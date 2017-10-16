@@ -1,0 +1,78 @@
+C:\Programme\IrfanView\i_view32.exe		1|Irfanview.omt|
+C:\Programme\LifeTool\CatchMe%202\CatchMe%202_Deutsch\bin\CatchMe2.exe		1|Catch_me.omt|CatchMe_horizontal.omt|
+C:\Programme\LifeTool\ShowMe\ShowMe%20LP2\bin\ShowMe.exe		1|ShowMe_Maus.omt|ShowMe_Scanning.omt|
+C:\Programme\LifeTool\Pablo\bin\Pablo.exe		1|Pablo_Scanning.omt|Pablo_Maus.omt|
+C:\Programme\LifeTool\Archimedes\Archimedes_Deutsch\bin\Archimedes.exe		1|Archimedes_Maus.omt|Archimedes_Scanning.omt|
+C:\Programme\LifeTool\Kon-Zen\Kon-Zen_Deutsch\bin\KonZen.exe		1|KonZen_Maus.omt|KonZen_Scanning.omt|
+C:\Programme\MULTITEXT\Multitext.exe		1|Multitext.omt|
+C:\ITOOLS\italk32\ITALK32.EXE		1|Anlaut IntelliTalk32.omt|
+C:\Budenberg\abrunden.exe	1|Budenberg Maus.omt|
+C:\Budenberg\aehnlich.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\anlaut.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\begriff.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\bildles.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\bildschr.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\bildwort.exe		1|Budenberg Pfeile.omt|
+C:\Budenberg\brd.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\bruchre.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\buchstab.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\buchstw.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\deldatum.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\dezimal.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\doppelt.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\einmal.exe	1|Budenberg Maus.omt|
+C:\Budenberg\erstles.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\euro.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\form.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\geld.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\geldc.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\geomet1.exe	1|Budenberg Maus.omt|
+C:\Budenberg\geomet2.exe	1|Budenberg Maus.omt|
+C:\Budenberg\geomet3.exe	1|Budenberg Maus.omt|
+C:\Budenberg\gleich.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\grzahlen.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\hundert.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\info.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\kegel.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\kran.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\kreuzw.exe	1|Budenberg Minitext.omt|
+C:\Budenberg\lesetr.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\minitext.exe	1|Budenberg Minitext.omt|
+C:\Budenberg\partner.exe	1|Budenberg Zahlen.omt|
+C:\Budenberg\raetsel.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\rechmix.exe	1|Budenberg Zahlen.omt|
+C:\Budenberg\richtung.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\rschreib.exe	1|Budenberg Maus.omt|
+C:\Budenberg\satzbau.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\silbenw.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\silbles.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\srechnen.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\teilen.exe	1|Budenberg Maus.omt|
+C:\Budenberg\textgli.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\textschr.exe	1|Budenberg Buchstaben.omt|
+C:\Budenberg\trainer.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\tutor.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\uhr.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\verglei.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\verkehr.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\wdiktat.exe	1|Budenberg Buchstaben.omt|
+C:\Budenberg\weiter.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\wortart.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\wortra.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\wsuchen.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\wuerfel.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\zahlbild.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\zahlenra.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\zbuendel.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\zehnein.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\zehnueb.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\zerlegen.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\zhaus.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\zraum20.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\zreihe.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\zstrahl.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\zweitles.exe	1|Budenberg Pfeile.omt|
+C:\Budenberg\bb.exe	1|Budenberg Pfeile.omt|
+C:\Programme\LifeTool\KlickTool%20AAC%20Deutsch\bin\KlickTool2.exe		1|3-Tasten-Scanning.omt|2-Tasten-Scanning.omt|
+C:\Programme\LifeTool\Hanna%20und%20Co%20Plus\bin\Hanna2.exe		1|3-Tasten-Scanning.omt|2-Tasten-Scanning.omt|
+C:\Programme\LifeTool\Sicher%20im%20Verkehr\bin\Sicher_im_Verkehr.exe		1|3-Tasten-Scanning.omt|2-Tasten-Scanning.omt|

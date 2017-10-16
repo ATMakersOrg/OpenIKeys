@@ -1,0 +1,9 @@
+{
+  Description     = "IntelliKeys USB Cleaup";
+  Provides        = ("ikusb");
+  OrderPreference = "Late";
+  Messages =
+  {
+    start = "Start IntelliKeys USB Cleaup";
+  };
+}

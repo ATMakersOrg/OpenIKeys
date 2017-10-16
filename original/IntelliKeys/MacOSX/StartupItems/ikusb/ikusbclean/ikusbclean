@@ -1,0 +1,38 @@
+#!/bin/sh
+
+##
+# ikusb cleanup
+##
+
+. /etc/rc.common
+
+StopService ()
+{
+   return 0
+}
+
+StartService ()
+{
+	chmod -R 0777 /Applications/IntelliTools/"IntelliKeys USB"
+	rm -rf /Applications/IntelliTools/"IntelliKeys USB"
+
+	chmod -R 0777 /System/Library/StartupItems/ikusb
+	rm -rf /System/Library/StartupItems/ikusb
+
+	chmod -R 0777 /System/Library/Extensions/IKUSBMatch.kext
+	rm -rf /System/Library/Extensions/IKUSBMatch.kext
+
+	chmod -R 0777 /System/Library/StartupItems/ikusbclean
+	rm -rf /System/Library/StartupItems/ikusbclean
+}
+
+RestartService ()
+{
+   return 0
+}
+
+#
+#  take this out since it was introduced in 10.1
+#  copy the 10.2 code instead.
+#
+RunService "$1"

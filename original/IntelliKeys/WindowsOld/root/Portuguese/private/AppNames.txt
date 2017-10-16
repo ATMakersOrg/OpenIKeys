@@ -1,0 +1,13 @@
+windows%20calculator%20application%20file				Windows Calculator
+Installer%20VISE%20uninstall%20application%20file			Installer VISE Uninstaller
+Microsoft%20Project%20for%20Windows%20application file		Microsoft Project for Windows
+Microsoft%20Schedule+%20for%20Windows%2095%20application%20file	Microsoft Schedule+ for Windows 95
+Uninstall%20application%20file					Installer VISE Uninstaller
+Windows%20Help%20Engine%20application%20file			Windows Help Engine
+Windows%20Packager%20application%20file				Windows Packager
+Windows%20System%20Editor%20application%20file			Windows System Editor
+
+Windows%20Notepad%20application%20file		Notepad
+WordPad%20MFC%20Application			Wordpad
+Windows%20Calculator%20application%20file		Calculator
+CD%20Player%20accessory				CD Player

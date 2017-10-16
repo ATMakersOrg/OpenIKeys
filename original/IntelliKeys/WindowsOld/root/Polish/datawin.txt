@@ -1,0 +1,116 @@
+
+;  for international versions
+
+codepage_for_locale_0404		950  ;  tradycyjny chinski
+codepage_for_locale_0C04		932  ;  chinski uproszczony
+codepage_for_locale_0411		932  ;  japonski
+codepage_for_locale_0412		949  ;  koreanski
+
+
+Overlays_Folder			Private/Standard Overlays/Win/
+Switch_Settings_Folder		Private/Switch Settings/Win/
+
+;
+;  The standard overlays
+;
+Standard_Overlay_0		Nakladka internet USB.omg
+Standard_Overlay_1		Nakladka ustawien USB.oms
+Standard_Overlay_2		Nakladka matematyczna USB.oms
+Standard_Overlay_3		Nakladka Alfabet USB.oms
+Standard_Overlay_4		Nakladka Mysz USB.oms
+Standard_Overlay_5		Nakladka QWERTY USB.omg
+Standard_Overlay_6		Nakladka Latwe Pisanie USB.oms
+Standard_Overlay_7		zadna.oms
+Standard_Setup_Overlay		1
+
+Standard_Overlay_0_Name		Nakladka internet USB
+Standard_Overlay_1_Name		Nakladka ustawien USB
+Standard_Overlay_2_Name		Nakladka matematyczna USB
+Standard_Overlay_3_Name		Nakladka Alfabet USB
+Standard_Overlay_4_Name		Nakladka Mysz USB
+Standard_Overlay_5_Name		Nakladka QWERTY USB
+Standard_Overlay_6_Name		Nakladka Latwe Pisanie USB
+Standard_Overlay_7_Name		zadna
+
+
+Control_Panel_Name		IntelliKeys USB.exe
+
+Override_Use_System_Repeat_Settings          	0
+Force_Key_Up					1
+max_repeat_delay				750
+
+num_switch_files	26
+
+switch_file_1	1 - Ctrl-Enter i Ctrl-Enter.oms
+switch_file_2	2 - Ctrl-W prawo i -W dol.oms
+switch_file_3	3 - Spacja i Enter.oms
+switch_file_4	4 - Klik i Klik.oms
+switch_file_5	5 - Klik i Podwojny Klik.oms
+switch_file_6	6 - W lewo i W prawo.oms
+switch_file_7	7 - W gore i W dol.oms
+switch_file_8	8 - W lewo i W gore.oms
+switch_file_9	9 - 1 i 2.oms
+switch_file_10	10 - Tab i Enter.oms
+switch_file_11	11 - Tab i Spacja.oms
+switch_file_12	12 - Tab i Shift-Tab.oms
+switch_file_13	13 - Lewy Shift i Prawy Shift.oms
+switch_file_14	14 - W dol i Enter.oms
+switch_file_15	15 - W prawo i Enter.oms
+switch_file_16	16 - Lewy Klik i Prawy Klik.oms
+switch_file_17	17 - Klawisze kursora i Enter.oms
+switch_file_18	18 - Klawisze kursora i Spacja.oms
+switch_file_19	19 - 1 do 4 i 0.oms
+switch_file_20	20 - 1 do 4 i Enter.oms
+switch_file_21	21 - Klawisze edycyjne.oms
+switch_file_22	22 - Klawisze modyfikatorow.oms
+switch_file_23	23 - Klikniecie myszy.oms
+switch_file_24	24 - Mysz piecioprzyciskowa.oms
+switch_file_25	25 - Rozne 1.oms
+switch_file_26	26 - Kierunki myszy.oms
+
+;
+;  names by which to identify running programs
+
+engine_name_1		ikusbsvc.exe
+engine_name_2		ikusb.exe
+engine_name_3		w9xsvc.exe
+
+control_panel_name_1	IntelliKeys USB.exe
+control_panel_name_2	IntelliKeys USB
+
+system_tray_name_1	iksystray.exe
+system_tray_name_2	system tray.exe
+system_tray_name_3	iksyst~1.exe
+
+balloon_name_1		balloon.exe
+
+debug_sender		0
+
+Unicode_File_Names	0
+	
+intellikeys_file		IntelliKeys USB.exe
+
+S_SYSTRAY_SKIP_APP_1	Bootstrap loader for Discover
+S_SYSTRAY_SKIP_APP_2	Szuflada systemowa IK USB
+S_SYSTRAY_SKIP_APP_3	IntelliKeys USB
+S_SYSTRAY_SKIP_APP_4	Glowna aplikacja umieszczona w szufladzie systemowej
+S_SYSTRAY_SKIP_APP_5	Uruchom DLL jako aplikacje
+
+DiscoverName		DiscoverPro
+
+s_overlay_not_sent_1	Nakladka nie zostala wyslana|Nakladka nie zostala wyslana poniewaz wybrano Jedna nakladke w zakladce tryb Panelu sterowania IntelliKeys USB i IntelliSwitch. Aby wlaczyc wysylanie nakladek wybierz tam Nakladki.
+s_overlay_not_sent_2	Nakladka nie zostala wyslana|Nakladka nie zostala wyslana poniewaz wybrano Ustawienia przelacznikow w zakladce tryb Panelu sterowania IntelliKeys USB i IntelliSwitch. Aby wlaczyc wysylanie nakladek wybierz tam Nakladki.
+s_overlay_not_sent_3	Nakladka nie zostala wyslana|Nakladka nie zostala wyslana poniewaz wybrano DiscoverPro w zakladce tryb Panelu sterowania IntelliKeys USB i IntelliSwitch. Aby wlaczyc wysylanie nakladek wybierz tam Nakladki.
+S_LISTFEATURES_MODE_DISCOVER			DiscoverPro
+
+$Mode_intro				Funkcje IntelliKeys i IntelliSwitch beda ustalone przez
+
+$mode_overlays			Nakladki
+mode_one_overlay		Jedna nakladka
+$mode_overlays_one		Uzyj tej samej nakladki dla wszystkich aplikacji
+mode_presets			Ustawienia przyciskow
+$mode_discover_but		Pozwol aplikacjom wysylac ich wlasne nakladki
+Mode				Tryb
+$Sent_By:			Wyslana przez: 
+
+

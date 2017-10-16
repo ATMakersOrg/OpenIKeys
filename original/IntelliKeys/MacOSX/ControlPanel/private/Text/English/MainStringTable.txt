@@ -1,0 +1,282 @@
+!Cannot_Add_Group_Folder2		'.  The folder may not be accessible.
+!Cannot_Add_Group_Folder		Unable to add the group named '
+!Cannot_Locate_Student_Folder	Could not locate the student's folder.  Using Guest settings.
+!Cannot_Read_Group_Folder	Can't create group folder or scan user folders for the group :
+!Cannot_Rename_Group_Folder	Unable to rename group folder to : 
+!Cannot_Scan_Group_Folders	Unable to scan for group folders.  They may be inaccessible.
+!Cannot_Add_To_Guest_Group	You cannot add users to the Guest group.
+!Could_Not_Be_Added		' could not be added.  The file location may not be accessible.
+!Group_Folder_Inaccessible	Unable to scan the groups and users.  The root folder may be inaccessible.
+!Group_Already_Exists		There is already a group of that name.  Please choose another name.
+!Group_Is_Not_Empty		The group cannot be removed because it is not empty.  Please delete all users before deleting the group.
+!Keyboard_Software_Not_Responding	The USB Keyboard software is not responding.  It may not be running, or it may be busy.  Check to see that the software is running, then try changing the setting again.
+!Keyboard_Not_Reset		The keyboard was not reset.  Try again.
+!Root_Folder_Does_Not_Exist	The root folder does not exists.  Please check your installation.
+!The_User			The user '
+!Unable_To_Load_Applications	Unable to load the applications for this user.
+!Unable_To_Load_The_Settings	Unable to load the settings file for this user.
+!Unable_To_Locate_Preferences	Unable to locate the preferences file in the private folder.
+!Unable_To_Save_Preferences	Unable to write the preferences file.
+!Unable_To_Save_The_Settings	Unable to save the settings file for this user.
+!Unsupported_USB_Keyboard_Message	Intellikeys USB Software received an unsupported message : ID = 
+!User_Already_Exists		There is already a user of that name.  Please choose another name.
+!Users_Folder_Does_Not_Exist	The users folder does not exists.  Please check your installation.
+$1				1
+$2				2
+$3				3
+$4				4
+$Add			Add... 
+$Additional_Features	Additional Features
+$Advanced		&Advanced
+$App_Not_Allowed	You cannot attach overlays to this application from the IntelliKeys USB Control Panel as the application is designed to send its own overlays. Consult this application's User's Guide about attaching overlays.
+$App_Not_Found	not found
+$App_Tab_Unavailable_Body	The Applications tab is not available in this version.
+$App_Tab_Unavailable_Title	Feature Unavailable
+$Application	Application
+$Application_Details	Application Details
+$Application_Find_Dialog_Title		Find Application
+$Application_Find_Dialog_Prompt		Select desired application
+$Applications		Applications 
+$Available_Applications_Form_Title	Available Applications
+$Attach			Attach... 
+$Browse			Browse... 
+$Browse...		&Browse...
+$Browse_For_Application_Dialog_Title	Locate Application 
+$Browse_For_Application_Dialog_Prompt	Select desired Application 
+$Cancel					Cancel
+$Cannot_Edit_Overlay	You cannot edit this file because it is a content-only or group overlay.  
+$Choose			Choose...  
+$Choose_App_Header	Choose an Application. 
+$Clear			&Clear
+$Column_=			Column =
+$Confirm_Delete			Confirm Delete
+$Connected		Connected
+$Connected_:		Connected :
+$Custom	  ;  the following are for the Applications tab.			  
+$Data_Send_Rate:		Data Send Rate:
+$Data_Send_Rate_=		Data Send Rate =
+$Delete_Empty_Group		Delete Empty Group?
+$Detach			Detach 
+$Device:				Device:
+$Device_Status		Device Status
+$DiscoverNameMac		Discover Envoy
+$DiscoverNameWin		DiscoverPro
+$Display_Features...	D&isplay Features...
+$Display_Latching		Latching
+$Display_Locking		Locking
+$Display_No_Latching		No Latching
+$Done			&Done
+$Edit			Edit... 
+$Edit_Groups_And_Users	&Edit Groups and Users...
+$Edit_Template_Overlay	This file is an overlay template.  You will be editing a copy of the file, and will need to attach the file after you save it.  
+$False			False
+$Find		Find...  
+$Firmware_Version_:	Firmware Version :
+$Firmware_Version_=		Firmware Version =
+$Group:			Group:
+$Group_Delete					&Delete
+$Group_Must_Be_Empty		The group must be empty before it can be removed.  Please delete all users in this group before deleting the group.
+$Group_Name				Group Name
+$Group_Name:			Group Name:
+$Group_New...					&New...
+$Group_Rename...				&Rename...
+$Groups					Groups
+$Groups_and_Users		Groups and Users
+$Guest				Guest
+$Has_these_overlays	... the Control Panel will ... 
+$Help...		&Help...
+$IKOff		IntelliKeys Off  
+$IKOn		IntelliKeys On 
+$ISOff		IntelliSwitch Off  
+$ISOn		IntelliSwitch On 
+$In_Group			in group
+$Indicator_Lights	Shift Key Action
+$Indicator_Lights_=		Indicator Lights =
+$IntelliKeys_USB		IntelliKeys USB
+$IntelliKeys_USB_Features_For_User	IntelliKeys USB features for user
+$IntelliKeys_USB_Window_Title	IntelliKeys USB Control Panel 
+$IntelliKeys_USB_Window_Title2	IntelliKeys USB and IntelliSwitch Control Panel 
+$IntelliSwitchFeaturesNotice	NOTE: IntelliSwitch users can adjust Repeat Rate, Repeat On/Off, Mouse Speed, Key Sound Volume, and Data Send Rate. 
+$Invalid_Preference		Invalid value for user preference. Using
+$Is_Empty_Delete		is empty.  Do you wish to delete this group?
+$Is_Located	is located at path
+$Keyboard_Number_=		Keyboard Number =
+$Keyboard_Reset		&Keyboard Reset
+$Keysound_Volume	Keysound Volume
+$Keysound_Volume_=		Keysound Volume =
+$Language_:		Language :
+$Last_Saved_Group_Missing	The last saved group does not exist.  Using
+$Last_Saved_User_Missing	The last saved user does not exist.  Using
+$Last_Sent			last sent
+$Last_Sent_Note		Note: Use the Applications tab to attach overlays to applications  
+$Last_Sent_Overlay_:	Last Sent Overlay :
+$Last_Sent_Overlay_=		Last Sent Overlay =
+$Latching		Latch&ing
+$Latching2		Latching
+$Locking		L&ocking
+$Locking2		Locking
+$Mode				Mode
+$Mode_:_		Mode : 
+$Mode_=				Mode =
+$Mode_Discover			Discover
+$Mode_Discover_But		But still allow applications to send their own overlays
+$Mode_Intro				IntelliKeys and IntelliSwitch functions will be determined by
+$Mode_One_Overlay		One Overlay Only
+$Mode_Overlays			Overlays
+$Mode_Presets			Switch Presets
+$Mode_Warning_=			Show mode warning message =
+$Mouse_Speed:		Mouse Speed:
+$Mouse_Speed_=			Mouse Speed =
+$Must_Attach_Overlay		On the Applications tab, you specified "Use the overlay selected below", for an application, but did not attach an overlay.  Click OK to return to the Applications tab.  Click Cancel to remove the application.
+$Must_Supply_One_Overlay	On the Mode tab, you cannot choose One Overlay Only without also choosing an overlay.  Please choose an overlay now, or select a different mode.
+$No						No
+$No_Latching		&No Latching
+$No_Latching2		No Latching
+$None				none
+$Not_Connected		Not Connected
+$Not_Valid_Overlay	That is not a valid overlay file. Please choose another file. 
+$Number_Of_Connected_Keyboards_=	Number of connected keyboards =
+$Number_Of_Keys_Pressed_=	Number of keys pressed =
+$OK						OK
+$Off				Off
+$On					On
+$On_Off_Switch_:	On/Off Switch :
+$On_or_Off_=			On or Off =
+$Overlay	Overlay
+$Overlay_Details	Overlay Details
+$Overlay_Find_Dialog_Title		Locate Overlay
+$Overlay_Find_Dialog_Prompt		Select desired overlay
+$Overlay_Level_:	Overlay Level :
+$Overlay_Level_=		Overlay Level =
+$Overlay_Location	Overlay Path: 
+$Overlay_Missing	The selected overlay file could not be found.  It may have been deleted or moved after it was attached. 
+$Overlay_Name_=			Overlay Name =
+$Overlay_Sending_Disabled	Sending disabled, check Mode tab
+$Pad_:			: Pad
+$Program_Files		Program Files 
+$Programs		Applications 
+$Radio_Attached		The Control Panel will send the overlay selected below: 
+$Radio_None		The Control Panel will not send an overlay
+$Remove			Remove 
+$Removing_App_Body	The Application you selected is designed to send its own overlays.  You cannot attach overlays to it using the IntelliKeys USB Control Panel, so it will now be removed from the list.  Consult the application's User's Guide about attaching overlays.
+$Removing_App_Title	Removing Application
+$Repeat			Re&peat
+$Repeat_Features	Repeat Features
+$Repeat_Latching	Repeat &Latching
+$Repeat_Latching_is		Repeat Latching is
+$Repeat_Rate:		Repeat Rate:
+$Repeat_Rate_=			Repeat Rate =
+$Repeat_is			Repeat is
+$Required_Lift_Off	&Required Lift Off
+$Required_Lift_Off_is		Required Lift Off is
+$Response_Rate:		Response Rate:
+$Response_Rate_=		Response Rate =
+$Row_=				Row =
+$Sensor_Values_:_		Sensor Values : 
+$Sensor_Values_=		Sensor Values =
+$Sent_By:			Sent by : 
+$Sent_By_	Sent By:
+$Sent_By_=		Sent By = 
+$Serial_Number_:	Serial Number :
+$Serial_Number_=		Serial Number
+$Shift_Key_Action_=		Shift Key Action =
+$Show_Mode_Warning	Show warning when overlay cannot be sent
+$Six				Six
+$Smart_Typing		&Smart Typing
+$Smart_Typing_is		Smart Typing is
+$Software_Version_:	Software Version :
+$Software_Version_=		Software Version =
+$Specific_Overlay_=		Specific Overlay =
+$Standard_Overlay_0_Name		Web Access USB Overlay
+$Standard_Overlay_1_Name		Setup USB Overlay
+$Standard_Overlay_2_Name		Math Access USB Overlay
+$Standard_Overlay_3_Name		Alphabet USB Overlay
+$Standard_Overlay_4_Name		Mouse Access USB Overlay
+$Standard_Overlay_5_Name		QWERTY USB Overlay
+$Standard_Overlay_6_Name		Basic Writing USB Overlay
+$Standard_Overlay_7_Name		none
+$Standard_Overlay_=		Standard Overlay =
+$Standard_Overlay_In_Place_:	Standard Overlay In Place :
+$Standard_Overlay_Note	NOTE: Whenever a Standard Overlay is inserted, it will take effect and override any overlay chosen above.
+$Sticky					Sticky
+$Student_Delete					De&lete
+$Student_New...					N&ew...
+$Student_Rename...				Rena&me...
+$Sure_Delete_Group		Are you sure you want to delete the group
+$Sure_Delete_User		Are you sure you want to delete the user
+$Switch_			switch 
+$Switch_1_:		Switch 1 : 
+$Switch_1_=			Switch 1 =
+$Switch_2_:		Switch 2 : 
+$Switch_2_=			Switch 2 =
+$Switch_3_:		Switch 3 : 
+$Switch_3_=			Switch 3 =
+$Switch_4_:		Switch 4 : 
+$Switch_4_=			Switch 4 =
+$Switch_5_:		Switch 5 : 
+$Switch_5_=			Switch 5 =
+$Switch_Content_0
+$Switch_Content_1		Switches:||1: Control-Enter|2: Control-Enter|3: Control-Enter|4: Control-Enter|5: Control-Enter
+$Switch_Content_10	Switches:||1: Tab|2: Enter|3: Tab|4: Enter|5: Tab
+$Switch_Content_11	Switches:||1: Tab|2: Space|3: Tab|4: Space|5: Tab 
+$Switch_Content_12	Switches:||1: Tab|2: Shift-Tab|3: Tab|4: Shift-Tab|5: Tab
+$Switch_Content_13	Switches:||1: Left Shift|2: Right Shift|3: Left Shift|4: Right Shift|5: Left Shift
+$Switch_Content_14	Switches:||1: Down Arrow|2: Enter|3: Down Arrow|4: Enter|5: Down Arrow 
+$Switch_Content_15	Switches:||1: Right Arrow|2: Enter|3: Right Arrow|4: Enter|5: Right Arrow 
+$Switch_Content_16	Switches:||1: Left Mouse Click|2: Right Mouse Click|3: Left Mouse Click|4: Right Mouse Click|5: Left Mouse Click
+$Switch_Content_17	Switches:||1: Up Arrow|2: Down Arrow|3: Left Arrow|4: Right Arow|5: Enter
+$Switch_Content_18	Switches:||1: Up Arrow|2: Down Arrow|3: Left Arrow|4: Right Arow|5: Space
+$Switch_Content_19	Switches:||1: 1|2: 2|3: 3|4: 4|5: 0
+$Switch_Content_2		Switches:||1: Control-Right Arrow|2: Control-Down Arrow|3: Control-Right Arrow|4: Control-Down Arrow|5: Control-Right Arrow
+$Switch_Content_20	Switches:||1: 1|2: 2|3: 3|4: 4|5: Enter
+$Switch_Content_21	Switches:||1: Space|2: Enter|3: Tab|4: Shift-Tab|5: Backspace
+$Switch_Content_22	Switches:||1: Left Shift|2: Right Shift|3: Control|4: Command/Left Alt|5: Command/Right Alt
+$Switch_Content_23	Switches:||1: Left Mouse Click|2: Right Mouse Click|3: Left Mouse Double-Click|4: Space|5: Enter
+$Switch_Content_24	Switches:||1: Left Mouse Click|2: Right Mouse Click|3: Middle Mouse Click|4: Left Side Mouse Click|5: Right Side Mouse Click
+$Switch_Content_25	Switches:||1: Left Mouse Click|2: Space|3: Q|4: Z|5: Escape
+$Switch_Content_26	Switches:||1: Mouse Up|2: Mouse Down|3: Mouse Left|4: Mouse Right|5: Button Click
+$Switch_Content_3		Switches:||1: Space|2: Enter|3: Space|4: Enter|5: Space
+$Switch_Content_4		Switches:||1: Left Mouse Click|2: Left Mouse Click|3: Left Mouse Click|4: Left Mouse Click|5: Left Mouse Click
+$Switch_Content_5		Switches:||1: Left Mouse Click|2: Left Mouse Double-Click|3: Left Mouse Click|4: Left Mouse Double-Click|5: Left Mouse Click
+$Switch_Content_6		Switches:||1: Left Arrow|2: Right Arrow|3: Left Arrow|4: Right Arrow|5: Left Arrow
+$Switch_Content_7		Switches:||1: Up Arrow|2: Down Arrow|3: Up Arrow|4: Down Arrow|5: Up Arrow
+$Switch_Content_8		Switches:||1: Left Arrow|2: Up Arrow|3: Left Arrow|4: Up Arrow|5: Left Arrow
+$Switch_Content_9		Switches:||1: 1|2: 2|3: 1|4: 2|5: 1
+$Switch_Setting_=		Switch Setting =
+$Switched_Off		Switched Off
+$Switched_On		Switched On
+$Tab_Does_Not_Apply		NOTE: Settings on this tab have no effect unless you select "Overlays" on the Mode tab.
+$Tab_Does_Not_Apply_Msg		NOTE: Settings on the Applications tab have no effect unless you select "Overlays" on the Mode tab.
+$Testing		Testing
+$The_App_Highlighted	For the application selected below... 
+$The_Group_Named		The group named
+$Three				Three
+$Touch_Features		Touch Features
+$Touch_Features_Tab_Title		Touch &Features
+$Troubleshooting	Tro&ubleshooting
+$True				True
+$Unknown			Unknown
+$Use_				use 
+$Use_As_A_Switch		Use As A Switch
+$Use_Intellikeys...		When not using a Standard overlay, use IntelliKeys...
+$Use_Last_Sent_Overlay		Use Last Sent Overlay
+$Use_This_Overlay		Use This Overlay
+$User:			User:
+$User_Name				User Name
+$User_Name:				User Name:
+$Users					Users
+$Visit_Our_Website	&Visit Our Website
+$Volume:		Volume:
+$VolumeTest				Test
+$Was_Expected	cannot be found.  It was expected at path
+$Yes					Yes
+$already_attached	That overlay is already attached.  
+$app_already_added	That application is already in the list. 
+$attach_edit_overlays	Attach/Edit Overlays 
+$confirm_delete_app	Are you sure you want to remove the selected application? 
+$confirm_detach_overlay		Are you sure you want to detach the selected overlay? 
+$current_overlay	Current overlay: 
+$mode_overlays_one		Use the same overlay for all applications
+$sent_by		Sent by: 
+
+

@@ -1,0 +1,273 @@
+﻿
+Software_Version			3.5.2.19
+Firmware_Version			2.2
+
+;
+;   relative paths to various files and folders
+;   all are relative to the root folder.
+;
+Private_Folder			Private/
+Channels_Folder			Private/Channels/
+Engine_Folder			Private/Channels/Engine/
+Users_Folder			Documents/
+Guest_Folder			Documents/Gast/
+
+;
+;  Preferences stuff
+;
+Preferences_File		preferences.txt
+Guest				Gast
+
+;Reload_Standard_Overlay_When_Recognized		1
+
+;
+;  Other stuff
+;
+Intellipics_Program			intellipics.exe
+Intellipics_Player_Program		intellipics player.exe
+
+;
+;  debug stuff
+;
+;Debug_Log_File			DebugLog.txt
+Debug_Log_Flush_Period		1000
+
+
+Custom_Overlay			Nutzer
+
+;
+;  Time periods for various tasks, in MSec
+;
+Correct_Period			500
+Engine_Period			5
+Device_Search_Period		1000
+External_Command_Period		250
+External_Command_Period 2	250
+EEProm_Byte_Overdue		500
+Dead_Until_Time			1000
+Min_Response_Time		15
+Min_Repeat_Start			1000
+Max_Repeat_Start			4000
+Keyboard_Reset_Sound_Duration	50
+Mouse_Click_Delay			5
+Led_Reconcile_Period		100
+Queue_Empty_Timeout		2000
+Switch_Response_Period		50
+
+;  App watching
+watch_apps			1
+App_Watch_Period		500
+
+
+;
+;  Mouse accelleration parameters
+;
+Mouse_Accelleration_Knee		1000
+Mouse_Accelleration_Scale_Mac	60
+Mouse_Accelleration_Scale_Win	25
+
+;
+;  Overlay recognition
+;
+Overlay_Rec_Settle_Period		1000
+Overlay_Rec_Fallback_Threshhold	150
+Overlay_Rec_Black_Weight		50
+
+;
+;  vendor and product ID for USB device matching
+;  must use decimail values
+;
+IK_Vendor_ID			2398
+IK_Product_ID			257
+
+IS_Vendor_ID			5195
+IS_Product_ID			8
+
+;
+;  valid serial number prefix
+;
+Valid_Serial_Number_Prefix		C-
+
+;
+;
+;
+Key_Sound_Frequency		247
+Short_Key_Sound_Length		50
+Long_Key_Sound_Length		700
+Sweep_Sound_Low_Frequency	200
+Sweep_Sound_High_Frequency	250
+Sweep_Sound_Duration		200
+
+Unknown				Unbekannt
+
+Help_File				Private/ikusbhelp.html
+
+S_KEYSOUND_OFF		Aus
+S_KEYSOUND_1			1
+S_KEYSOUND_2			2
+S_KEYSOUND_3			3
+S_KEYSOUND_4			4
+S_CP_KEYSOUND_VOLUME	Tastenton Lautstärke
+
+S_UNKNOWN_VALUE		Unbekannter Wert
+
+S_NONE				keine
+
+S_BOOL_ON			Ein
+S_BOOL_OFF			Aus
+
+S_LF_HEADER1			IntelliKeys USB Einstellungen für Nutzer "%s"
+S_LF_HEADER2			IntelliKeys USB Einstellungen für Nutzer "%s" in Gruppe "%s"
+
+S_LISTFEATURES_RESPONSE_RATE 		Verzögerungszeit
+S_LISTFEATURES_REPEAT_RATE 			Wiederholungsrate
+S_LISTFEATURES_MOUSE_SPEED 			Mausgeschwindigkeit
+S_LISTFEATURES_DATA_SEND_RATE 		Datenübertragungsrate
+S_LISTFEATURES_SMART_TYPING 			Clever eingeben
+S_LISTFEATURES_REQUIRED_LIFT_OFF 		Taste loslassen
+S_LISTFEATURES_KEY_SOUND_VOLUME		Tastenton Lautstärke
+S_LISTFEATURES_REPEAT			Wiederholung
+S_LISTFEATURES_REPEAT_LATCHING		Wiederholung einrasten
+S_LISTFEATURES_SHIFT_KEY_ACTION 		Funktion der Shift-Taste
+S_LISTFEATURES_INDICATOR_LIGHTS 		Anzeigelichter
+
+S_LISTFEATURES_MODE				Modus
+S_LISTFEATURES_MODE_LASTSENT		Nutze Zuletzt gesendete Schablone
+S_LISTFEATURES_MODE_SPECIFIC			Nutze festgelegte Schablone
+S_LISTFEATURES_MODE_SWITCH			wie eine Taste
+
+S_LISTFEATURES_MODE_LAST_OVERLAY		Zuletzt gesendete Schablone
+S_LISTFEATURES_MODE_SPECIFIC_OVERLAY	Festgelegte Schablone
+S_LISTFEATURES_MODE_SWITCH_SETTING		Tasteneinstellungen
+
+S_LF_NUMKB				Anzahl der verbundenen Tastaturen 
+S_LF_KBNUM				Tastaturnummer
+
+S_LATCHING				Einrasten
+S_LOCKING				Feststellen
+S_NO_LATCHING				Nicht einrasten
+
+S_LIGHTS_THREE				Drei
+S_LIGHTS_SIX				Sechs
+
+S_CP_KEYSOUNDVOLUME		Tastenton Lautstärke
+S_CP_KEYSOUNDVOLUME_OFF		Aus
+
+S_NOT_CONNECTED			Nicht verbunden
+S_CONNECTED				Verbunden
+
+S_YES					Ja
+S_NO					Nein
+
+
+S_CP_STANDARD_OVERLAY       	Standard Schablone
+S_CP_CUSTOM_OVERLAY          	Nutzer Schablone
+S_CP_ONOFF_SWITCH_STATUS      Ein oder Aus
+S_CP_FIRMWARE_VERSION          	Firmware Version
+S_CP_SOFTWARE_VERSION          	Software Version
+S_CP_SERIAL_NUMBER            	Seriennummer
+S_CP_SENSORS                   	Sensor Werte
+S_CP_CONNECTED		Verbunden
+S_CP_OVERLAY_NAME		Schablonen Name
+S_CP_OVERLAY_LEVEL		Schablonen Ebene
+
+S_CP_SWITCH1			Taste 1
+S_CP_SWITCH2			Taste 2
+
+S_CP_NUMKEYS			Nummern der gedrückten Tasten
+S_CP_ROWCOL			Zeile = %d, Spalte = %d
+S_CP_SENS			Sensor Werte = %d,%d,%d,%d,%d,%d,%d,%d,%d
+S_GUEST			Gast
+
+right_click_text	AAAAAAAAAARIGHTCLICKAAAAAAAAAA
+
+report_diagnostics_realtime		1
+report_diagnostics_realtime_period	100
+report_diagnostics_realtime_timeout	50
+
+APP_OVERLAYS_SRC_FOLDER	Application Overlays
+APP_OVERLAYS_SRC_MAP	applications.txt
+APP_OVERLAYS_NAMES_MAP	application display names.txt
+
+intellikeys_usb			IntelliKeys USB
+
+app_not_allowed	Mit dem Intellikeys Einstellungsfenster können Sie dieser Anwendung keine Schablone zuweisen, da die Anwendung eigene Schablonen sendet. Für weitere Informationen lesen Sie bitte das Handbuch der Anwendung.
+
+sending			senden
+for			für
+
+S_MENU_NONE1		erlaube
+S_MENU_NONE2		eine Schablone zu senden
+S_MENU_CLICKIT		erlaube ClickIt! eine Schblone zu senden
+S_MENU_DISCOVER	erlaube DiscoverPro ein Setup zu senden
+
+
+S_TOOLTIP_IK_ON		IntelliKeys USB ist angeschlossen.
+S_TOOLTIP_IK_OFF		IntelliKeys USB ist angeschlossen aber ausgeschaltet.
+S_TOOLTIP_IS_ON		IntelliSwitch ist angeschlossen.
+S_TOOLTIP_IS_OFF		IntelliSwitch ist angeschlossen aber ausgeschaltet.
+S_TOOLTIP_MULTIPLE_DEVICES	Mehrere Geräte sind angeschlossen.
+S_TOOLTIP_NO_DEVICES		Es ist kein Gerät angeschlossen.
+
+
+Systray_Tip			IntelliKeys USB
+Systray_Menu			Einstellungsfenster für IntelliKeys USB öffnen
+Systray_Menu_Switch		Einstellungsfenster für IntelliKeys USB und IntelliSwitch öffnen
+
+S_TROUBLESHOOTING		Fehlersuche...
+S_INTELLIKEYS_WILL		das Einstellungsfenster...
+
+use_switch_setting		sendet folgende Tasten-Einstellungen: 
+use_overlay			sendet folgende Schablone:
+
+attach_edit_overlays_for	Schablonen zuweisen/bearbeiten für:
+
+s_overlay_not_sent_1	Schablone nicht gesendet|Keine Schblone gesendet, da die Option \n"mit dieser Schablone für alle Anwendungen" gewählt wurde.\nUm das Senden von Schblonen zu ermöglichen, \nwählen Sie "mit Schablonen, die Anwendungen zugewiesen sind, oder der zuletzt benutzten".
+
+s_overlay_not_sent_2	Schablone nicht gesendet|Keine Schblone gesendet, da die Option \n"als Taster" gewählt wurde.\nUm das Senden von Schblonen zu ermöglichen, \nwählen Sie die Option "mit Schablonen, die Anwendungen zugewiesen sind, oder der zuletzt benutzten".
+
+Send	sendet
+Send_No_Overlay	sendet keine Schablone
+
+send		Senden
+send_no_overlay	sendet keine Schablone
+
+S_error_sending_overlay	Fehler beim Senden der Schablone
+S_overlay			Schablone
+S_attached_to_application	An die Anwendung gebundne
+S_cannot_be_sent		Kann nicht geschickt werden. Es könnte verschoben oder gelöscht sein.
+
+app_will_choose		Die Systemsteuerung wird keine Schablone senden
+app_will_choose_clickit	Die Systemsteuerung wird keine Schablone senden
+
+//  set this to 1 if you want Discover to appear 
+//  in the UI even if it's not installed.
+show_discover_anyway	0
+
+//  set this to 1 to log calls to the DLLs
+log_dlls	0
+
+//  these pertain to selecting the One Overlay option from the system tray
+//  without specifying an overlay.
+must_specify_overlay	Sie müssen eine Schablone definieren, wenn Sie den "Nur eine Schablone" Modus wählen.
+overlay_files		Schablonen Dateien 
+all_files			Alle Dateien
+choose_overlay		Bitte wählen Sie eine Schablonen Datei
+not_valid_overlay		Diese Datei ist keine gültige Schablone. Der Modus wird nicht geändert.
+no_overlay_chosen		Sie haben keine Schablonen Datei gewählt. Der Modus wird nicht geändert.
+
+//  period (in mSec) after an overlay is sent in which Discover cannot set raw mode
+raw_mode_immunity		2000
+
+allow_applications_to_send_overlays	but still allow applications to send their own overlays
+overlay_files		Schablonen Dateien 
+
+use_attached_overlay	Die Systemsteuerung wird senden
+
+Overlays	Schablonen
+One_Overlay_Only	Nur eine Schablone
+Switch_Presets	Voreinstellung Taster
+Mode:	Modus
+Using_overlay	Schablone benutzen
+
+

@@ -1,0 +1,24 @@
+/* Compiling Coinstaller for 64 bits. */
+
+You will need Visual Studio 2008 or later. You will need to create an x64 target, 
+if not already there.
+
+Here are the settings:
+
+// Compiler
+/O2 /Ob1 /I "..\..\..\..\..\WinDDK\7600.16385.1\inc" /D "NDEBUG" /D "UNICODE" /D "WIN32" 
+/D "_WINDOWS" /D "_USRDLL" /D "COINSTALLER_EXPORTS" /D "_AMD64_" /D "_VC80_UPGRADE=0x0600" 
+/D "_WINDLL" /D "_MBCS" /GF /FD /EHsc /MT /Gy /Yu"stdafx.h" /Fp".\x64\Release/coinstaller.pch" 
+/Fo".\x64\Release/" /Fd".\x64\Release/" /W3 /nologo /c /TP /errorReport:prompt
+
+// Linker
+/OUT:"x64\release\ikusbco.dll" /INCREMENTAL:NO /NOLOGO 
+/LIBPATH:"C:..\..\..\..\..\WinDDK\7600.16385.1\lib\wlh\amd64" /DLL /MANIFEST 
+/MANIFESTFILE:"x64\Release\ikusbco.dll.intermediate.manifest" 
+/MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEF:".\ikusbco.def" 
+/PDB:".\x64\Release/ikusbco.pdb" /DYNAMICBASE:NO /IMPLIB:".\x64\Release/ikusbco.lib" 
+/MACHINE:X64 /ERRORREPORT:PROMPT setupapi.lib  comctl32.lib  kernel32.lib user32.lib 
+gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib 
+odbc32.lib odbccp32.lib
+
+Note that you will get some compiler errors and the compiler will tell you how to fix it.

@@ -1,0 +1,290 @@
+$Touch_Features	Ustawienia dotyku
+$Keysound_Volume	Glosnosc dzwieku klawiszy
+$Repeat_Features	Ustawienia powtarzania
+$Additional_Features	Ustawienia dodatkowe
+$Indicator_Lights	Akcja klawisza Shift
+$Testing		Test
+$StandardOverlayNote	UWAGA: kazde umieszczenie standardowej nakladki w urzadzeniu spowoduje anulacje powyzszych ustawien.
+$Volume:		Glosnosc:
+$Response_Rate:		Szybkosc reakcji:
+$Mouse_Speed:		Predkosc myszy:
+$Repeat_Rate:		Szybkosc powtarzania:
+$Firmware_Version_:	Wersja Firmware :
+$Software_Version_:	Wersja Software :
+$On/Off_Switch_:	Wlaczony/Wylaczony :
+$Connected_:		Podlaczony :
+$Serial_Number_:	Numer seryjny :
+$Standard_Overlay_In_Place_:	Standardowa nakladka w klawiaturze :
+$Last_Sent_Overlay_:	Ostatnio wyslana nakladka :
+$Overlay_Level_:	Znaczenie przyciskow :
+$Language_:		Jezyk :
+$Mode_:_		Tryb : 
+$Connected		Podlaczony
+$Not_Connected		Nie podlaczony
+$Switched_On		Wlaczony
+$Switched_Off		Wylaczony
+On			Wlaczony
+Off			Wylaczony
+$Switch_1_:		Przycisk 1 : 
+$Switch_2_:		Przycisk 2 : 
+$Switch_3_:		Przycisk 3 : 
+$Switch_4_:		Przycisk 4 : 
+$Switch_5_:		Przycisk 5 : 
+$Pad_:			: Pad
+$Group:			Grupy:
+$User:			Uzytkownicy:
+$Edit_Groups_and_Users	Edycja...
+$Keyboard_Reset		Reset klawiatury 
+$Help...		Pomoc...
+$Visit_Our_Website	Zajrzyj na nasze strony www
+$Done			Gotowe
+$Clear			Wyczysc
+$Required_Lift_Off	Wymagane podniesienie
+$Repeat			Powtarzanie
+$Repeat_Latching	Blokowanie powtarzania
+$Smart_Typing		Podpowiedz
+$Latching		&Wlaczanie
+$Latching		Wlaczanie
+$Locking		&Blokowanie
+$Locking		Blokowanie
+$No_Latching		B&ez wlaczania
+$No_Latching		Bez wlaczania
+$Touch_Features.tabTitle		&Ustawienia dotyku
+$Advanced		&Zaawansowane
+$Troubleshooting	&Rozwiazywanie problemow
+
+
+$Browse...		&Przegladaj...
+$Display_Features...	Pokaz ustawienia...
+!Root_Folder_Does_Not_Exist	Folder glowny nie istnienie. Sprawdz instalacje.
+!Users_Folder_Does_Not_Exist	Folder Uzytkownikow nie istnienie. Sprawdz instalacje.
+!Group_Folder_Inaccessible	Nie mozna przegladac grup i uzytkownikow. Byc moze nie masz dostepu do foldera glownego.
+!Keyboard_Software_Not_Responding	Oprogramowanie USB klawiatury nie odpowiada. Moze byc nie uruchomione, lub zajete. Sprawdz, czy oprogramowanie to jest uruchomione, po czym sprobuj zmienic ustawienie ponownie.
+!Unsupported_USB_Keyboard_Message	Oprogramowanie Intellikeys USB otrzymalo nie wspierany komunikat : ID = 
+$Use_Intellikeys...		Kiedy nie uzywasz standardowej nakladki, uzyj...
+$Device_Status		Status Urzadzenia
+!Unable_to_save_the_settings	Nie mozna zapisac pliku ustawien tego Uzytkownika.
+!Unable_to_load_the_settings	Nie mozna odczytac pliku ustawien tego Uzytkownika.
+!Unable_to_locate_preferences	Nie mozna odnalezc pliku wlasciwosci w prywatnym folderze.
+!Unable_to_save_preferences	Nie mozna zapisac pliku wlasciwosci.
+!Cannot_Add_To_Guest_Group	Nie mozna dodawac uzytkownikow do grupy Gosc.
+!The_User			Uzytkownik '
+!Could_not_be_added		' nie mogl zostac dodany.  Byc moze nie masz dostepu do pliku.
+!Can't_read_group_folder	Nie mozna utworzyc foldera grupy lub przegladac folderow uzytkownikow dla tej grupy :
+!Can't_rename_group_folder	Nie mozna zmienic nazwy foldera grupy na : 
+!User_already_exists		Uzytkownik o tej nazwie juz istnieje. Podaj inna nazwe..
+!Group_already_exists		Grupa o tej nazwie juz istnieje. Podaj inna nazwe..
+!Can't_add_group_folder		Nie mozna dodac grupy o nazwie '
+!Can't_add_group_folder		'.  Folder moze byc niedostepny.
+!Can't_scan_group_folders	Nie mozna przegladac folderow grupy. Moga byc niedostepne.
+!Group_is_not_empty		Nie mozna usunac grupy, poniewaz nie jest pusta. Usun uzytkownikow z tej grupy przed jej usunieciem.
+!Keyboard_not_reset		Klawiatura nie zostala zresetowana. Sprobuj ponownie.
+!Can't_locate_student_folder	Nie mozna odnalezc folderu ucznia. Uzywam ustawien Goscia.
+$Device:				Urzadzenie:
+$Data_Send_Rate:		Predkosc wysylania danych:
+$IntelliKeys_USB		IntelliKeys USB
+$Groups_and_Users		Grupy i uzytkownicy
+$Groups					Grupy
+$Users					Uzytkownicy
+$Group_Name				Nazwa grupy
+$Group_Name:			Nazwa grupy:
+$OK						OK
+$Cancel					Anuluj
+$User_Name				Nazwa Uzytkownika
+$User_Name:				Nazwa Uzytkownika:
+$Yes					Tak
+$No						Nie
+$group_New...					Nowy...
+$group_Delete					Usun
+$group_Rename...				Zmien nazwe...
+$student_New...					Nowy...
+$student_Delete					Usun
+$student_Rename...				Zmien nazwe...
+$volumeTest				Test
+$Last_Sent			ostatnio wyslanej
+$Use_				uzyj 
+$Switch_			przycisk 
+$None				Brak
+$Off				Wyl
+$1				1
+$2				2
+$3				3
+$4				4	
+$Sensor_Values_:_		Wartosci czujnikow : 
+$Guest				Gosc
+$Software_Version_=		Wersja Software =
+$Firmware_Version_=		Wersja Firmware =
+$Repeat_Rate_=			Szybkosc powtarzania =
+$Mouse_Speed_=			Predkosc myszy =
+$Data_Send_Rate_=		Predkosc wysylania danych =
+$Response_Rate_=		Szybkosc reakcji =
+$Smart_Typing_is		podpowiedz
+$Required_Lift_Off_is		Wymagane podniesienie
+$Keysound_Volume_=		Glosnosc dzwieku klawiszy =
+$Repeat_is			powtarzanie
+$Repeat_Latching_is		blokowanie powtarzania
+$Shift_Key_Action_=		Akcja klawisza Shift =
+$Display_Latching		Wlaczanie
+$Display_No_Latching		Bez wlaczania
+$Display_Locking		Blokowanie
+$Indicator_Lights_=		Lampki =
+$Three				Trzy
+$Six				Szesc
+$Mode_=				Tryb =
+$Mode_Warning_=			Pokaz ostrzezenie trybu =
+$Use_Last_Sent_Overlay		ostatnio wyslanej nakladki
+$Use_This_Overlay		tej nakladki
+$Use_As_A_Switch		jako przycisk
+$Last_Sent_Overlay_=		ostatnio wyslanej nakladki =
+$Specific_Overlay_=		tej nakladki =
+$Switch_Setting_=		Ustawienia przyciskow =
+$Number_Of_Connected_Keyboards_=	Liczba podlaczonych klawiatur =
+$Keyboard_Number_=		Numer klawiatury =
+$Serial_Number_=		Numer seryjny
+$On_or_Off_=			Wlaczony lub wylaczony =
+$Standard_Overlay_=		Standardowa nakladka =
+$Overlay_Name_=			Nazwa nakladki =
+$Overlay_Level_=		Poziom nakladki =
+$Switch_1_=			Przycisk 1 =
+$Switch_2_=			Przycisk 2 =
+$Switch_3_=			Przycisk 3 =
+$Switch_4_=			Przycisk 4 =
+$Switch_5_=			Przycisk 5 =
+$Sensor_Values_=		Wartosci czujnikow =
+$Number_of_keys_pressed_=	Uderzenia poboczne =
+$Row_=				Wiersz =
+$Column_=			Kolumna =
+$IntelliKeys_USB_features_for_user	Ustawienia IntelliKeys USB dla Uzytkownika
+$in_group			z grupy
+$Unknown			Nieznany
+$Custom				Wlasny
+$Applications		Aplikacje 
+$The_app_highlighted	Dla aplikacji wybranej ponizej... 
+$Has_these_overlays	... Panel sterowania ... 
+$overlay_location	sciezka nakladki: 
+$Add			Dodaj... 
+$Remove			Usun 
+$Attach			Skojarz... 
+$Detach			Usun skojarzenie 
+$Edit			Edycja... 
+$attach_edit_overlays	Skojarz/Edytuj nakladki 
+$select_an_application	Wybierz aplikacje  
+$program_files		Program Files 
+$confirm_delete_app	Czy jestes pewien, ze chcesz usunac wybrana aplikacje? 
+$app_already_added	Aplikacja znajduje sie juz na liscie. 
+$not_valid_overlay	To nie jest wazny plik nakladki. Wybierz inny plik. 
+$overlay_missing	Wybrany plik nakladki nie istnieje. Byc moze zostal usuniety lub przeniesiony po wykonaniu skojarzenia. 
+$confirm_detach_overlay		Czy jestes pewien, ze chcesz usunac skojarzenie wybranej nakladki? 
+$already_attached	Ta nakladka jest juz skojarzona.  
+$app_not_allowed	Nie mozna skojarzyc nakladek do tej aplikacji z Panelu sterowania IntelliKeys USB poniewaz wysyla ona sama nakladki. Sprawdz podrecznik uzytkownika tej aplikacji. 
+
+$choose_app_header	Wybierz aplikacje. 
+$programs		Aplikacje 
+$browse			Przegladaj... 
+$choose			Wybierz...  
+$current_overlay	Biezaca nakladka: 
+$sent_by		Wyslany przez: 
+$Sent_By_	Wyslany przez:
+$Sent_By_=		Wyslany przez = 
+$last_sent_note		Uwaga: Uzyj zakladki Aplikacje do kojarzenia nakladek z aplikacjami  
+
+$radio_attached		Panel sterowania wysle wybrana ponizej nakladke: 
+$radio_none		Panel sterowania nie wysle nakladki
+
+$edit_template_overlay	Ten plik jest szablonem nakladki.  Bedziesz mogl edytowac kopie tego pliku i po zachowaniu go bedziesz musial go skojarzyc.  
+$cannot_edit_overlay	Nie mozesz edytowac tego pliku poniewaz jest to nakladka typu zawartosc lub grupowa.  
+$IntelliKeys_USB_Window_Title	Panel sterowania IntelliKeys USB 
+$IntelliKeys_USB_Window_Title2	Panel sterowania IntelliKeys USB i IntelliSwitch 
+$find		Wyszukaj...  
+$IKOn		Zalaczone IntelliKeys 
+$IKOff		Wylaczone IntelliKeys  
+$ISOn		Zalaczone IntelliSwitch 
+$ISOff		Wylaczone IntelliSwitch  
+$IntelliSwitchFeaturesNotice	UWAGA: Uzytkownik IntelliSwitch moze ustawic predkosc powtarzania, wylaczyc powtarzanie, ustawic predkosc myszy, glosnosc klawiszy i predkosc przesylania danych. 
+$TabDoesNotApply		UWAGA: Ustawienia na tej zakladce nie maja znaczenia o ile nie wybierzesz "Nakladki" w zakladce Tryb.
+$TabDoesNotApplyMsg		UWAGA: Ustawienia na zakladce Aplikacje nie maja znaczenia o ile nie wybierzesz "Nakladki" w zakladce Tryb.
+
+$application	Aplikacja
+$overlay	Nakladka
+$is_located	znajduje sie na sciezce
+$was_expected	nie istnieje.  Powinna byc na sciezce
+$overlay_details	Szczegoly nakladki
+$application_details	Szczegoly aplikacji
+
+$show_mode_warning	Pokaz ostrzezenie kiedy nie mozna wyslac nakladki
+
+$switch_content_0
+$switch_content_1		Przelaczniki:||1: Control-Enter|2: Control-Enter|3: Control-Enter|4: Control-Enter|5: Control-Enter
+$switch_content_2		Przelaczniki:||1: Control-W prawo|2: Control-W dol|3: Control-W prawo|4: Control-W dol|5: Control-W prawo
+$switch_content_3		Przelaczniki:||1: Spacja|2: Enter|3: Spacja|4: Enter|5: Spacja
+$switch_content_4		Przelaczniki:||1: Lewy klik|2: Lewy klik|3: Lewy klik|4: Lewy klik|5: Lewy klik
+$switch_content_5		Przelaczniki:||1: Lewy klik|2: Lewy podwojny klik|3: Lewy klik|4: Lewy podwojny klik|5: Lewy klik
+$switch_content_6		Przelaczniki:||1: W lewo|2: W prawo|3: W lewo|4: W prawo|5: W lewo
+$switch_content_7		Przelaczniki:||1: W gore|2: W dol|3: W gore|4: W dol|5: W gore
+$switch_content_8		Przelaczniki:||1: W lewo|2: W gore|3: W lewo|4: W gore|5: W lewo
+$switch_content_9		Przelaczniki:||1: 1|2: 2|3: 1|4: 2|5: 1
+$switch_content_10	Przelaczniki:||1: Tab|2: Enter|3: Tab|4: Enter|5: Tab
+$switch_content_11	Przelaczniki:||1: Tab|2: Spacja|3: Tab|4: Spacja|5: Tab 
+$switch_content_12	Przelaczniki:||1: Tab|2: Shift-Tab|3: Tab|4: Shift-Tab|5: Tab
+$switch_content_13	Przelaczniki:||1: Lewy Shift|2: Prawy Shift|3: Lewy Shift|4: Prawy Shift|5: Lewy Shift
+$switch_content_14	Przelaczniki:||1: W dol|2: Enter|3: W dol|4: Enter|5: W dol 
+$switch_content_15	Przelaczniki:||1: W prawo|2: Enter|3: W prawo|4: Enter|5: W prawo 
+$switch_content_16	Przelaczniki:||1: Lewy klik|2: Prawy Klik|3: Lewy klik|4: Prawy Klik|5: Lewy klik
+
+$switch_content_17	Przelaczniki:||1: W gore|2: W dol|3: W lewo|4: W prawo|5: Enter
+$switch_content_18	Przelaczniki:||1: W gore|2: W dol|3: W lewo|4: W prawo|5: Spacja
+$switch_content_19	Przelaczniki:||1: 1|2: 2|3: 3|4: 4|5: 0
+$switch_content_20	Przelaczniki:||1: 1|2: 2|3: 3|4: 4|5: Enter
+$switch_content_21	Przelaczniki:||1: Spacja|2: Enter|3: Tab|4: Shift-Tab|5: Backspace
+$switch_content_22	Przelaczniki:||1: Lewy Shift|2: Prawy Shift|3: Control|4: Lewy Alt|5: Prawy Alt
+$switch_content_23	Przelaczniki:||1: Lewy klik|2: Prawy Klik|3: Lewy podwojny klik|4: Spacja|5: Enter
+$switch_content_24	Przelaczniki:||1: Lewy klik|2: Prawy Klik|3: srodkowy Klik|4: Klik lewym bocznym klawiszem myszy|5: Klik prawym bocznym klawiszem myszy
+$switch_content_25	Przelaczniki:||1: Lewy klik|2: Spacja|3: Q|4: Z|5: Escape
+$switch_content_26	Przelaczniki:||1: Mysz w gore|2: Mysz w dol|3: Mysz w lewo|4: Mysz w prawo|5: Klikniecie
+
+
+$removing_app_title	Usuwanie aplikacji
+$removing_app_body	Wybrana aplikacja sama wysyla nakladki. Nie mozna skojarzyc do niej nakladek za pomoca Panelu sterowania IntelliKeys USB, wiec zostanie usunieta z listy. Sprawdz instrukcje uzytkownika aplikacji aby sprawdzic jak skojarzyc nakladki.
+
+$app_tab_unavailable_body	Zakladka Aplikacje nie jest dostepna w tej wersji.
+$app_tab_unavailable_title	Funkcja nieosiagalna
+
+$confirm_delete			Potwierdzenie usuniecia
+$sure_delete_group		Czy jestes pewien, ze chcesz usunac grupe
+$sure_delete_user		Czy jestes pewien, ze chcesz usunac uzytkownika
+$group_must_be_empty		Przed usunieciem grupa musi byc pusta. Usun wszystkich uzytkownikow tej grupy przed jej usunieciem.
+$delete_empty_group		Usunac pusta grupe?
+$the_group_named		Grupa pod nazwa
+$is_empty_delete		jest pusta. Czy chcesz ja usunac?
+$last_saved_group_missing	Usunieta ostatnio grupa nie istnieje. Uzyje
+$last_saved_user_missing	Usuniety ostatnio uzytkownik nie istnieje. Uzyje
+$invalid_preference		Niewlasciwa wartosc preferencji uzytkownika. Uzyje
+
+$Standard_Overlay_0_Name		Nakladka internet USB
+$Standard_Overlay_1_Name		Nakladka ustawien USB
+$Standard_Overlay_2_Name		Nakladka matematyczna USB
+$Standard_Overlay_3_Name		Nakladka Alfabet USB
+$Standard_Overlay_4_Name		Nakladka Mysz USB
+$Standard_Overlay_5_Name		Nakladka QWERTY USB
+$Standard_Overlay_6_Name		Nakladka Latwe Pisanie USB
+$Standard_Overlay_7_Name		zadna
+
+
+$Mode_intro				Funkcje IntelliKeys i IntelliSwitch beda ustalone przez
+
+$mode_overlays			Nakladki
+$mode_one_overlay		Jedna nakladka
+$mode_overlays_one		Uzyj tej samej nakladki dla wszystkich aplikacji
+$mode_presets			Ustawienia przyciskow
+$mode_discover_but		Pozwol aplikacjom wysylac ich wlasne nakladki
+$Mode				Tryb
+$Sent_By:			Wyslana przez : 
+
+$DiscoverNameMac		Discover Envoy
+$DiscoverNameWin		DiscoverPro
+
+$must_supply_one_overlay	Na zakladce Tryb nie mozna wybrac Jedna nakladka bez ustalenia tej nakladki. Wybierz nakladke lub wybierz inny tryb.
+
+$must_attach_overlay		Na zakladce Aplikacje ustawiles "Uzyj nakladki wybranej ponizej" dla aplikacji, ale nie skojarzyles jej z zadna nakladka. Kliknij OK, co spowoduje powrot do zakladki Aplikacje. Klikniecie Anuluj spowoduje usuniecie tej aplikacji.
+
+$overlay_sending_disabled	Wysylanie wylaczone, sprawdz zakladke Tryb

@@ -1,0 +1,213 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9EAFF91914A2D33700F07F64 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EAFF91814A2D33700F07F64 /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9EAFF91414A2D33700F07F64 /* Shutdown */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Shutdown; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EAFF91814A2D33700F07F64 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		9EAFF91A14A2D33700F07F64 /* Shutdown.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Shutdown.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9EAFF91114A2D33700F07F64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9EAFF90914A2D33700F07F64 = {
+			isa = PBXGroup;
+			children = (
+				9EAFF91714A2D33700F07F64 /* Shutdown */,
+				9EAFF91514A2D33700F07F64 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9EAFF91514A2D33700F07F64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9EAFF91414A2D33700F07F64 /* Shutdown */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9EAFF91714A2D33700F07F64 /* Shutdown */ = {
+			isa = PBXGroup;
+			children = (
+				9EAFF91814A2D33700F07F64 /* main.cpp */,
+				9EAFF91A14A2D33700F07F64 /* Shutdown.1 */,
+			);
+			path = Shutdown;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9EAFF91314A2D33700F07F64 /* Shutdown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EAFF91D14A2D33700F07F64 /* Build configuration list for PBXNativeTarget "Shutdown" */;
+			buildPhases = (
+				9EAFF91014A2D33700F07F64 /* Sources */,
+				9EAFF91114A2D33700F07F64 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shutdown;
+			productName = Shutdown;
+			productReference = 9EAFF91414A2D33700F07F64 /* Shutdown */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9EAFF90B14A2D33700F07F64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = RORICK.NET;
+			};
+			buildConfigurationList = 9EAFF90E14A2D33700F07F64 /* Build configuration list for PBXProject "Shutdown" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9EAFF90914A2D33700F07F64;
+			productRefGroup = 9EAFF91514A2D33700F07F64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9EAFF91314A2D33700F07F64 /* Shutdown */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9EAFF91014A2D33700F07F64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EAFF91914A2D33700F07F64 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9EAFF91B14A2D33700F07F64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = "/Applications/IntelliTools/IntelliKeys USB/Private";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = /;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.5;
+				SKIP_INSTALL = NO;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		9EAFF91C14A2D33700F07F64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = "/Applications/IntelliTools/IntelliKeys USB/Private";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = /;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				SDKROOT = macosx10.5;
+				SKIP_INSTALL = NO;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Release;
+		};
+		9EAFF91E14A2D33700F07F64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				INSTALL_PATH = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9EAFF91F14A2D33700F07F64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				INSTALL_PATH = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9EAFF90E14A2D33700F07F64 /* Build configuration list for PBXProject "Shutdown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EAFF91B14A2D33700F07F64 /* Debug */,
+				9EAFF91C14A2D33700F07F64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EAFF91D14A2D33700F07F64 /* Build configuration list for PBXNativeTarget "Shutdown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EAFF91E14A2D33700F07F64 /* Debug */,
+				9EAFF91F14A2D33700F07F64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9EAFF90B14A2D33700F07F64 /* Project object */;
+}

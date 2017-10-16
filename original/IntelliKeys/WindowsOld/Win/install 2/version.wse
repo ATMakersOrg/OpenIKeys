@@ -1,0 +1,34 @@
+Document Type: WSE
+item: Global
+  Version=9.0
+  Title=IntelliKeys USB Installer
+  Flags=00000100
+  Split=1420
+  Languages=65 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  Copy Default=1
+  Japanese Font Name=MS Gothic
+  Japanese Font Size=10
+  Start Gradient=0 0 255
+  End Gradient=0 0 0
+  Windows Flags=00000100000000010010110000001000
+  Message Font=MS Sans Serif
+  Font Size=8
+  Disk Filename=SETUP
+  Patch Flags=0000000000000001
+  Patch Threshold=85
+  Patch Memory=4000
+  MIF PDF Version=1.0
+  MIF SMS Version=2.0
+  FTP Cluster Size=20
+  Per-User Version ID=1
+  Dialogs Version=6
+  Crystal Format=10111100101100000010001001001001
+end
+item: Set Variable
+  Variable=VERSION
+  Value=3.5.2
+end
+item: Set Variable
+  Variable=SHORTVERSION
+  Value=3.5
+end

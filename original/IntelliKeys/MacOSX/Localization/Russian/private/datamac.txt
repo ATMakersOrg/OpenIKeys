@@ -1,0 +1,90 @@
+﻿;  The standard overlays
+Standard_Overlay_0		Web Access USB Overlay.oms
+Standard_Overlay_1		Setup USB Overlay.oms
+Standard_Overlay_2		Math Access USB Overlay.oms
+Standard_Overlay_3		Alphabet USB Overlay.oms
+Standard_Overlay_4		Mouse Access USB Overlay.oms
+Standard_Overlay_5		QWERTY USB Overlay.oms
+Standard_Overlay_6		Basic Writing USB Overlay.oms
+Standard_Overlay_7		none.oms
+Standard_Setup_Overlay		1
+
+;;translated overlay names
+Standard_Overlay_0_Name		Интернет
+Standard_Overlay_1_Name		Настройки
+Standard_Overlay_2_Name		Математика
+Standard_Overlay_3_Name		Алфавитная клавиатура
+Standard_Overlay_4_Name		Мышь
+Standard_Overlay_5_Name		Основная клавиатура
+Standard_Overlay_6_Name		Основы письма
+Standard_Overlay_7_Name		нет
+
+;; The corresponding English names here for reference
+;Standard_Overlay_0_Name		Web Access USB Overlay
+;Standard_Overlay_1_Name		Setup USB Overlay
+;Standard_Overlay_2_Name		Math Access USB Overlay
+;Standard_Overlay_3_Name		Alphabet USB Overlay
+;Standard_Overlay_4_Name		Mouse Access USB Overlay
+;Standard_Overlay_5_Name		QWERTY USB Overlay
+;Standard_Overlay_6_Name		Basic Writing USB Overlay
+;Standard_Overlay_7_Name		none
+
+
+switch_file_1	1 - Ctrl-Enter и Ctrl-Enter
+switch_file_2	2 - Ctrl Справа и Стрелка Вниз.oms
+switch_file_3	3 - Space и Enter.oms
+switch_file_4	4 - Щелчок и Щелчок.oms
+switch_file_5	5 – Щелчок и Двойной щелчок.oms
+switch_file_6	6 - Стрелки Влево и Вправо.oms
+switch_file_7	7 - Стрелки Вверх и Вниз.oms
+switch_file_8	8 -  Стрелки Влево и Вверх.oms
+switch_file_9	9 - 1 и 2.oms
+switch_file_10	10 - Tab и Enter.oms
+switch_file_11	11 - Tab и Space.oms
+switch_file_12	12 - Tab и Shift-Tab.oms
+switch_file_13	13 - Shift слева и Shift справа.oms
+switch_file_14	14 - Стрелка Вниз и Enter.oms
+switch_file_15	15 - Стрелка Вправо и Enter.oms
+switch_file_16	16 -  Щелчок и Правый Щелчок
+switch_file_17	17 -  Клавиши-стрелки и Enter.oms
+switch_file_18	18 - Клавиши-стрелки и Space.oms
+switch_file_19	19 - 1 – 4 и 0.oms
+switch_file_20	20 - 1 – 2 и Enter.oms
+switch_file_21	21 - Клавиши редактирования.oms
+switch_file_22	22 - Модификаторы.oms
+switch_file_23	23 - Щелчки.oms
+switch_file_24	24 - Пятикнопочная мышь.oms
+switch_file_25	25 - Разное1.oms
+switch_file_26	26 - Движения мыши.oms
+
+;
+;  names by which to identify running programs
+
+Balloon_Name_1			/Applications/IntelliTools/IntelliKeys USB/Private/Balloon
+Balloon_Name_2			/Applications/IntelliTools/IntelliKeys USB/Private/Balloon.app
+Classic_Sending_Extension	Switch InTT Release
+Classic_Control_Panel		IntelliKeys USB
+
+Control_Panel_Name		IntelliKeys USB.app
+Control_Panel_Name_1		/Applications/IntelliTools/IntelliKeys USB/IntelliKeys USB
+Control_Panel_Name_2		/applications/intellitools/intellikeys usb/IntelliKeys USB.app
+DiscoverName			Discover Envoy
+Engine_Name_1			ikusb
+Intellikeys_File		IntelliKeys USB
+
+Overlays_Folder			private/Standard Overlays/Mac/
+Switch_Settings_Folder		private/Switch Settings/Mac/
+Save_Text_As_Unicode		0
+Save_Text_As_UTF8		0
+Override_Use_System_Repeat_Settings          	0
+Force_Key_Up			1
+Max_Repeat_Delay		750
+Num_Switch_Files		26
+
+S_ListFeatures_Mode_Discover	Discover Envoy
+
+;; translated strings
+s_overlay_not_sent_1	Накладка не загружена|Накладка не загружена, так как на вкладке "Режим" Панели управления IntelliKeys и IntelliSwitch выбран режим "Только одной накладкой".  Для загрузки накладки выберите режим "Накладками".
+s_overlay_not_sent_2	Накладка не загружена|Накладка не загружена, так как на вкладке "Режим" Панели управления IntelliKeys и IntelliSwitch выбран режим "Установками ключей".  Для загрузки накладки выберите режим "Накладками".
+s_overlay_not_sent_3	Накладка не загружена|Накладка не загружена, так как на вкладке "Режим" Панели управления IntelliKeys и IntelliSwitch выбран режим "DiscoverPro".  Для загрузки накладки выберите режим "Накладками".
+

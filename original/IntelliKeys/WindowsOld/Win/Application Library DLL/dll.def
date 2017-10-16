@@ -1,0 +1,50 @@
+; dll.def : Declares the module parameters for the DLL.
+
+LIBRARY      "AppLib"
+DESCRIPTION  'dll Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+
+DllAppLibAddSystem
+DllAppLibRemoveSystem
+DllAppLibCountSystems
+DllAppLibGetNthSystem
+DllAppLibAddApplication
+DllAppLibRemoveApplication
+DllAppLibTakeOwnership
+DllAppLibHasOwnership
+DllAppLibGetOwner
+DllAppLibReleaseOwnership
+DllAppLibCountApplications
+DllAppLibGetNthApplication
+DllAppLibLock
+DllAppLibUnlock
+DllAppLibGetAppFriendlyName
+DllAppLibMaintenance
+DllAppLibGetStudentAttachedOverlay
+DllAppLibCountAttachedOverlays
+DllAppLibGetSelectedOverlay
+DllAppLibGetNumberedOverlay
+DllAppLibAddApplicationForStudent
+DllAppLibSetSelectedOverlay
+DllAppLibAttachOverlayForStudent
+DllAppLibDetachOverlayForStudent
+DllAppLibIsSystemPresent
+DllAppLibAddPreinstalledOverlays
+DllAppLibFloatingMessage
+DllAppLibIsAppAllowed
+DllAppLibSetAppAllowed
+DllAppLibRemoveApplicationForStudent
+DllAppLibCountStandardApps
+DllAppLibGetNthStandardApp
+DllAppLibGetTruePath
+DllAppLibSetSystemInterest
+DllAppLibHasSystemInterest
+DllAppLibAddDisallowedApps
+DllAppLibDeferSaving
+DllAppLibIsOverlayPreinstalled
+DllAppLibUpdateAppPath
+DllAppLibIsIntelliSwitchInstalled
+DllAppLibIsIntellikeysInstalled
+DllAppLibAddApplicationForCurrentStudent

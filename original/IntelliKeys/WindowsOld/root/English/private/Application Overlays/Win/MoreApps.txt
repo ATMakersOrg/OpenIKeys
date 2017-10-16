@@ -1,0 +1,6 @@
+;  These apps should be made to appear in the 
+;  Add app Dialog.
+
+%systemroot%\system32\notepad.exe
+%systemroot%\system32\wordpad.exe
+%systemroot%\system32\calc.exe

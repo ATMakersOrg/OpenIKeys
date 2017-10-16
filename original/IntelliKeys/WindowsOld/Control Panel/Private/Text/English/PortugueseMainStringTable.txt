@@ -1,0 +1,289 @@
+﻿!Cannot_Add_Group_Folder2		'.  A pasta pode não estar acessível.
+!Cannot_Add_Group_Folder		Impossível adicionar o grupo chamado '
+!Cannot_Locate_Student_Folder	Não foi possível localizar a pasta do aluno.  Uso de configurações de convidado.
+!Cannot_Read_Group_Folder	Não foi possível criar pasta de grupo ou pesquisar pastas do usuário para o grupo :
+!Cannot_Rename_Group_Folder	Impossível renomear pasta de grupo para : 
+!Cannot_Scan_Group_Folders	Impossível pesquisar pastas de grupo.  Elas podem estar inacessíveis.
+!Cannot_Add_To_Guest_Group	Não é possível adicionar usuários ao grupo Convidado.
+!Could_Not_Be_Added		Não foi possível adicionar '.  O local do arquivo pode não estar acessível.
+!Group_Folder_Inaccessible	Impossível pesquisar os grupos e usuários.  A pasta raiz pode estar inacessível.
+!Group_Already_Exists		Já existe um grupo com esse nome.  Escolha outro nome.
+!Group_Is_Not_Empty		O grupo não pode ser removido porque não está vazio.  Exclua todos os usuários antes de excluir o grupo.
+!Keyboard_Software_Not_Responding	O software Teclado USB não está respondendo.  Ele pode não estar sendo executado ou pode estar ocupado.  Verifique se o software está sendo executado, depois tente alterar a configuração novamente.
+!Keyboard_Not_Reset		O teclado não foi reinicializado.  Tente novamente.
+!Root_Folder_Does_Not_Exist	A pasta raiz não existe.  Verifique a sua instalação.
+!The_User			O usuário '
+!Unable_To_Load_Applications	Impossível carregar os aplicativos para este usuário.
+!Unable_To_Load_The_Settings	Impossível carregar o arquivo de configurações para este usuário.
+!Unable_To_Locate_Preferences	Impossível localizar o arquivo de preferências na pasta privada.
+!Unable_To_Save_Preferences	Impossível gravar no arquivo de preferências.
+!Unable_To_Save_The_Settings	Impossível salvar o arquivo de configurações para este usuário.
+!Unsupported_USB_Keyboard_Message	O software Intellikeys USB recebeu uma mensagem sem suporte : ID = 
+!User_Already_Exists		Já existe um usuário com esse nome.  Escolha outro nome.
+!Users_Folder_Does_Not_Exist	A pasta usuários não existe.  Verifique a sua instalação.
+$1				1
+$2				2
+$3				3
+$4				4
+$Add			Adicionar… 
+$Additional_Features	Configurações Adicionais
+$Advanced		&Avançado
+$App_Not_Allowed	Não é possível anexar sobreposições a este aplicativo pelo painel de controle do IntelliKeys USB, pois o aplicativo foi desenvolvido para enviar suas próprias sobreposições. Consulte o guia do usuário deste aplicativo com relação à anexação de sobreposições.
+$App_Not_Found	não encontrado
+$App_Tab_Unavailable_Body	A guia Aplicativos não está disponível nesta versão.
+$App_Tab_Unavailable_Title	Recurso indisponível
+$Application	Aplicativo
+$Application_Details	Detalhes do aplicativo
+$Application_Find_Dialog_Title		Encontrar aplicativo
+$Application_Find_Dialog_Prompt		Selecionar aplicativo desejado
+$Applications		Aplicativos 
+$Available_Applications_Form_Title	Aplicativos disponíveis
+$Attach			Anexar... 
+$Browse			Pesquisar... 
+$Browse...		&Pesquisar...
+$Browse_For_Application_Dialog_Title	Localizar aplicativo 
+$Browse_For_Application_Dialog_Prompt	Selecionar aplicativo desejado 
+$Cancel					Cancelar
+$Cannot_Edit_Overlay	Não é possível editar este arquivo porque é somente conteúdo ou sobreposição de grupo.  
+$Choose			Escolher…  
+$Choose_App_Header	Escolha um aplicativo. 
+$Clear			&Limpar
+$Column_=			Coluna =
+$Confirm_Delete			Confirmar exclusão
+$Connected		Conectado
+$Connected_:		Conectado :
+$Custom	  ;  os seguintes são para a guia Aplicativos.			  
+$Data_Send_Rate:		Velocidade de Transmissão:
+$Data_Send_Rate_=		Velocidade de Transmissão =
+$Delete_Empty_Group		Excluir grupo vazio?
+$Detach			Destacar 
+$Device:				Dispositivo:
+$Device_Status		Status do dispositivo
+$DiscoverNameMac		Descobrir emissário
+$DiscoverNameWin		DiscoverPro
+$Display_Features...	Mostrar Configurações
+$Display_Latching		Fechamento
+$Display_Locking		Travamento
+$Display_No_Latching		Sem fechamento
+$Done			&Concluído
+$Edit			Editar... 
+$Edit_Groups_And_Users	&Editar grupos e usuários...
+$Edit_Template_Overlay	Este arquivo é um modelo de sobreposição.  Você editará uma cópia do arquivo e precisará anexar o arquivo depois de salvá-lo.  
+$False			Falso
+$Find		Encontrar...  
+$Firmware_Version_:	Versão do firmware :
+$Firmware_Version_=		Versão do firmware =
+$Group:			Grupo:
+$Group_Delete					&Excluir
+$Group_Must_Be_Empty		O grupo deve estar vazio antes de ser removido.  Exclua todos os usuários neste grupo antes de excluir o grupo.
+$Group_Name				Nome do grupo
+$Group_Name:			Nome do grupo:
+$Group_New...					&Novo...
+$Group_Rename...				&Renomear...
+$Groups					Grupos
+$Groups_and_Users		Grupos e usuários
+$Guest				Convidado
+$Has_these_overlays	... o Painel de controle irá… 
+$Help...		&Ajuda...
+$IKOff		IntelliKeys desligado  
+$IKOn		IntelliKeys ligado 
+$ISOff		IntelliSwitch desligado  
+$ISOn		IntelliSwitch ligado 
+$In_Group			no grupo
+$Indicator_Lights	Teclas Modificadoras
+$Indicator_Lights_=		Luzes do indicador =
+$IntelliKeys_USB		IntelliKeys USB
+$IntelliKeys_USB_Features_For_User	Recursos de IntelliKeys USB para usuário
+$IntelliKeys_USB_Window_Title	Painel de controle do IntelliKeys USB 
+$IntelliKeys_USB_Window_Title2	Painel de controle do IntelliKeys USB e do IntelliSwitch 
+$IntelliSwitchFeaturesNotice	OBSERVAÇÃO: Usuários do IntelliSwitch podem ajustar taxa de repetição, ligar/desligar repetição, volume do som da tecla e taxa de envio de dados. 
+$Invalid_Preference		Valor inválido para preferência do usuário. Usando
+$Is_Empty_Delete		está vazio.  Você deseja excluir este grupo?
+$Is_Located	está localizado no caminho
+$Keyboard_Number_=		Número do teclado =
+$Keyboard_Reset		Rei&niciar o teclado
+$Keysound_Volume	Volume de Tecla Sonora
+$Keysound_Volume_=		Volume de Tecla Sonora =
+$Language_:		Idioma :
+$Last_Saved_Group_Missing	O último grupo salvo não existe.  Usando
+$Last_Saved_User_Missing	O último usuário salvo não existe.  Usando
+$Last_Sent			último enviado
+$Last_Sent_Note		Observação: Use a guia Aplicativos para anexar sobreposições a aplicativos  
+$Last_Sent_Overlay_:	Última sobreposição enviada :
+$Last_Sent_Overlay_=		Última sobreposição enviada =
+$Latching		Prender
+$Latching2		Prender
+$Locking		Bloquear
+$Locking2		Bloquear
+$Mode				Modo
+$Mode_:_		Modo : 
+$Mode_=				Modo =
+$Mode_Discover			Descobrir
+$Mode_Discover_But		Mas ainda permitir que aplicativos enviem suas próprias sobreposições
+$Mode_Intro				As funções IntelliKeys e IntelliSwitch serão determinadas por
+$Mode_One_Overlay		Somente uma sobreposição
+$Mode_Overlays			Sobreposições
+$Mode_Presets			Predefinições de chave
+$Mode_Warning_=			Exibir mensagem de aviso de modo =
+$Mouse_Speed:		Velocidade do Rato:
+$Mouse_Speed_=			Velocidade do Rato =
+$Must_Attach_Overlay		Na guia Aplicativos, você especificou "Usar a sobreposição selecionada abaixo" para um aplicativo, mas não anexou uma sobreposição.  Clique em OK para voltar à guia Aplicativos.  Clique em Cancelar para remover o aplicativo.
+$Must_Supply_One_Overlay	Na guia Modo, não é possível escolher Somente uma sobreposição sem também escolher uma sobreposição.  Escolha uma sobreposição agora ou selecione um modo diferente.
+$No						Não
+$No_Latching		Normal
+$No_Latching2		Normal
+$None				nenhum
+$Not_Connected		Não conectado
+$Not_Valid_Overlay	Esse arquivo não é uma sobreposição válida. Escolha outro arquivo. 
+$Number_Of_Connected_Keyboards_=	Número de teclados conectados =
+$Number_Of_Keys_Pressed_=	Número de teclas pressionadas =
+$OK						OK
+$Off				0
+$On					Ligado
+$On_Off_Switch_:	Chave liga/desliga :
+$On_or_Off_=			Ligado ou desligado =
+$Overlay	Sobreposição
+$Overlay_Details	Detalhes da sobreposição
+$Overlay_Find_Dialog_Title		Localizar sobreposição
+$Overlay_Find_Dialog_Prompt		Selecionar sobreposição desejada
+$Overlay_Level_:	Nível da sobreposição :
+$Overlay_Level_=		Nível da sobreposição =
+$Overlay_Location	Caminho da sobreposição: 
+$Overlay_Missing	Não foi possível encontrar o arquivo de sobreposição selecionado.  Pode ter sido excluído ou movido depois de ser anexado. 
+$Overlay_Name_=			Nome da sobreposição =
+$Overlay_Sending_Disabled	Envio desabilitado, verifique a guia Modo
+$Pad_:			: Bloco
+$Program_Files		Arquivos de programa 
+$Programs		Aplicativos 
+$Radio_Attached		O painel de controle enviará a sobreposição selecionada abaixo: 
+$Radio_None		O painel de controle não enviará uma sobreposição
+$Remove			Remover 
+$Removing_App_Body	O aplicativo que você selecionou foi desenvolvido para enviar suas próprias sobreposições.  Não é possível anexar sobreposições a ele usando o painel de controle do IntelliKeys USB, por isso agora ele será removido da lista.  Consulte o guia do usuário do aplicativo com relação à anexação de sobreposições.
+$Removing_App_Title	Removendo aplicativo
+$Repeat			Re&petir
+$Repeat_Features	Configuração de Repetição
+$Repeat_Latching	P&render Repetição
+$Repeat_Latching_Is		P&render Repetição está
+$Repeat_Rate:		Velocidade de Repetição:
+$Repeat_Rate_=			Velocidade de Repetição =
+$Repeat_Is			Repetir está
+$Required_Lift_Off	&Deixar de Premir
+$Required_Lift_Off_Is		&Deixar de Premir está
+$Response_Rate:		Velocidade de Resposta:
+$Response_Rate_=		Velocidade de Resposta =
+$Row_=				Linha =
+$Sensor_Values_:_		Valores do sensor : 
+$Sensor_Values_=		Valores do sensor =
+$Sent_By:			Enviado por : 
+$Sent_By_	Enviado por:
+$Sent_By_=		Enviado por = 
+$Serial_Number_:	Número de série :
+$Serial_Number_=		Número de série
+$Shift_Key_Action_=		Ação da tecla Shift =
+$Show_Mode_Warning	Exibir aviso quando não for possível enviar sobreposição
+$Six				Seis
+$Smart_Typing		E&scrita Inteligente
+$Smart_Typing_Is		E&scrita Inteligente está
+$Software_Version_:	Versão do software :
+$Software_Version_=		Versão do software =
+$Specific_Overlay_=		Sobreposição específica =
+$Standard_Overlay_0_Name		Grelha de Acesso à Internet
+$Standard_Overlay_1_Name		Grelha Configuração USB
+$Standard_Overlay_2_Name		Grelha Matemática USB
+$Standard_Overlay_3_Name		Grelha Alfabeto USB
+$Standard_Overlay_4_Name		Grelha Funções do Rato USB
+$Standard_Overlay_5_Name		Grelha QWERTY USB
+$Standard_Overlay_6_Name		Grelha Escrita Básica USB
+$Standard_Overlay_7_Name		nenhum
+$Standard_Overlay_=		Sobreposição padrão =
+$Standard_Overlay_In_Place_:	Sobreposição padrão no lugar :
+$Standard_Overlay_Note	OBSERVAÇÃO: Sempre que uma sobreposição padrão for inserida, entrará em vigor e substituirá qualquer sobreposição escolhida acima.
+$Sticky					Adesivo
+$Student_Delete					E&xcluir
+$Student_New...					N&ovo...
+$Student_Rename...				Reno&mear...
+$Sure_Delete_Group		Você tem certeza de que deseja excluir o grupo
+$Sure_Delete_User		Você tem certeza de que deseja excluir o usuário
+$Switch_			chave 
+$Switch_1_:		Chave 1 : 
+$Switch_1_=			Chave 1 =
+$Switch_2_:		Chave 2 : 
+$Switch_2_=			Chave 2 =
+$Switch_3_:		Chave 3 : 
+$Switch_3_=			Chave 3 =
+$Switch_4_:		Chave 4 : 
+$Switch_4_=			Chave 4 =
+$Switch_5_:		Chave 5 : 
+$Switch_5_=			Chave 5 =
+$Switch_Content_0
+$Switch_Content_1		Chaves:||1: Control-Enter|2: Control-Enter|3: Control-Enter|4: Control-Enter|5: Control-Enter
+$Switch_Content_10	Chaves:||1: Tab|2: Enter|3: Tab|4: Enter|5: Tab
+$Switch_Content_11	Chaves:||1: Tab|2: Espaço|3: Tab|4: Espaço|5: Tab 
+$Switch_Content_12	Chaves:||1: Tab|2: Shift-Tab|3: Tab|4: Shift-Tab|5: Tab
+$Switch_Content_13	Chaves:||1: Shift esquerdo|2: Shift direito|3: Shift esquerdo|4: Shift direito|5: Shift esquerdo
+$Switch_Content_14	Chaves:||1: Seta para baixo|2: Enter|3: Seta para baixo|4: Enter|5: Seta para baixo 
+$Switch_Content_15	Chaves:||1: Seta para direita|2: Enter|3: Seta para direita|4: Enter|5: Seta para direita 
+$Switch_Content_16	Chaves:||1: Clique no botão esquerdo do mouse|2: Clique no botão direito do mouse|3: Clique no botão esquerdo do mouse|4: Clique no botão direito do mouse|5: Clique no botão esquerdo do mouse
+$Switch_Content_17	Chaves:||1: Seta para cima|2: Seta para baixo|3: Seta para esquerda|4: Seta para direita|5: Enter
+$Switch_Content_18	Chaves:||1: Seta para cima|2: Seta para baixo|3: Seta para esquerda|4: Seta para direita|5: Espaço
+$Switch_Content_19	Chaves:||1: 1|2: 2|3: 3|4: 4|5: 0
+$Switch_Content_2		Chaves:||1: Control seta para direita|2: Control seta para baixo|3: Control seta para direita|4: Control seta para baixo|5: Control seta para direita
+$Switch_Content_20	Chaves:||1: 1|2: 2|3: 3|4: 4|5: Enter
+$Switch_Content_21	Chaves:||1: Espaço|2: Enter|3: Tab|4: Shift-Tab|5: Backspace
+$Switch_Content_22	Chaves:||1: Shift esquerdo|2: Shift direito|3: Control|4: Comando/alt esquerdo|5: Comando/alt direito
+$Switch_Content_23	Chaves:||1: Clique no botão esquerdo do mouse|2: Clique no botão direito do mouse|3: Dois cliques com o botão esquerdo do mouse|4: Espaço|5: Enter
+$Switch_Content_24	Chaves:||1: Clique no botão esquerdo do mouse|2: Clique no botão direito do mouse|3: Clique no botão central do mouse|4: Clique no botão esquerdo do mouse|5: Clique no botão direito lateral do mouse
+$Switch_Content_25	Chaves:||1: Clique no botão esquerdo do mouse|2: Espaço|3: Q|4: Z|5: Esc
+$Switch_Content_26	Chaves:||1: Mouse para cima|2: Mouse para baixo|3: Mouse para esquerda|4: Mouse para direita|5: Clique no botão
+$Switch_Content_3		Chaves:||1: Espaço|2: Enter|3: Espaço|4: Enter|5: Espaço
+$Switch_Content_4		Chaves:||1: Clique no botão esquerdo do mouse|2: Clique no botão esquerdo do mouse|3: Clique no botão esquerdo do mouse|4: Clique no botão esquerdo do mouse|5: Clique no botão esquerdo do mouse
+$Switch_Content_5		Chaves:||1: Clique no botão esquerdo do mouse|2: Dois cliques com o botão esquerdo do mouse|3: Clique no botão esquerdo do mouse|4: Dois cliques com o botão esquerdo do mouse|5: Clique no botão esquerdo do mouse
+$Switch_Content_6		Chaves:||1: Seta para esquerda|2: Seta para direita|3: Seta para esquerda|4: Seta para direita|5: Seta para esquerda
+$Switch_Content_7		Chaves:||1: Seta para cima|2: Seta para baixo|3: Seta para cima|4: Seta para baixo|5: Seta para cima
+$Switch_Content_8		Chaves:||1: Seta para esquerda|2: Seta para cima|3: Seta para esquerda|4: Seta para cima|5: Seta para esquerda
+$Switch_Content_9		Chaves:||1: 1|2: 2|3: 1|4: 2|5: 1
+$Switch_Setting_=		Configuração de chave =
+$Switched_Off		Desligada
+$Switched_On		Ligada
+$Tab_Does_Not_Apply		OBSERVAÇÃO: As configurações nesta guia não têm efeito, a menos que você selecione "Sobreposições" na guia Modo.
+$Tab_Does_Not_Apply_Msg		OBSERVAÇÃO: As configurações na guia Aplicativos não têm efeito, a menos que você selecione "Sobreposições" na guia Modo.
+$Testing		Testar
+$The_App_Highlighted	Para o aplicativo selecionado abaixo... 
+$The_Group_Named		O grupo chamado
+$Three				Três
+$Touch_Features		Configuração das Teclas
+$Touch_Features_Tab_Title		 Configuração das Teclas
+$Troubleshooting	Problemas
+$True				Verdadeiro
+$Unknown			Desconhecido
+$Use_				usar 
+$Use_As_A_Switch		Usar como chave
+$Use_Intellikeys...		Ao não usar uma sobreposição padrão, use IntelliKeys...
+$Use_Last_Sent_Overlay		Usar última sobreposição enviada
+$Use_This_Overlay		Usar esta sobreposição
+$User:			Usuário:
+$User_Name				Nome do usuário
+$User_Name:				Nome do usuário:
+$Users					Usuários
+$Visit_Our_Website	&Acessar nosso site
+$Volume:		Volume:
+$VolumeTest				Testar
+$Was_Expected	não pôde ser encontrado.  Era esperado no caminho
+$Yes					Sim
+$already_attached	Essa sobreposição já está anexada.  
+$app_already_added	Esse aplicativo já está na lista. 
+$attach_edit_overlays	Anexar/editar sobreposições 
+$confirm_delete_app	Você tem certeza de que deseja remover o aplicativo selecionado? 
+$confirm_detach_overlay		Você tem certeza de que deseja destacar a sobreposição selecionada? 
+$current_overlay	Sobreposição atual: 
+$mode_overlays_one		Usar a mesma sobreposição para todos os aplicativos
+$sent_by		Enviado por: 
+
+
+$All_Intellikeys_Overlays		PO-All Intellikeys Overlays
+$All_Files						PO-All Files
+$IntelliKeys_Editable_Overlay	PO-IntelliKeys Editable Overlay
+$IntelliKeys_Content_Overlay	PO-IntelliKeys Content Overlay
+$IntelliKeys_Group_Overlay		PO-IntelliKeys Group Overlay
+$IntelliKeys_Template_Overlay	PO-IntelliKeys Template Overlay
+

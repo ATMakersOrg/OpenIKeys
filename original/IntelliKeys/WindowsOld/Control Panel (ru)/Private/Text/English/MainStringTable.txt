@@ -1,0 +1,294 @@
+﻿
+$Touch_Features		Сенсорные возможности
+$Keysound_Volume	Громкость звука клавиш
+$Repeat_Features	Функция повтора
+$Additional_Features	Дополнительные возможности
+$Indicator_Lights	Действие клавиши Shift
+$Testing		Тестирование
+$StandardOverlayNote	ВНИМАНИЕ: При вводе Стандартной накладки она вступает в действие, отменяя действие ранее выбранной накладки.
+$Volume:		Громкость:
+$Response_Rate:		Скорость реакции:
+$Mouse_Speed:		Скорость мыши:
+$Repeat_Rate:		Частота повтора:
+$Firmware_Version_:	Версия системы :
+$Software_Version_:	Версия программы :
+$On/Off_Switch_:	Ключ Вкл/Выкл :
+$Connected_:		Подключено :
+$Serial_Number_:	Серийный номер :
+$Standard_Overlay_In_Place_:	Вставленная Стандартная накладка :
+$Last_Sent_Overlay_:	Загруженная накл. :
+$Overlay_Level_:	Слой накладки :
+$Language_:		Язык :
+$Mode_:_		Режим : 
+$Connected		Подключено
+$Not_Connected		Не подключено
+$Switched_On		Ключ на Вкл
+$Switched_Off		Ключ на Выкл
+On			Вкл
+Off			Выкл
+$Switch_1_:		Ключ 1 : 
+$Switch_2_:		Ключ 2 : 
+$Switch_3_:		Ключ 3 : 
+$Switch_4_:		Ключ 4 : 
+$Switch_5_:		Ключ 5 : 
+$Pad_:			: Pad
+$Group:			Группа:
+$User:			Имя:
+$Edit_Groups_and_Users	&Редактировать...
+$Keyboard_Reset		&Перезагрузить
+$Help...		&Справка...
+$Visit_Our_Website	&Web-сайт
+$Done			&Готово
+$Clear			С&тереть
+$Required_Lift_Off	Отр&ывистое нажатие
+$Repeat			По&втор
+$Repeat_Latching	За&крепление повтора
+$Smart_Typing		&Умная печать
+$Latching		На&жатие
+$Latching2		Нажатие
+$Locking		&Закрепление
+$Locking2		Закрепление
+$No_Latching		&Не нажимать
+$No_Latching2		Не нажимать
+$Touch_Features.tabTitle		С&енсорные возможности
+$Advanced		&Дополнительно
+$Troubleshooting	Подс&казки
+
+
+$Browse...		&Обзор...
+$Display_Features...	Пок&азать настройки...
+!Root_Folder_Does_Not_Exist	Корневая папка не установлена.  Проверьте установку программы.
+!Users_Folder_Does_Not_Exist	Папка пользователей на установлена.  Проверьте установку программы.
+!Group_Folder_Inaccessible	Не могу определить группы и пользователей.  Возможно, корневая папка недоступна.
+!Keyboard_Software_Not_Responding	Программное обеспечение USB-клавиатуры не отвечает.  Возможно, оно не запущено или занято.  Убедитесь, что программа запущена, и повторите изменение настроек.
+!Unsupported_USB_Keyboard_Message	Программа Intellikeys USB получила неподдерживаемое сообщение : ID = 
+$Use_Intellikeys...		Если накладка не стандартная, то IntelliKeys используется...
+$Device_Status		Статус устройства
+!Unable_to_save_the_settings	Не могу сохранить файл настроек этого пользователя.
+!Unable_to_load_the_settings	Не могу загрузить файл настроек этого пользователя.
+!Unable_to_locate_preferences	Не могу определить файл preferences в папке private.
+!Unable_to_save_preferences	Не могу записать файл preferences.
+!Cannot_Add_To_Guest_Group	Вы не можете добавлять пользователя в группу Guest.
+!The_User			Пользователь '
+!Could_not_be_added		' не может быть добавлен.  Возможно, недоступно расположение файла.
+!Can't_read_group_folder	Не могу создать папку группы или просматривать папки пользователй для группы :
+!Can't_rename_group_folder	Не могу переименовать папку группы на : 
+!User_already_exists		Пользователь с этим именем уже есть.  Выберите другое имя.
+!Group_already_exists		Группа с таким именем уже есть.  Выберите другое имя.
+!Can't_add_group_folder		Не могу добавить группу '
+!Can't_add_group_folder		'.  Возможно, папка недоступна.
+!Can't_scan_group_folders	Не могу просматривать папки групп.  Возможно они недоступны.
+!Group_is_not_empty		Группу нельзя удалить, так как она не пуста.  Сначала удалите всех пользователей группы.
+!Keyboard_not_reset		Клавиатура не перезагружена.  Попробуйте снова.
+!Can't_locate_student_folder	Не могу определить папку ученика.  Используются гостевые настройки.
+$Device:				Устройство:
+$Data_Send_Rate:		Частота отправки данных:
+$IntelliKeys_USB		IntelliKeys USB
+$Groups_and_Users		Группы и пользователи
+$Groups					Группы
+$Users					Пользователи
+$Group_Name				Имя группы
+$Group_Name:			Имя группы:
+$OK						OK
+$Cancel					Отмена
+$User_Name				Имя пользователя
+$User_Name:				Имя пользователя:
+$Yes					Да
+$No						Нет
+$group_New...					&Добавить...
+$group_Delete					&Удалить
+$group_Rename...				&Изменить...
+$student_New...					Д&обавить...
+$student_Delete					Уд&алить
+$student_Rename...				И&зменить...
+$volumeTest				Тест
+$Last_Sent			последняя загруженная
+$Use_				использовать 
+$Switch_			ключ 
+$None				никакой
+$Off				Выкл
+$1				1
+$2				2
+$3				3
+$4				4
+$Sensor_Values_:_		Значения сенсора :
+$Guest				Guest
+$Software_Version_=		Software Version =
+$Firmware_Version_=		Firmware Version =
+$Repeat_Rate_=			Repeat Rate =
+$Mouse_Speed_=			Mouse Speed =
+$Data_Send_Rate_=		Data Send Rate =
+$Response_Rate_=		Response Rate =
+$Smart_Typing_is		Smart Typing is
+$Required_Lift_Off_is		Required Lift Off is
+$Keysound_Volume_=		Keysound Volume =
+$Repeat_is			Repeat is
+$Repeat_Latching_is		Repeat Latching is
+$Shift_Key_Action_=		Shift Key Action =
+$Display_Latching		Нажатие
+$Display_No_Latching		Не нажимать
+$Display_Locking		Закрепление
+$Indicator_Lights_=		Indicator Lights =
+$Three				3
+$Six				6
+$Mode_=				Mode =
+$Mode_Warning_=			Показать предупреждение о режиме =
+$Use_Last_Sent_Overlay		Использовать последнюю загруженную накладку
+$Use_This_Overlay		Использовать эту накладку
+$Use_As_A_Switch		Использовать как ключ
+$Last_Sent_Overlay_=		Last Sent Overlay =
+$Specific_Overlay_=		Specific Overlay =
+$Switch_Setting_=		Switch Setting =
+$Number_Of_Connected_Keyboards_=	Number of connected keyboards =
+$Keyboard_Number_=		Keyboard Number =
+$Serial_Number_=		Serial Number
+$On_or_Off_=			On or Off =
+$Standard_Overlay_=		Standard Overlay =
+$Overlay_Name_=			Overlay Name =
+$Overlay_Level_=		Overlay Level =
+$Switch_1_=			Switch 1 =
+$Switch_2_=			Switch 2 =
+$Switch_3_=			Switch 3 =
+$Switch_4_=			Switch 4 =
+$Switch_5_=			Switch 5 =
+$Sensor_Values_=		Sensor Values =
+$Number_of_keys_pressed_=	Number of keys pressed =
+$Row_=				Row =
+$Column_=			Column =
+$IntelliKeys_USB_features_for_user	Параметры IntelliKeys USB для пользователя
+$in_group			в группе
+$Unknown			Неизвестно
+$Custom	  ;  следующее - для вкладки Приложения.			  
+$Applications		Приложения 
+$The_app_highlighted	Для приложения, выбранного ниже... 
+$Has_these_overlays	... Панель управления будет ... 
+$overlay_location	Путь накладки: 
+$Add			Добавить... 
+$Remove			Удалить 
+$Attach			Прикрепить... 
+$Detach			Открепить 
+$Edit			Правка... 
+$attach_edit_overlays	Прикрепление/Редактирование накладок 
+$select_an_application	Выбор приложения 
+$program_files		Program Files 
+$confirm_delete_app	Вы уверены, что выделенное приложение надо удалить? 
+$app_already_added	Это приложение уже сть в списке. 
+$not_valid_overlay	Это неисправный файл накладки. Выберите другой файл. 
+$overlay_missing	Указанный файл накладки не может быть найден.  Возможно, он удален или перемещен после прикрепления. 
+$confirm_detach_overlay		Вы уверены, что выделенную накладку следует открепить? 
+$already_attached	Эта накладка уже прикреплена.  
+$app_not_allowed	Вы не можете прикреплять накладки к этому приложению с помощью Панели управления IntelliKeys USB, поскольку приложение настроено на загрузку собственных наклaдок. Обратитесь к Руководству пользователя для этого приложения.
+
+$choose_app_header	Выберите приложение. 
+$programs		Приложения 
+$browse			Обзор... 
+$choose			Выбрать...  
+$current_overlay	Текущая накладка: 
+$sent_by		Загружено через: 
+$Sent_By_	Загружено через:
+$Sent_By_=		Sent By = 
+$last_sent_note		Внимание: Для прикрепления к приложению используйте вкладку Приложения  
+
+$radio_attached		Панель управления загружает выбранные ниже накладки 
+$radio_none		Панель управления не будет загружать накладки
+
+$edit_template_overlay	Это файл шаблона накладки.  Отредактируйте копию файла, сохраните, а затем прикрепите.  
+$cannot_edit_overlay	Вы не можете редактировать этот файл, так как либо это группа накладок, либо файл типа "content-only".  
+$IntelliKeys_USB_Window_Title	Панель управления IntelliKeys USB 
+$IntelliKeys_USB_Window_Title2	Панель управления IntelliKeys USB и IntelliSwitch 
+$find		Найти...  
+$IKOn		IntelliKeys Вкл 
+$IKOff		IntelliKeys Выкл  
+$ISOn		IntelliSwitch Вкл 
+$ISOff		IntelliSwitch Выкл  
+$IntelliSwitchFeaturesNotice	ВНИМАНИЕ: Пользователи IntelliSwitch могут настроить Частоту повтора, Повтор Вкл/Выкл, Скорость мыши, Громкость звука клавиши и Частоту отправки данных. 
+$TabDoesNotApply		Внимание: Параметры этой вкладки не действуют, пока на вкладке Режим вы не выберите вариант "Накладки".
+$TabDoesNotApplyMsg		Внимание: Параметры вкладки Приложения не действуют, пока на вкладке Режим вы не выберите вариант "Накладки".
+
+$application	Приложение
+$overlay	Накладка
+$is_located	расположено по адресу
+$was_expected	не найдено.  Его ожидаемый адрес:
+$overlay_details	Детали накладки
+$application_details	Детали приложения
+
+$show_mode_warning	Показывать сообщение о невозможности загрузки накладки
+
+$switch_content_0
+$switch_content_1		Ключи:||1: Control-Enter|2: Control-Enter|3: Control-Enter|4: Control-Enter|5: Control-Enter
+$switch_content_2		Ключи:||1: Control-Стрелка вправо|2: Control-Стрелка вниз|3: Control-Стрелка вправо|4: Control-Стрелка вниз|5: Control-Стрелка вправо
+$switch_content_3		Ключи:||1: Space|2: Enter|3: Space|4: Enter|5: Space
+$switch_content_4		Ключи:||1: Щелчок левой кнопкой|2: Щелчок левой кнопкой|3: Щелчок левой кнопкой|4: Щелчок левой кнопкой|5: Щелчок левой кнопкой
+$switch_content_5		Ключи:||1: Щелчок левой кнопкой|2: Двойной щелчок левой кнопкой|3: Щелчок левой кнопкой|4: Двойной щелчок левой кнопкой|5: Щелчок левой кнопкой
+$switch_content_6		Ключи:||1: Стрелка влево|2: Стрелка вправо|3: Стрелка влево|4: Стрелка вправо|5: Стрелка влево
+$switch_content_7		Ключи:||1: Стрелка вверх|2: Стрелка вниз|3: Стрелка вверх|4: Стрелка вниз|5: Стрелка вверх
+$switch_content_8		Ключи:||1: Стрелка влево|2: Стрелка вверх|3: Стрелка влево|4: Стрелка вверх|5: Стрелка влево
+$switch_content_9		Ключи:||1: 1|2: 2|3: 1|4: 2|5: 1
+$switch_content_10	Ключи:||1: Tab|2: Enter|3: Tab|4: Enter|5: Tab
+$switch_content_11	Ключи:||1: Tab|2: Space|3: Tab|4: Space|5: Tab 
+$switch_content_12	Ключи:||1: Tab|2: Shift-Tab|3: Tab|4: Shift-Tab|5: Tab
+$switch_content_13	Ключи:||1: Левый Shift|2: Правый Shift|3: Левый Shift|4: Правый Shift|5: Левый Shift
+$switch_content_14	Ключи:||1: Стрелка вниз|2: Enter|3: Стрелка вниз|4: Enter|5: Стрелка вниз 
+$switch_content_15	Ключи:||1: Стрелка вправо|2: Enter|3: Стрелка вправо|4: Enter|5: Стрелка вправо 
+$switch_content_16	Ключи:||1: Щелчок левой кнопкой|2: Щелчок правой кнопкой|3: Щелчок левой кнопкой|4: Щелчок правой кнопкой|5: Щелчок левой кнопкой
+
+$switch_content_17	Ключи:||1: Стрелка вверх|2: Стрелка вниз|3: Стрелка влево|4: Стрелка вправо|5: Enter
+$switch_content_18	Ключи:||1: Стрелка вверх|2: Стрелка вниз|3: Стрелка влево|4: Стрелка вправо|5: Space
+$switch_content_19	Ключи:||1: 1|2: 2|3: 3|4: 4|5: 0
+$switch_content_20	Ключи:||1: 1|2: 2|3: 3|4: 4|5: Enter
+$switch_content_21	Ключи:||1: Space|2: Enter|3: Tab|4: Shift-Tab|5: Backspace
+$switch_content_22	Ключи:||1: Левый Shift|2: Правый Shift|3: Control|4: Command/Левый Alt|5: Command/Правый Alt
+$switch_content_23	Ключи:||1: Щелчок левой кнопкой|2: Щелчок правой кнопкой|3: Двойной щелчок левой кнопкой|4: Space|5: Enter
+$switch_content_24	Ключи:||1: Щелчок левой кнопкой|2: Щелчок правой кнопкой|3: Щелчок средней кнопкой|4: Щелчок левой боковой кнопкой|5: Щелчок правой боковой кнопкой
+$switch_content_25	Ключи:||1: Щелчок левой кнопкой|2: Space|3: Q|4: Z|5: Escape
+$switch_content_26	Ключи:||1: Mouse Up|2: Mouse Down|3: Mouse Left|4: Mouse Right|5: Button Click
+
+
+$removing_app_title	Удаление приложения
+$removing_app_body	Выбранное приложение настроено на загрузку собственных накладок.  Вы не можете прикреплять к нему накладки с помощью Панели управления IntelliKeys USB, поэтому оно удаляется из списка.  Обратитесь к Руководству пользователя для этого приложения.
+
+$app_tab_unavailable_body	В этой версии вкладка Приложения недоступна.
+$app_tab_unavailable_title	Настройки недоступны
+
+$confirm_delete			Подтвердите удаление
+$sure_delete_group		Вы уверены, что группу следует удалить?
+$sure_delete_user		Вы уверены, что пользователя следует удалить?
+$group_must_be_empty		Удалять можно только пустую группу.  Пожалуйста, сначала удалите из этой группы всех пользователй.
+$delete_empty_group		Удалить пустую группу?
+$the_group_named		Группа
+$is_empty_delete		пуста.  Удалить эту группу?
+$last_saved_group_missing	Последняя сохраненная группа не обнаружена.  Используется
+$last_saved_user_missing	Последний сохраненный пользователь не обнаружен.  Используется
+$invalid_preference		Настройки пользователя повреждены. Используется
+
+$Standard_Overlay_0_Name		Web Access USB Overlay
+$Standard_Overlay_1_Name		Setup USB Overlay
+$Standard_Overlay_2_Name		Math Access USB Overlay
+$Standard_Overlay_3_Name		Alphabet USB Overlay
+$Standard_Overlay_4_Name		Mouse Access USB Overlay
+$Standard_Overlay_5_Name		QWERTY USB Overlay
+$Standard_Overlay_6_Name		Basic Writing USB Overlay
+$Standard_Overlay_7_Name		никакая
+
+
+$Mode_intro				Функции IntelliKeys и IntelliSwitch определяются...
+
+$mode_overlays			Накладками
+$mode_one_overlay		Только одной накладкой
+$mode_overlays_one		Использовать ту же накладку для всех приложений
+$mode_presets			Установками ключей
+$mode_discover_but		Но по-прежнему разрешать приложениям загружать собственные накладки
+$Mode				Режим
+$Sent_By:			Загружено через: 
+
+$DiscoverNameMac		Discover Envoy
+$DiscoverNameWin		DiscoverPro
+
+$must_supply_one_overlay	На вкладке Режим нельзя выбирать вариант "Только одной накладкой", не указав при этом накладку. Пожалуйста, укажите накладку, или выберите другой режим.
+
+$must_attach_overlay		На вкладке Приложения вы выбрали вариант "Панель управления загружает выбранные ниже накладки", но не прикрепили к приложению накладку.  Нажмите OK, чтобы вернуться на вкладку Приложение.  Нажмите Отмена, чтобы удалить приложение.
+
+$overlay_sending_disabled	Загрузка недоступна, проверьте вкладку Режим
+
+$sticky				"Залипающие" ячейки
+

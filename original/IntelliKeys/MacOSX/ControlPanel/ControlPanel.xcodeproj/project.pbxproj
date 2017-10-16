@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E3FBB7E14C3878100B11574 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E3FBB7D14C3878100B11574 /* CoreFoundation.framework */; };
+		9E3FBB8414C3878100B11574 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E3FBB8214C3878100B11574 /* InfoPlist.strings */; };
+		9E3FBB9614C38A0800B11574 /* ControlPanelLib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E3FBB9514C38A0800B11574 /* ControlPanelLib.cpp */; };
+		9E845A4914C655170073C8D8 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E845A4814C655170073C8D8 /* Carbon.framework */; };
+		9E92B97D14C390A9004057A0 /* AppLib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E92B97914C390A9004057A0 /* AppLib.cpp */; };
+		9E92B97E14C390A9004057A0 /* IKString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E92B97B14C390A9004057A0 /* IKString.cpp */; };
+		9E92B98F14C3959D004057A0 /* IKApplications.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E92B97F14C3959D004057A0 /* IKApplications.cpp */; };
+		9E92B99014C3959D004057A0 /* IKControlPanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E92B98014C3959D004057A0 /* IKControlPanel.cpp */; };
+		9E92B99114C3959D004057A0 /* IKDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E92B98114C3959D004057A0 /* IKDevice.cpp */; };
+		9E92B99214C3959D004057A0 /* IKEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E92B98214C3959D004057A0 /* IKEngine.cpp */; };
+		9E92B99314C3959D004057A0 /* IKFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E92B98314C3959D004057A0 /* IKFile.cpp */; };
+		9E92B99414C3959D004057A0 /* IKMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E92B98414C3959D004057A0 /* IKMessage.cpp */; };
+		9E92B99514C3959D004057A0 /* IKMsg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E92B98514C3959D004057A0 /* IKMsg.cpp */; };
+		9E92B99614C3959D004057A0 /* IKOverlay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E92B98614C3959D004057A0 /* IKOverlay.cpp */; };
+		9E92B99714C3959D004057A0 /* IKOverlayList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E92B98714C3959D004057A0 /* IKOverlayList.cpp */; };
+		9E92B99814C3959D004057A0 /* IKPrefs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E92B98814C3959D004057A0 /* IKPrefs.cpp */; };
+		9E92B99914C3959D004057A0 /* IKSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E92B98914C3959D004057A0 /* IKSettings.cpp */; };
+		9E92B99B14C3959D004057A0 /* IKStringArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E92B98B14C3959D004057A0 /* IKStringArray.cpp */; };
+		9E92B99C14C3959D004057A0 /* IKUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E92B98C14C3959D004057A0 /* IKUtil.cpp */; };
+		9E92B99D14C3959D004057A0 /* MessageClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E92B98D14C3959D004057A0 /* MessageClient.cpp */; };
+		9E92B99E14C3959D004057A0 /* sharedMemory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E92B98E14C3959D004057A0 /* sharedMemory.cpp */; };
+		9E92B9A814C399F7004057A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E92B9A714C399F7004057A0 /* Foundation.framework */; };
+		9E92B9AA14C39A04004057A0 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E92B9A914C39A04004057A0 /* CoreServices.framework */; };
+		9E92B9AE14C39A2E004057A0 /* IKMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E92B9AD14C39A2E004057A0 /* IKMap.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9E3FBB7A14C3878100B11574 /* ControlPanel.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ControlPanel.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E3FBB7D14C3878100B11574 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		9E3FBB8114C3878100B11574 /* ControlPanel-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ControlPanel-Info.plist"; sourceTree = "<group>"; };
+		9E3FBB8314C3878100B11574 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9E3FBB8514C3878100B11574 /* ControlPanel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ControlPanel-Prefix.pch"; sourceTree = "<group>"; };
+		9E3FBB9514C38A0800B11574 /* ControlPanelLib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ControlPanelLib.cpp; sourceTree = SOURCE_ROOT; };
+		9E845A4814C655170073C8D8 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		9E92B96614C38C9A004057A0 /* ControlPanelLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlPanelLib.h; sourceTree = SOURCE_ROOT; };
+		9E92B97914C390A9004057A0 /* AppLib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AppLib.cpp; path = ../common/AppLib.cpp; sourceTree = "<group>"; };
+		9E92B97A14C390A9004057A0 /* AppLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppLib.h; path = ../common/AppLib.h; sourceTree = "<group>"; };
+		9E92B97B14C390A9004057A0 /* IKString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKString.cpp; path = ../common/IKString.cpp; sourceTree = "<group>"; };
+		9E92B97F14C3959D004057A0 /* IKApplications.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKApplications.cpp; path = ../common/IKApplications.cpp; sourceTree = "<group>"; };
+		9E92B98014C3959D004057A0 /* IKControlPanel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKControlPanel.cpp; path = ../common/IKControlPanel.cpp; sourceTree = "<group>"; };
+		9E92B98114C3959D004057A0 /* IKDevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKDevice.cpp; path = ../common/IKDevice.cpp; sourceTree = "<group>"; };
+		9E92B98214C3959D004057A0 /* IKEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKEngine.cpp; path = ../common/IKEngine.cpp; sourceTree = "<group>"; };
+		9E92B98314C3959D004057A0 /* IKFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKFile.cpp; path = ../common/IKFile.cpp; sourceTree = "<group>"; };
+		9E92B98414C3959D004057A0 /* IKMessage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKMessage.cpp; path = ../common/IKMessage.cpp; sourceTree = "<group>"; };
+		9E92B98514C3959D004057A0 /* IKMsg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKMsg.cpp; path = ../common/IKMsg.cpp; sourceTree = "<group>"; };
+		9E92B98614C3959D004057A0 /* IKOverlay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKOverlay.cpp; path = ../common/IKOverlay.cpp; sourceTree = "<group>"; };
+		9E92B98714C3959D004057A0 /* IKOverlayList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKOverlayList.cpp; path = ../common/IKOverlayList.cpp; sourceTree = "<group>"; };
+		9E92B98814C3959D004057A0 /* IKPrefs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKPrefs.cpp; path = ../common/IKPrefs.cpp; sourceTree = "<group>"; };
+		9E92B98914C3959D004057A0 /* IKSettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKSettings.cpp; path = ../common/IKSettings.cpp; sourceTree = "<group>"; };
+		9E92B98B14C3959D004057A0 /* IKStringArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKStringArray.cpp; path = ../common/IKStringArray.cpp; sourceTree = "<group>"; };
+		9E92B98C14C3959D004057A0 /* IKUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKUtil.cpp; path = ../common/IKUtil.cpp; sourceTree = "<group>"; };
+		9E92B98D14C3959D004057A0 /* MessageClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MessageClient.cpp; path = ../common/MessageClient.cpp; sourceTree = "<group>"; };
+		9E92B98E14C3959D004057A0 /* sharedMemory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sharedMemory.cpp; path = ../common/sharedMemory.cpp; sourceTree = "<group>"; };
+		9E92B9A714C399F7004057A0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9E92B9A914C39A04004057A0 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		9E92B9AD14C39A2E004057A0 /* IKMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKMap.cpp; path = ../common/IKMap.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E3FBB7714C3878100B11574 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E3FBB7E14C3878100B11574 /* CoreFoundation.framework in Frameworks */,
+				9E92B9A814C399F7004057A0 /* Foundation.framework in Frameworks */,
+				9E92B9AA14C39A04004057A0 /* CoreServices.framework in Frameworks */,
+				9E845A4914C655170073C8D8 /* Carbon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9E3FBB6F14C3878100B11574 = {
+			isa = PBXGroup;
+			children = (
+				9E3FBB7F14C3878100B11574 /* ControlPanel */,
+				9E92B97814C3907F004057A0 /* Common */,
+				9E3FBB7C14C3878100B11574 /* Frameworks */,
+				9E3FBB7B14C3878100B11574 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9E3FBB7B14C3878100B11574 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E3FBB7A14C3878100B11574 /* ControlPanel.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E3FBB7C14C3878100B11574 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E845A4814C655170073C8D8 /* Carbon.framework */,
+				9E92B9A914C39A04004057A0 /* CoreServices.framework */,
+				9E92B9A714C399F7004057A0 /* Foundation.framework */,
+				9E3FBB7D14C3878100B11574 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E3FBB7F14C3878100B11574 /* ControlPanel */ = {
+			isa = PBXGroup;
+			children = (
+				9E3FBB9514C38A0800B11574 /* ControlPanelLib.cpp */,
+				9E92B96614C38C9A004057A0 /* ControlPanelLib.h */,
+				9E3FBB8014C3878100B11574 /* Supporting Files */,
+			);
+			path = ControlPanel;
+			sourceTree = "<group>";
+		};
+		9E3FBB8014C3878100B11574 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E3FBB8114C3878100B11574 /* ControlPanel-Info.plist */,
+				9E3FBB8214C3878100B11574 /* InfoPlist.strings */,
+				9E3FBB8514C3878100B11574 /* ControlPanel-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9E92B97814C3907F004057A0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9E92B97F14C3959D004057A0 /* IKApplications.cpp */,
+				9E92B98014C3959D004057A0 /* IKControlPanel.cpp */,
+				9E92B98114C3959D004057A0 /* IKDevice.cpp */,
+				9E92B98214C3959D004057A0 /* IKEngine.cpp */,
+				9E92B98314C3959D004057A0 /* IKFile.cpp */,
+				9E92B9AD14C39A2E004057A0 /* IKMap.cpp */,
+				9E92B98414C3959D004057A0 /* IKMessage.cpp */,
+				9E92B98514C3959D004057A0 /* IKMsg.cpp */,
+				9E92B98614C3959D004057A0 /* IKOverlay.cpp */,
+				9E92B98714C3959D004057A0 /* IKOverlayList.cpp */,
+				9E92B98814C3959D004057A0 /* IKPrefs.cpp */,
+				9E92B98914C3959D004057A0 /* IKSettings.cpp */,
+				9E92B98B14C3959D004057A0 /* IKStringArray.cpp */,
+				9E92B98C14C3959D004057A0 /* IKUtil.cpp */,
+				9E92B98D14C3959D004057A0 /* MessageClient.cpp */,
+				9E92B98E14C3959D004057A0 /* sharedMemory.cpp */,
+				9E92B97914C390A9004057A0 /* AppLib.cpp */,
+				9E92B97A14C390A9004057A0 /* AppLib.h */,
+				9E92B97B14C390A9004057A0 /* IKString.cpp */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E3FBB7914C3878100B11574 /* ControlPanel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E3FBB8814C3878100B11574 /* Build configuration list for PBXNativeTarget "ControlPanel" */;
+			buildPhases = (
+				9E3FBB7614C3878100B11574 /* Sources */,
+				9E3FBB7714C3878100B11574 /* Frameworks */,
+				9E3FBB7814C3878100B11574 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ControlPanel;
+			productName = ControlPanel;
+			productReference = 9E3FBB7A14C3878100B11574 /* ControlPanel.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E3FBB7114C3878100B11574 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = RORICK.NET;
+			};
+			buildConfigurationList = 9E3FBB7414C3878100B11574 /* Build configuration list for PBXProject "ControlPanel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9E3FBB6F14C3878100B11574;
+			productRefGroup = 9E3FBB7B14C3878100B11574 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E3FBB7914C3878100B11574 /* ControlPanel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9E3FBB7814C3878100B11574 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E3FBB8414C3878100B11574 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E3FBB7614C3878100B11574 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E3FBB9614C38A0800B11574 /* ControlPanelLib.cpp in Sources */,
+				9E92B97D14C390A9004057A0 /* AppLib.cpp in Sources */,
+				9E92B97E14C390A9004057A0 /* IKString.cpp in Sources */,
+				9E92B98F14C3959D004057A0 /* IKApplications.cpp in Sources */,
+				9E92B99014C3959D004057A0 /* IKControlPanel.cpp in Sources */,
+				9E92B99114C3959D004057A0 /* IKDevice.cpp in Sources */,
+				9E92B99214C3959D004057A0 /* IKEngine.cpp in Sources */,
+				9E92B99314C3959D004057A0 /* IKFile.cpp in Sources */,
+				9E92B99414C3959D004057A0 /* IKMessage.cpp in Sources */,
+				9E92B99514C3959D004057A0 /* IKMsg.cpp in Sources */,
+				9E92B99614C3959D004057A0 /* IKOverlay.cpp in Sources */,
+				9E92B99714C3959D004057A0 /* IKOverlayList.cpp in Sources */,
+				9E92B99814C3959D004057A0 /* IKPrefs.cpp in Sources */,
+				9E92B99914C3959D004057A0 /* IKSettings.cpp in Sources */,
+				9E92B99B14C3959D004057A0 /* IKStringArray.cpp in Sources */,
+				9E92B99C14C3959D004057A0 /* IKUtil.cpp in Sources */,
+				9E92B99D14C3959D004057A0 /* MessageClient.cpp in Sources */,
+				9E92B99E14C3959D004057A0 /* sharedMemory.cpp in Sources */,
+				9E92B9AE14C39A2E004057A0 /* IKMap.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9E3FBB8214C3878100B11574 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E3FBB8314C3878100B11574 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9E3FBB8614C3878100B11574 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = "/Library/Application Support/IntelliTools";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = /;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.5;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		9E3FBB8714C3878100B11574 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = "/Library/Application Support/IntelliTools";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = /;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				SDKROOT = macosx10.5;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Release;
+		};
+		9E3FBB8914C3878100B11574 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = "/Library/Application Support/IntelliTools";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ControlPanel/ControlPanel-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				HEADER_SEARCH_PATHS = (
+					/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon,
+					../common/,
+				);
+				INFOPLIST_FILE = "ControlPanel/ControlPanel-Info.plist";
+				INSTALL_PATH = /;
+				LD_GENERATE_MAP_FILE = YES;
+				MACH_O_TYPE = mh_dylib;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.6;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		9E3FBB8A14C3878100B11574 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = "";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ControlPanel/ControlPanel-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				HEADER_SEARCH_PATHS = (
+					/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon,
+					../common/,
+				);
+				INFOPLIST_FILE = "ControlPanel/ControlPanel-Info.plist";
+				INSTALL_PATH = /;
+				LD_GENERATE_MAP_FILE = YES;
+				MACH_O_TYPE = mh_dylib;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.6;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E3FBB7414C3878100B11574 /* Build configuration list for PBXProject "ControlPanel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E3FBB8614C3878100B11574 /* Debug */,
+				9E3FBB8714C3878100B11574 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E3FBB8814C3878100B11574 /* Build configuration list for PBXNativeTarget "ControlPanel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E3FBB8914C3878100B11574 /* Debug */,
+				9E3FBB8A14C3878100B11574 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9E3FBB7114C3878100B11574 /* Project object */;
+}

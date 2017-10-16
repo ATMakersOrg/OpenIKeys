@@ -1,0 +1,4 @@
+LIBRARY    IKUSB
+DESCRIPTION "IntelliKeys USB Control Panel"
+EXPORTS
+   CPlApplet    @1

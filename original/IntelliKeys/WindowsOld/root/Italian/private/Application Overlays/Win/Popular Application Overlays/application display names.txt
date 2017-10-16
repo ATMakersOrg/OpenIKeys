@@ -1,0 +1,17 @@
+AOLServiceHost.exe	AOL Explorer
+aim.exe		AOL Instant Messenger
+Insp7.exe	Inspiration 7
+Insp8.exe	Inspiration 8
+Kids2.exe	Kidspiration
+iTunes.exe	iTunes
+Kurzweil 3000.exe	Kurzweil 3000
+Wynn3\Wynn.exe	Wynn3
+Wynn4\Wynn.exe	Wynn4
+Wynn5\Wynn.exe	Wynn 5
+TestTalker.exe	TestTalker
+WOL.exe		WRITE:Outloud
+CoWriter5000.exe	CO:Writer
+OFFICE10\POWERPNT.EXE	Microsoft PowerPoint 2002
+OFFICE11\POWERPNT.EXE	Microsoft PowerPoint 2003
+OFFICE10\WINWORD.EXE	Microsoft Word 2002
+OFFICE11\WINWORD.EXE	Microsoft Word 2003

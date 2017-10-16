@@ -1,0 +1,259 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9EA4E22E14B8389400CFE4F0 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA4E22D14B8389400CFE4F0 /* CoreFoundation.framework */; };
+		9EA4E23414B8389400CFE4F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9EA4E23214B8389400CFE4F0 /* InfoPlist.strings */; };
+		9EA4E23D14B838D500CFE4F0 /* RealBasicTestLib.c in Sources */ = {isa = PBXBuildFile; fileRef = 9EA4E23B14B838D500CFE4F0 /* RealBasicTestLib.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9E61E75D14BD25E000EFB747 /* RealBasicTestLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealBasicTestLib.h; sourceTree = SOURCE_ROOT; };
+		9EA4E22A14B8389400CFE4F0 /* RealBasicTestLib.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealBasicTestLib.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EA4E22D14B8389400CFE4F0 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		9EA4E23114B8389400CFE4F0 /* RealBasicTestLib-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RealBasicTestLib-Info.plist"; sourceTree = "<group>"; };
+		9EA4E23314B8389400CFE4F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9EA4E23514B8389400CFE4F0 /* RealBasicTestLib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RealBasicTestLib-Prefix.pch"; sourceTree = "<group>"; };
+		9EA4E23B14B838D500CFE4F0 /* RealBasicTestLib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = RealBasicTestLib.c; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9EA4E22714B8389400CFE4F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EA4E22E14B8389400CFE4F0 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9EA4E21F14B8389400CFE4F0 = {
+			isa = PBXGroup;
+			children = (
+				9EA4E22F14B8389400CFE4F0 /* RealBasicTestLib */,
+				9EA4E22C14B8389400CFE4F0 /* Frameworks */,
+				9EA4E22B14B8389400CFE4F0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9EA4E22B14B8389400CFE4F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9EA4E22A14B8389400CFE4F0 /* RealBasicTestLib.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9EA4E22C14B8389400CFE4F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9EA4E22D14B8389400CFE4F0 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9EA4E22F14B8389400CFE4F0 /* RealBasicTestLib */ = {
+			isa = PBXGroup;
+			children = (
+				9EA4E23B14B838D500CFE4F0 /* RealBasicTestLib.c */,
+				9E61E75D14BD25E000EFB747 /* RealBasicTestLib.h */,
+				9EA4E23014B8389400CFE4F0 /* Supporting Files */,
+			);
+			path = RealBasicTestLib;
+			sourceTree = "<group>";
+		};
+		9EA4E23014B8389400CFE4F0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9EA4E23114B8389400CFE4F0 /* RealBasicTestLib-Info.plist */,
+				9EA4E23214B8389400CFE4F0 /* InfoPlist.strings */,
+				9EA4E23514B8389400CFE4F0 /* RealBasicTestLib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9EA4E22914B8389400CFE4F0 /* RealBasicTestLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EA4E23814B8389400CFE4F0 /* Build configuration list for PBXNativeTarget "RealBasicTestLib" */;
+			buildPhases = (
+				9EA4E22614B8389400CFE4F0 /* Sources */,
+				9EA4E22714B8389400CFE4F0 /* Frameworks */,
+				9EA4E22814B8389400CFE4F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RealBasicTestLib;
+			productName = RealBasicTestLib;
+			productReference = 9EA4E22A14B8389400CFE4F0 /* RealBasicTestLib.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9EA4E22114B8389400CFE4F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = RORICK.NET;
+			};
+			buildConfigurationList = 9EA4E22414B8389400CFE4F0 /* Build configuration list for PBXProject "RealBasicTestLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9EA4E21F14B8389400CFE4F0;
+			productRefGroup = 9EA4E22B14B8389400CFE4F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9EA4E22914B8389400CFE4F0 /* RealBasicTestLib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9EA4E22814B8389400CFE4F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EA4E23414B8389400CFE4F0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9EA4E22614B8389400CFE4F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EA4E23D14B838D500CFE4F0 /* RealBasicTestLib.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9EA4E23214B8389400CFE4F0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9EA4E23314B8389400CFE4F0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9EA4E23614B8389400CFE4F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9EA4E23714B8389400CFE4F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9EA4E23914B8389400CFE4F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RealBasicTestLib/RealBasicTestLib-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				INFOPLIST_FILE = "RealBasicTestLib/RealBasicTestLib-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACH_O_TYPE = mh_dylib;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		9EA4E23A14B8389400CFE4F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RealBasicTestLib/RealBasicTestLib-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				INFOPLIST_FILE = "RealBasicTestLib/RealBasicTestLib-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACH_O_TYPE = mh_dylib;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9EA4E22414B8389400CFE4F0 /* Build configuration list for PBXProject "RealBasicTestLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EA4E23614B8389400CFE4F0 /* Debug */,
+				9EA4E23714B8389400CFE4F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EA4E23814B8389400CFE4F0 /* Build configuration list for PBXNativeTarget "RealBasicTestLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EA4E23914B8389400CFE4F0 /* Debug */,
+				9EA4E23A14B8389400CFE4F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9EA4E22114B8389400CFE4F0 /* Project object */;
+}

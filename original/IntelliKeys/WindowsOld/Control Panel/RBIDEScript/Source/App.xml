@@ -1,0 +1,294 @@
+<?xml version="1.0"?>
+<RBProject version="2011r4.3" FormatVersion="2" MinIDEVersion="20070100">
+<block type="Module" ID="912924300">
+ <ObjName>App</ObjName>
+ <ObjContainerID>0</ObjContainerID>
+ <IsClass>1</IsClass>
+ <Superclass>ConsoleApplication</Superclass>
+ <ItemFlags>1</ItemFlags>
+ <IsInterface>0</IsInterface>
+ <IsApplicationObject>1</IsApplicationObject>
+ <Compatibility></Compatibility>
+ <HookInstance>
+  <ItemName>Run</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function Run(args() as String) As Integer</SourceLine>
+   <SourceLine>if args.Ubound = 0 then</SourceLine>
+   <SourceLine>// No arguments were specified</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>stdout.WriteLine "Enter script commands, one per line. To finish, enter an empty line."</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// Read from stdin until end-of-input,</SourceLine>
+   <SourceLine>// and send that data to the IDE.</SourceLine>
+   <SourceLine>if not SendStdin() then</SourceLine>
+   <SourceLine>return 1 // -&gt; error occured</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine>// Process the given arguments</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim arg As String</SourceLine>
+   <SourceLine>Dim i As Integer</SourceLine>
+   <SourceLine>for i = 1 to UBound(args)</SourceLine>
+   <SourceLine>arg = Trim( args(i) )</SourceLine>
+   <SourceLine>if arg = "-i" then</SourceLine>
+   <SourceLine>dim cmds as String = Join( Slice(args, i+1), EndOfLine )</SourceLine>
+   <SourceLine>if not IDECommunicator.SendScript( cmds ) then</SourceLine>
+   <SourceLine>return 1 // -&gt; error occured</SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine>exit // finished</SourceLine>
+   <SourceLine>end</SourceLine>
+   <SourceLine>elseif arg = "-v" then</SourceLine>
+   <SourceLine>PrintVersionInfo</SourceLine>
+   <SourceLine>elseif arg = "-?" or arg = "-h" then</SourceLine>
+   <SourceLine>PrintUsage</SourceLine>
+   <SourceLine>exit</SourceLine>
+   <SourceLine>elseif arg = "-c" then</SourceLine>
+   <SourceLine>PrintPath</SourceLine>
+   <SourceLine>elseif arg &lt;&gt; "" and Left( arg, 1 ) &lt;&gt; "-" then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>stdout.WriteLine kAppName +": calling SendFile(" + arg + ")"</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if not SendFile (arg) then</SourceLine>
+   <SourceLineBreakpoint>37</SourceLineBreakpoint>
+   <SourceLine>return 1 // -&gt; error occured</SourceLine>
+   <SourceLine>end</SourceLine>
+   <SourceLine>elseif arg &lt;&gt; "" then</SourceLine>
+   <SourceLine>stderr.WriteLine kAppName + ": illegal option -- " + arg</SourceLine>
+   <SourceLine>PrintUsage</SourceLine>
+   <SourceLine>return 1 // -&gt; error</SourceLine>
+   <SourceLineBreakpoint>43</SourceLineBreakpoint>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>next</SourceLine>
+   <SourceLine>end</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return 0 // -&gt; success</SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+ </HookInstance>
+ <HookInstance>
+  <ItemName>UnhandledException</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function UnhandledException(error As RuntimeException) As Boolean</SourceLine>
+   <SourceLine>stderr.WriteLine kAppName + ": Unhandled exception."</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+ </HookInstance>
+ <Method>
+  <ItemName>PrintUsage</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub PrintUsage()</SourceLine>
+   <SourceLine>stdout.WriteLine kAppName + " version " + kVersion</SourceLine>
+   <SourceLine>stdout.WriteLine " "</SourceLine>
+   <SourceLine>stdout.WriteLine "usage: rbidescript [-i command] [-v] [-c] [-?] [file]"</SourceLine>
+   <SourceLine>stdout.WriteLine " "</SourceLine>
+   <SourceLine>stdout.WriteLine kAppName + " sends script commands to the REAL Studio IDE."</SourceLine>
+   <SourceLine>stdout.WriteLine "Options:"</SourceLine>
+   <SourceLine>stdout.WriteLine "   -i command: send the given one-line command"</SourceLine>
+   <SourceLine>stdout.WriteLine "   -v: print version information and exit"</SourceLine>
+   <SourceLine>stdout.WriteLine "   -c: report the communications path and exit"</SourceLine>
+   <SourceLine>stdout.WriteLine "   -? or -h: print this help screen and exit"</SourceLine>
+   <SourceLine>stdout.WriteLine "   file: send the contents of the given file and exit"</SourceLine>
+   <SourceLine>stdout.WriteLine " "</SourceLine>
+   <SourceLine>stdout.WriteLine "If no arguments are given, then script input is read from stdin"</SourceLine>
+   <SourceLine>stdout.WriteLine "until an empty input line is received or EOF is reached."</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>1</ItemFlags>
+  <Shared>0</Shared>
+  <ItemParams></ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>PrintPath</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub PrintPath()</SourceLine>
+   <SourceLine>stdout.WriteLine kAppName + ":IDE Communication Path: " + IDECommunicator.IPCPath</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>1</ItemFlags>
+  <Shared>0</Shared>
+  <ItemParams></ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>Slice</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function Slice(strArray() As String, fromPos As Integer=0, toPos As Integer = -1) As String()</SourceLine>
+   <SourceLine>// Return a subset of the given array.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim ub As Integer = UBound( strArray )</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim startIdx As Integer = fromPos</SourceLine>
+   <SourceLine>if startIdx &lt; 0 then startIdx = ub + 1 + startIdx</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim endIdx As Integer = toPos</SourceLine>
+   <SourceLine>if endIdx &lt; 0 then endIdx = ub + 1 + endIdx</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim out() As String</SourceLine>
+   <SourceLine>Dim i As Integer</SourceLine>
+   <SourceLine>if endIdx &gt;= startIdx then</SourceLine>
+   <SourceLine>Redim out( endIdx - startIdx )</SourceLine>
+   <SourceLine>for i = startIdx to endIdx</SourceLine>
+   <SourceLine>out( i - startIdx ) = strArray(i)</SourceLine>
+   <SourceLine>next</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return out</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>1</ItemFlags>
+  <Shared>0</Shared>
+  <ItemParams>strArray() As String, fromPos As Integer=0, toPos As Integer = -1</ItemParams>
+  <ItemResult>String()</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>SendFile</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function SendFile(path As String) As Boolean</SourceLine>
+   <SourceLine>// Send a file at the given path to the IDE.</SourceLine>
+   <SourceLine>// But watch out for a first line that starts with "#!"; this is </SourceLine>
+   <SourceLine>// a shell script interpreter, and not part of the script itself.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim inputText As String</SourceLine>
+   <SourceLine>Dim fullPath As FolderItem</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>fullPath = IDECommunicator.ResolveNativePath( path )</SourceLine>
+   <SourceLine>if (fullPath = nil) or not fullPath.exists then</SourceLine>
+   <SourceLine>stderr.Write kAppName + ": unable to locate file: "</SourceLine>
+   <SourceLineBreakpoint>10</SourceLineBreakpoint>
+   <SourceLine>if (fullPath &lt;&gt; nil) then </SourceLine>
+   <SourceLine>stderr.WriteLine fullPath.AbsolutePath </SourceLine>
+   <SourceLine>else </SourceLine>
+   <SourceLine>stderr.WriteLine path</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>return false</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim firstLine As String</SourceLine>
+   <SourceLine>Dim inp As TextInputStream</SourceLine>
+   <SourceLine>inp = TextInputStream.Open(fullPath)</SourceLine>
+   <SourceLine>if (inp = nil) then</SourceLine>
+   <SourceLine>stderr.WriteLine kAppName + ": unable to read file: " + path</SourceLine>
+   <SourceLineBreakpoint>23</SourceLineBreakpoint>
+   <SourceLine>return false</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>firstLine = inp.ReadLine + EndOfLine</SourceLine>
+   <SourceLine>if Left( firstLine, 2 ) = "#!" then </SourceLine>
+   <SourceLine>firstLine = ""</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>inputText = inp.ReadAll</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>stdout.WriteLine kAppName + ":  calling SendScript(" + EndOfLine + firstLine + inputText + EndOfLine + ")"</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return IDECommunicator.SendScript (firstLine + inputText)</SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>1</ItemFlags>
+  <Shared>0</Shared>
+  <ItemParams>path As String</ItemParams>
+  <ItemResult>Boolean</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>PrintVersionInfo</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub PrintVersionInfo()</SourceLine>
+   <SourceLine>stdout.WriteLine kAppName + " version " + kVersion</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>1</ItemFlags>
+  <Shared>0</Shared>
+  <ItemParams></ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>SendStdin</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function SendStdin() As Boolean</SourceLine>
+   <SourceLine>// Read from stdin until end-of-input, and send</SourceLine>
+   <SourceLine>// that data to the IDE.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim buffer As String</SourceLine>
+   <SourceLine>while not stdin.EOF</SourceLine>
+   <SourceLine>dim line as String = stdin.ReadLine</SourceLine>
+   <SourceLine>if line = "" then exit</SourceLine>
+   <SourceLine>buffer = buffer + line + EndOfLine</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return IDECommunicator.SendScript (buffer)</SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>1</ItemFlags>
+  <Shared>0</Shared>
+  <ItemParams></ItemParams>
+  <ItemResult>Boolean</ItemResult>
+ </Method>
+ <PropertyVal Name="MenuBar">0</PropertyVal>
+ <ViewBehavior>
+ </ViewBehavior>
+ <Constant>
+  <ItemName>kVersion</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemName>kVersion</ItemName>
+  <ItemType>0</ItemType>
+  <ItemDef>1.0</ItemDef>
+  <ItemFlags>1</ItemFlags>
+ </Constant>
+ <Constant>
+  <ItemName>kAppName</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemName>kAppName</ItemName>
+  <ItemType>0</ItemType>
+  <ItemDef>rbidescript</ItemDef>
+  <ItemFlags>1</ItemFlags>
+ </Constant>
+</block>
+</RBProject>

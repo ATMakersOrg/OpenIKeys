@@ -1,0 +1,229 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E04AA0014F1B0CB0089DFB0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E04A9FF14F1B0CB0089DFB0 /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9E04A9E814F1B0850089DFB0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9E04A9EA14F1B0850089DFB0 /* HelperWatcher */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelperWatcher; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E04A9FE14F1B0CB0089DFB0 /* HelperWatcher.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = HelperWatcher.1; sourceTree = SOURCE_ROOT; };
+		9E04A9FF14F1B0CB0089DFB0 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E04A9E714F1B0850089DFB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9E04A9DF14F1B0850089DFB0 = {
+			isa = PBXGroup;
+			children = (
+				9E04A9ED14F1B0850089DFB0 /* HelperWatcher */,
+			);
+			sourceTree = "<group>";
+		};
+		9E04A9EB14F1B0850089DFB0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E04A9EA14F1B0850089DFB0 /* HelperWatcher */,
+			);
+			name = Products;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		9E04A9ED14F1B0850089DFB0 /* HelperWatcher */ = {
+			isa = PBXGroup;
+			children = (
+				9E04A9FE14F1B0CB0089DFB0 /* HelperWatcher.1 */,
+				9E04A9FF14F1B0CB0089DFB0 /* main.cpp */,
+				9E04A9EB14F1B0850089DFB0 /* Products */,
+			);
+			path = HelperWatcher;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E04A9E914F1B0850089DFB0 /* HelperWatcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E04A9F314F1B0850089DFB0 /* Build configuration list for PBXNativeTarget "HelperWatcher" */;
+			buildPhases = (
+				9E04A9E614F1B0850089DFB0 /* Sources */,
+				9E04A9E714F1B0850089DFB0 /* Frameworks */,
+				9E04A9E814F1B0850089DFB0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelperWatcher;
+			productName = HelperWatcher;
+			productReference = 9E04A9EA14F1B0850089DFB0 /* HelperWatcher */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E04A9E114F1B0850089DFB0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = RORICK.NET;
+			};
+			buildConfigurationList = 9E04A9E414F1B0850089DFB0 /* Build configuration list for PBXProject "HelperWatcher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9E04A9DF14F1B0850089DFB0;
+			productRefGroup = 9E04A9EB14F1B0850089DFB0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E04A9E914F1B0850089DFB0 /* HelperWatcher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E04A9E614F1B0850089DFB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E04AA0014F1B0CB0089DFB0 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9E04A9F114F1B0850089DFB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = "/Applications/IntelliTools/IntelliKeys USB/Private";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = /;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		9E04A9F214F1B0850089DFB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = "/Applications/IntelliTools/IntelliKeys USB/Private";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = /;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+		9E04A9F414F1B0850089DFB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = "/Applications/IntelliTools/IntelliKeys USB/Private";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				INSTALL_PATH = /;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		9E04A9F514F1B0850089DFB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = "/Applications/IntelliTools/IntelliKeys USB/Private";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				INSTALL_PATH = /;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E04A9E414F1B0850089DFB0 /* Build configuration list for PBXProject "HelperWatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E04A9F114F1B0850089DFB0 /* Debug */,
+				9E04A9F214F1B0850089DFB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E04A9F314F1B0850089DFB0 /* Build configuration list for PBXNativeTarget "HelperWatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E04A9F414F1B0850089DFB0 /* Debug */,
+				9E04A9F514F1B0850089DFB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9E04A9E114F1B0850089DFB0 /* Project object */;
+}

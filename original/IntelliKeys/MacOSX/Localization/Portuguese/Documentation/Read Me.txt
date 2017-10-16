@@ -1,0 +1,80 @@
+﻿IntelliKeys USB
+Versão 3.5.2
+Informações importantes
+
+
+1 – O que mudou nesta versão
+
+A versão 3.5.2 inclui suporte para Windows 8 e Mac OS 10.8 (Mountain Lion),
+além de suporte aprimorado para sistemas operacionais Windows de 64 bits para
+versões internacionais.
+
+
+2 – Notas do produto
+
+Nota de instalação:
+Para instalar o software IntelliKeys USB, é necessário ter acesso de
+administrador ao computador. Antes de instalar esta nova versão, desconecte o
+IntelliKeys USB do computador. Desinstale o software IntelliKeys USB antigo.
+
+Para desinstalar a versão antiga:
+- No Windows XP, use a opção Adicionar ou remover programas do Painel de
+  Controle.
+- Nos Windows 7 e 8, use Programas e Recursos.
+- No Mac, use o programa de desinstalação fornecido com a instalação.
+
+Entretanto, se você tiver o Popular Software Overlays, NÃO desinstale o
+software IntelliKeys USB antigo!
+
+Informações muito importantes para usuários de Mac!
+
+- A versão 3.5.2 funcionará apenas em sistemas Intel que executam o Mac OS da
+  versão 10.5.8 a 10.8. Isso pode ser encontrado em "Installers/V3.5 (10.x,
+  Intel Only)" na versão em inglês do produto, e trata-se da única versão do
+  instalador para versões internacionais do produto.
+
+- No Mac OS X, o ícone do IntelliKeys USB aparece na barra de menu, geralmente
+  ao lado da exibição de hora. Selecione esse ícone para abrir o painel de
+  controle do IntelliKeys USB. No modo clássico, na barra de menu, selecione a
+  pesquisa para encontrar o ícone IntelliKeys USB e abrir o painel de controle
+  do software.
+
+- O clique com botão direito do mouse da sobreposição do IntelliKeys USB
+  padrão funcionará em programas do Mac OS X que sejam compatíveis com a
+  funcionalidade de clique com botão direito.
+
+- No Mac, cada teclado conectado é reconhecido como independente e único. Isso
+  significa que as luzes que indicam Num Lock e Caps Lock no IntelliKeys USB
+  mostram o estado apenas do IntelliKeys USB. Essas luzes não precisam ser
+  sincronizadas com as luzes no teclado convencional.
+
+
+3 – Suporte a sistemas operacionais
+
+O IntelliKeys USB versão 3.5 funcionará em:
+
+- Sistemas Intel executando Mac da versão 10.5 a 10.8
+- Windows XP, Windows Vista, Windows 7 e Windows 8, todos de 32 e 64 bits.
+
+Caso você tenha uma versão anterior do IntelliKeys USB instalada, consulte
+nosso site para obter detalhes técnicos: www.intellitools.com 
+
+
+4 – Contatos da IntelliTools
+
+Seus comentários são bem-vindos! Você pode entrar em contato das seguintes
+maneiras: 
+* Por telefone: (das 9h às 19h, hora do leste dos EUA, de segunda a
+  sexta-feira)
+    800-547-6747 (EUA e Canadá)
+    +1-303-651-2829 (todos os outros países)
+* Por e-mail:
+    tech@cambiumtech.com (para informações técnicas)
+    customerservice@cambiumtech.com (para informações gerais)
+* Na Internet:
+    http://www.intellitools.com	
+* Por carta, para o endereço: 
+    Cambium Learning Technologies
+    24 Prime Park Way, Suite 303
+    Natick, MA 01730
+    EUA

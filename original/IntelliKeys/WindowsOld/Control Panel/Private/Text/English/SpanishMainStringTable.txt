@@ -1,0 +1,288 @@
+﻿!Cannot_Add_Group_Folder2		'.  La carpeta puede no ser accesible.
+!Cannot_Add_Group_Folder		No se puede agregar el grupo denominado '
+!Cannot_Locate_Student_Folder	No se pudo localizar la carpeta del estudiante.  Usando la configuración de invitado.
+!Cannot_Read_Group_Folder	No se puede crear carpeta de grupo o escanear las carpetas de usuario para el grupo :
+!Cannot_Rename_Group_Folder	No se puede cambiar el nombre de carpeta de grupo a : 
+!Cannot_Scan_Group_Folders	No se puede escanear las carpetas de grupo.  Pueden ser inaccesibles.
+!Cannot_Add_To_Guest_Group	No se puede agregar usuarios al Grupo de invitados.
+!Could_Not_Be_Added		' podría no agregarse.  La ubicación del archivo puede no ser accesible.
+!Group_Folder_Inaccessible	No se puede escanear los grupos y los usuarios.  La carpeta raíz puede ser inaccesible.
+!Group_Already_Exists		Ya existe un grupo con ese nombre.  Por favor, elija otro nombre.
+!Group_Is_Not_Empty		No se puede quitar el grupo porque no está vacío.  Por favor elimine todos los usuarios antes de eliminar el grupo.
+!Keyboard_Software_Not_Responding	El software del teclado USB no responde.  Puede no estar en funcionamiento, o puede estar ocupado.  Compruebe que el software se esté ejecutando, y a continuación intente volver a cambiar la configuración.
+!Keyboard_Not_Reset		El teclado no se reinició.  Inténtelo de nuevo.
+!Root_Folder_Does_Not_Exist	La carpeta raíz no existe.  Compruebe la instalación.
+!The_User			El usuario '
+!Unable_To_Load_Applications	No se puede cargar las aplicaciones para este usuario.
+!Unable_To_Load_The_Settings	No se puede cargar el archivo de configuración para este usuario.
+!Unable_To_Locate_Preferences	No se puede encontrar el archivo de preferencias en la carpeta privada.
+!Unable_To_Save_Preferences	No se puede escribir el archivo de preferencias.
+!Unable_To_Save_The_Settings	No se puede guardar el archivo de configuración para este usuario.
+!Unsupported_USB_Keyboard_Message	El software de Intellikeys USB recibió un mensaje no admitido : ID = 
+!User_Already_Exists		Ya existe un usuario con ese nombre.  Por favor, elija otro nombre.
+!Users_Folder_Does_Not_Exist	La carpeta usuarios no existe.  Compruebe la instalación.
+$1				1
+$2				2
+$3				3
+$4				4
+$Add			Agregar... 
+$Additional_Features	Características Adicionales
+$Advanced		&Avanzadas
+$App_Not_Allowed	No puede adjuntar overlays a esta aplicación desde el panel de control de IntelliKeys USB ya que la aplicación está diseñada para enviar sus propias overlays. Consulte la Guía del usuario de esta aplicación sobre cómo adjuntar overlays.
+$App_Not_Found	no se encontró
+$App_Tab_Unavailable_Body	La pestaña Aplicaciones no está disponible en esta versión.
+$App_Tab_Unavailable_Title	Característica no disponible
+$Application	Aplicación
+$Application_Details	Detalles de la aplicación
+$Application_Find_Dialog_Title		Encontrar aplicación
+$Application_Find_Dialog_Prompt		Seleccionar la aplicación deseada
+$Applications		Aplicaciones 
+$Available_Applications_Form_Title	Aplicaciones disponibles
+$Attach			Adjuntar... 
+$Browse			Examinar... 
+$Browse...		&Buscar...
+$Browse_For_Application_Dialog_Title	Localizar aplicación 
+$Browse_For_Application_Dialog_Prompt	Seleccionar la aplicación deseada 
+$Cancel					Cancelar
+$Cannot_Edit_Overlay	No puede editar este archivo porque es un overlay de sólo contenido o de grupo.  
+$Choose			Elegir...  
+$Choose_App_Header	Seleccionar una aplicación. 
+$Clear			&Borrar
+$Column_=			Columna =
+$Confirm_Delete			Confirmar eliminación
+$Connected		Conectado
+$Connected_:		Conectado :
+$Custom	  ;  los siguientes son para la pestaña Aplicaciones.			  
+$Data_Send_Rate:		Velocidad de Transferencia de Datos:
+$Data_Send_Rate_=		Velocidad de Transferencia de Datos =
+$Delete_Empty_Group		¿Eliminar grupo vacío?
+$Detach			Separar 
+$Device:				Dispositivo:
+$Device_Status		Estado del dispositivo
+$DiscoverNameMac		Descubrir enviado
+$DiscoverNameWin		DiscoverPro
+$Display_Features...	Ver Características...
+$Display_Latching		Mantener efecto
+$Display_Locking		Bloqueo
+$Display_No_Latching		Sin efecto
+$Done			&Hecho
+$Edit			Editar... 
+$Edit_Groups_And_Users	&Editar grupos y usuarios...
+$Edit_Template_Overlay	Este archivo es una plantilla de overlay.  Editará una copia del archivo, y tendrá que adjuntar el archivo después de guardarlo.  
+$False			Falso
+$Find		Buscar...  
+$Firmware_Version_:	Versión de Firmware :
+$Firmware_Version_=		Versión de Firmware =
+$Group:			Grupo:
+$Group_Delete					&Eliminar
+$Group_Must_Be_Empty		El grupo debe estar vacío antes de que pueda ser eliminado.  Por favor elimine todos los usuarios en este grupo antes de eliminar el grupo.
+$Group_Name				Nombre del grupo
+$Group_Name:			Nombre del grupo:
+$Group_New...					&Nuevo...
+$Group_Rename...				&Renombrar...
+$Groups					Grupos
+$Groups_and_Users		Grupos y usuarios
+$Guest				Invitado
+$Has_these_overlays	... el Panel de Control ... 
+$Help...		&Ayuda...
+$IKOff		IntelliKeys desactivadas  
+$IKOn		IntelliKeys encendido 
+$ISOff		IntelliSwitch apagado  
+$ISOn		IntelliSwitch encendido 
+$In_Group			en el grupo
+$Indicator_Lights	Efecto Tecla Mayús
+$Indicator_Lights_=		Indicadores luminosos =
+$IntelliKeys_USB		IntelliKeys USB
+$IntelliKeys_USB_Features_For_User	Funciones de IntelliKeys USB para el usuario
+$IntelliKeys_USB_Window_Title	Panel de Control de IntelliKeys USB 
+$IntelliKeys_USB_Window_Title2	Panel de Control de IntelliKeys USB y de IntelliSwitch 
+$IntelliSwitchFeaturesNotice	NOTA: Los usuarios de IntelliSwitch pueden ajustar la velocidad de repetición, repetición activada/desactivada, velocidad del ratón, sonido de teclas y velocidad de transferencia de datos. 
+$Invalid_Preference		Valor no válido para la preferencia del usuario. Uso
+$Is_Empty_Delete		está vacía.  ¿Desea eliminar este grupo?
+$Is_Located	la ruta de acceso es
+$Keyboard_Number_=		Teclado número =
+$Keyboard_Reset		Reconfigurar Teclado
+$Keysound_Volume	Volumen Sonido Teclas
+$Keysound_Volume_=	Volumen Sonido Teclas =
+$Language_:		Idioma :
+$Last_Saved_Group_Missing	El último grupo guardado no existe.  Uso
+$Last_Saved_User_Missing	El último usuario guardado no existe.  Uso
+$Last_Sent			último enviado
+$Last_Sent_Note		Nota: Utilice la pestaña Aplicaciones para adjuntar overlays a las aplicaciones  
+$Last_Sent_Overlay_:	Última overlay enviada :
+$Last_Sent_Overlay_=		Última overlay enviada =
+$Latching		Mant&ener Efecto
+$Latching2		Mantener Efecto
+$Locking		Bloquear Efecto
+$Locking2		Bloquear Efecto
+$Mode				Modo
+$Mode_:_		Modo : 
+$Mode_=				Modo =
+$Mode_Discover			Descubrir
+$Mode_Discover_But		Aunque permiten que las aplicaciones envíen sus propias overlays
+$Mode_Intro				Las funciones Intellikeys y IntelliSwitch será determinadas por
+$Mode_One_Overlay		Sólo un Overlay
+$Mode_Overlays			Overlays
+$Mode_Presets			Switch Presets
+$Mode_Warning_=			Ver mensajes modo de aviso =
+$Mouse_Speed:		Velocidad Mouse:
+$Mouse_Speed_=			Velocidad Mouse =
+$Must_Attach_Overlay		En la pestaña Aplicaciones, especificó "Usar la overlay seleccionada abajo", para una aplicación, pero no adjuntó la overlay.  Haga clic en Aceptar para volver a la pestaña Aplicaciones.  Haga clic en Cancelar para eliminar la aplicación.
+$Must_Supply_One_Overlay	En la pestaña Modo no se puede elegir Sólo una Overlay sin elegir además una overlay.  Por favor, elija una overlay, o seleccione un modo diferente.
+$No						No
+$No_Latching		&Sin Efecto
+$No_Latching2		Sin Efecto
+$None				ninguno
+$Not_Connected		No conectado
+$Not_Valid_Overlay	Ese no es un archivo de overlay válido. Por favor elija otro archivo. 
+$Number_Of_Connected_Keyboards_=	Número de teclados conectados =
+$Number_Of_Keys_Pressed_=	Número de teclas pulsadas =
+$OK						Aceptar
+$Off				Sin
+$On					Encendido
+$On_Off_Switch_:	Encender/Apagar Switch :
+$On_or_Off_=			Encendido o Apagado =
+$Overlay	Overlay
+$Overlay_Details	Detalles de overlay
+$Overlay_Find_Dialog_Title		Buscar Overlay
+$Overlay_Find_Dialog_Prompt		Seleccionar overlay deseada
+$Overlay_Level_:	Nivel de overlay :
+$Overlay_Level_=		Nivel de overlay =
+$Overlay_Location	Ruta de Overlay: 
+$Overlay_Missing	No se pudo encontrar el archivo de overlay seleccionado.  Puede que haya sido eliminado o movido después de que se adjuntó. 
+$Overlay_Name_=			Nombre de overlay =
+$Overlay_Sending_Disabled	Envío deshabilitado, revisar pestaña Modo
+$Pad_:			: Rellenar
+$Program_Files		Archivos de programa 
+$Programs		Aplicaciones 
+$Radio_Attached		El panel de control enviará la overlay seleccionada a continuación: 
+$Radio_None		El Panel de Control no enviará una overlay
+$Remove			Quitar 
+$Removing_App_Body	La aplicación que seleccionó está diseñada para enviar sus propias overlays.  No puede adjuntar overlays a ésta utilizando el Panel de control de IntelliKeys USB, por lo que se eliminará ahora de la lista.  Consulte la Guía del usuario de la aplicación sobre cómo adjuntar overlays.
+$Removing_App_Title	Quitar aplicación
+$Repeat			Repetición
+$Repeat_Features	Características Repetición
+$Repeat_Latching	Repetición Automática
+$Repeat_Latching_Is		Repetición automática es
+$Repeat_Rate:		Velocidad Repetición:
+$Repeat_Rate_=			Velocidad Repetición =
+$Repeat_Is			La repetición es
+$Required_Lift_Off	Alza Obligitoria
+$Required_Lift_Off_Is		Alza Obligitoria es
+$Response_Rate:		Velocidad Respuesta:
+$Response_Rate_=		Velocidad Respuesta =
+$Row_=				Fila =
+$Sensor_Values_:_		Valores de los Sensores : 
+$Sensor_Values_=		Valores de los Sensores =
+$Sent_By:			Enviado por : 
+$Sent_By_	Enviado por:
+$Sent_By_=		Enviado por = 
+$Serial_Number_:	Número de Serie :
+$Serial_Number_=		Número de Serie
+$Shift_Key_Action_=		Efecto de Tecla Mayús =
+$Show_Mode_Warning	Mostrar advertencia cuando no se pueda enviar la overlay
+$Six				Seis
+$Smart_Typing		Tipeo Inteligente
+$Smart_Typing_Is		La escritura inteligente es
+$Software_Version_:	Versión de Software :
+$Software_Version_=		Versión de Software =
+$Specific_Overlay_=		Overlay específica =
+$Standard_Overlay_0_Name		Overlay Acceso Web USB 
+$Standard_Overlay_1_Name		Overlay Configuración USB
+$Standard_Overlay_2_Name		Overlay Acceso Calculo USB
+$Standard_Overlay_3_Name		Overlay Alfabeto USB
+$Standard_Overlay_4_Name		Overlay Acceso Mouse USB
+$Standard_Overlay_5_Name		Overlay QWERTY USB
+$Standard_Overlay_6_Name		Overlay Escritura Basica
+$Standard_Overlay_7_Name		ninguno
+$Standard_Overlay_=		Overlay estándar =
+$Standard_Overlay_In_Place_:	Overlay estándar en el lugar :
+$Standard_Overlay_Note	NOTA: Cada vez que una overlay estándar sea insertada, entrará en acción y anulará cualquier overlay seleccionada anteriormente.
+$Sticky					Pegajoso
+$Student_Delete					E&liminar
+$Student_New...					N&uevo...
+$Student_Rename...				Reno&mbrar...
+$Sure_Delete_Group		¿Está seguro que desea eliminar el grupo?
+$Sure_Delete_User		¿Está seguro que desea eliminar el usuario?
+$Switch_			switch 
+$Switch_1_:		Switch 1 : 
+$Switch_1_=			Switch 1 =
+$Switch_2_:		Switch 2 : 
+$Switch_2_=			Switch 2 =
+$Switch_3_:		Switch 3 : 
+$Switch_3_=			Switch 3 =
+$Switch_4_:		Switch 4 : 
+$Switch_4_=			Switch 4 =
+$Switch_5_:		Switch 5 : 
+$Switch_5_=			Switch 5 =
+$Switch_Content_0
+$Switch_Content_1		Switches:||1: Control-Intro|2: Control-Intro|3: Control-Intro|4: Control-Intro|5: Control-Intro
+$Switch_Content_10	Switches:||1: Tab|2: Intro|3: Tab|4: Intro|5: Tab
+$Switch_Content_11	Switches:||1: Tab|2: Espacio|3: Tab|4: Espacio|5: Tab 
+$Switch_Content_12	Switches:||1: Tab|2: Mayús-Tab|3: Tab|4: Mayús-Tab|5: Tab
+$Switch_Content_13	Switches:||1: Mayús Izq|2: Mayús Der|3: Mayús Izq|4: Mayús Der|5: Mayús Izq
+$Switch_Content_14	Switches:||1: Flecha abajo|2: Intro|3: Flecha abajo|4: Intro|5: Flecha abajo 
+$Switch_Content_15	Switches:||1: Flecha derecha|2: Intro|3: Flecha derecha|4: Intro|5: Flecha derecha 
+$Switch_Content_16	Switches:||1: Clic botón izquierdo|2: Clic botón derecho|3: Clic botón izquierdo|4: Clic botón derecho|5: Clic botón izquierdo
+$Switch_Content_17	Switches:||1: Flecha arriba|2: Flecha abajo|3: Flecha izquierda|4: Flecha derecha|5: Intro
+$Switch_Content_18	Switches:||1: Flecha arriba|2: Flecha abajo|3: Flecha izquierda|4: Flecha derecha|5: Espacio
+$Switch_Content_19	Switches:||1: 1|2: 2|3: 3|4: 4|5: 0
+$Switch_Content_2		Switches:||1: Control-Flecha derecha|2: Control-Flecha abajo|3: Control-Flecha derecha|4: Control-Flecha abajo|5: Control-Flecha derecha
+$Switch_Content_20	Switches:||1: 1|2: 2|3: 3|4: 4|5: Intro
+$Switch_Content_21	Switches:||1: Espacio|2: Intro|3: Tab|4: Mayús-Tab|5: Retroceso
+$Switch_Content_22	Switches:||1: Mayús Izq|2: Mayús Der|3: Control|4: Comando/Alt Izq|5: Comando/Alt Der
+$Switch_Content_23	Switches:||1: Clic botón izquierdo|2: Clic botón derecho|3: Doble clic botón izquierdo|4: Espacio|5: Intro
+$Switch_Content_24	Switches:||1: Clic botón izquierdo|2: Clic botón derecho|3: Clic botón central|4: Clic botón izquierdo|5: Clic botón derecho
+$Switch_Content_25	Switches:||1: Clic botón izquierdo|2: Espacio|3: Q|4: Z|5: Escape
+$Switch_Content_26	Switches:||1: Ratón hacia arriba|2: Ratón hacia abajo|3: Ratón hacia la izquierda|4: Ratón hacia la derecha|5: Clic con el botón
+$Switch_Content_3		Switches:||1: Espacio|2: Intro|3: Espacio|4: Intro|5: Espacio
+$Switch_Content_4		Switches:||1: Clic botón izquierdo|2: Clic botón izquierdo|3: Clic botón izquierdo|4: Clic botón izquierdo|5: Clic botón izquierdo
+$Switch_Content_5		Switches:||1: Clic botón izquierdo|2: Doble clic botón izquierdo|3: Clic botón izquierdo|4: Doble clic botón izquierdo|5: Clic botón izquierdo
+$Switch_Content_6		Switches:||1: Flecha izquierda|2: Flecha derecha|3: Flecha izquierda|4: Flecha derecha|5: Flecha izquierda
+$Switch_Content_7		Switches:||1: Flecha arriba|2: Flecha abajo|3: Flecha arriba|4: Flecha abajo|5: Flecha arriba
+$Switch_Content_8		Switches:||1: Flecha izquierda|2: Flecha arriba|3: Flecha izquierda|4: Flecha arriba|5: Flecha izquierda
+$Switch_Content_9		Switches:||1: 1|2: 2|3: 1|4: 2|5: 1
+$Switch_Setting_=		Configurar switch =
+$Switched_Off		Desactivado
+$Switched_On		Activado
+$Tab_Does_Not_Apply		NOTA: Los ajustes de esta pestaña no tienen ningún efecto a menos que seleccione "Overlays" en la pestaña Modo.
+$Tab_Does_Not_Apply_Msg		NOTA: Los ajustes en la pestaña Aplicaciones no tienen ningún efecto a menos que seleccione "Overlays" en la pestaña Modo.
+$Testing		Prueba
+$The_App_Highlighted	Para la aplicación seleccionada a continuación... 
+$The_Group_Named		El grupo llamado
+$Three				Tres
+$Touch_Features		Características Pulsación
+$Touch_Features_Tab_Title		&Caract. Pulsación
+$Troubleshooting	&Solución de problemas
+$True				Verdadero
+$Unknown			Desconocido
+$Use_				utilizar 
+$Use_As_A_Switch		Utilizar como Switch A
+$Use_Intellikeys...		Si no utiliza una overlay estándar, utilice IntelliKeys...
+$Use_Last_Sent_Overlay		Utilice la última overlay enviada
+$Use_This_Overlay		Utilice esta overlay
+$User:			Usuario:
+$User_Name				Nombre de usuario
+$User_Name:				Nombre de usuario:
+$Users					Usuarios
+$Visit_Our_Website	&Visite nuestro sitio web
+$Volume:		Volumen:
+$VolumeTest				Probar
+$Was_Expected	no se puede encontrar.  Se esperaba en la ruta de acceso
+$Yes					Sí
+$already_attached	Esa overlay ya ha sido adjuntada.  
+$app_already_added	Esa aplicación ya está en la lista. 
+$attach_edit_overlays	Adjuntar/Editar Overlays 
+$confirm_delete_app	¿Está seguro que desea quitar la aplicación seleccionada? 
+$confirm_detach_overlay		¿Está seguro que desea eliminar la overlay seleccionada? 
+$current_overlay	Overlay actual: 
+$mode_overlays_one		Utilice la misma overlay para todas las aplicaciones
+$sent_by		Enviado por: 
+
+$All_Intellikeys_Overlays		SP-All Intellikeys Overlays
+$All_Files						SP-All Files
+$IntelliKeys_Editable_Overlay	SP-IntelliKeys Editable Overlay
+$IntelliKeys_Content_Overlay	SP-IntelliKeys Content Overlay
+$IntelliKeys_Group_Overlay		SP-IntelliKeys Group Overlay
+$IntelliKeys_Template_Overlay	vIntelliKeys Template Overlay
+

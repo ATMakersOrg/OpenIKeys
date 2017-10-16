@@ -1,0 +1,316 @@
+Document Type: WSE
+item: Global
+  Version=9.0
+  Flags=01000100
+  Split=1420
+  Languages=65 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  Japanese Font Name=MS Gothic
+  Japanese Font Size=10
+  Start Gradient=0 0 255
+  End Gradient=0 0 0
+  Windows Flags=00000100000000010010110000011000
+  Message Font=MS Sans Serif
+  Font Size=8
+  Pages Modified=00001000000000000000000000000000
+  Disk Filename=SETUP
+  Patch Flags=0000000000000001
+  Patch Threshold=85
+  Patch Memory=4000
+  MIF PDF Version=1.0
+  MIF SMS Version=2.0
+  FTP Cluster Size=20
+  Dialogs Version=6
+  Crystal Format=10111100101100000010001001001001
+  Step View=&Properties
+  Variable Name1=_INIT_WINDOW_
+  Variable Default1=HIDE
+  Variable Flags1=00001000
+end
+item: Check Disk Space
+end
+item: Get System Information
+  Variable=THISFILE
+  Flags=00001101
+end
+item: Parse String
+  Source=%THISFILE%
+  Pattern=\
+  Variable1=THISPATH
+  Variable2=THISFILENAME
+  Flags=00000111
+end
+item: Set Variable
+  Variable=ROOT
+  Value=%THISPATH%
+  Flags=00010100
+end
+item: Remark
+end
+item: Get Registry Key Value
+  Variable=WISEPATH
+  Key=wise.document\shell\open\command
+  Default=c:\program files\wise\wise32.exe
+end
+item: Parse String
+  Source=%WISEPATH%
+  Pattern= 
+  Variable1=WISEPATH
+end
+item: Remark
+end
+item: Execute Program
+  Pathname=%wisepath%
+  Command Line=/c %root%\uninstall2.wse
+  Default Directory=%root%
+  Flags=00000010
+end
+item: Execute Program
+  Pathname=%wisepath%
+  Command Line=/c %root%\uninstall.wse
+  Default Directory=%root%
+  Flags=00000010
+end
+item: Execute Program
+  Pathname=%wisepath%
+  Command Line=/c %root%\setup.wse
+  Default Directory=%root%
+  Flags=00000010
+end
+item: Execute Program
+  Pathname=%wisepath%
+  Command Line=/c "%root%\setup pso.wse"
+  Default Directory=%root%
+  Flags=00000010
+end
+remarked item: Execute Program
+  Pathname=%wisepath%
+  Command Line=/c %root%\setupdev.wse
+  Default Directory=%root%
+  Flags=00000010
+end
+item: Execute Program
+  Pathname=%wisepath%
+  Command Line=/c "%root%\setup unattended.wse"
+  Default Directory=%root%
+  Flags=00000010
+end
+remarked item: Execute Program
+  Pathname=%wisepath%
+  Command Line=/c "%root%\setup china.wse"
+  Default Directory=%root%
+  Flags=00000010
+end
+item: Remark
+end
+item: Delete File
+  Pathname=%root%\cd\English*.*
+end
+item: Copy Local File
+  Source=%root%\setup.exe
+  Destination=%root%\cd\EnglishSetup.exe
+  Flags=0000000011000010
+end
+item: Copy Local File
+  Source=%root%\setupPSO.exe
+  Destination=%root%\cd\EnglishSetupWithPSO.exe
+  Flags=0000000011000010
+end
+item: Copy Local File
+  Source=%root%\setupUnattended.exe
+  Destination=%root%\cd\EnglishUnattendedSetup.exe
+  Flags=0000000011000010
+end
+item: Remark
+end
+remarked item: Copy Local File
+  Source=%root%\..\Drivers\ikusb4.inf
+  Destination=%root%\cd\Drivers\w2k\x86\ikusb4.inf
+  Flags=0000000011000010
+end
+remarked item: Copy Local File
+  Source=%root%\..\Drivers\ikusb4.inf
+  Destination=%root%\cd\Drivers\wxp\x86\ikusb4.inf
+  Flags=0000000011000010
+end
+remarked item: Copy Local File
+  Source=%root%\..\Drivers\ikusb4.inf
+  Destination=%root%\cd\Drivers\wxp\x64\ikusb4.inf
+  Flags=0000000011000010
+end
+remarked item: Copy Local File
+  Source=%root%\..\Drivers\ikusb4.inf
+  Destination=%root%\cd\Drivers\wlh\x86\ikusb4.inf
+  Flags=0000000011000010
+end
+remarked item: Copy Local File
+  Source=%root%\..\Drivers\ikusb4.inf
+  Destination=%root%\cd\Drivers\wlh\x64\ikusb4.inf
+  Flags=0000000011000010
+end
+remarked item: Copy Local File
+  Source=%root%\..\Drivers\wxp\x86\ikusb4.inf
+  Destination=%root%\cd\Drivers\wxp\x86\ikusb4.inf
+  Flags=0000000011000010
+end
+remarked item: Copy Local File
+  Source=%root%\..\Drivers\wxp\x64\ikusb4.inf
+  Destination=%root%\cd\Drivers\wxp\x64\ikusb4.inf
+  Flags=0000000011000010
+end
+remarked item: Copy Local File
+  Source=%root%\..\Drivers\wlh\x86\ikusb4.inf
+  Destination=%root%\cd\Drivers\wlh\x86\ikusb4.inf
+  Flags=0000000011000010
+end
+remarked item: Copy Local File
+  Source=%root%\..\Drivers\wlh\x64\ikusb4.inf
+  Destination=%root%\cd\Drivers\wlh\x64\ikusb4.inf
+  Flags=0000000011000010
+end
+remarked item: Copy Local File
+  Source=%root%\..\Drivers\IntelliKeys.spt
+  Destination=%root%\cd\Drivers\w2k\x86\IntelliKeys.spt
+  Flags=0000000011000010
+end
+remarked item: Copy Local File
+  Source=%root%\..\Drivers\IntelliKeys.spt
+  Destination=%root%\cd\Drivers\wxp\x86\IntelliKeys.spt
+  Flags=0000000011000010
+end
+remarked item: Copy Local File
+  Source=%root%\..\Drivers\IntelliKeys.spt
+  Destination=%root%\cd\Drivers\wxp\x64\IntelliKeys.spt
+  Flags=0000000011000010
+end
+remarked item: Copy Local File
+  Source=%root%\..\Drivers\IntelliKeys.spt
+  Destination=%root%\cd\Drivers\wlh\x86\IntelliKeys.spt
+  Flags=0000000011000010
+end
+remarked item: Copy Local File
+  Source=%root%\..\Drivers\IntelliKeys.spt
+  Destination=%root%\cd\Drivers\wlh\x64\IntelliKeys.spt
+  Flags=0000000011000010
+end
+remarked item: Copy Local File
+  Source=%root%\..\Drivers\w2k\x86\ikusb.sys
+  Destination=%root%\cd\Drivers\w2k\x86\ikusb.sys
+  Flags=0000000011000010
+end
+remarked item: Copy Local File
+  Source=%root%\..\Drivers\wxp\x86\ikusb.sys
+  Destination=%root%\cd\Drivers\wxp\x86\ikusb.sys
+  Flags=0000000011000010
+end
+remarked item: Copy Local File
+  Source=%root%\..\Drivers\wxp\x64\ikusb.sys
+  Destination=%root%\cd\Drivers\wxp\x64\ikusb.sys
+  Flags=0000000011000010
+end
+remarked item: Copy Local File
+  Source=%root%\..\Drivers\wlh\x86\ikusb.sys
+  Destination=%root%\cd\Drivers\wlh\x86\ikusb.sys
+  Flags=0000000011000010
+end
+remarked item: Copy Local File
+  Source=%root%\..\Drivers\wlh\x64\ikusb.sys
+  Destination=%root%\cd\Drivers\wlh\x64\ikusb.sys
+  Flags=0000100011000010
+end
+remarked item: Copy Local File
+  Source=%root%\..\Drivers\cyusb.cat
+  Destination=%root%\cd\Drivers\wlh\x86\cyusb.cat
+  Flags=0000100011000010
+end
+remarked item: Copy Local File
+  Source=%root%\..\Drivers\cyusb.cat
+  Destination=%root%\cd\Drivers\wlh\x64\cyusb.cat
+  Flags=0000100011000010
+end
+remarked item: Copy Local File
+  Source=%root%\..\Drivers\cyusb.cat
+  Destination=%root%\cd\Drivers\wxp\x86\cyusb.cat
+  Flags=0000100011000010
+end
+remarked item: Copy Local File
+  Source=%root%\..\Drivers\cyusb.cat
+  Destination=%root%\cd\Drivers\wxp\x64\cyusb.cat
+  Flags=0000100011000010
+end
+remarked item: Copy Local File
+  Source=%root%\..\Drivers\wlh\x86\ikusb3.cat
+  Destination=%root%\cd\Drivers\wlh\x86\ikusb3.cat
+  Flags=0000100011000010
+end
+remarked item: Copy Local File
+  Source=%root%\..\Drivers\wlh\x64\ikusb3.cat
+  Destination=%root%\cd\Drivers\wlh\x64\ikusb3.cat
+  Flags=0000100011000010
+end
+remarked item: Copy Local File
+  Source=%root%\..\Drivers\wxp\x86\ikusb3.cat
+  Destination=%root%\cd\Drivers\wxp\x86\ikusb3.cat
+  Flags=0000100011000010
+end
+remarked item: Copy Local File
+  Source=%root%\..\Drivers\wxp\x64\ikusb3.cat
+  Destination=%root%\cd\Drivers\wxp\x64\ikusb3.cat
+  Flags=0000100011000010
+end
+remarked item: Copy Local File
+  Source=%root%\coinstall\release\ikusbco.dll
+  Destination=%root%\cd\Drivers\w2k\x86\ikusbco.dll
+  Flags=0000000011000010
+end
+remarked item: Copy Local File
+  Source=%root%\coinstall\release\ikusbco.dll
+  Destination=%root%\cd\Drivers\wxp\x86\ikusbco.dll
+  Flags=0000000011000010
+end
+remarked item: Copy Local File
+  Source=%root%\coinstall\x64\release\ikusbco.dll
+  Destination=%root%\cd\Drivers\wxp\x64\ikusbco.dll
+  Flags=0000000011000010
+end
+remarked item: Copy Local File
+  Source=%root%\coinstall\release\ikusbco.dll
+  Destination=%root%\cd\Drivers\wlh\x86\ikusbco.dll
+  Flags=0000000011000010
+end
+remarked item: Copy Local File
+  Source=%root%\coinstall\x64\release\ikusbco.dll
+  Destination=%root%\cd\Drivers\wlh\x64\ikusbco.dll
+  Flags=0000000011000010
+end
+remarked item: Remark
+end
+remarked item: Remark
+  Text=Coinstaller is currently not used with ikusb4.inf
+end
+remarked item: Copy Local File
+  Source=%root%\coinstall\release\ikusbco.dll
+  Destination=%root%\cd\Drivers\wnt\x86\ikusbco.dll
+  Flags=0000000011000010
+end
+remarked item: Copy Local File
+  Source=%root%\..\loading driver\ikusb3.inf
+  Destination=%root%\cd\Drivers\wnt\x86\ikusb3.inf
+  Flags=0000000011000010
+end
+remarked item: Copy Local File
+  Source=%root%\..\loading driver\ikusb3.cat
+  Destination=%root%\cd\ikusb3.cat
+  Flags=0000000011000010
+end
+remarked item: Copy Local File
+  Source=%root%\..\loading driver\forcustomers\ikfirm.sys
+  Destination=%root%\cd\Drivers\wnt\x86\ikfirm.sys
+  Flags=0000000011000010
+end
+item: Remark
+end
+item: Set Variable
+  Variable=RESTART
+end
+item: Remark
+end

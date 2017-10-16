@@ -1,0 +1,50 @@
+Document Type: WSE
+item: Global
+  Version=9.0
+  Title=IntelliKeys USB Uninstaller
+  Flags=01001000
+  Languages=65 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  Copy Default=1
+  Japanese Font Name=MS Gothic
+  Japanese Font Size=10
+  Start Gradient=0 0 255
+  End Gradient=0 0 0
+  Windows Flags=00000100000000000010110101011000
+  Message Font=MS Sans Serif
+  Font Size=8
+  Pages Modified=00001000000000000000000000000000
+  Disk Filename=SETUP
+  Patch Flags=0000000000000001
+  Patch Threshold=85
+  Patch Memory=4000
+  MIF PDF Version=1.0
+  MIF SMS Version=2.0
+  FTP Cluster Size=20
+  Dialogs Version=6
+  Crystal Format=10111100101100000010001001001001
+  Step View=&Properties
+  Variable Name1=_SYS_
+  Variable Default1=C:\WINDOWS\SYSTEM
+  Variable Flags1=00001000
+  Variable Name2=_WISE_
+  Variable Default2=C:\PROGRA~1\WISEIN~1
+  Variable Flags2=00001000
+  Variable Name3=_INIT_WINDOW_
+  Variable Default3=HIDE
+  Variable Flags3=00001000
+end
+item: Open/Close INSTALL.LOG
+  Flags=00000001
+end
+item: Include Script
+  Pathname=..\..\..\..\InstallPieces\systems\sysinfo.wse
+end
+item: Remark
+end
+item: Include Script
+  Pathname=remove driver.wse
+end
+item: Remark
+end
+item: Remark
+end

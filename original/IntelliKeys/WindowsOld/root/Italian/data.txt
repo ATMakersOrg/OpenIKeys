@@ -1,0 +1,254 @@
+
+Software_Version			3.5.2.19
+Firmware_Version			3.0
+
+;
+;   relative paths to various files and folders
+;   all are relative to the root folder.
+;
+Private_Folder			Private/
+Channels_Folder			Private/Channels/
+Engine_Folder			Private/Channels/Engine/
+Users_Folder			Documents/
+Guest_Folder			Documents/Guest/
+
+;
+;  Preferences stuff
+;
+Preferences_File		preferences.txt
+Guest				Guest
+
+;Reload_Standard_Overlay_When_Recognized		1
+
+;
+;  Other stuff
+;
+Intellipics_Program			intellipics.exe
+Intellipics_Player_Program		intellipics player.exe
+
+;
+;  debug stuff
+;
+;Debug_Log_File			DebugLog.txt
+Debug_Log_Flush_Period		1000
+
+
+Custom_Overlay			custom
+
+;
+;  Time periods for various tasks, in MSec
+;
+Correct_Period			500
+Engine_Period			5
+Device_Search_Period		1000
+External_Command_Period		250
+External_Command_Period 2	250
+EEProm_Byte_Overdue		500
+Dead_Until_Time			1000
+Min_Response_Time		15
+Min_Repeat_Start			1000
+Max_Repeat_Start			4000
+Keyboard_Reset_Sound_Duration	50
+Mouse_Click_Delay			5
+Led_Reconcile_Period		100
+Queue_Empty_Timeout		2000
+Switch_Response_Period		50
+
+;  App watching
+watch_apps			1
+App_Watch_Period		500
+
+
+;
+;  Mouse accelleration parameters
+;
+Mouse_Accelleration_Knee		1000
+Mouse_Accelleration_Scale_Mac	60
+Mouse_Accelleration_Scale_Win	25
+
+;
+;  Overlay recognition
+;
+Overlay_Rec_Settle_Period		1000
+Overlay_Rec_Fallback_Threshhold	150
+Overlay_Rec_Black_Weight		50
+
+;
+;  vendor and product ID for USB device matching
+;  must use decimail values
+;
+IK_Vendor_ID			2398
+IK_Product_ID			257
+
+IS_Vendor_ID			5195
+IS_Product_ID			8
+
+;
+;  valid serial number prefix
+;
+Valid_Serial_Number_Prefix		C-
+
+;
+;
+;
+Key_Sound_Frequency		247
+Short_Key_Sound_Length		50
+Long_Key_Sound_Length		700
+Sweep_Sound_Low_Frequency	200
+Sweep_Sound_High_Frequency	250
+Sweep_Sound_Duration		200
+
+Unknown				Unknown
+
+Help_File				Private/ikusbhelp.html
+
+S_KEYSOUND_OFF		Off
+S_KEYSOUND_1			1
+S_KEYSOUND_2			2
+S_KEYSOUND_3			3
+S_KEYSOUND_4			4
+S_CP_KEYSOUND_VOLUME	Keysound Volume
+
+S_UNKNOWN_VALUE		Unknown Value
+
+S_NONE				None
+
+S_BOOL_ON			On
+S_BOOL_OFF			Off
+
+S_LF_HEADER1			IntelliKeys USB Features for user "%s"
+S_LF_HEADER2			IntelliKeys USB Features for user "%s" in group "%s"
+
+S_LISTFEATURES_RESPONSE_RATE 		Response Rate
+S_LISTFEATURES_REPEAT_RATE 			Repeat Rate
+S_LISTFEATURES_MOUSE_SPEED 			Mouse Speed
+S_LISTFEATURES_DATA_SEND_RATE 		Data Send Rate
+S_LISTFEATURES_SMART_TYPING 			Smart Typing
+S_LISTFEATURES_REQUIRED_LIFT_OFF 		Required Lift Off
+S_LISTFEATURES_KEY_SOUND_VOLUME		Keysound Volume
+S_LISTFEATURES_REPEAT			Repeat
+S_LISTFEATURES_REPEAT_LATCHING		Repeat Latching
+S_LISTFEATURES_SHIFT_KEY_ACTION 		Shift Key Action
+S_LISTFEATURES_INDICATOR_LIGHTS 		Indicator Lights
+
+S_LISTFEATURES_MODE				Mode
+S_LISTFEATURES_MODE_LASTSENT		Use last sent overlay
+S_LISTFEATURES_MODE_SPECIFIC			Use specific overlay
+S_LISTFEATURES_MODE_SWITCH			as a switch
+
+S_LISTFEATURES_MODE_LAST_OVERLAY		Last Sent Overlay
+S_LISTFEATURES_MODE_SPECIFIC_OVERLAY	Specific Overlay
+S_LISTFEATURES_MODE_SWITCH_SETTING		Switch Setting
+S_LISTFEATURES_BUTALLOWOVERLAYS			But Allow Overlays
+
+
+S_LF_NUMKB				Number of connected keyboards
+S_LF_KBNUM				Keyboard Number
+
+S_LATCHING				Latching
+S_LOCKING				Locking
+S_NO_LATCHING				No Latching
+
+S_LIGHTS_THREE				Three
+S_LIGHTS_SIX				Six
+
+S_CP_KEYSOUNDVOLUME		Keysound Volume
+S_CP_KEYSOUNDVOLUME_OFF		Off
+
+S_NOT_CONNECTED			Not Connected
+S_CONNECTED				Connected
+
+S_YES					Yes
+S_NO					No
+
+
+S_CP_STANDARD_OVERLAY       	Standard Overlay
+S_CP_CUSTOM_OVERLAY          	Custom Overlay
+S_CP_ONOFF_SWITCH_STATUS      On or Off
+S_CP_FIRMWARE_VERSION          	Firmware Version
+S_CP_SOFTWARE_VERSION          	Software Version
+S_CP_SERIAL_NUMBER            	Serial Number
+S_CP_SENSORS                   	Sensor Values
+S_CP_CONNECTED		Connected
+S_CP_OVERLAY_NAME		Overlay Name
+S_CP_OVERLAY_LEVEL		Overlay Level
+
+S_CP_SWITCH1			Switch 1
+S_CP_SWITCH2			Switch 2
+
+S_CP_NUMKEYS			Number of keys pressed
+S_CP_ROWCOL			Row = %d, Column = %d
+S_CP_SENS			Sensor Values = %d,%d,%d,%d,%d,%d,%d,%d,%d
+S_GUEST			Guest
+
+right_click_text	AAAAAAAAAARIGHTCLICKAAAAAAAAAA
+
+report_diagnostics_realtime		1
+report_diagnostics_realtime_period	100
+report_diagnostics_realtime_timeout	50
+
+APP_OVERLAYS_SRC_FOLDER	Application Overlays
+APP_OVERLAYS_SRC_MAP	applications.txt
+APP_OVERLAYS_NAMES_MAP	application display names.txt
+
+intellikeys_usb			IntelliKeys USB
+
+app_not_allowed	You cannot attach overlays to this application from the IntelliKeys USB Control Panel as the application is designed to send its own overlays. Consult this application's User's Guide about attaching overlays.
+
+sending			Sending
+for			for
+
+S_TOOLTIP_IK_ON		IntelliKeys USB is connected.
+S_TOOLTIP_IK_OFF		IntelliKeys USB is connected, but currently turned off.
+S_TOOLTIP_IS_ON		IntelliSwitch is connected.
+S_TOOLTIP_IS_OFF		IntelliSwitch is connected, but currently turned off.
+S_TOOLTIP_MULTIPLE_DEVICES	More than one device is connected.
+S_TOOLTIP_NO_DEVICES		No devices are connected.
+
+
+Systray_Tip			IntelliKeys USB
+Systray_Menu			Open IntelliKeys USB Control Panel
+Systray_Menu_Switch		Open IntelliKeys USB and IntelliSwitch Control Panel
+
+S_TROUBLESHOOTING		Troubleshooting...
+S_INTELLIKEYS_WILL		the Control Panel will...
+
+use_switch_setting		use switch setting
+use_overlay			use overlay
+
+attach_edit_overlays_for	Attach/Edit overlays for
+
+send		Send
+send_no_overlay	Send No Overlay
+
+S_error_sending_overlay	Error Sending Overlay
+S_overlay			overlay
+S_attached_to_application	attached to application
+S_cannot_be_sent		cannot be sent.  It may have been moved or deleted.
+
+app_will_choose		The Control Panel will not send an overlay
+app_will_choose_clickit	The Control Panel will not send an overlay
+
+//  set this to 1 if you want Discover to appear 
+//  in the UI even if it's not installed.
+show_discover_anyway	0
+
+//  set this to 1 to log calls to the DLLs
+log_dlls	0
+
+//  these pertain to selecting the One Overlay option from the system tray
+//  without specifying an overlay.
+must_specify_overlay	You must specify an overlay when choosing One Overlay Only mode.
+overlay_files		Overlay Files
+all_files			All Files
+choose_overlay		Please choose an overlay file
+not_valid_overlay		That file is not a valid overlay.  The mode will not be changed.
+no_overlay_chosen		You did not choose an overlay file.  The mode will not be changed.
+
+//  period (in mSec) after an overlay is sent in which Discover cannot set raw mode
+raw_mode_immunity		2000
+
+allow_applications_to_send_overlays	but still allow applications to send their own overlays
+overlay_files		Overlay Files
+
+use_attached_overlay	The Control Panel will send

@@ -1,0 +1,181 @@
+﻿APP_DISALLOWED_SRC_MAP			disallowed.txt
+APP_OVERLAYS_NAMES_MAP			application display names.txt
+APP_OVERLAYS_SRC_FOLDER			Application Overlays
+APP_OVERLAYS_SRC_MAP			applications.txt
+All_Files				Todos os arquivos
+Allow_Applications_To_Send_Overlays	mas ainda permitir que aplicativos enviem suas próprias sobreposições
+App_Not_Allowed				Não é possível anexar sobreposições a este aplicativo pelo painel de controle do IntelliKeys USB, pois o aplicativo foi desenvolvido para enviar suas próprias sobreposições. Consulte o guia do usuário deste aplicativo com relação à anexação de sobreposições.
+App_Overlays_Folder			private/Application Overlays/Mac/
+App_Watch_Period			500
+App_Will_Choose				O painel de controle não enviará uma sobreposição
+App_Will_Choose_Clickit			O painel de controle não enviará uma sobreposição
+Attach_Edit_Overlays_For		Anexar/editar sobreposições para
+Channels_Folder				private/Channels/
+Choose_A_Switch_Setting			Escolher uma configuração de chave
+Choose_Overlay				Escolha um arquivo de sobreposição
+Correct_Period				500
+Custom_Overlay				custom
+Dead_Until_Time				1000
+Debug_Log_File			
+Debug_Log_Flush_Period			1000
+Debug_Sender				0
+Device_Search_Period			1000
+Diagnostic_Period			1000
+DiscoverName				Discover
+EEProm_Byte_Overdue			500
+Engine_Folder				private/Channels/Engine/
+Engine_Period				5
+External_Command_Period			250
+External_Command_Period_2		250
+Firmware_Version			3.0
+For					para
+;;Guest					Convidado
+;;Guest_Folder				Documents/Convidado/
+Guest					Guest
+Guest_Folder				Documents/Guest/
+Help_File				private/ikusbhelp.html
+IK_Product_ID				257
+IK_Vendor_ID				2398
+IS_Product_ID				8
+IS_Vendor_ID				5195
+Intellikeys_Name			IntelliKeys USB
+Intellikeys_Usb				IntelliKeys USB
+Intellipics_Player_Program		intellipics player.exe
+Intellipics_Program			intellipics.exe
+Key_Down_Time				5
+Key_Sound_Frequency			247
+Keyboard_Reset_Sound_Duration		50
+Led_Reconcile_Period			100
+Load_Student_Data			2000
+Log_Dlls				0
+Long_Key_Sound_Length			700
+Max_Repeat_Delay			750
+Max_Repeat_Start			4000
+Menu_Enabled				1
+Min_Repeat_Start			1000
+Min_Response_Time			15
+Mode:					Modo:
+Mouse_Accelleration_Knee		1000
+Mouse_Accelleration_Scale_Mac		60
+Mouse_Accelleration_Scale_Win		25
+Mouse_Click_Delay			5
+Must_Specify_Overlay			Você deve especificar uma sobreposição ao escolher o modo Somente uma sobreposição.
+No_Overlay_Chosen			Você não escolheu um arquivo de sobreposição.  O modo não será alterado.
+Not_Valid_Overlay			Esse arquivo não é uma sobreposição válida.  O modo não será alterado.
+Num_Switch_Files			0
+One_Overlay_Only			Somente uma sobreposição	
+Overlay_Files				Arquivos de sobreposição
+Overlay_Rec_Black_Weight		50
+Overlay_Rec_Fallback_Threshhold		150
+Overlay_Rec_Settle_Period		1000
+Overlays				Sobreposição
+Overlays_Folder				private/Standard Overlays/Mac
+Override_Use_System_Repeat_Settings	1
+Preferences_File			preferences.txt
+Private_Folder				private/
+Queue_Empty_Timeout			2000
+Raw_Mode_Immunity			2000
+Reload_Standard_Overlay_When_Recognized		0
+Report_Diagnostics_Realtime		1
+Report_Diagnostics_Realtime_Period	100
+Report_Diagnostics_Realtime_Timeout	50
+Right_Click_Text			AAAAAAAAAARIGHTCLICKAAAAAAAAAA
+S_BOOL_OFF				Desligado
+S_BOOL_ON				Ligado
+S_CONNECTED				Conectado
+S_CP_CONNECTED				Conectado
+S_CP_CUSTOM_OVERLAY          		Sobreposição personalizada
+S_CP_FIRMWARE_VERSION          		Versão do firmware
+S_CP_KEYSOUNDVOLUME			Volume do som da tecla
+S_CP_KEYSOUNDVOLUME_OFF			Desligado
+S_CP_KEYSOUND_VOLUME			Volume do som da tecla
+S_CP_NUMKEYS				Número de teclas pressionadas
+S_CP_ONOFF_SWITCH_STATUS      		Ligado ou desligado
+S_CP_OVERLAY_LEVEL			Nível da sobreposição
+S_CP_OVERLAY_NAME			Nome da sobreposição
+S_CP_ROWCOL				Linha = %d, Coluna = %d
+S_CP_SENS				Valores do sensor = %d,%d,%d,%d,%d,%d,%d,%d,%d
+S_CP_SENSORS                   		Valores do sensor
+S_CP_SERIAL_NUMBER            		Número de série
+S_CP_SOFTWARE_VERSION          		Versão do software
+S_CP_STANDARD_OVERLAY       		Sobreposição padrão
+S_CP_SWITCH1				Chave 1
+S_CP_SWITCH2				Chave 2
+S_GUEST					Convidado
+S_INTELLIKEYS_WILL			o Painel de controle irá…
+S_KEYSOUND_1				1
+S_KEYSOUND_2				2
+S_KEYSOUND_3				3
+S_KEYSOUND_4				4
+S_KEYSOUND_OFF				Desligado
+S_LATCHING				Fechamento
+S_LF_HEADER1				Recursos de IntelliKeys USB para usuário "%s"
+S_LF_HEADER2				Recursos de IntelliKeys USB para usuário "%s" no grupo "%s"
+S_LF_KBNUM				Número do teclado
+S_LF_NUMKB				Número de teclados conectados
+S_LIGHTS_SIX				Seis
+S_LIGHTS_THREE				Três
+S_LISTFEATURES_BUTALLOWOVERLAYS		Mas permite sobreposições
+S_LISTFEATURES_DATA_SEND_RATE 		Taxa de envio de dados
+S_LISTFEATURES_INDICATOR_LIGHTS 	Luzes do indicador
+S_LISTFEATURES_KEY_SOUND_VOLUME		Volume do som da tecla
+S_LISTFEATURES_MODE			Modo
+S_LISTFEATURES_MODE_LASTSENT		Usar última sobreposição enviada
+S_LISTFEATURES_MODE_LAST_OVERLAY	Última sobreposição enviada
+S_LISTFEATURES_MODE_SPECIFIC		Usar sobreposição específica
+S_LISTFEATURES_MODE_SPECIFIC_OVERLAY	Sobreposição específica
+S_LISTFEATURES_MODE_SWITCH		como uma chave
+S_LISTFEATURES_MODE_SWITCH_SETTING	Configuração de chave
+S_LISTFEATURES_MOUSE_SPEED 		Velocidade do mouse
+S_LISTFEATURES_REPEAT			Repetir
+S_LISTFEATURES_REPEAT_LATCHING		Repetir fechamento
+S_LISTFEATURES_REPEAT_RATE 		Taxa de repetição
+S_LISTFEATURES_REQUIRED_LIFT_OFF 	Levantamento necessário
+S_LISTFEATURES_RESPONSE_RATE 		Taxa de resposta
+S_LISTFEATURES_SHIFT_KEY_ACTION 	Ação da tecla Shift
+S_LISTFEATURES_SMART_TYPING 		Digitação inteligente
+S_LOCKING				Travamento
+S_NO					Não
+S_NONE					Nenhum
+S_NOT_CONNECTED				Não conectado
+S_NO_LATCHING				Sem fechamento
+S_TOOLTIP_IK_OFF			IntelliKeys USB está conectado, mas atualmente desligado.
+S_TOOLTIP_IK_ON				IntelliKeys USB está conectado.
+S_TOOLTIP_IS_OFF			IntelliSwitch está conectado, mas atualmente desligado.
+S_TOOLTIP_IS_ON				IntelliSwitch está conectado.
+S_TOOLTIP_MULTIPLE_DEVICES		Mais de um dispositivo está conectado.
+S_TOOLTIP_NO_DEVICES			Nenhum dispositivo está conectado.
+S_TROUBLESHOOTING			Solução de problemas…
+S_UNKNOWN_VALUE				Valor desconhecido
+S_YES					Sim
+S_Attached_To_Application		anexo ao aplicativo
+S_Cannot_Be_Sent			não pode ser enviado.  Pode ter sido movido ou excluído.
+S_Error_Sending_Overlay			Erro no envio da sobreposição
+S_Overlay				sobreposição
+Save_Text_As_UTF8			0
+Send					Enviar
+Send_No_Overlay				Enviar nenhuma sobreposição
+Sending					Enviando
+Short_Key_Sound_Length			50
+Show_Discover_Anyway			0
+Software_Version			3.5.2.19
+Sweep_Sound_Duration			200
+Sweep_Sound_High_Frequency		250
+Sweep_Sound_Low_Frequency		200
+Switch_Presets				Predefinições de chave
+Switch_Response_Period			50
+Switch_Settings_Folder			private/Switch Settings/Mac/
+Systray_Menu				Abrir painel de controle do IntelliKeys USB
+Systray_Menu_Switch			Abrir painel de controle do IntelliKeys USB e do IntelliSwitch
+Systray_Tip				IntelliKeys USB
+Tray_File				iksystray.dat
+Unicode_File_Names			0
+Unknown					Desconhecido
+Use_Attached_Overlay			o Painel de controle enviará
+Use_Overlay				usar sobreposição
+Use_Switch_Setting			usar configuração de chave
+Users_Folder				Documents/
+Using_Overlay				Uso da sobreposição
+Using_Switch_Setting			Uso da configuração de chave
+Valid_Serial_Number_Prefix		C-
+Watch_Apps				1

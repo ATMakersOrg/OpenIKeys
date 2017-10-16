@@ -1,0 +1,288 @@
+﻿!Cannot_Add_Group_Folder2		'.  Le répertoire peut ne pas être accessible.
+!Cannot_Add_Group_Folder		Impossible d’ajouter le groupe nommé ' 
+!Cannot_Locate_Student_Folder	Impossible de trouver le répertoire de l’étudiant.  Utiliser les paramètres d’invité.
+!Cannot_Read_Group_Folder	Impossible de créer un répertoire de groupe ou de lire des répertoires d’utilisateurs pour le groupe :
+!Cannot_Rename_Group_Folder	Impossible de renommer le répertoire du groupe à :  
+!Cannot_Scan_Group_Folders	Impossible de lire les répertoires du groupe.   Ils peuvent ne pas être accessibles.
+!Cannot_Add_To_Guest_Group	Vous ne pouvez pas ajouter d’utilisateurs au groupe Invité.
+!Could_Not_Be_Added		' n’a pas pu être ajouté.  L’emplacement de fichiers peut ne pas être accessible.
+!Group_Folder_Inaccessible	Impossible de lire les groupes et les utilisateurs.   Le répertoire racine peut ne pas être accessible.
+!Group_Already_Exists		Un groupe de ce nom existe déjà.  Veuillez choisir un autre nom.
+!Group_Is_Not_Empty		Impossible de retirer le groupe car il n’est pas vide.  Veuillez supprimer tous les utilisateurs avant d’effacer le groupe.
+!Keyboard_Software_Not_Responding	Le logiciel USB Keyboard ne répond pas.  Il peut ne pas être en exécution ou être occupé.  Vérifiez si le logiciel est en exécution, puis essayez de changer de nouveau le paramètre. 
+!Keyboard_Not_Reset		Le clavier n’a pas été réinitialisé.  Essayez de nouveau.
+!Root_Folder_Does_Not_Exist	Le répertoire racine n’existe pas.  Veuillez vérifier l’installation.
+!The_User			L’utilisateur '
+!Unable_To_Load_Applications	Impossible de charger les applications pour cet utilisateur. 
+!Unable_To_Load_The_Settings	Impossible de charger le fichier de paramètres pour cet utilisateur. 
+!Unable_To_Locate_Preferences	Impossible de localiser le fichier de préférences dans le répertoire privé. 
+!Unable_To_Save_Preferences	Impossible d’écrire le fichier de préférences. 
+!Unable_To_Save_The_Settings	Impossible de sauvegarder le fichier de paramètres pour cet utilisateur. 
+!Unsupported_USB_Keyboard_Message	Le logiciel IntelliKeys USB a reçu un message non pris en charge : ID = 
+!User_Already_Exists		Un utilisateur de ce nom existe déjà.  Veuillez choisir un autre nom.
+!Users_Folder_Does_Not_Exist	Le répertoire d’utilisateurs n’existe pas.  Veuillez vérifier l’installation.
+$1				1
+$2				2
+$3				3
+$4				4
+$Add			Ajouter... 
+$Additional_Features	Fonctions additionnelles
+$Advanced		A&vancées
+$App_Not_Allowed	Vous ne pouvez relier de planches à cette application à partir du panneau de configuration de IntelliKeys USB puisque l’application est conçue pour envoyer ses propres planches.  Consultez le Guide d’utilisation de l’application au sujet du lien avec des planches.
+$App_Not_Found	non trouvé
+$App_Tab_Unavailable_Body	L’onglet Applications n’est pas disponible dans cette version.
+$App_Tab_Unavailable_Title	Fonction non disponible
+$Application	Application
+$Application_Details	Détails de l’application
+$Application_Find_Dialog_Title		Trouver une application
+$Application_Find_Dialog_Prompt		Sélectionner une application désirée
+$Applications		Applications 
+$Available_Applications_Form_Title	Applications disponibles
+$Attach			Relier... 
+$Browse			Parcourir... 
+$Browse...		Parc&ourir...
+$Browse_For_Application_Dialog_Title	Localiser une application 
+$Browse_For_Application_Dialog_Prompt	Sélectionner une application désirée 
+$Cancel					Annuler
+$Cannot_Edit_Overlay	Vous ne pouvez pas modifier ce fichier car il s’agit d’une planche de contenu seulement ou de groupe.  
+$Choose			Choisir...  
+$Choose_App_Header	Choisir une application. 
+$Clear			&Effacer
+$Column_=			Colonne = 
+$Confirm_Delete			Confirmer Effacer
+$Connected		Connecté
+$Connected_:		Connecté :
+$Custom	  ;  les éléments suivants sont utilisés pour l'onglet Applications.			  
+$Data_Send_Rate:		Vitesse transfert données :
+$Data_Send_Rate_=		Vitesse transfert données =
+$Delete_Empty_Group		Effacer un groupe vide?
+$Detach			Détacher 
+$Device:				Dispositif :
+$Device_Status		État du dispositif
+$DiscoverNameMac		Discover Envoy
+$DiscoverNameWin		DiscoverPro
+$Display_Features...	Liste fonctions...
+$Display_Latching		Blocage
+$Display_Locking		Verrouillage
+$Display_No_Latching		Pas de blocage
+$Done			&Terminé
+$Edit			Modifier... 
+$Edit_Groups_And_Users	&Modifier des groupes et utilisateurs...
+$Edit_Template_Overlay	Ce fichier est un modèle de planche.  Vous modifierez une copie du fichier et devrez le relier au fichier après l’avoir sauvegardé.  
+$False			Faux
+$Find		Trouver...  
+$Firmware_Version_:	Version du micrologiciel :
+$Firmware_Version_=		Version du micrologiciel =
+$Group:			Groupe :
+$Group_Delete					&Effacer...
+$Group_Must_Be_Empty		Le groupe doit être vide avant de le retirer.  Veuillez supprimer tous les utilisateurs de ce groupe avant d’effacer le groupe.
+$Group_Name				Nom de groupe
+$Group_Name:			Nom de groupe :
+$Group_New...					&Nouveau...
+$Group_Rename...				&Renommer...
+$Groups					Groupes
+$Groups_and_Users		Groupes et utilisateurs
+$Guest				Invité
+$Has_these_overlays	... le panneau de configuration... 
+$Help...		&Aide...
+$IKOff		IntelliKeys désactivé  
+$IKOn		IntelliKeys activé 
+$ISOff		IntelliSwitch désactivé  
+$ISOn		IntelliSwitch activé 
+$In_Group			dans le groupe
+$Indicator_Lights	État de la touche majuscule
+$Indicator_Lights_=		Voyants lumineux =
+$IntelliKeys_USB		IntelliKeys USB
+$IntelliKeys_USB_Features_For_User	Fonctions de IntelliKeys USB pour l’utilisateur
+$IntelliKeys_USB_Window_Title	Panneau de configuration de IntelliKeys USB 
+$IntelliKeys_USB_Window_Title2	Panneau de configuration de IntelliKeys USB et IntelliSwitch 
+$IntelliSwitchFeaturesNotice	REMARQUE : Les utilisateurs de IntelliSwitch peuvent ajuster Taux de répétitions, Répétition activée/désactivée, Vitesse de la souris, Volume de son de touche et Taux d’envoi de données.   
+$Invalid_Preference		Valeur non valide pour une préférence d’utilisateur. Utilisation de
+$Is_Empty_Delete		est vide.  Voulez-vous effacer ce groupe?
+$Is_Located	est situé dans le chemin
+$Keyboard_Number_=		Nombre de claviers =
+$Keyboard_Reset		Annulation réglages
+$Keysound_Volume	Volume
+$Keysound_Volume_=		Volume =
+$Language_:		Langue :
+$Last_Saved_Group_Missing	Le dernier groupe sauvegardé n’existe pas.  Utilisation de
+$Last_Saved_User_Missing	Le dernier utilisateur sauvegardé n’existe pas.  Utilisation de
+$Last_Sent			dernier envoyé
+$Last_Sent_Note		Remarque : Utilisez l’onglet Applications pour relier des planches à des applications  
+$Last_Sent_Overlay_:	Dernière planche envoyée :
+$Last_Sent_Overlay_=		Dernière planche envoyée =
+$Latching		&Blocage
+$Latching2		Blocage
+$Locking		&Verrouillage
+$Locking2		Verrouillage
+$Mode				Mode
+$Mode_:_		Mode : 
+$Mode_=				Mode =
+$Mode_Discover			Discover
+$Mode_Discover_But		Mais permettre aux applications d’envoyer leurs propres planches
+$Mode_Intro				Les fonctions de IntelliKeys et IntelliSwitch seront déterminées par
+$Mode_One_Overlay		Une planche seulement
+$Mode_Overlays			Planches
+$Mode_Presets			Préréglages d’interrupteur
+$Mode_Warning_=			Afficher message d’avertissement de mode = 
+$Mouse_Speed:		Vitesse Souris :
+$Mouse_Speed_=			Vitesse Souris =
+$Must_Attach_Overlay		À l’onglet Applications, vous avez spécifié “Utiliser la planche sélectionnée ci-dessous” pour une application, mais vous n’avez pas relié de planche.   Cliquez sur OK pour revenir à l’onglet Applications.  Cliquez sur Annuler pour retirer l’application.
+$Must_Supply_One_Overlay	À l’onglet Mode, vous ne pouvez pas choisir Une planche seulement sans choisir aussi une planche.  Veuillez choisir une planche maintenant ou sélectionner un autre mode.
+$No						Non
+$No_Latching		Pa&s de blocage
+$No_Latching2		Pas de blocage
+$None				aucun
+$Not_Connected		Pas connecté
+$Not_Valid_Overlay	Ce fichier n’est pas un fichier de planche valide. Veuillez choisir un autre fichier. 
+$Number_Of_Connected_Keyboards_=	Nombre de claviers connectés = 
+$Number_Of_Keys_Pressed_=	Nombre de touches appuyées =
+$OK						OK
+$Off				0
+$On					Activé
+$On_Off_Switch_:	Interrupteur Activé ou désactivé :
+$On_or_Off_=			Activé ou désactivé =
+$Overlay	Planche
+$Overlay_Details	Détails de la planche
+$Overlay_Find_Dialog_Title		Localiser une planche
+$Overlay_Find_Dialog_Prompt		Sélectionner une planche désirée
+$Overlay_Level_:	Niveau de planche :
+$Overlay_Level_=		Niveau de planche =
+$Overlay_Location	Chemin de la planche : 
+$Overlay_Missing	Impossible de trouver le fichier de la planche sélectionnée.  Il peut avoir été effacé ou déplacé après qu’il ait été relié. 
+$Overlay_Name_=			Nom de planche =
+$Overlay_Sending_Disabled	Envoi désactivé, vérifiez l'onglet Mode
+$Pad_:			: Clavier numérique
+$Program_Files		Fichiers de programme 
+$Programs		Applications 
+$Radio_Attached		Le panneau de configuration enverra la planche sélectionnée ci-dessous : 
+$Radio_None		Le panneau de configuration n’enverra pas de planche
+$Remove			Retirer 
+$Removing_App_Body	L’application que vous avez choisie est conçue pour envoyer ses propres planches.  Vous ne pouvez pas relier de planches à partir du panneau de configuration de IntelliKeys USB, il sera donc retiré de la liste.   Consultez le Guide d’utilisation de l’application au sujet du lien avec des planches.
+$Removing_App_Title	Retirer une application
+$Repeat			Répétition
+$Repeat_Features	Fonctions de répétition
+$Repeat_Latching	Blocage de répétition
+$Repeat_Latching_Is		Blocage de répétition est
+$Repeat_Rate:		Vitesse de répétition
+$Repeat_Rate_=			Vitesse de répétition =
+$Repeat_Is			Répétition est
+$Required_Lift_Off	Décollage des doigts
+$Required_Lift_Off_Is		Décollage des doigts est
+$Response_Rate:		Temps de réponse :
+$Response_Rate_=		Temps de réponse =
+$Row_=				Rangée =
+$Sensor_Values_:_		Valeurs des capteurs : 
+$Sensor_Values_=		Valeurs des capteurs =
+$Sent_By:			Envoyé par : 
+$Sent_By_	Envoyé par :
+$Sent_By_=		Envoyé par = 
+$Serial_Number_:	Numéro de série :
+$Serial_Number_=		Numéro de série
+$Shift_Key_Action_=		Action de la touche majuscule =
+$Show_Mode_Warning	Afficher un avertissement lorsque la planche ne peut être envoyée.
+$Six				Six
+$Smart_Typing		Frappe assistée
+$Smart_Typing_Is		Frappe assistée est
+$Software_Version_:	Version du logiciel :
+$Software_Version_=		Version du logiciel =
+$Specific_Overlay_=		Planche spécifique =
+$Standard_Overlay_0_Name		Planche Accès Internet USB
+$Standard_Overlay_1_Name		Planche de Paramétrage USB
+$Standard_Overlay_2_Name		Planche Chiffres USB
+$Standard_Overlay_3_Name		Planche Alphabet USB
+$Standard_Overlay_4_Name		Planche Flèches Souris USB
+$Standard_Overlay_5_Name		Planche QWERTY USB 
+$Standard_Overlay_6_Name		Planche Juste Écrire USB
+$Standard_Overlay_7_Name		aucune
+$Standard_Overlay_=		Planche standard =
+$Standard_Overlay_In_Place_:	Planche standard en place :
+$Standard_Overlay_Note	REMARQUE : Chaque fois qu'une planche standard est insérée, elle entrera en vigueur et remplacera toute planche choisie ci-dessus.
+$Sticky					Persister
+$Student_Delete					&Effacer
+$Student_New...					&Nouveau...
+$Student_Rename...				&Renommer...
+$Sure_Delete_Group		Êtes-vous certain de vouloir renommer le groupe?
+$Sure_Delete_User		Êtes-vous certain de vouloir effacer l’utilisateur
+$Switch_			interrupteur 
+$Switch_1_:		Interrupteur 1 : 
+$Switch_1_=			Interrupteur 1 = 
+$Switch_2_:		Interrupteur 2 : 
+$Switch_2_=			Interrupteur 2 = 
+$Switch_3_:		Interrupteur 3 : 
+$Switch_3_=			Interrupteur 3 = 
+$Switch_4_:		Interrupteur 4 : 
+$Switch_4_=			Interrupteur 4 = 
+$Switch_5_:		Interrupteur 5 : 
+$Switch_5_=			Interrupteur 5 = 
+$Switch_Content_0
+$Switch_Content_1		Interrupteurs:||1: Contrôle-Entrée|2: Contrôle-Entrée|3: Contrôle-Entrée|4: Contrôle-Entrée|5: Contrôle-Entrée
+$Switch_Content_10	Interrupteurs:||1: Tabulation|2: Entrée|3: Tabulation|4: Entrée|5: Tabulation
+$Switch_Content_11	Interrupteurs:||1: Tabulation|2: Espacement|3: Tabulation|4: Espacement|5: Tabulation 
+$Switch_Content_12	Interrupteurs:||1: Tabulation|2: Majuscule-Tabulation|3: Tabulation|4: Majuscule-Tabulation|5: Tabulation
+$Switch_Content_13	Interrupteurs:||1: Majuscule gauche|2: Majuscule droite|2: Majuscule gauche|4: Majuscule droite|5: Majuscule gauche
+$Switch_Content_14	Interrupteurs:||1: Flèche bas|2: Entrée|3: Flèche bas|4: Entrée|5: Flèche bas 
+$Switch_Content_15	Interrupteurs:||1: Flèche droite|2: Entrée|3: Flèche droite|4: Entrée|5: Flèche droite 
+$Switch_Content_16	Interrupteurs:||1: Clic souris gauche|2: Clic souris droite|3: Clic souris gauche|4: Clic souris droite|5: Clic souris gauche
+$Switch_Content_17	Interrupteurs:||1: Flèche haut|2: Flèche bas|3: Flèche gauche|4: Flèche droite|5: Entrée
+$Switch_Content_18	Interrupteurs:||1: Flèche haut|2: Flèche bas|3: Flèche gauche|4: Flèche droite|5: Espacement
+$Switch_Content_19	Interrupteurs:||1: 1|2: 2|3: 3|4: 4|5: 0
+$Switch_Content_2		Interrupteurs:||1: Contrôle-Flèche droite|2: Contrôle-Flèche bas|3: Contrôle-Flèche droite|4: Contrôle-Flèche bas|5: Contrôle-Flèche droite
+$Switch_Content_20	Interrupteurs:||1: 1|2: 2|3: 3|4: 4|5: Entrée
+$Switch_Content_21	Interrupteurs:||1: Espacement|2: Entrée|3: Tabulation|4: Majuscule-Tabulation|5: Effacement arrière
+$Switch_Content_22	Interrupteurs:||1: Majuscule gauche|2: Majuscule droite|2: Contrôle|4: Commande/Alternative gauche|5: Commande/Alternative droite
+$Switch_Content_23	Interrupteurs:||1: Clic souris gauche|2: Clic souris droite|3: Double-clic souris gauche|4: Espacement|5: Entrée
+$Switch_Content_24	Interrupteurs:||1: Clic souris gauche|2: Clic souris droite|3: Clic souris milieu|4: Clic souris côté gauche|4: Clic souris côté droit|4:
+$Switch_Content_25	Interrupteurs:||1: Clic souris gauche|2: Espacement|3: Q|4: Z|5: Échappement
+$Switch_Content_26	Interrupteurs:||1: Souris haut|2: Souris bas|3: Souris gauche|4: Souris droite|2: Clic de bouton
+$Switch_Content_3		Interrupteurs:||1: Espacement|2: Entrée|3: Espacement|4: Entrée|5: Espacement
+$Switch_Content_4		Interrupteurs:||1: Clic souris gauche|2: Clic souris gauche|3: Clic souris gauche|4: Clic souris gauche|5: Clic souris gauche
+$Switch_Content_5		Interrupteurs:||1: Clic souris gauche|2: Double-clic souris gauche|3: Clic souris gauche|4: Double-clic souris gauche|4: Clic souris gauche
+$Switch_Content_6		Interrupteurs:||1: Flèche gauche|2: Flèche droite|3: Flèche gauche|4: Flèche droite|5: Flèche gauche
+$Switch_Content_7		Interrupteurs:||1: Flèche haut|2: Flèche bas|3: Flèche haut|4: Flèche bas|5: Flèche haut
+$Switch_Content_8		Interrupteurs:||1: Flèche gauche|2: Flèche haut|3: Flèche gauche|4: Flèche haut|5: Flèche gauche
+$Switch_Content_9		Interrupteurs:||1: 1|2: 2|3: 1|4: 2|5: 1
+$Switch_Setting_=		Paramètre d’interrupteur =
+$Switched_Off		Désactivé
+$Switched_On		Activé
+$Tab_Does_Not_Apply		REMARQUE : Les paramètres de cet onglet n’ont pas d’effet à moins que vous ne sélectionniez « Planches » à l’onglet Mode.
+$Tab_Does_Not_Apply_Msg		REMARQUE : Les paramètres de l’onglet Applications n’ont pas d’effet à moins que vous ne sélectionniez « Planches » à l’onglet Mode.
+$Testing		Vérification
+$The_App_Highlighted	Pour l’application sélectionnée ci-dessous... 
+$The_Group_Named		Le groupe nommé
+$Three				Trois
+$Touch_Features		Fonctions de touche
+$Touch_Features_Tab_Title		Fon&ctions de touche
+$Troubleshooting	Dé&pannage
+$True				Vrai
+$Unknown			Inconnu
+$Use_				utiliser 
+$Use_As_A_Switch		Utiliser comme un interrupteur
+$Use_Intellikeys...		Lorsque vous n'utilisez pas une planche standard, utilisez IntelliKeys...
+$Use_Last_Sent_Overlay		Utiliser la dernière planche envoyée
+$Use_This_Overlay		Utiliser cette planche
+$User:			Utilisateur :
+$User_Name				Nom de l’utilisateur
+$User_Name:				Nom de l’utilisateur :
+$Users					Utilisateurs
+$Visit_Our_Website	Visiter notre site &Web
+$Volume:		Volume :
+$VolumeTest				Vérification
+$Was_Expected	ne peut être trouvé.  Il devait se trouver au chemin
+$Yes					Oui
+$already_attached	Cette planche n’est pas déjà reliée.  
+$app_already_added	Cette application est déjà dans la liste. 
+$attach_edit_overlays	Relier/Modifier des planches 
+$confirm_delete_app	Êtes-vous certain de vouloir retirer l’application sélectionnée? 
+$confirm_detach_overlay		Êtes-vous certain de vouloir détacher la planche sélectionnée? 
+$current_overlay	Planche actuelle : 
+$mode_overlays_one		Utiliser la même planche pour toutes les applications
+$sent_by		Envoyé par : 
+
+
+$All_Intellikeys_Overlays		FC-All Intellikeys Overlays
+$All_Files						FC-All Files
+$IntelliKeys_Editable_Overlay	FC-IntelliKeys Editable Overlay
+$IntelliKeys_Content_Overlay	FC-IntelliKeys Content Overlay
+$IntelliKeys_Group_Overlay		FC-IntelliKeys Group Overlay
+$IntelliKeys_Template_Overlay	FC-IntelliKeys Template Overlay

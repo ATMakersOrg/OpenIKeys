@@ -1,0 +1,1 @@
+/* *  prefix.h *  Root Locator * *  Created by fred ross-perry on Mon Jan 27 2003. *  Copyright (c) 2003 __MyCompanyName__. All rights reserved. * */#define PLAT_MACINTOSH		1#define PLAT_MACINTOSH_X	1#define BUILD_PB		1#include <CoreFoundation/CoreFoundation.h>#include <CoreServices/CoreServices.h>#include <Carbon/Carbon.h>#include <string.h>

@@ -1,0 +1,21 @@
+//
+// Prefix header for all source files of the 'Overlay Sending' target in the 'Overlay Sending' project.
+//
+
+#define PLAT_MACINTOSH		1
+#define PLAT_MACINTOSH_X	1
+#define BUILD_CW			1
+
+#include <CoreFoundation/CoreFoundation.h>
+#include <CoreServices/CoreServices.h>
+#include <Carbon/Carbon.h>
+
+#include <IOKit/IOKitLib.h>
+#include <IOKit/IOCFPlugIn.h>
+#include <IOKit/usb/IOUSBLib.h>
+
+#include <pthread.h>
+#include <stdio.h>
+#include <mach/mach.h>
+#include "IKCommon.h"
+

@@ -1,0 +1,263 @@
+
+Software_Version			3.5.2.19
+Firmware_Version			2.2
+
+;
+;   relative paths to various files and folders
+;   all are relative to the root folder.
+;
+Private_Folder			Private/
+Channels_Folder			Private/Channels/
+Engine_Folder			Private/Channels/Engine/
+Users_Folder			Documents/
+Guest_Folder			Documents/Gosc/
+
+;
+;  Preferences stuff
+;
+Preferences_File		preferences.txt
+Guest				Gosc
+
+;Reload_Standard_Overlay_When_Recognized		1
+
+;
+;  Other stuff
+;
+Intellipics_Program			intellipics.exe
+Intellipics_Player_Program		intellipics player.exe
+
+;
+;  debug stuff
+;
+;Debug_Log_File			DebugLog.txt
+Debug_Log_Flush_Period		1000
+
+
+Custom_Overlay			wlasne
+
+;
+;  Time periods for various tasks, in MSec
+;
+Correct_Period			500
+Engine_Period			5
+Device_Search_Period		1000
+External_Command_Period		250
+External_Command_Period 2	250
+EEProm_Byte_Overdue		500
+Dead_Until_Time			1000
+Min_Response_Time		15
+Min_Repeat_Start			1000
+Max_Repeat_Start			4000
+Keyboard_Reset_Sound_Duration	50
+Mouse_Click_Delay			5
+Led_Reconcile_Period		100
+Queue_Empty_Timeout		2000
+Switch_Response_Period		50
+
+;  App watching
+watch_apps			1
+App_Watch_Period		500
+
+
+;
+;  Mouse accelleration parameters
+;
+Mouse_Accelleration_Knee		1000
+Mouse_Accelleration_Scale_Mac	60
+Mouse_Accelleration_Scale_Win	25
+
+;
+;  Overlay recognition
+;
+Overlay_Rec_Settle_Period		1000
+Overlay_Rec_Fallback_Threshhold	150
+Overlay_Rec_Black_Weight		50
+
+;
+;  vendor and product ID for USB device matching
+;  must use decimail values
+;
+IK_Vendor_ID			2398
+IK_Product_ID			257
+
+IS_Vendor_ID			5195
+IS_Product_ID			8
+
+;
+;  valid serial number prefix
+;
+Valid_Serial_Number_Prefix		C-
+
+;
+;
+;
+Key_Sound_Frequency		247
+Short_Key_Sound_Length		50
+Long_Key_Sound_Length		700
+Sweep_Sound_Low_Frequency	200
+Sweep_Sound_High_Frequency	250
+Sweep_Sound_Duration		200
+
+Unknown				Nieznany
+
+Help_File				Private/ikusbhelp.html
+
+S_KEYSOUND_OFF		Off
+S_KEYSOUND_1			1
+S_KEYSOUND_2			2
+S_KEYSOUND_3			3
+S_KEYSOUND_4			4
+S_CP_KEYSOUND_VOLUME	Glosnosc klawiszy
+
+S_UNKNOWN_VALUE		Nieznana wartosc
+
+S_NONE				Zaden
+
+S_BOOL_ON			Wyl
+S_BOOL_OFF			Zal
+
+S_LF_HEADER1			Funkcje Intellikeys USB dla uzytkownika "%s"
+S_LF_HEADER2			Funkcje Intellikeys USB dla uzytkownika "%s" z grupy "%s"
+
+S_LISTFEATURES_RESPONSE_RATE 		Szybkosc reakcji
+S_LISTFEATURES_REPEAT_RATE 			Szybkosc powtarzania
+S_LISTFEATURES_MOUSE_SPEED 			Predkosc myszy
+S_LISTFEATURES_DATA_SEND_RATE 		Predkosc wysylania danych
+S_LISTFEATURES_SMART_TYPING 			Podpowiedz
+S_LISTFEATURES_REQUIRED_LIFT_OFF 		Wymagane podniesienie
+S_LISTFEATURES_KEY_SOUND_VOLUME		Glosnosc dzwieku klawiszy
+S_LISTFEATURES_REPEAT			Powtarzanie
+S_LISTFEATURES_REPEAT_LATCHING		Blokowanie powtarzania
+S_LISTFEATURES_SHIFT_KEY_ACTION 		Akcja klawisza Shift
+S_LISTFEATURES_INDICATOR_LIGHTS 		Wskazniki
+
+S_LISTFEATURES_MODE				Tryb
+S_LISTFEATURES_MODE_LASTSENT		Uzyj ostatnio wysylanej nakladki
+S_LISTFEATURES_MODE_SPECIFIC			Uzyj tej nakladki
+S_LISTFEATURES_MODE_SWITCH			jako przycisku
+
+S_LISTFEATURES_MODE_LAST_OVERLAY		Ostatnio wyslana nakladka
+S_LISTFEATURES_MODE_SPECIFIC_OVERLAY	Ta nakladka
+S_LISTFEATURES_MODE_SWITCH_SETTING		Ustawienia przyciskow
+S_LISTFEATURES_BUTALLOWOVERLAYS			Ale pozwol uzyc nakladek
+
+
+S_LF_NUMKB				Liczba podlaczonych klawiatur
+S_LF_KBNUM				Numer klawiatury
+
+S_LATCHING				Zalaczanie
+S_LOCKING				Blokowanie
+S_NO_LATCHING				Bez zalaczania
+
+S_LIGHTS_THREE				Trzy
+S_LIGHTS_SIX				Szesc
+
+S_CP_KEYSOUNDVOLUME		Glosnosc klawiszy
+S_CP_KEYSOUNDVOLUME_OFF		Wylaczona
+
+S_NOT_CONNECTED			Nie podlaczona
+S_CONNECTED				Podlaczona
+
+S_YES					Tak
+S_NO					Nie
+
+
+S_CP_STANDARD_OVERLAY       	Standardowa nakladka
+S_CP_CUSTOM_OVERLAY          	Wlasna nakladka
+S_CP_ONOFF_SWITCH_STATUS      Zalaczona lub wylaczona
+S_CP_FIRMWARE_VERSION          	Wersja firmware
+S_CP_SOFTWARE_VERSION          	Wersja oprogramowania
+S_CP_SERIAL_NUMBER            	Numer seryjny
+S_CP_SENSORS                   	Wartosci sensorow
+S_CP_CONNECTED		Podlaczona
+S_CP_OVERLAY_NAME		Nazwa nakladki
+S_CP_OVERLAY_LEVEL		Poziom nakladki
+
+S_CP_SWITCH1			Przycisk 1
+S_CP_SWITCH2			Przycisk 2
+
+S_CP_NUMKEYS			Liczba przycisnietych klawiszy
+S_CP_ROWCOL			Wiersz = %d, Kolumna = %d
+S_CP_SENS			Wartosci sensorow = %d,%d,%d,%d,%d,%d,%d,%d,%d
+S_GUEST			Gosc
+
+right_click_text	AAAAAAAAAAPRAWYKLIKAAAAAAAAAAA
+
+report_diagnostics_realtime		1
+report_diagnostics_realtime_period	100
+report_diagnostics_realtime_timeout	50
+
+APP_OVERLAYS_SRC_FOLDER	Nakladki do aplikacji
+APP_OVERLAYS_SRC_MAP	applications.txt
+APP_OVERLAYS_NAMES_MAP	application display names.txt
+
+intellikeys_usb			IntelliKeys USB
+
+app_not_allowed	Nie mozna skojarzyc nakladek do tej aplikacji za pomoca Panelu sterowania USB, poniewaz aplikacja sama wysyla nakladki. Sprawdz opis aplikacji w jej podreczniku uzytkownika.
+
+sending			wysylam
+for			dla
+
+S_TOOLTIP_IK_ON		IntelliKeys USB jest podlaczona.
+S_TOOLTIP_IK_OFF		IntelliKeys USB jest podlaczona, ale wylaczona.
+S_TOOLTIP_IS_ON		IntelliSwitch jest podlaczona.
+S_TOOLTIP_IS_OFF		IntelliSwitch jest podlaczona, ale wylaczona.
+S_TOOLTIP_MULTIPLE_DEVICES	Podlaczono wiecej niz jedno urzadzenie.
+S_TOOLTIP_NO_DEVICES		Brak podlaczonych urzadzen.
+
+
+Systray_Tip			IntelliKeys USB
+Systray_Menu			Otworz Panel sterowania IntelliKeys USB
+Systray_Menu_Switch		Otworz Panel sterowania IntelliKeys USB i IntelliSwitch
+
+S_TROUBLESHOOTING		Rozwiazywanie problemow...
+S_INTELLIKEYS_WILL		Panel Sterowania...
+
+use_switch_setting		uzyj ustawien przelacznikow
+use_overlay			uzyj nakladki
+
+attach_edit_overlays_for	Skojarz/Edytuj nakladki dla
+
+send		Wyslij
+send_no_overlay	Nie wysylaj nakladki
+
+S_error_sending_overlay	Blad wysylania nakladki
+S_overlay			nakladka
+S_attached_to_application	skojarzony z aplikacja
+S_cannot_be_sent		nie moze byc wyslana.  Byc moze zostala przeniesiona lub usunieta.
+
+app_will_choose		Panel sterowania nie wysle nakladki
+app_will_choose_clickit	Panel sterowania nie wysle nakladki
+
+//  set this to 1 if you want Discover to appear 
+//  in the UI even if it's not installed.
+show_discover_anyway	0
+
+//  set this to 1 to log calls to the DLLs
+log_dlls	0
+
+//  these pertain to selecting the One Overlay option from the system tray
+//  without specifying an overlay.
+must_specify_overlay	Kiedy uzywasz trybu jednej nakladki musisz podac jej nazwe.
+overlay_files		Pliki nakladek
+all_files			Wszystkie pliki
+choose_overlay		Wybierz plik nakladek
+not_valid_overlay		Ten plik nie jest plikiem nakladki. Tryb nie zostanie zmieniony.
+no_overlay_chosen		Nie wybrales pliku nakladki. Tryb nie zostanie zmieniony.
+
+//  period (in mSec) after an overlay is sent in which Discover cannot set raw mode
+raw_mode_immunity		2000
+
+allow_applications_to_send_overlays	but still allow applications to send their own overlays
+overlay_files		Pliki nakladek
+
+use_attached_overlay	Panel sterowania wysle
+
+Mode:				Tryb:
+overlays			Nakladki
+one_overlay_only		Jedna nakladka
+switch_presets			Ustawienia przyciskow
+
+
+
+

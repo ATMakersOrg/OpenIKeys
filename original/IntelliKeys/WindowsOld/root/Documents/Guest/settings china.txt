@@ -1,0 +1,17 @@
+Repeat_Rate		15
+Shift_Key_Action		0
+Response_Rate		15
+Mouse_Speed		15
+Data_Send_Rate		15
+Make_Break_Rate		15
+Indicator_Lights		1
+Required_Lift_Off		FALSE
+Use_System_Repeat_Settings		TRUE
+Key_Sound_Volume		2
+Repeat		TRUE
+Repeat_Latching		FALSE
+Smart_Typing		FALSE
+Mode		3
+Use_This_Switch_Setting		0
+Use_This_Overlay		
+But_Allow_Overlays		TRUE

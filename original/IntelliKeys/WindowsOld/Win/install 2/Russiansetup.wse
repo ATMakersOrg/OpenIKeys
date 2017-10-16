@@ -1,0 +1,75 @@
+Document Type: WSE
+item: Global
+  Version=9.0
+  Title=IntelliKeys USB Installer
+  Title Japanese=IntelliKeys USB Installer
+  Flags=01001000
+  Languages=64 0 0 0 0 0 0 0 0 0 0 0 0 0 0 65
+  Copy Default=1
+  Japanese Font Name=Tahoma
+  Japanese Font Size=10
+  Start Gradient=0 0 255
+  End Gradient=0 0 0
+  Windows Flags=00000100001000000010110101011000
+  Message Font=Tahoma
+  Font Size=10
+  Extra Flags=00000000000000000000010000000000
+  Pages Modified=10001001000001000000000000000000
+  Extra Pages=00000000000000000000000000110000
+  Disk Filename=SETUP
+  Patch Flags=0000000000000001
+  Patch Threshold=85
+  Patch Memory=4000
+  MIF PDF Version=1.0
+  MIF SMS Version=2.0
+  Code Sign Name=IntelliKeys Russian
+  Code Sign Info=www.intellitools.com
+  Code Sign TimeStamp=http://timestamp.verisign.com/scripts/timstamp.dll
+  SPC Pathname=C:\Projects\Certificate\KESICredentials.spc
+  PVK Pathname=C:\Projects\Certificate\KESIPrivateKey.pvk
+  FTP Cluster Size=20
+  Dialogs Version=6
+  Crystal Format=10111100101100000010001001001001
+  Step View=&Properties
+  Variable Name1=_SYS_
+  Variable Default1=C:\WINDOWS\SYSTEM
+  Variable Flags1=00001000
+  Variable Name2=_WISE_
+  Variable Default2=C:\PROGRA~2\WISEIN~1
+  Variable Flags2=00001000
+  Variable Name3=_INIT_WINDOW_
+  Variable Default3=HIDE
+  Variable Flags3=00001000
+  Variable Name4=_OVERLAYPACK_
+  Variable Default4=YES
+  Variable Flags4=00001000
+end
+item: Check Configuration
+  Flags=10100000
+end
+item: Check Configuration
+  Message=This product requires Windows XP or higher to run.
+  Title=Minimum Windows Version
+  Flags=11011001
+end
+item: End Block
+end
+item: Set Variable
+  Variable=ATTENDED
+  Value=yes
+end
+item: Set Variable
+  Variable=INTELLISWITCH
+  Value=no
+end
+item: Set Variable
+  Variable=OVERLAYPACK
+  Value=YES
+end
+item: Set Variable
+  Variable=CHINA
+  Value=no
+end
+item: Include Script
+  Pathname=Russiansetup-common.wse
+end

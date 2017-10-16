@@ -1,0 +1,220 @@
+Document Type: WSE
+item: Global
+  Version=9.0
+  Title=IntelliKeys USB Installer
+  Flags=00000100
+  Languages=65 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  Japanese Font Name=MS Gothic
+  Japanese Font Size=9
+  Progress Bar DLL=%_WISE_%\Progress\WizWin32a.DLL
+  Start Gradient=0 0 255
+  End Gradient=0 0 0
+  Windows Flags=00000100000000010010110000001000
+  Message Font=MS Sans Serif
+  Font Size=8
+  Pages Modified=00100000000000000000000000000000
+  Disk Label=Default
+  Disk Filename=SETUP
+  Patch Flags=0000000000000001
+  Patch Threshold=85
+  Patch Memory=4000
+  MIF PDF Version=1.0
+  MIF SMS Version=2.0
+  FTP Cluster Size=20
+  Dialogs Version=7
+  Crystal Format=10111100101100000010001001001001
+  Step View=Properties
+  Variable Name1=_SYS_
+  Variable Default1=C:\Windows\system32
+  Variable Flags1=00001000
+  Variable Name2=_WIN_
+  Variable Default2=C:\Windows
+  Variable Flags2=00001000
+  Variable Name3=_WISE_
+  Variable Default3=C:\PROGRA~2\WISEIN~1
+  Variable Flags3=00001000
+end
+item: Remark
+  Text=---- Language Specific Installation Directory Names
+end
+item: Set Variable
+  Variable=DOCUMENTATION_DIR
+  Value=Documentation
+end
+item: Set Variable
+  Variable=GUEST_DIR
+  Value=Invité
+end
+item: Set Variable
+  Variable=OVERLAYS_DIR
+  Value=Overlays
+end
+item: Set Variable
+  Variable=OVERLAYS_FOR_EDITING_DIR
+  Value=Overlays for Editing
+end
+remarked item: Set Variable
+  Variable=OVERLAYS_DIR
+  Value=Planches
+end
+remarked item: Set Variable
+  Variable=OVERLAYS_FOR_EDITING_DIR
+  Value=Planches à modifier
+end
+item: Remark
+end
+item: Remark
+  Text=---- End Language Specific Directory Names
+end
+item: Remark
+end
+item: Remark
+  Text=------ Setup Language Specific Strings ------
+end
+item: Remark
+end
+item: Set Variable
+  Variable=WELCOME_DLG_TITLE
+  Value=Bienvenue
+end
+item: Set Variable
+  Variable=WELCOME_DLG_TEXT1
+  Value=Bienvenue au programme d’installation de %APPTITLE% v%VERSION%. 
+end
+item: Set Variable
+  Variable=WELCOME_DLG_TEXT2
+  Value=Ce programme installera %APPTITLE% v%VERSION% sur votre ordinateur.
+end
+item: Set Variable
+  Variable=LICENSE_DLG_TITLE
+  Value=Contrat de licence
+end
+item: Set Variable
+  Variable=README_DLG_TITLE
+  Value=Fichier Lisez-moi 
+end
+item: Set Variable
+  Variable=FINISHED_DLG_TITLE
+  Value=Installation terminée
+end
+item: Set Variable
+  Variable=FINISHED_DLG_TEXT1
+  Value=%APPTITLE% a été installé avec succès.
+end
+item: Set Variable
+  Variable=FINISHED_DLG_TEXT2
+  Value=Appuyez sur le bouton Terminer pour quitter cette installation. 
+end
+item: Set Variable
+  Variable=MSG_UNABLE_TO_CONTINUE_TITLE
+  Value=Impossible de terminer l'installation
+end
+item: Set Variable
+  Variable=MSG_UNABLE_TO_CONTINUE_TEXT1
+  Value=%apptitle% v%version% ne peut s’installer sur ce système.
+end
+item: Set Variable
+  Variable=MSG_UNABLE_TO_CONTINUE_TEXT2
+  Value=Pour terminer l'installation sur ce système d'exploitation, vous aurez besoin des privilèges d'administrateur. 
+end
+item: Set Variable
+  Variable=MSG_UNABLE_TO_CONTINUE_TEXT3
+  Value=Veuillez quitter cette installation, connectez-vous en tant qu'administrateur et commencer l'installation ou contacter votre administrateur pour installer ce produit.
+end
+item: Set Variable
+  Variable=MSG_UNABLE_TO_CONTINUE_TEXT4
+  Value=Appuyez sur le bouton OK pour quitter cette installation. 
+end
+item: Set Variable
+  Variable=MSG_INSTALL_ALREADY_RUNNING
+  Value=Le système installe déjà un ou plusieurs pilotes pour IntelliKeys USB.  Dans ce cas, il n'est pas nécessaire d'exécuter le programme d'installation vous-même. Au lieu de cela, suivez les instructions fournies par l'Assistant Nouveau matériel détecté.
+end
+item: Set Variable
+  Variable=MSG_UNPLUG_INTELLIKEYS
+  Value=Veuillez débrancher votre IntelliKeys avant d'utiliser ce programme d'installation.
+end
+item: Set Variable
+  Variable=MSG_UNPLUG_INTELLIKEYS_2
+  Value=Ce programme d'installation a besoin de mettre à jour le pilote IntelliKeys USB, mais il ne peut être fait lorsque l'appareil est branché. Veuillez débrancher le périphérique et redémarrer ce programme d'installation.
+end
+item: Remark
+end
+item: Remark
+  Text=------ End Setup Language Specific Strings ------
+end
+item: Remark
+end
+item: Remark
+  Text=----- Uninstall Language Strings -----
+end
+item: Remark
+end
+item: Set Variable
+  Variable=UNINSTALL_WELCOME_DLG_TITLE
+  Value=Bienvenue
+end
+item: Set Variable
+  Variable=UNINSTALL_WELCOME_DLG_TEXT1
+  Value=Bienvenue dans le programme de désinstallation de %APPTITLE% v%version%.
+end
+item: Set Variable
+  Variable=UNINSTALL_WELCOME_DLG_TEXT2
+  Value=Ce programme désinstallera %APPTITLE% v%version% de votre ordinateur.
+end
+item: Set Variable
+  Variable=UNINSTALL_MSG_CANCEL_TITLE
+  Value=Annuler Désinstaller
+end
+item: Set Variable
+  Variable=UNINSTALL_MSG_CANCEL_TEXT1
+  Value=Voulez-vous annuler la suppression d'IntelliKeys USB v%version%?
+end
+item: Set Variable
+  Variable=UNINSTALLING_PROGRESS_TITLE
+  Value=Désinstallation...
+end
+item: Set Variable
+  Variable=UNINSTALLING_PROGRESS_TEXT
+  Value=La désinstallation est en cours.  Veuillez patienter.
+end
+item: Remark
+end
+item: Remark
+  Text=----- End Uninstall Language Strings -----
+end
+item: Remark
+end
+item: Remark
+  Text=----- Uninstall2 Language Strings -----
+end
+item: Remark
+end
+item: Set Variable
+  Variable=UNINSTALL_FINISHED_DLG_TITLE
+  Value=Désinstallation terminée
+end
+item: Set Variable
+  Variable=UNINSTALL_FINISHED_DLG_TEXT1
+  Value=%APPTITLE% v%version% a été désinstallé avec succès.
+end
+remarked item: Set Variable
+  Variable=UNINSTALLING_PROGRESS_TITLE
+  Value=Désinstallation...
+end
+remarked item: Set Variable
+  Variable=UNINSTALLING_PROGRESS_TEXT
+  Value=La désinstallation est en cours.  Veuillez patienter.
+end
+item: Set Variable
+  Variable=MSG_UNPLUG_INTELLIKEYS_TITLE
+  Value=Débranchez IntelliKeys
+end
+item: Set Variable
+  Variable=MSG_UNPLUG_TEXT
+  Value=Votre IntelliKeys USB est branché.  Si vous avez désinstallé le logiciel en vue d'installer une nouvelle version ou une version différente, veillez à débrancher IntelliKeys USB avant de commencer cette installation.
+end
+item: Remark
+end
+item: Remark
+  Text=----- End Uninstall2 Language Strings -----
+end

@@ -1,0 +1,6 @@
+
+OSX:Applications:Adobe%20Reader%206.0:Adobe%20Reader%206.0.app		1|OSX:Applications:IntelliTools:IntelliKeys USB:private:Application Overlays:Sample:Adobe Reader Overlay.omt|
+OSX:Applications:Adobe%20Reader%207.0.5:Adobe%20Reader%207.0.5.app		0|
+OSX:Applications:Clicker%204:Clicker%204.app		1|OSX:Applications:IntelliTools:IntelliKeys USB:private:Application Overlays:Sample:Clicker Scan Overlay.omt|
+OSX:Applications:Clicker%205:Clicker%205.app		1|OSX:Applications:IntelliTools:IntelliKeys USB:private:Application Overlays:Sample:Clicker 5 Scan Overlay.omt|
+OSX:Developer:Applications:Xcode.app		0|

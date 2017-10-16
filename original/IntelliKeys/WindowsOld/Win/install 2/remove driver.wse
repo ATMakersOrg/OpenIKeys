@@ -1,0 +1,479 @@
+Document Type: WSE
+item: Global
+  Version=9.0
+  Title=IntelliKeys USB Installer
+  Flags=00000100
+  Split=1420
+  Languages=65 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  Copy Default=1
+  Japanese Font Name=MS Gothic
+  Japanese Font Size=10
+  Start Gradient=0 0 255
+  End Gradient=0 0 0
+  Windows Flags=00000100000000010010110000001000
+  Message Font=MS Sans Serif
+  Font Size=8
+  Disk Filename=SETUP
+  Patch Flags=0000000000000001
+  Patch Threshold=85
+  Patch Memory=4000
+  MIF PDF Version=1.0
+  MIF SMS Version=2.0
+  FTP Cluster Size=20
+  Per-User Version ID=1
+  Dialogs Version=6
+  Crystal Format=10111100101100000010001001001001
+  Step View=&Properties
+end
+item: Remark
+end
+item: Remark
+  Text=-----  use this program for Win 2K and XP to edit the registry
+end
+item: Remark
+end
+item: Remark
+  Text=FIXME: Do we need to change it for Vista / Windows7
+end
+item: Remark
+end
+item: If/While Statement
+  Variable=SYS_MAJORVER
+  Value=5
+  Flags=00000111
+end
+item: Create Directory
+  Pathname=%temp%\itools
+end
+item: Remark
+end
+item: If/While Statement
+  Variable=DRIVER_PLATFORM_ARC
+  Value=x86
+  Flags=00000100
+end
+item: Remark
+  Text=For Windows Vista and above, remove2k cannot uninstall the driver. But we call it it anyway later.
+end
+item: If/While Statement
+  Variable=SYS_MAJORVER
+  Value=6
+  Flags=00000111
+end
+remarked item: Install File
+  Source=RemoveVista\Release\RemoveVista.exe
+  Destination=%temp%\itools\x86\RemoveVista.exe
+  Flags=0000000010100010
+end
+remarked item: Remark
+  Text=#4895 clean Vista x86 does not have difxapi.dll
+end
+remarked item: Install File
+  Source=RemoveVista\difxapi.dll
+  Destination=%temp%\itools\x86\difxapi.dll
+  Flags=0000000010100010
+end
+remarked item: Execute Program
+  Pathname=%temp%\itools\x86\RemoveVista.exe
+  Flags=00001010
+end
+remarked item: Delete File
+  Pathname=%temp%\itools\x86\RemoveVista.exe
+end
+item: End Block
+end
+item: Install File
+  Source=remove2k\Release\remove2k.exe
+  Destination=%temp%\itools\x86\remove2k.exe
+  Flags=0000000010100010
+end
+item: Execute Program
+  Pathname=%temp%\itools\x86\remove2k.exe
+  Flags=00000110
+end
+item: Delete File
+  Pathname=%temp%\itools\x86\remove2k.exe
+end
+item: Else Statement
+end
+item: Remark
+  Text=For Windows Vista and above, remove2k cannot uninstall the driver. But we call it it anyway later.
+end
+item: If/While Statement
+  Variable=SYS_MAJORVER
+  Value=6
+  Flags=00000111
+end
+remarked item: Install File
+  Source=RemoveVista\x64\Release\RemoveVista.exe
+  Destination=%temp%\itools\x64\RemoveVista.exe
+  Flags=0000000010100010
+end
+remarked item: Remark
+  Text=#4895 clean Vista x64 does not have difxapi.dll
+end
+remarked item: Install File
+  Source=RemoveVista\x64\difxapi.dll
+  Destination=%temp%\itools\x64\difxapi.dll
+  Flags=0000000010100010
+end
+remarked item: Install File
+  Source=RemoveVista\difxapi.dll
+  Destination=%win%\system32\difxapi.dll
+  Flags=0000000010100010
+end
+remarked item: Execute Program
+  Pathname=%temp%\itools\x64\RemoveVista.exe
+  Flags=00001010
+end
+remarked item: Delete File
+  Pathname=%temp%\itools\x64\RemoveVista.exe
+end
+item: End Block
+end
+item: Install File
+  Source=remove2k\Release64\remove2k.exe
+  Destination=%temp%\itools\x64\remove2k.exe
+  Flags=0000000010100010
+end
+item: Execute Program
+  Pathname=%temp%\itools\x64\remove2k.exe
+  Flags=00000110
+end
+item: Delete File
+  Pathname=%temp%\itools\x64\remove2k.exe
+end
+item: End Block
+end
+item: Else Statement
+end
+remarked item: Install File
+  Source=remove98\Release\remove98.exe
+  Destination=%temp%\remove98.exe
+  Flags=0000000010100010
+end
+remarked item: Execute Program
+  Pathname=%temp%\remove98.exe
+  Flags=00000110
+end
+remarked item: Delete File
+  Pathname=%temp%\remove98.exe
+end
+item: End Block
+end
+item: Remark
+end
+item: Remark
+  Text=-----  remove any registry entries
+end
+item: Remark
+end
+item: Edit Registry
+  Total Keys=1
+  Key=Enum\HID\VID_0547&PID_2131
+  Root=130
+end
+item: Edit Registry
+  Total Keys=1
+  Key=Enum\USB\VID_0547&PID_2131
+  Root=130
+end
+item: Remark
+end
+item: Edit Registry
+  Total Keys=1
+  Key=Enum\HID\VID_095E&PID_0101
+  Root=130
+end
+item: Edit Registry
+  Total Keys=1
+  Key=Enum\USB\VID_095E&PID_0101
+  Root=130
+end
+item: Edit Registry
+  Total Keys=1
+  Key=Enum\HID\VID_144B&PID_0008
+  Root=130
+end
+item: Edit Registry
+  Total Keys=1
+  Key=Enum\USB\VID_144B&PID_0008
+  Root=130
+end
+item: Remark
+end
+item: Edit Registry
+  Total Keys=1
+  Key=Enum\HID\VID_095E&PID_0100
+  Root=130
+end
+item: Edit Registry
+  Total Keys=1
+  Key=Enum\USB\VID_095E&PID_0100
+  Root=130
+end
+item: Remark
+end
+item: Edit Registry
+  Total Keys=1
+  Key=Enum\HID\VID_095E&PID_0101&MI_00
+  Root=130
+end
+item: Edit Registry
+  Total Keys=1
+  Key=Enum\HID\VID_095E&PID_0101&MI_01
+  Root=130
+end
+item: Edit Registry
+  Total Keys=1
+  Key=Enum\HID\VID_095E&PID_0101&MI_02
+  Root=130
+end
+item: Remark
+end
+item: Edit Registry
+  Total Keys=1
+  Key=Enum\USB\VID_095E&PID_0101&MI_00
+  Root=130
+end
+item: Edit Registry
+  Total Keys=1
+  Key=Enum\USB\VID_095E&PID_0101&MI_01
+  Root=130
+end
+item: Edit Registry
+  Total Keys=1
+  Key=Enum\USB\VID_095E&PID_0101&MI_02
+  Root=130
+end
+item: Remark
+end
+item: Edit Registry
+  Total Keys=1
+  Key=Enum\HID\VID_144B&PID_0008&MI_00
+  Root=130
+end
+item: Edit Registry
+  Total Keys=1
+  Key=Enum\HID\VID_144B&PID_0008&MI_01
+  Root=130
+end
+item: Edit Registry
+  Total Keys=1
+  Key=Enum\HID\VID_144B&PID_0008&MI_02
+  Root=130
+end
+item: Remark
+end
+item: Edit Registry
+  Total Keys=1
+  Key=Enum\USB\VID_144B&PID_0008&MI_00
+  Root=130
+end
+item: Edit Registry
+  Total Keys=1
+  Key=Enum\USB\VID_144B&PID_0008&MI_01
+  Root=130
+end
+item: Edit Registry
+  Total Keys=1
+  Key=Enum\USB\VID_144B&PID_0008&MI_02
+  Root=130
+end
+item: Remark
+end
+item: Remark
+  Text=-----  Delete any INF and PNF files from this or previous versions
+end
+item: Remark
+end
+item: Delete File
+  Pathname=%win%\inf\intellikeys.inf
+end
+item: Delete File
+  Pathname=%win%\inf\intellikeys.pnf
+end
+item: Remark
+end
+item: Delete File
+  Pathname=%win%\inf\intellikeys1.inf
+end
+item: Delete File
+  Pathname=%win%\inf\intellikeys1.pnf
+end
+item: Remark
+end
+item: Delete File
+  Pathname=%win%\inf\intellikeys2.inf
+end
+item: Delete File
+  Pathname=%win%\inf\intellikeys2.pnf
+end
+item: Remark
+end
+item: Delete File
+  Pathname=%win%\inf\intellikeys3.inf
+end
+item: Delete File
+  Pathname=%win%\inf\intellikeys3.pnf
+end
+item: Remark
+end
+item: Delete File
+  Pathname=%win%\inf\ikusb1.inf
+end
+item: Delete File
+  Pathname=%win%\inf\ikusb1.pnf
+end
+item: Remark
+end
+item: Delete File
+  Pathname=%win%\inf\ikusb2.inf
+end
+item: Delete File
+  Pathname=%win%\inf\ikusb2.pnf
+end
+item: Remark
+end
+item: Delete File
+  Pathname=%win%\inf\ikusb2a.inf
+end
+item: Delete File
+  Pathname=%win%\inf\ikusb2a.pnf
+end
+item: Remark
+end
+item: Delete File
+  Pathname=%win%\inf\isusb2a.inf
+end
+item: Delete File
+  Pathname=%win%\inf\isusb2a.pnf
+end
+item: Remark
+end
+item: Delete File
+  Pathname=%win%\inf\ikusb2b.inf
+end
+item: Delete File
+  Pathname=%win%\inf\ikusb2b.pnf
+end
+item: Remark
+end
+item: Delete File
+  Pathname=%win%\inf\isusb2b.inf
+end
+item: Delete File
+  Pathname=%win%\inf\isusb2b.pnf
+end
+item: Remark
+end
+item: Delete File
+  Pathname=%win%\inf\intellikeysshop.inf
+end
+item: Delete File
+  Pathname=%win%\inf\intellikeysshop.pnf
+end
+item: Remark
+end
+item: Delete File
+  Pathname=%win%\inf\ikusbshp.inf
+end
+item: Delete File
+  Pathname=%win%\inf\ikusbshp.pnf
+end
+item: Remark
+end
+item: Delete File
+  Pathname=%win%\inf\ikusb3.inf
+end
+item: Delete File
+  Pathname=%win%\inf\ikusb3.pnf
+end
+item: Remark
+end
+item: Remark
+  Text=FIXME: In Windows7 64 bit m/c the inf and pnf files are in %win%\DriverStore\FileRepository\ikusb4.inf_amd*\. How to delete these?
+end
+item: Delete File
+  Pathname=%win%\inf\ikusb4.inf
+end
+item: Delete File
+  Pathname=%win%\inf\ikusb4.pnf
+end
+item: Remark
+end
+item: Delete File
+  Pathname=%win%\inf\ikloadez.inf
+end
+item: Delete File
+  Pathname=%win%\inf\iloadez.pnf
+end
+item: Remark
+end
+item: Remark
+  Text=-----  remove any driver files
+end
+item: Remark
+end
+item: Delete File
+  Pathname=%win%\system32\drivers\ikfirm.sys
+end
+item: Delete File
+  Pathname=%win%\system32\drivers\ikfirmshop.sys
+end
+item: Delete File
+  Pathname=%win%\system32\drivers\IntelliKeys.spt
+end
+item: Delete File
+  Pathname=%win%\system32\drivers\ikusb.sys
+end
+item: Delete File
+  Pathname=%win%\system32\drivers\ikloadez.sys
+end
+item: Delete File
+  Pathname=%win%\system32\drivers\095e0100.hex
+  Flags=00000100
+end
+item: Delete File
+  Pathname=%win%\system32\drivers\ikgenerc.sys
+  Flags=00000100
+end
+item: Delete File
+  Pathname=%win%\system32\ikusbco.dll
+  Flags=00000100
+end
+item: Delete File
+  Pathname=%win%\system32\drivers\ikusbco.dll
+  Flags=00000100
+end
+item: Delete File
+  Pathname=%win%\system32\drivers\ikusb3.cat
+  Flags=00000100
+end
+item: Remark
+end
+item: Set Variable
+  Variable=DELTHISFILE
+  Value=%win%\inf\other\
+end
+item: Set Variable
+  Variable=DELTHISFILE
+  Value=IntelliTools Inc.ikusb3.inf
+  Flags=00010101
+end
+item: Delete File
+  Pathname=%delthisfile%
+end
+item: Remark
+end
+item: Remark
+  Text=-----  deleting these files causes Win98/ME to rebuild the device database next time we're plugged in
+end
+item: Remark
+end
+item: Delete File
+  Pathname=%win%\inf\drvdata.bin
+end
+item: Delete File
+  Pathname=%win%\inf\drvidx.bin
+end

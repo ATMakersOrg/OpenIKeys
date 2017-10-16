@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A9E300215BF2A4500FED82E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A9E300115BF2A4500FED82E /* Security.framework */; };
+		9E2E239414A2C814007AC799 /* AppLib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E2E238314A2C814007AC799 /* AppLib.cpp */; };
+		9E2E239514A2C814007AC799 /* IKControlPanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E2E238414A2C814007AC799 /* IKControlPanel.cpp */; };
+		9E2E239614A2C814007AC799 /* IKDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E2E238514A2C814007AC799 /* IKDevice.cpp */; };
+		9E2E239714A2C814007AC799 /* IKEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E2E238614A2C814007AC799 /* IKEngine.cpp */; };
+		9E2E239814A2C814007AC799 /* IKFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E2E238714A2C814007AC799 /* IKFile.cpp */; };
+		9E2E239914A2C814007AC799 /* IKMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E2E238814A2C814007AC799 /* IKMap.cpp */; };
+		9E2E239A14A2C814007AC799 /* IKMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E2E238914A2C814007AC799 /* IKMessage.cpp */; };
+		9E2E239B14A2C814007AC799 /* IKMsg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E2E238A14A2C814007AC799 /* IKMsg.cpp */; };
+		9E2E239C14A2C814007AC799 /* IKOverlay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E2E238B14A2C814007AC799 /* IKOverlay.cpp */; };
+		9E2E239D14A2C814007AC799 /* IKOverlayList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E2E238C14A2C814007AC799 /* IKOverlayList.cpp */; };
+		9E2E239E14A2C814007AC799 /* IKPrefs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E2E238D14A2C814007AC799 /* IKPrefs.cpp */; };
+		9E2E239F14A2C814007AC799 /* IKSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E2E238E14A2C814007AC799 /* IKSettings.cpp */; };
+		9E2E23A014A2C814007AC799 /* IKString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E2E238F14A2C814007AC799 /* IKString.cpp */; };
+		9E2E23A114A2C814007AC799 /* IKStringArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E2E239014A2C814007AC799 /* IKStringArray.cpp */; };
+		9E2E23A214A2C814007AC799 /* IKUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E2E239114A2C814007AC799 /* IKUtil.cpp */; };
+		9E2E23A314A2C814007AC799 /* MessageClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E2E239214A2C814007AC799 /* MessageClient.cpp */; };
+		9E2E23A414A2C814007AC799 /* sharedMemory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E2E239314A2C814007AC799 /* sharedMemory.cpp */; };
+		9E48FECC14A1385F00527643 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E48FECB14A1385F00527643 /* Cocoa.framework */; };
+		9E48FED614A1385F00527643 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E48FED414A1385F00527643 /* InfoPlist.strings */; };
+		9E48FED914A1385F00527643 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E48FED814A1385F00527643 /* main.m */; };
+		9E48FEDC14A1385F00527643 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 9E48FEDA14A1385F00527643 /* Credits.rtf */; };
+		9E48FEE514A1385F00527643 /* USBMenu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E48FEE314A1385F00527643 /* USBMenu.xcdatamodeld */; };
+		9E48FF2A14A140B800527643 /* blueicon.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9E48FF2614A140B800527643 /* blueicon.tiff */; };
+		9E48FF2C14A140B800527643 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 9E48FF2814A140B800527643 /* MainMenu.nib */; };
+		9E48FF2D14A140B800527643 /* redicon.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9E48FF2914A140B800527643 /* redicon.tiff */; };
+		9E48FF4114A14CF000527643 /* IntelliKeys_Mac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E48FF4014A14CF000527643 /* IntelliKeys_Mac.cpp */; };
+		9E6D49AD14A163C3009B66D5 /* iksupport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E6D49AC14A163C3009B66D5 /* iksupport.cpp */; };
+		9E6D49AF14A163F6009B66D5 /* MenuBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6D49AE14A163F6009B66D5 /* MenuBarController.m */; };
+		9E6D49B314A166DB009B66D5 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E6D49B214A166DB009B66D5 /* Carbon.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6A9E300115BF2A4500FED82E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		9E19EAB814A1553100BCC1A3 /* USBMenu-Prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "USBMenu-Prefix.h"; sourceTree = "<group>"; };
+		9E2E238314A2C814007AC799 /* AppLib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AppLib.cpp; path = ../common/AppLib.cpp; sourceTree = "<group>"; };
+		9E2E238414A2C814007AC799 /* IKControlPanel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKControlPanel.cpp; path = ../common/IKControlPanel.cpp; sourceTree = "<group>"; };
+		9E2E238514A2C814007AC799 /* IKDevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKDevice.cpp; path = ../common/IKDevice.cpp; sourceTree = "<group>"; };
+		9E2E238614A2C814007AC799 /* IKEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKEngine.cpp; path = ../common/IKEngine.cpp; sourceTree = "<group>"; };
+		9E2E238714A2C814007AC799 /* IKFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKFile.cpp; path = ../common/IKFile.cpp; sourceTree = "<group>"; };
+		9E2E238814A2C814007AC799 /* IKMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKMap.cpp; path = ../common/IKMap.cpp; sourceTree = "<group>"; };
+		9E2E238914A2C814007AC799 /* IKMessage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKMessage.cpp; path = ../common/IKMessage.cpp; sourceTree = "<group>"; };
+		9E2E238A14A2C814007AC799 /* IKMsg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKMsg.cpp; path = ../common/IKMsg.cpp; sourceTree = "<group>"; };
+		9E2E238B14A2C814007AC799 /* IKOverlay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKOverlay.cpp; path = ../common/IKOverlay.cpp; sourceTree = "<group>"; };
+		9E2E238C14A2C814007AC799 /* IKOverlayList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKOverlayList.cpp; path = ../common/IKOverlayList.cpp; sourceTree = "<group>"; };
+		9E2E238D14A2C814007AC799 /* IKPrefs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKPrefs.cpp; path = ../common/IKPrefs.cpp; sourceTree = "<group>"; };
+		9E2E238E14A2C814007AC799 /* IKSettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKSettings.cpp; path = ../common/IKSettings.cpp; sourceTree = "<group>"; };
+		9E2E238F14A2C814007AC799 /* IKString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKString.cpp; path = ../common/IKString.cpp; sourceTree = "<group>"; };
+		9E2E239014A2C814007AC799 /* IKStringArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKStringArray.cpp; path = ../common/IKStringArray.cpp; sourceTree = "<group>"; };
+		9E2E239114A2C814007AC799 /* IKUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKUtil.cpp; path = ../common/IKUtil.cpp; sourceTree = "<group>"; };
+		9E2E239214A2C814007AC799 /* MessageClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MessageClient.cpp; path = ../common/MessageClient.cpp; sourceTree = "<group>"; };
+		9E2E239314A2C814007AC799 /* sharedMemory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sharedMemory.cpp; path = ../common/sharedMemory.cpp; sourceTree = "<group>"; };
+		9E48FEC714A1385F00527643 /* USBMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = USBMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E48FECB14A1385F00527643 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		9E48FECE14A1385F00527643 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		9E48FECF14A1385F00527643 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9E48FED014A1385F00527643 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9E48FED314A1385F00527643 /* USBMenu-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "USBMenu-Info.plist"; sourceTree = "<group>"; };
+		9E48FED514A1385F00527643 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9E48FED814A1385F00527643 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9E48FEDB14A1385F00527643 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		9E48FEE414A1385F00527643 /* USBMenu.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = USBMenu.xcdatamodel; sourceTree = "<group>"; };
+		9E48FF2614A140B800527643 /* blueicon.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = blueicon.tiff; path = Resources/blueicon.tiff; sourceTree = "<group>"; };
+		9E48FF2814A140B800527643 /* MainMenu.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = MainMenu.nib; path = Resources/MainMenu.nib; sourceTree = "<group>"; };
+		9E48FF2914A140B800527643 /* redicon.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = redicon.tiff; path = Resources/redicon.tiff; sourceTree = "<group>"; };
+		9E48FF4014A14CF000527643 /* IntelliKeys_Mac.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntelliKeys_Mac.cpp; path = ../common/IntelliKeys_Mac.cpp; sourceTree = "<group>"; };
+		9E6D49AC14A163C3009B66D5 /* iksupport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iksupport.cpp; sourceTree = "<group>"; };
+		9E6D49AE14A163F6009B66D5 /* MenuBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuBarController.m; sourceTree = "<group>"; };
+		9E6D49B214A166DB009B66D5 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		9E6D49B414A177D1009B66D5 /* MenuBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuBarController.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E48FEC414A1385F00527643 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E48FECC14A1385F00527643 /* Cocoa.framework in Frameworks */,
+				9E6D49B314A166DB009B66D5 /* Carbon.framework in Frameworks */,
+				6A9E300215BF2A4500FED82E /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9E48FEBC14A1385F00527643 = {
+			isa = PBXGroup;
+			children = (
+				9E48FED114A1385F00527643 /* USBMenu */,
+				9E48FF1C14A139EF00527643 /* Resources */,
+				9E48FECA14A1385F00527643 /* Frameworks */,
+				9E48FEC814A1385F00527643 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9E48FEC814A1385F00527643 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E48FEC714A1385F00527643 /* USBMenu.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E48FECA14A1385F00527643 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A9E300115BF2A4500FED82E /* Security.framework */,
+				9E6D49B214A166DB009B66D5 /* Carbon.framework */,
+				9E48FECE14A1385F00527643 /* AppKit.framework */,
+				9E48FECF14A1385F00527643 /* CoreData.framework */,
+				9E48FED014A1385F00527643 /* Foundation.framework */,
+				9E48FECB14A1385F00527643 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E48FED114A1385F00527643 /* USBMenu */ = {
+			isa = PBXGroup;
+			children = (
+				9E48FED814A1385F00527643 /* main.m */,
+				9E6D49AE14A163F6009B66D5 /* MenuBarController.m */,
+				9E6D49AC14A163C3009B66D5 /* iksupport.cpp */,
+				9E48FEE314A1385F00527643 /* USBMenu.xcdatamodeld */,
+				9E19EAB814A1553100BCC1A3 /* USBMenu-Prefix.h */,
+				9E6D49B414A177D1009B66D5 /* MenuBarController.h */,
+				9E48FF1114A139AC00527643 /* common */,
+				9E48FED214A1385F00527643 /* Supporting Files */,
+			);
+			path = USBMenu;
+			sourceTree = "<group>";
+		};
+		9E48FED214A1385F00527643 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E48FED314A1385F00527643 /* USBMenu-Info.plist */,
+				9E48FEDA14A1385F00527643 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9E48FF1114A139AC00527643 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				9E2E238314A2C814007AC799 /* AppLib.cpp */,
+				9E2E238414A2C814007AC799 /* IKControlPanel.cpp */,
+				9E2E238514A2C814007AC799 /* IKDevice.cpp */,
+				9E2E238614A2C814007AC799 /* IKEngine.cpp */,
+				9E2E238714A2C814007AC799 /* IKFile.cpp */,
+				9E2E238814A2C814007AC799 /* IKMap.cpp */,
+				9E2E238914A2C814007AC799 /* IKMessage.cpp */,
+				9E2E238A14A2C814007AC799 /* IKMsg.cpp */,
+				9E2E238B14A2C814007AC799 /* IKOverlay.cpp */,
+				9E2E238C14A2C814007AC799 /* IKOverlayList.cpp */,
+				9E2E238D14A2C814007AC799 /* IKPrefs.cpp */,
+				9E2E238E14A2C814007AC799 /* IKSettings.cpp */,
+				9E2E238F14A2C814007AC799 /* IKString.cpp */,
+				9E2E239014A2C814007AC799 /* IKStringArray.cpp */,
+				9E2E239114A2C814007AC799 /* IKUtil.cpp */,
+				9E2E239214A2C814007AC799 /* MessageClient.cpp */,
+				9E2E239314A2C814007AC799 /* sharedMemory.cpp */,
+				9E48FF4014A14CF000527643 /* IntelliKeys_Mac.cpp */,
+			);
+			name = common;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		9E48FF1C14A139EF00527643 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9E48FED414A1385F00527643 /* InfoPlist.strings */,
+				9E48FF2614A140B800527643 /* blueicon.tiff */,
+				9E48FF2814A140B800527643 /* MainMenu.nib */,
+				9E48FF2914A140B800527643 /* redicon.tiff */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E48FEC614A1385F00527643 /* USBMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E48FEE814A1385F00527643 /* Build configuration list for PBXNativeTarget "USBMenu" */;
+			buildPhases = (
+				9E48FEC314A1385F00527643 /* Sources */,
+				9E48FEC414A1385F00527643 /* Frameworks */,
+				9E48FEC514A1385F00527643 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = USBMenu;
+			productName = USBMenu;
+			productReference = 9E48FEC714A1385F00527643 /* USBMenu.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E48FEBE14A1385F00527643 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = RORICK.NET;
+			};
+			buildConfigurationList = 9E48FEC114A1385F00527643 /* Build configuration list for PBXProject "USBMenu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9E48FEBC14A1385F00527643;
+			productRefGroup = 9E48FEC814A1385F00527643 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E48FEC614A1385F00527643 /* USBMenu */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9E48FEC514A1385F00527643 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E48FED614A1385F00527643 /* InfoPlist.strings in Resources */,
+				9E48FEDC14A1385F00527643 /* Credits.rtf in Resources */,
+				9E48FF2A14A140B800527643 /* blueicon.tiff in Resources */,
+				9E48FF2C14A140B800527643 /* MainMenu.nib in Resources */,
+				9E48FF2D14A140B800527643 /* redicon.tiff in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E48FEC314A1385F00527643 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E48FED914A1385F00527643 /* main.m in Sources */,
+				9E48FEE514A1385F00527643 /* USBMenu.xcdatamodeld in Sources */,
+				9E48FF4114A14CF000527643 /* IntelliKeys_Mac.cpp in Sources */,
+				9E6D49AD14A163C3009B66D5 /* iksupport.cpp in Sources */,
+				9E6D49AF14A163F6009B66D5 /* MenuBarController.m in Sources */,
+				9E2E239414A2C814007AC799 /* AppLib.cpp in Sources */,
+				9E2E239514A2C814007AC799 /* IKControlPanel.cpp in Sources */,
+				9E2E239614A2C814007AC799 /* IKDevice.cpp in Sources */,
+				9E2E239714A2C814007AC799 /* IKEngine.cpp in Sources */,
+				9E2E239814A2C814007AC799 /* IKFile.cpp in Sources */,
+				9E2E239914A2C814007AC799 /* IKMap.cpp in Sources */,
+				9E2E239A14A2C814007AC799 /* IKMessage.cpp in Sources */,
+				9E2E239B14A2C814007AC799 /* IKMsg.cpp in Sources */,
+				9E2E239C14A2C814007AC799 /* IKOverlay.cpp in Sources */,
+				9E2E239D14A2C814007AC799 /* IKOverlayList.cpp in Sources */,
+				9E2E239E14A2C814007AC799 /* IKPrefs.cpp in Sources */,
+				9E2E239F14A2C814007AC799 /* IKSettings.cpp in Sources */,
+				9E2E23A014A2C814007AC799 /* IKString.cpp in Sources */,
+				9E2E23A114A2C814007AC799 /* IKStringArray.cpp in Sources */,
+				9E2E23A214A2C814007AC799 /* IKUtil.cpp in Sources */,
+				9E2E23A314A2C814007AC799 /* MessageClient.cpp in Sources */,
+				9E2E23A414A2C814007AC799 /* sharedMemory.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9E48FED414A1385F00527643 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E48FED514A1385F00527643 /* en */,
+			);
+			name = InfoPlist.strings;
+			path = USBMenu;
+			sourceTree = "<group>";
+		};
+		9E48FEDA14A1385F00527643 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E48FEDB14A1385F00527643 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9E48FEE614A1385F00527643 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = "/Applications/IntelliTools/IntelliKeys USB/Private";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = /;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx10.5;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VALID_ARCHS = i386;
+			};
+			name = Debug;
+		};
+		9E48FEE714A1385F00527643 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = "/Applications/IntelliTools/IntelliKeys USB/Private";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = /;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				SDKROOT = macosx10.5;
+				VALID_ARCHS = i386;
+			};
+			name = Release;
+		};
+		9E48FEE914A1385F00527643 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = "";
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "USBMenu/USBMenu-Prefix.h";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				HEADER_SEARCH_PATHS = "";
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "";
+				INFOPLIST_FILE = "USBMenu/USBMenu-Info.plist";
+				INSTALL_PATH = /;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.6;
+				SYMROOT = build;
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = ../common;
+				VALID_ARCHS = "i386 x86_64";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9E48FEEA14A1385F00527643 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DSTROOT = "";
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "USBMenu/USBMenu-Prefix.h";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				HEADER_SEARCH_PATHS = "";
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "";
+				INFOPLIST_FILE = "USBMenu/USBMenu-Info.plist";
+				INSTALL_PATH = /;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.6;
+				SYMROOT = "$(SYMROOT)";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = ../common;
+				VALID_ARCHS = "i386 x86_64";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E48FEC114A1385F00527643 /* Build configuration list for PBXProject "USBMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E48FEE614A1385F00527643 /* Debug */,
+				9E48FEE714A1385F00527643 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E48FEE814A1385F00527643 /* Build configuration list for PBXNativeTarget "USBMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E48FEE914A1385F00527643 /* Debug */,
+				9E48FEEA14A1385F00527643 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9E48FEE314A1385F00527643 /* USBMenu.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9E48FEE414A1385F00527643 /* USBMenu.xcdatamodel */,
+			);
+			currentVersion = 9E48FEE414A1385F00527643 /* USBMenu.xcdatamodel */;
+			path = USBMenu.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9E48FEBE14A1385F00527643 /* Project object */;
+}

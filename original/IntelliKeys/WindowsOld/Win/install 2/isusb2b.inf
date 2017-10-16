@@ -1,0 +1,303 @@
+
+
+;
+; HIDDEV.INF
+;
+; - Installs default support for HID devices according to compatible id
+;
+; Copyright (c) 1998 Microsoft Corporation
+;
+
+[Version]
+CatalogFile=hiddev.cat
+LayoutFile=Layout.inf, Layout1.inf, Layout2.inf
+Signature="$CHICAGO$"
+Class=HID
+ClassGUID={745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+Provider=Microsoft
+SetupClass=Base
+
+[BaseWinOptions]
+Inst_Hiddev
+
+[Inst_Hiddev]
+Copyfiles=Hid.Inf.Copy
+
+[Hid.Inf.Copy]
+hiddev.inf
+
+[DestinationDirs]
+DefaultDestDir = 11             ; LDID_SYS, the Windows\System directory
+HidClassCopy = 11
+HidClassDel = 25
+Hid.Inf.Copy   = 17             ; LDID_INF, the Windows\Inf directory
+USBHIDDevice.Copy = 10,system32\drivers
+USBHIDDevice.Del = 11
+HIDSystemControl.Copy = 11
+MMHID.Copy = 11
+MMHID.Del = 11
+
+[ClassInstall]
+AddReg=HIDClassReg
+CopyFiles=HidClassCopy
+DelFiles=HidClassDel
+
+[HIDClassReg]
+HKR,,,0,%HIDClassDescription%
+HKR,,Icon,,-24
+HKR,,Installer,,hidci.dll  ; the class installer forces RunOnce entries
+                           ; to be executed for all hid device installs
+
+[HidClassCopy]
+hidci.dll
+
+[HidClassDel]
+hidci.dll
+
+[ControlFlags]
+; All PnP devices should be excluded from manual AddDevice Applet list
+;ExcludeFromSelect=*
+
+[Manufacturer]
+%UnknownMfg%=UnknownMfg
+%Altec.Mfg%=Altec.Section
+%Philips.Mfg%=Philips.Section
+%CTX.Mfg%=CTX.Section
+%LiteOn.Mfg%=LiteOn.Section
+%Mitsubishi.Mfg%=Mitsubishi.Section
+%EIZO.Mfg%=EIZO.Section
+%Nokia.Mfg%=Nokia.Section
+%Labtec.Mfg%=Labtec.Section
+%Microsoft.Mfg%=Microsoft.Section
+%NEC.Mfg%=NEC.Section
+%Yamaha.Mfg%=Yamaha.Section
+%IntelliTools.Mfg%=IntelliTools.Section
+
+[UnknownMfg]
+
+; All USB HID devices have this compatible id
+%USB\Class_03%=USBHIDDevice,USB\Class_03
+
+; Compatible ID for generic HID collections
+%HID_DEVICE%=HIDCollection,HID_DEVICE
+
+;
+; Note: the following compatible HID IDs are supported in
+;       their device-class-specific INF files:
+;
+;               HID_DEVICE_SYSTEM_MOUSE
+;               HID_DEVICE_SYSTEM_KEYBOARD
+;               HID_DEVICE_SYSTEM_GAME
+;
+
+
+%HID_DEVICE_SYSTEM_CONTROL%=HIDSystemControl,HID_DEVICE_SYSTEM_CONTROL
+%HID_DEVICE_SYSTEM_CONSUMER%=HIDSystemConsumer,HID_DEVICE_UP:000C_U:0001
+
+; =================== Microsoft ===========================
+
+[Microsoft.Section]
+%USB\VID_045E&PID_0014&MI_02.DeviceDesc%=USBHIDDevice,USB\VID_045E&PID_0014&MI_02
+
+; =================== Altec Lansing ===========================
+
+[Altec.Section]
+%USB\VID_04D2&PID_FF47&MI_02.DeviceDesc%=USBHIDDevice,USB\VID_04D2&PID_FF47&MI_02
+%USB\VID_04D2&PID_FF49&MI_02.DeviceDesc%=USBHIDDevice,USB\VID_04D2&PID_FF49&MI_02
+%USB\VID_04D2&PID_0070&MI_02.DeviceDesc%=USBHIDDevice,USB\VID_04D2&PID_0070&MI_02
+
+; =================== Philips ===========================
+
+[Philips.Section]
+%USB\VID_0471&PID_0101&MI_02.DeviceDesc%=USBHIDDevice,USB\VID_0471&PID_0101&MI_02
+
+; =================== CTX ===========================
+
+[CTX.Section]
+%USB\VID_0698&PID_1786.DeviceDesc%=USBHIDDevice,USB\VID_0698&PID_1786
+
+; =================== LiteOn ===========================
+
+[LiteOn.Section]
+%USB\VID_04CA&PID_1766.DeviceDesc%=USBHIDDevice,USB\VID_04CA&PID_1766
+
+; =================== Mitsubishi ===========================
+
+[Mitsubishi.Section]
+%USB\VID_0452&PID_0021.DeviceDesc%=USBHIDDevice,USB\VID_0452&PID_0021
+
+; =================== EIZO ===========================
+
+[EIZO.Section]
+%USB\VID_056D&PID_0002.DeviceDesc%=USBHIDDevice_NanaoFix,USB\VID_056D&PID_0002
+
+; =================== Nokia ===========================
+
+[Nokia.Section]
+%USB\VID_04A6&PID_0181.DeviceDesc%=USBHIDDevice,USB\VID_04A6&PID_0181
+
+; =================== Labtec ===========================
+
+[Labtec.Section]
+%USB\VID_0672&PID_1041&MI_02.DeviceDesc%=USBHIDDevice,USB\VID_0672&PID_1041&MI_02
+
+; =================== NEC ==============================
+
+[NEC.Section]
+%USB\VID_0409&PID_0203&MI_03.DeviceDesc%=USBHIDDevice,USB\VID_0409&PID_0203&MI_03
+
+; =================== Yamaha ===========================
+
+[Yamaha.Section]
+%USB\VID_0499&PID_3001&MI_02.DeviceDesc%=USBHIDDevice,USB\VID_0499&PID_3001&MI_02
+
+; =================== IntelliTools ===========================
+
+[IntelliTools.Section]
+%USB\VID_144B&PID_0008&MI_00.DeviceDesc%=USBHIDDevice, USB\VID_144B&PID_0008&MI_00
+%USB\VID_144B&PID_0008&MI_01.DeviceDesc%=USBHIDDevice, USB\VID_144B&PID_0008&MI_01
+%USB\VID_144B&PID_0008&MI_02.DeviceDesc%=USBHIDDevice, USB\VID_144B&PID_0008&MI_02
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;  Install section for all USB HID devices  ;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[USBHIDDevice]
+CopyFiles=USBHIDDevice.Copy
+DelFiles=USBHIDDevice.Del
+AddReg=USBHIDDevice.AddReg
+
+[USBHIDDevice.Copy]
+hidclass.sys
+hidusb.sys
+hidparse.sys
+
+[USBHIDDevice.Del]
+hidclass.sys
+hidusb.sys
+hidparse.sys
+
+[USBHIDDevice.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,"hidusb.sys"
+
+
+[USBHIDDevice_NanaoFix]
+CopyFiles=USBHIDDevice.Copy
+DelFiles=USBHIDDevice.Del
+AddReg=USBHIDDevice.AddReg,NanaoHack.AddReg
+
+[NanaoHack.AddReg]
+;
+; The Nanao display driver is dependent on allowing feature
+; access on non-feature collections.
+; Set a flag in the devnode that allerts HIDCLASS to allow this
+; driver to continue working.
+;
+HKR,DeviceSpecificFlags,AllowFeatureOnNonFeatureCollection,,1
+
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[HIDCollection]
+; no reg or copy section for generic collections
+;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;  Install section for HID System Control devices  ;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;
+; The keyboard mapper handles system power controls.
+;
+[HIDSystemControl]
+CopyFiles=HIDSystemControl.Copy
+AddReg=HIDSystemControl.AddReg
+
+[HIDSystemControl.Copy]
+kbdhid.vxd
+
+[HIDSystemControl.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,"kbdhid.vxd"
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;  Install section for HID Consumer Control devices  ;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[HIDSystemConsumer]
+CopyFiles=MMHID.Copy
+DelFiles=MMHID.Del
+AddReg=MMHID.AddReg
+DelReg=MMHID.DelReg
+
+[MMHID.Copy]
+hidserv.exe
+
+[MMHID.Del]
+mmhid.dll
+
+[MMHID.DelReg]
+HKLM,Software\Microsoft\Windows\CurrentVersion\Run,MMHID
+
+[MMHID.AddReg]
+HKLM,Software\Microsoft\Windows\CurrentVersion\RunServices,Hidserv,,"Hidserv.exe run"
+HKLM,Software\Microsoft\Windows\CurrentVersion\RunOnce,Hidserv,,"Hidserv.exe install"
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+[Strings]
+UnknownMfg="(Standard device)"
+USB\Class_03="USB Human Interface Device"
+HIDClassDescription="Human Interface Devices"
+HID_DEVICE_SYSTEM_CONTROL="HID-compliant system control device"
+HID_DEVICE_SYSTEM_CONSUMER="HID-compliant consumer control device"
+HID_DEVICE="HID-compliant device"
+
+Microsoft.Mfg="Microsoft"
+USB\VID_045E&PID_0014&MI_02.DeviceDesc="Microsoft Digital Sound System 80 HID Audio Controls"
+
+Altec.Mfg="Altec Lansing"
+USB\VID_04D2&PID_FF47&MI_02.DeviceDesc="Altec Lansing HID Audio Controls"
+USB\VID_04D2&PID_FF49&MI_02.DeviceDesc="Altec Lansing HID Audio Controls"
+USB\VID_04D2&PID_0070&MI_02.DeviceDesc="Altec Lansing HID Audio Controls"
+
+Labtec.Mfg="Labtec"
+USB\VID_0672&PID_1041&MI_02.DeviceDesc="Labtec HID Audio Controls"
+
+Philips.Mfg="Philips"
+USB\VID_0471&PID_0101&MI_02.DeviceDesc="Philips HID Audio Controls"
+
+CTX.Mfg="CTX"
+USB\VID_0698&PID_1786.DeviceDesc="CTX USB Monitor"
+
+LiteOn.Mfg="Lite On"
+USB\VID_04CA&PID_1766.DeviceDesc="Lite On USB Monitor"
+
+Mitsubishi.Mfg="Mitsubishi"
+USB\VID_0452&PID_0021.DeviceDesc="Mitsubishi USB Monitor"
+
+EIZO.Mfg="EIZO"
+USB\VID_056D&PID_0002.DeviceDesc="EIZO USB HID Monitor"
+
+Nokia.Mfg="Nokia"
+USB\VID_04A6&PID_0181.DeviceDesc="Nokia USB Monitor Control"
+
+NEC.Mfg="NEC"
+USB\VID_0409&PID_0203&MI_03.DeviceDesc="NEC HID Audio Controls"
+
+Yamaha.Mfg="Yamaha"
+USB\VID_0499&PID_3001&MI_02.DeviceDesc="Yamaha HID Audio Controls"
+
+IntelliTools.Mfg="IntelliTools"
+USB\VID_144B&PID_0008&MI_00.DeviceDesc="IntelliSwitch Private"
+
+IntelliTools.Mfg="IntelliTools"
+USB\VID_144B&PID_0008&MI_01.DeviceDesc="IntelliSwitch Keyboard"
+
+IntelliTools.Mfg="IntelliTools"
+USB\VID_144B&PID_0008&MI_02.DeviceDesc="IntelliSwitch Mouse"
+

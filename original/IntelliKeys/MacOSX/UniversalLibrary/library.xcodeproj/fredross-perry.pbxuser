@@ -1,0 +1,282 @@
+// !$*UTF8*$!
+{
+	0867D690FE84028FC02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Release;
+		activeExecutable = E8F921EA0C68CD58007A339E /* test app */;
+		activeTarget = D2AAC09C05546B4700DB518D /* library */;
+		addToTargets = (
+			D2AAC09C05546B4700DB518D /* library */,
+			E8F921E80C68CD58007A339E /* test app */,
+		);
+		breakpoints = (
+			E8A26A9F0C8377CB003C52B8 /* main.cpp:205 */,
+		);
+		breakpointsGroup = E851FDB40C67EBA500E6C7FF /* XCBreakpointsBucket */;
+		codeSenseManager = E851FDA40C67EB2000E6C7FF /* Code sense */;
+		executables = (
+			E8F921EA0C68CD58007A339E /* test app */,
+		);
+		perUserDictionary = {
+			"PBXConfiguration.PBXBreakpointsDataSource.v1:1CA1AED706398EBD00589147" = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXBreakpointsDataSource_BreakpointID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					20,
+					210,
+					20,
+					110,
+					109,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXBreakpointsDataSource_ActionID,
+					PBXBreakpointsDataSource_TypeID,
+					PBXBreakpointsDataSource_BreakpointID,
+					PBXBreakpointsDataSource_UseID,
+					PBXBreakpointsDataSource_LocationID,
+					PBXBreakpointsDataSource_ConditionID,
+					PBXBreakpointsDataSource_ContinueID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					315,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFindDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFindDataSource_LocationID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					200,
+					415,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFindDataSource_MessageID,
+					PBXFindDataSource_LocationID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					200,
+					221,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 233101330;
+			PBXWorkspaceStateSaveDate = 233101330;
+		};
+		sourceControlManager = E851FDA30C67EB2000E6C7FF /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	32BAE0B70371A74B00C91783 /* library_Prefix.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1368, 647}}";
+			sepNavSelRange = "{157, 0}";
+			sepNavVisRect = "{{0, 0}, {1368, 647}}";
+			sepNavWindowFrame = "{{15, 97}, {1407, 776}}";
+		};
+	};
+	D2AAC09C05546B4700DB518D /* library */ = {
+		activeExec = 0;
+	};
+	E851FDA30C67EB2000E6C7FF /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+		scmType = "";
+	};
+	E851FDA40C67EB2000E6C7FF /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	E851FDA50C67EB4900E6C7FF /* main.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1399, 14924}}";
+			sepNavSelRange = "{5716, 0}";
+			sepNavVisRect = "{{0, 2886}, {1399, 319}}";
+			sepNavWindowFrame = "{{15, 116}, {1265, 757}}";
+		};
+	};
+	E851FDB40C67EBA500E6C7FF /* XCBreakpointsBucket */ = {
+		isa = XCBreakpointsBucket;
+		name = "Project Breakpoints";
+		objects = (
+			E8A26A9F0C8377CB003C52B8 /* main.cpp:205 */,
+		);
+	};
+	E851FDDE0C67ED8100E6C7FF /* AppLib.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1094, 30436}}";
+			sepNavSelRange = "{371, 24}";
+			sepNavVisRect = "{{0, 0}, {1018, 373}}";
+		};
+	};
+	E851FDE00C67ED8100E6C7FF /* IKCommon.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1018, 1078}}";
+			sepNavSelRange = "{1051, 28}";
+			sepNavVisRect = "{{0, 705}, {1018, 373}}";
+			sepNavWindowFrame = "{{15, 97}, {1407, 776}}";
+		};
+	};
+	E851FDE10C67ED8100E6C7FF /* IKFile.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1018, 23072}}";
+			sepNavSelRange = "{796, 24}";
+			sepNavVisRect = "{{0, 465}, {1018, 373}}";
+		};
+	};
+	E851FDE40C67ED8100E6C7FF /* IKMap.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1018, 1064}}";
+			sepNavSelRange = "{905, 41}";
+			sepNavVisRect = "{{0, 367}, {1018, 373}}";
+		};
+	};
+	E851FDEB0C67ED8100E6C7FF /* IKString.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1399, 15764}}";
+			sepNavSelRange = "{454, 0}";
+			sepNavVisRect = "{{0, 83}, {1399, 324}}";
+		};
+	};
+	E851FDEC0C67ED8100E6C7FF /* IKString.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1018, 1736}}";
+			sepNavSelRange = "{492, 29}";
+			sepNavVisRect = "{{0, 0}, {1018, 373}}";
+		};
+	};
+	E851FDEF0C67ED8100E6C7FF /* IKUtil.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1399, 44408}}";
+			sepNavSelRange = "{9696, 0}";
+			sepNavVisRect = "{{0, 6992}, {1399, 423}}";
+		};
+	};
+	E851FE040C67ED9300E6C7FF /* IterateDirectory.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1018, 3332}}";
+			sepNavSelRange = "{3075, 8}";
+			sepNavVisRect = "{{0, 731}, {1018, 373}}";
+			sepNavWindowFrame = "{{15, 97}, {1407, 776}}";
+		};
+	};
+	E851FE0F0C67EDEC00E6C7FF /* library_Prefix.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1368, 647}}";
+			sepNavSelRange = "{214, 0}";
+			sepNavVisRect = "{{0, 0}, {1368, 647}}";
+			sepNavWindowFrame = "{{15, 97}, {1407, 776}}";
+		};
+	};
+	E851FE4B0C67EEE000E6C7FF /* IKMessage.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1399, 9912}}";
+			sepNavSelRange = "{3791, 0}";
+			sepNavVisRect = "{{0, 4521}, {1399, 324}}";
+			sepNavWindowFrame = "{{70, 107}, {1265, 757}}";
+		};
+	};
+	E851FE4D0C67EEE000E6C7FF /* IKMsg.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1399, 4340}}";
+			sepNavSelRange = "{4068, 0}";
+			sepNavVisRect = "{{0, 2652}, {1399, 423}}";
+		};
+	};
+	E851FE550C67EF0300E6C7FF /* sharedMemory.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1368, 4830}}";
+			sepNavSelRange = "{5983, 0}";
+			sepNavVisRect = "{{0, 3479}, {1368, 647}}";
+			sepNavWindowFrame = "{{15, 97}, {1407, 776}}";
+		};
+	};
+	E8A26A9F0C8377CB003C52B8 /* main.cpp:205 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		delayBeforeContinue = 0;
+		fileReference = E851FDA50C67EB4900E6C7FF /* main.cpp */;
+		functionName = "IsWinOverlayFile()";
+		hitCount = 1;
+		lineNumber = 205;
+		location = main.ob;
+		modificationTime = 209942647.638213;
+		state = 1;
+	};
+	E8F921E80C68CD58007A339E /* test app */ = {
+		activeExec = 0;
+		executables = (
+			E8F921EA0C68CD58007A339E /* test app */,
+		);
+	};
+	E8F921EA0C68CD58007A339E /* test app */ = {
+		isa = PBXExecutable;
+		activeArgIndex = 2147483647;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "test app";
+		savedGlobals = {
+		};
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+			"checkMORE-FourCharCode-IsWinOverlayFile" = 5;
+		};
+	};
+}

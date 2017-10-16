@@ -1,0 +1,9 @@
+
+Acrobat%206.0\Reader\AcroRd32.exe	Adobe Reader 6
+Acrobat%207.0\Reader\AcroRd32.exe	Adobe Reader 7
+
+Clicker4\Clicker%204.exe		Clicker 4
+Clicker5\Clicker%205.exe		Clicker 5
+USWWS2000CD.exe	Writing With Symbols
+BM_SDP.exe		Boardmaker with SD Pro
+

@@ -1,0 +1,8 @@
+
+%Program%20Files%\Adobe\Acrobat%206.0\Reader\AcroRd32.exe		1|Adobe Reader Overlay.omt|
+%Program%20Files%\Adobe\Acrobat%207.0\Reader\AcroRd32.exe		1|Adobe Reader Overlay.omt|
+
+%root%\Clicker4\Clicker%204.exe		1|Clicker Scan Overlay.omt|
+%Program%20Files%\Crick%20Software\Clicker%205\Clicker%205.exe		1|Clicker 5 Scan Overlay.omt|
+%Program%20Files%\Boardmaker%20with%20SD%20Pro\BM_SDP.exe		1|MJ Scan Overlay.omt|
+%root%\WWS2000\Application\USWWS2000CD.exe		1|WWS Scan Overlay.omt|

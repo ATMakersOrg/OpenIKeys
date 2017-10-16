@@ -1,0 +1,242 @@
+
+Software_Version			3.1
+Firmware_Version			2.2
+
+;
+;   relative paths to various files and folders
+;   all are relative to the root folder.
+;
+Private_Folder			Private/
+Channels_Folder			Private/Channels/
+Engine_Folder			Private/Channels/Engine/
+Users_Folder			Documents/
+Guest_Folder			Documents/Gast/
+
+;
+;  Preferences stuff
+;
+Preferences_File		Preferences.txt
+Guest				Gast
+
+;Reload_Standard_Overlay_When_Recognized		1
+
+;
+;  Other stuff
+;
+Intellipics_Program			intellipics.exe
+Intellipics_Player_Program		intellipics player.exe
+
+;
+;  debug stuff
+;
+;Debug_Log_File			DebugLog.txt
+Debug_Log_Flush_Period		1000
+
+
+Custom_Overlay			persoonlijk
+
+;
+;  Time periods for various tasks, in MSec
+;
+Correct_Period			500
+Engine_Period			5
+Device_Search_Period		1000
+External_Command_Period		250
+External_Command_Period 2	250
+EEProm_Byte_Overdue		500
+Dead_Until_Time			1000
+Min_Response_Time		15
+Min_Repeat_Start			1000
+Max_Repeat_Start			4000
+Keyboard_Reset_Sound_Duration	50
+Mouse_Click_Delay			5
+Led_Reconcile_Period		100
+Queue_Empty_Timeout		2000
+Switch_Response_Period		50
+
+;  App watching
+watch_apps			1
+App_Watch_Period		500
+
+;
+;  Mouse accelleration parameters
+;
+Mouse_Accelleration_Knee		1000
+Mouse_Accelleration_Scale_Mac	60
+Mouse_Accelleration_Scale_Win	25
+
+;
+;  Overlay recognition
+;
+Overlay_Rec_Settle_Period		1000
+Overlay_Rec_Fallback_Threshhold	150
+Overlay_Rec_Black_Weight		50
+
+;
+;  vendor and product ID for USB device matching
+;  must use decimail values
+;
+Vendor_ID			2398
+Product_ID			257
+
+IK_Vendor_ID			2398
+IK_Product_ID			257
+
+IS_Vendor_ID			5195
+IS_Product_ID			8
+
+;
+;  valid serial number prefix
+;
+Valid_Serial_Number_Prefix		C-
+
+;
+;
+;
+Key_Sound_Frequency		247
+Short_Key_Sound_Length		50
+Long_Key_Sound_Length		700
+Sweep_Sound_Low_Frequency	200
+Sweep_Sound_High_Frequency	250
+Sweep_Sound_Duration		200
+
+Unknown				Onbekend
+
+Help_File				Private/ikusbhelp.html
+
+S_KEYSOUND_OFF		Uit
+S_KEYSOUND_1			1
+S_KEYSOUND_2			2
+S_KEYSOUND_3			3
+S_KEYSOUND_4			4
+S_CP_KEYSOUND_VOLUME	Volume toetsgeluid
+
+S_UNKNOWN_VALUE		Onbekende waarde
+
+S_NONE				Geen
+
+S_BOOL_ON			Aan
+S_BOOL_OFF			Uit
+
+S_LF_HEADER1			IntelliKeys USB instellingen voor gebruiker "%s"
+S_LF_HEADER2			IntelliKeys USB instellingen voor gebruiker "%s" in groep "%s"
+
+S_LISTFEATURES_RESPONSE_RATE 		Reactiesnelheid
+S_LISTFEATURES_REPEAT_RATE 			Herhaalsnelheid
+S_LISTFEATURES_MOUSE_SPEED 			Muissnelheid
+S_LISTFEATURES_DATA_SEND_RATE 		Zendsnelheid
+S_LISTFEATURES_SMART_TYPING 			Slim typen
+S_LISTFEATURES_REQUIRED_LIFT_OFF 		Loslaten vereist
+S_LISTFEATURES_KEY_SOUND_VOLUME		Volume toetsgeluid
+S_LISTFEATURES_REPEAT			Herhalen
+S_LISTFEATURES_REPEAT_LATCHING		Herhalen vastzetten
+S_LISTFEATURES_SHIFT_KEY_ACTION 		Shift-toets functie
+S_LISTFEATURES_INDICATOR_LIGHTS 		Indicatielampjes
+
+S_LISTFEATURES_MODE				Modus
+S_LISTFEATURES_MODE_LASTSENT		Gebruik laatst verzonden Overlay
+S_LISTFEATURES_MODE_SPECIFIC			Gebruik specifieke Overlay
+S_LISTFEATURES_MODE_SWITCH			als schakelaar
+
+S_LISTFEATURES_MODE_LAST_OVERLAY		Laatst verzonden Overlay
+S_LISTFEATURES_MODE_SPECIFIC_OVERLAY	Specifieke Overlay
+S_LISTFEATURES_MODE_SWITCH_SETTING		Schakelaarinstelling
+
+S_LF_NUMKB				Aantal aangesloten toetsenborden
+S_LF_KBNUM				Toetsenbordnummer
+
+S_LATCHING				Vastzetten
+S_LOCKING				Vergrendelen
+S_NO_LATCHING				Niet vastzetten
+
+S_LIGHTS_THREE				Drie
+S_LIGHTS_SIX				Zes
+
+S_CP_KEYSOUNDVOLUME		Volume toetsgeluid
+S_CP_KEYSOUNDVOLUME_OFF		Uit
+
+S_NOT_CONNECTED			Niet aangesloten
+S_CONNECTED				Aangesloten
+
+S_YES					Ja
+S_NO					Nee
+
+
+S_CP_STANDARD_OVERLAY       	Standaard Overlay
+S_CP_CUSTOM_OVERLAY          	Eigen Overlay
+S_CP_ONOFF_SWITCH_STATUS      Aan of Uit
+S_CP_FIRMWARE_VERSION          	Firmware versie
+S_CP_SOFTWARE_VERSION          	Software versie
+S_CP_SERIAL_NUMBER            	Serienummer
+S_CP_SENSORS                   	Sensorwaarden
+S_CP_CONNECTED		Aangesloten
+S_CP_OVERLAY_NAME		Overlaynaam
+S_CP_OVERLAY_LEVEL		Overlayniveau
+
+S_CP_SWITCH1			Schakelaar 1
+S_CP_SWITCH2			Schakelaar 2
+S_CP_SWITCH3			Schakelaar 3
+S_CP_SWITCH4			Schakelaar 4
+S_CP_SWITCH5			Schakelaar 5
+
+S_CP_NUMKEYS			Aantal ingedrukte toetsen
+S_CP_ROWCOL			Rij = %d, Kolom = %d
+S_CP_SENS			Sensorwaarden = %d,%d,%d,%d,%d,%d,%d,%d,%d
+S_GUEST			Gast
+
+right_click_text	AAAAAAAAAARIGHTCLICKAAAAAAAAAA
+
+report_diagnostics_realtime		1
+report_diagnostics_realtime_period	100
+report_diagnostics_realtime_timeout	50
+
+APP_OVERLAYS_SRC_FOLDER	Applicaton Overlays
+APP_OVERLAYS_SRC_MAP	applications.txt
+APP_OVERLAYS_NAMES_MAP	application display names.txt
+
+intellikeys_usb			IntelliKeys USB
+
+app_not_allowed		Deze Overlay kan niet gekoppeld worden aan de applicatie vanuit Intellikeys configuratiescherm.Deze applicatie koppelt zijn eigen overlays. Raadpleeg zonodig de gebruikershandleiding van deze applicatie.
+
+sending			verzenden
+for			voor
+
+S_MENU_NONE1		toestaan
+S_MENU_NONE2		om een overlay te verzenden
+S_MENU_CLICKIT		toestaan om ClickIt! een overlay te verzenden
+S_MENU_DISCOVER		toestaan om DiscoverPro een setup te gebruiken
+
+
+S_TOOLTIP_IK_ON		IntelliKeys USB is aangesloten.
+S_TOOLTIP_IK_OFF		IntelliKeys USB is aangesloten, maar is uitgeschakeld.
+S_TOOLTIP_IS_ON		IntelliSwitch is aangesloten.
+S_TOOLTIP_IS_OFF		IntelliSwitch is aangesloten, maar is uitgeschakeld.
+S_TOOLTIP_MULTIPLE_DEVICES	Er zijn meerdere apparaten aangesloten.
+S_TOOLTIP_NO_DEVICES		Er is geen apparaat aangesloten.
+
+
+Systray_Tip			IntelliKeys USB
+Systray_Menu			Open IntelliKeys USB Configuratiescherm
+Systray_Menu_Switch		Open IntelliKeys USB en IntelliSwitch Configuratiescherm
+
+S_TROUBLESHOOTING		Probleem Oplossen...
+S_INTELLIKEYS_WILL		Het configuratiescherm zal...
+
+use_switch_setting		de volgende switch instelling gebruiken: 
+use_overlay			de volgnede overlay gebruiken:
+
+attach_edit_overlays_for	koppel/wijzig overlays voor
+
+s_overlay_not_sent_1	Overlay niet verzonden|Een overlay is niet verzonden omdat \n"met een enkele overlay voor alle programma's" is geselecteerd \nop de Tab Geavanceerd van de \nIntelliKeys en IntelliSwitch configuratiescherm.\n\nom het verzenden van overlays in te schakelen, selecteer "Met overlays gekoppeld aan applicatie".
+
+s_overlay_not_sent_2	Overlay niet verzonden|Een overlay is niet verzonden omdat \n"Als een schakelaar" is geselecteerd \nop de Tab Geavanceerd van de \nIntelliKeys en IntelliSwitch configuratiescherm.\n\nom het verzenden van overlays in te schakelen, selecteer "Met overlays gekoppeld aan applicatie".
+
+Send	Verzenden
+Send_No_Overlay	Geen overlay verzenden
+
+Overlays	overlays
+One_Overlay_Only	One overlay Only
+Switch_Presets	Switch Presets
+Mode:	Modus
+Using_overlay	Using overlays
+

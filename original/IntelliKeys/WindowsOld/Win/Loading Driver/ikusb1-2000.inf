@@ -1,0 +1,67 @@
+;
+; FILE   : INTELLIKEYS.INF
+; VERSION: 1.1
+;
+
+[Version]
+Signature="$CHICAGO$"
+Class=USB
+ClassGuid={36FC9E60-C465-11CF-8056-444553540000}
+provider=%IntelliTools%
+LayoutFile=LAYOUT.INF
+
+[Manufacturer]
+%IntelliTools%=IntelliTools
+
+[IntelliTools]
+;
+; This is the device entry for the device prior to firmware
+; download and ReNumeration.
+;
+%USB\VID_095E&PID_0100.DeviceDesc%=IkFirm.Dev, USB\VID_095E&PID_0100
+
+[PreCopySection]
+HKR,,NoSetupUI,,1
+
+;[DestinationDirs]
+;IkFirm.Files.Ext = 10,System32\Drivers
+;IkFirm.Files.Inf = 10,INF
+
+[IkFirm.Dev]
+;CopyFiles=IkFirm.Files.Ext, IkFirm.Files.Inf
+AddReg=IkFirm.AddReg
+
+[IkFirm.Dev.NT]
+; copyfiles commented out for Win2K to avoid user intervention during install
+;CopyFiles=IkFirm.Files.Ext, IkFirm.Files.Inf
+AddReg=IkFirm.AddReg
+
+[IkFirm.Dev.NT.Services]
+Addservice = IkFirm, 0x00000002, IkFirm.AddService
+
+[IkFirm.AddService]
+DisplayName    = %IkFirm.SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 2                  ; SERVICE_AUTO_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %10%\System32\Drivers\IkFirm.sys
+LoadOrderGroup = Base
+;DependOnGroup = SpoolerGroup
+
+[IkFirm.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,IkFirm.sys
+
+;[IkFirm.Files.Ext]
+;IkFirm.sys
+
+;[IkFirm.Files.Inf]
+;ikusb1.Inf
+
+;---------------------------------------------------------------;
+
+[Strings]
+IntelliTools="IntelliTools"
+USB\VID_095E&PID_0100.DeviceDesc="IntelliKeys Firmware"
+
+IkFirm.SvcDesc="IntelliKeys Firmware Download Driver (IkFirm.sys)"

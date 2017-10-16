@@ -1,0 +1,139 @@
+﻿
+;  for international versions
+
+codepage_for_locale_0404		950  ;  traditional chinese
+codepage_for_locale_0C04		932  ;  simplified chinese
+codepage_for_locale_0411		932  ;  japanese
+codepage_for_locale_0412		949  ;  korean
+codepage_for_locale_0019		1251  ; Russian (ru) Cyrillic
+codepage_for_locale_0419		1251  ; Russian (ru-RU) Cyrillic
+codepage_for_locale_000C		1252  ; French (fr)  
+codepage_for_locale_0C0C		1252  ; French (fr-CA) 
+codepage_for_locale_040C		1252  ; French (fr-FR)  
+codepage_for_locale_0016		1252  ; Portuguese (pt) 
+codepage_for_locale_0416		1252  ; Portuguese (pt-BR) 
+codepage_for_locale_0816		1252  ; Portuguese (pt-PT) 
+codepage_for_locale_000A		1252  ; Spanish (sp) 
+codepage_for_locale_080A		1252  ; Spanish (sp-MX) 
+codepage_for_locale_0C0A		1252  ; Spanish (sp-SP) 
+codepage_for_locale_0009		1252  ; English (en) 
+codepage_for_locale_0409		1252  ; English (en-US)
+codepage_for_locale_1009		1252  ; English (en-CN)
+codepage_for_locale_0809		1252  ; English (en-UK)
+
+Overlays_Folder			Private/Standard Overlays/Win/
+Switch_Settings_Folder		Private/Switch Settings/Win/
+
+;
+;  The standard overlays
+;
+Standard_Overlay_0		Planche Acces Internet USB.omg
+Standard_Overlay_1		Planche de parametrage.oms
+Standard_Overlay_2		Planche Chiffres USB.oms
+Standard_Overlay_3		Planche Alphabet USB.oms
+Standard_Overlay_4		Planche Fleches souris USB.oms
+Standard_Overlay_5		Planche de QWERTY USB.omg
+Standard_Overlay_6		Planche Juste ecrire USB.oms
+Standard_Overlay_7		none.oms
+Standard_Setup_Overlay		1
+
+Standard_Overlay_0_Name		Planche Accès Internet USB
+Standard_Overlay_1_Name		Planche de Paramétrage USB
+Standard_Overlay_2_Name		Planche Chiffres USB
+Standard_Overlay_3_Name		Planche Alphabet USB
+Standard_Overlay_4_Name		Planche Flèches Souris USB
+Standard_Overlay_5_Name		Planche QWERTY USB 
+Standard_Overlay_6_Name		Planche Juste Écrire USB
+Standard_Overlay_7_Name		aucune
+
+;;the standard english overlays for reference
+;Standard_Overlay_0		Web Access USB Overlay.oms
+;Standard_Overlay_1		Setup USB Overlay.oms
+;Standard_Overlay_2		Math Access USB Overlay.oms
+;Standard_Overlay_3		Alphabet USB Overlay.oms
+;Standard_Overlay_4		Mouse Access USB Overlay.oms
+;Standard_Overlay_5		QWERTY USB Overlay.oms
+;Standard_Overlay_6		Basic Writing USB Overlay.oms
+;Standard_Overlay_7		none.oms
+;Standard_Setup_Overlay		1
+
+;; The corresponding English names here for reference
+;Standard_Overlay_0_Name		Web Access USB Overlay
+;Standard_Overlay_1_Name		Setup USB Overlay
+;Standard_Overlay_2_Name		Math Access USB Overlay
+;Standard_Overlay_3_Name		Alphabet USB Overlay
+;Standard_Overlay_4_Name		Mouse Access USB Overlay
+;Standard_Overlay_5_Name		QWERTY USB Overlay
+;Standard_Overlay_6_Name		Basic Writing USB Overlay
+;Standard_Overlay_7_Name		none
+
+Override_Use_System_Repeat_Settings          	0
+Force_Key_Up					1
+max_repeat_delay				750
+num_switch_files	26
+
+switch_file_1	1 - Ctrl-Enter and Ctrl-Enter
+switch_file_2	2 - Ctrl-Right and -Down Arrows.oms
+switch_file_3	3 - Space and Enter.oms
+switch_file_4	4 - Click and Click.oms
+switch_file_5	5 - Click and Double Click.oms
+switch_file_6	6 - Left and Right Arrows.oms
+switch_file_7	7 - Up Arrow and Down Arrow.oms
+switch_file_8	8 - Left Arrow and Up Arrow.oms
+switch_file_9	9 - 1 and 2.oms
+switch_file_10	10 - Tab and Enter.oms
+switch_file_11	11 - Tab and Space.oms
+switch_file_12	12 - Tab and Shift-Tab.oms
+switch_file_13	13 - Left Shift and Right Shift.oms
+switch_file_14	14 - Down Arrow and Enter.oms
+switch_file_15	15 - Right Arrow and Enter.oms
+switch_file_16	16 - Left Click and Right Click
+switch_file_17	17 - Arrow Keys and Enter.oms
+switch_file_18	18 - Arrow Keys and Space.oms
+switch_file_19	19 - 1 thru 4 and 0.oms
+switch_file_20	20 - 1 thru 4 and Enter.oms
+switch_file_21	21 - Edit Keys.oms
+switch_file_22	22 - Modifiers.oms
+switch_file_23	23 - Mouse Click.oms
+switch_file_24	24 - Five-Button Mouse.oms
+switch_file_25	25 - Miscellaneous 1.oms
+switch_file_26	26 - Mouse Directions.oms
+
+;
+;  names by which to identify running programs
+
+engine_name_1		ikusbsvc.exe
+engine_name_2		ikusb.exe
+engine_name_3		w9xsvc.exe
+
+Control_Panel_Name		IntelliKeys USB.exe
+control_panel_name_1	IntelliKeys USB.exe
+control_panel_name_2	IntelliKeys USB
+
+system_tray_name_1	iksystray.exe
+system_tray_name_2	system tray.exe
+system_tray_name_3	iksyst~1.exe
+
+balloon_name_1		balloon.exe
+
+Debug_Sender		0
+
+Unicode_File_Names	1
+	
+intellikeys_file		IntelliKeys USB.exe
+
+S_SYSTRAY_SKIP_APP_1	Bootstrap loader for Discover
+S_SYSTRAY_SKIP_APP_2	IK USB System Tray
+S_SYSTRAY_SKIP_APP_3	IntelliKeys USB
+S_SYSTRAY_SKIP_APP_4	Main UI application that resides in the System Tray
+S_SYSTRAY_SKIP_APP_5	Run a DLL as an app
+
+DiscoverName		DiscoverPro
+
+s_overlay_not_sent_1	Planche non envoyée|Une planche n’a pas été envoyée car Une planche seulement est sélectionné à l’onglet Mode du panneau de configuration IntelliKeys et IntelliSwitch.   Pour activer l’envoi de planche, sélectionnez Planches.
+s_overlay_not_sent_2	Planche non envoyée|Une planche n’a pas été envoyée car Préréglages d’interrupteur est sélectionné à l’onglet Mode du panneau de configuration IntelliKeys et IntelliSwitch.   Pour activer l’envoi de planche, sélectionnez Planches.
+s_overlay_not_sent_3	Planche non envoyée|Une planche n’a pas été envoyée car DiscoverPro est sélectionné à l’onglet Mode du panneau de configuration IntelliKeys et IntelliSwitch.   Pour activer l’envoi de planche, sélectionnez Planches.
+
+S_LISTFEATURES_MODE_DISCOVER			DiscoverPro
+
+menu_enabled		1

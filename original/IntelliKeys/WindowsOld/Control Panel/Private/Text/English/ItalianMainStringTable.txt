@@ -1,0 +1,293 @@
+$Touch_Features		Regolazioni del tocco 
+$Keysound_Volume	Volume acustico
+$Repeat_Features	Regolazioni della ripetizione
+$Additional_Features	Altre regolazioni
+$Indicator_Lights	Attivazione tasti doppia funzione
+$Testing		Prova
+$StandardOverlayNote	NOTA: ogni volta che viene inserito un Overlay standard, questo diventa attivo e sostituisce l'overlay precedente.
+$Volume:		Volume :
+$Response_Rate:		Soglia :
+$Mouse_Speed:		Regolazione mouse :
+$Repeat_Rate:		Velocità di ripetizione :
+$Firmware_Version_:	Versione Firmware :
+$Software_Version_:	Versione Software :
+$On/Off_Switch_:	Interruttore :
+$Connected_:		Tastiera Collegata :
+$Serial_Number_:	Numero di serie :
+$Standard_Overlay_In_Place_:	Overlay Standard inserito :
+$Last_Sent_Overlay_:	Ultimo Overlay inviato:
+$Overlay_Level_:	Livello Overlay :
+$Language_:		Lingua :
+$Mode_:_		Modalità : 
+$Connected		Connessa
+$Not_Connected		Non Connessa
+$Switched_On		Accesa
+$Switched_Off		Spenta
+On			Accesa
+Off			Spenta
+$Switch_1_:		Sensore 1 : 
+$Switch_2_:		Sensore 2 : 
+$Switch_3_:		Sensore 3 : 
+$Switch_4_:		Sensore 4 : 
+$Switch_5_:		Sensore 5 : 
+$Pad_:			: Tastiera
+$Group:			Gruppo:
+$User:			Utente:
+$Edit_Groups_and_Users	&Gruppi e utenti...
+$Keyboard_Reset		&Reset 
+$Help...		&Aiuto...
+$Visit_Our_Website	&Visita il nostro sito Web...
+$Done			&Fatto
+$Clear			&Annulla
+$Required_Lift_Off	Sol&levamento
+$Repeat			Ri&petizione
+$Repeat_Latching	Ripeti&zione controllata
+$Smart_Typing		&Scrittura Veloce
+$Latching		Tempora&nea
+$Latching2		Temporanea
+$Locking		Bl&occabile
+$Locking2		Bloccabile
+$No_Latching		&Normale
+$No_Latching2		Normale
+$Touch_Features.tabTitle		Impostazioni &Tastiera
+$Advanced		Avanzat&e
+$Troubleshooting	Soluzione dei &problemi
+
+
+$Browse...		&Cerca...
+$Display_Features...	Lista &Valori...
+!Root_Folder_Does_Not_Exist	La cartella principale non esiste.  Verificare che l'installazione sia corretta.
+!Users_Folder_Does_Not_Exist	La cartella utente non esiste.  Verificare che l'installazione sia corretta.
+!Group_Folder_Inaccessible	Impossibile accedere a Gruppi e Utenti.  La cartella principale potrebbe essere inaccessibile.
+!Keyboard_Software_Not_Responding	Il programma della tastiera USB non risponde: può essersi interrotto o può essere bloccato.  Verificare che il programma sia in esecuzione, poi riprovare a cambiare le impostazioni.
+!Unsupported_USB_Keyboard_Message	Il programma di Intellikeys USB ha ricevuto un messaggio non codificato con codice : ID = 
+$Use_Intellikeys...		Quando non c'è montato un Overlay Standard , usa IntelliKeys...
+$Device_Status		Stato
+!Unable_to_save_the_settings	Impossibile salvare il file di impostazioni per questo utente.
+!Unable_to_load_the_settings	Impossibile caricare il file di impostazioni per questo utente.
+!Unable_to_locate_preferences	Impossibile trovare il file delle preferenze nella cartella privata.
+!Unable_to_save_preferences	Impossibile salvare il file delle preferenze.
+!Cannot_Add_To_Guest_Group	Non è possibile aggiungere utenti al gruppo Ospite.
+!The_User			L'utente '
+!Could_not_be_added		' non può essere aggiunto.  Il file potrebbe non essere accessibile.
+!Can't_read_group_folder	Impossibile creare la cartella gruppo o visualizzare le cartelle utenti per il gruppo :
+!Can't_rename_group_folder	Impossibile rinominare la cartella del gruppo in : 
+!User_already_exists		Esiste già un utente con questo nome.  Scegliere un nome diverso.
+!Group_already_exists		Esiste già un gruppo con questo nome.  Scegliere un nome diverso.
+!Can't_add_group_folder		Impossibile aggiungere il gruppo '
+!Can't_add_group_folder		'.  La cartella potrebbe non essere accessibile.
+!Can't_scan_group_folders	Impossibile visualizzare le cartelle del gruppo.  Potrebbero essere inaccessibili.
+!Group_is_not_empty		Il gruppo non può essere eliminato perchè non è vuoto.  Rimuovere tutti gli utenti prima di eliminare il gruppo.
+!Keyboard_not_reset		Il reset della tastiera non ha funzionato.  Provare di nuovo.
+!Can't_locate_student_folder	Cartella studente non trovata.  Utilizzare le impostazioni Ospite.
+$Device:				Tastiera:
+$Data_Send_Rate:		Velocità invio dati:
+$IntelliKeys_USB		IntelliKeys USB
+$Groups_and_Users		Gruppi e Utenti
+$Groups					Gruppi
+$Users					Utenti
+$Group_Name				Nome del Gruppo
+$Group_Name:			Nome del Gruppo:
+$OK						OK
+$Cancel					Annulla
+$User_Name				Nome Utente
+$User_Name:				Nome Utente:
+$Yes					Sì
+$No						No
+$group_New...					&Nuovo...
+$group_Delete					&Cancella
+$group_Rename...				&Rinomina...
+$student_New...					N&uovo...
+$student_Delete					C&ancella
+$student_Rename...				Rinomin&a...
+$volumeTest				Prova
+$Last_Sent			Ultimo inviato
+$Use_				Usa 
+$Switch_			Sensore 
+$None				Nessuno
+$Off				Spento
+$1				1
+$2				2
+$3				3
+$4				4
+$Sensor_Values_:_		Tipi : 
+$Guest				Guest
+$Software_Version_=		Versione Software =
+$Firmware_Version_=		Versione Firmware =
+$Repeat_Rate_=			Velocità di ripetizione =
+$Mouse_Speed_=			Velocità del mouse =
+$Data_Send_Rate_=		Velocità di invio dati =
+$Response_Rate_=		Soglia =
+$Smart_Typing_is		Scrittura Veloce
+$Required_Lift_Off_is		Sollevamento
+$Keysound_Volume_=		Feedback acustico =
+$Repeat_is			Ripetizione
+$Repeat_Latching_is		Ripetizione Controllata 
+$Shift_Key_Action_=		Attivazione tasti doppia funzione =
+$Display_Latching		Temporanea
+$Display_No_Latching		Normale
+$Display_Locking		Bloccabile
+$Indicator_Lights_=		Indicatori luminosi =
+$Three				3
+$Six				6
+$Mode_=				Modalità =
+$Mode_Warning_=			Modalità di visualizzazione delle segnalazioni = 
+$Use_Last_Sent_Overlay		con l'ultimo Overlay inviato
+$Use_This_Overlay		con questo Overlay
+$Use_As_A_Switch		come un sensore
+$Last_Sent_Overlay_=		Ultimo Overlay inviato =
+$Specific_Overlay_=		Overlay =
+$Switch_Setting_=		Funzione sensori =
+$Number_Of_Connected_Keyboards_=	Numero di tastiere connesse =
+$Keyboard_Number_=		Numero tastiera =
+$Serial_Number_=		Numero di serie
+$On_or_Off_=			Interruttore =
+$Standard_Overlay_=		Overlay Standard Inserito =
+$Overlay_Name_=			Nome Overlay =
+$Overlay_Level_=		Livello Overlay =
+$Switch_1_=			Sensore 1 =
+$Switch_2_=			Sensore 2 =
+$Switch_3_=			Sensore 3 =
+$Switch_4_=			Sensore 4 =
+$Switch_5_=			Sensore 5 =
+$Sensor_Values_=		Valori di Stato =  
+$Number_of_keys_pressed_=	Numero di tasti premuti =
+$Row_=				Riga =
+$Column_=			Colonna =
+$IntelliKeys_USB_features_for_user	Regolazioni di IntelliKeys USB per l'utente
+$in_group			nel gruppo
+$Unknown			Sconosciuto
+$Custom	  ;  i seguenti sono per il pannello delle Applicazioni.			  
+$Applications		Applicazioni 
+$The_app_highlighted	Per l'applicazione selezionata ... 
+$Has_these_overlays	... il Pannello di controllo ... 
+$overlay_location	Percorso Overlay: 
+$Add			Aggiungi... 
+$Remove			Elimina 
+$Attach			Associa...
+$Detach			Rimuovi
+$Edit			Modifica... 
+$attach_edit_overlays	Associa/Modifica Overlay 
+$select_an_application	Seleziona un'Applicazione 
+$program_files		Programmi 
+$confirm_delete_app	Sei sicuro di voler rimuovere l'applicazione selezionata? 
+$app_already_added	Questa applicazione è già presente nella lista. 
+$not_valid_overlay	File Overlay non valido. Selezionare un altro file. 
+$overlay_missing	Il file Overlay selezionato non è stato trovato.  Può essere stato cancellato o spostato dopo aver fatto l'associazione. 
+$confirm_detach_overlay		Sei sicuro di voler rimuovere l'associazione all'overlay selezionato? 
+$already_attached	Questo overlay è già associato all'applicazione.  
+$app_not_allowed	Non è possibile collegare overlays a questa applicazione con il pannello di controllo di IntelliKeys poichè l'applicazione è progettata per inviare i propri overlay. Consultare la Guida Utente su come associare e inviare gli overlay.
+
+$choose_app_header	Scegli un'applicazione. 
+$programs		Applicazioni 
+$browse			Cerca... 
+$choose			Scegli...  
+$current_overlay	Overlay corrente: 
+$sent_by		Inviato da: 
+$Sent_By_	Inviato da:
+$Sent_By_=		Inviato da = 
+$last_sent_note		Nota: Usa il pannello delle Applicazioni per associare gli overlay alle applicazioni  
+
+$radio_attached		Il Pannello di Controllo invierà il seguente overlay: 
+$radio_none		Il Pannello di Controllo non invierà overlay
+
+$edit_template_overlay	Questo file è un Modello.  E' possibile modificarlo e associarlo solo dopo averlo salvato con un nome differente.  
+$cannot_edit_overlay	Non è possibile modificare questo file perchè è un overlay "senza grafica" o è un gruppo di overlay.
+$IntelliKeys_USB_Window_Title	Pannello di controllo di IntelliKeys USB 
+$IntelliKeys_USB_Window_Title2	Pannello di controllo di IntelliKeys USB e di IntelliSwitch 
+$find		Trova...  
+$IKOn		IntelliKeys Accesa 
+$IKOff		IntelliKeys Spenta  
+$ISOn		IntelliSwitch Acceso 
+$ISOff		IntelliSwitch Spento  
+$IntelliSwitchFeaturesNotice	NOTA: gli utenti di IntelliSwitch possono regolare Velocità di ripetizione, Ripetizione, Velocità del mouse, Feedback acustico e Velocità di invio dati. 
+$TabDoesNotApply		NOTA: Le impostazioni in questo pannello non avranno effetto fino a che non sarà selezionata la modalità "Overlay associati ad Applicazioni" nel pannello Modalità.
+$TabDoesNotApplyMsg		NOTA: Le impostazioni nel pannello Applicazioni non avranno effetto fino a che non sarà selezionata la modalità "Overlay associati ad Applicazioni" nel pannello Modalità.
+
+$application	Applicazione
+$overlay	Overlay
+$is_located	si trova nel percorso
+$was_expected	non è stato trovato.  E'stato cercato nel percorso
+$overlay_details	Dettagli Overlay
+$application_details	Dettagli Applicazione
+
+$show_mode_warning	Visualizza un messaggio quando un overlay non può essere inviato
+
+$switch_content_0
+$switch_content_1		Sensori:||1: Control-Invio|2: Control-Invio|3: Control-Invio|4: Control-Invio|5: Control-Invio
+$switch_content_2		Sensori:||1: Control-Freccia Destra|2: Control-Freccia Giù|3: Control-Freccia Destra|4: Control-Freccia Giù|5: Control-Freccia Destra
+$switch_content_3		Sensori:||1: Spazio|2: Invio|3: Spazio|4: Invio|5: Spazio
+$switch_content_4		Sensori:||1: Click sinistro|2: Click sinistro|3: Click Sinistro|4: Click Sinistro|5: Click Sinistro
+$switch_content_5		Sensori:||1: Click Sinistro|2: Doppio-Click Sinistro|3: Click Sinistro|4: Doppio-Click Sinistro|5: Click Sinistro
+$switch_content_6		Sensori:||1: Freccia Sinistra|2: Freccia Destra|3: Freccia Sinistra|4: Freccia Destra|5: Freccia Sinistra
+$switch_content_7		Sensori:||1: Freccia Su|2: Freccia Giù|3: Freccia Su|4: Freccia Giù|5: Freccia Su
+$switch_content_8		Sensori:||1: Freccia Sinistra|2: Freccia Su|3: Freccia Sinistra|4: Freccia Su|5: Freccia Sinistra
+$switch_content_9		Sensori:||1: 1|2: 2|3: 1|4: 2|5: 1
+$switch_content_10	Sensori:||1: Tab|2: Invio|3: Tab|4: Invio|5: Tab
+$switch_content_11	Sensori:||1: Tab|2: Spazio|3: Tab|4: Spazio|5: Tab 
+$switch_content_12	Sensori:||1: Tab|2: Shift-Tab|3: Tab|4: Shift-Tab|5: Tab
+$switch_content_13	Sensori:||1: Shift Sinistro|2: Shift Destro|3: Shift Sinistro|4: Shift Destro|5: Shift Sinistro
+$switch_content_14	Sensori:||1: Freccia Giù|2: Invio|3: Freccia Giù|4: Invio|5: Freccia Giù 
+$switch_content_15	Sensori:||1: Freccia Destra|2: Invio|3: Freccia Destra|4: Invio|5: Freccia Destra 
+$switch_content_16	Sensori:||1: Click Sinistro|2: Click Destro|3: Click Sinistro|4: Click destro|5: Click Sinistro
+
+$switch_content_17	Sensori:||1: Freccia Su|2: Freccia Giù|3: Freccia Sinistra|4: Freccia Destra|5: Invio
+$switch_content_18	Sensori:||1: Freccia Su|2: Freccia Giù|3: Freccia Sinistra|4: Freccia Destra|5: Spazio
+$switch_content_19	Sensori:||1: 1|2: 2|3: 3|4: 4|5: 0
+$switch_content_20	Sensori:||1: 1|2: 2|3: 3|4: 4|5: Invio
+$switch_content_21	Sensori:||1: Spazio|2: Invio|3: Tab|4: Shift-Tab|5: Backspace
+$switch_content_22	Sensori:||1: Shift Sinistro|2: Shift Destro|3: Control|4: Command/Sinistro Alt|5: Command/Destro Alt
+$switch_content_23	Sensori:||1: Click Sinistro|2: Click Destro|3: Doppio-Click Sinistro|4: Spazio|5: Invio
+$switch_content_24	Sensori:||1: Click Sinistro|2: Click Destro|3: Click tasto Centrale|4: Click Sinistro|5: Click Destro
+$switch_content_25	Sensori:||1: Click Sinistro|2: Spazio|3: Q|4: Z|5: Escape
+$switch_content_26	Sensori:||1: Mouse Su|2: Mouse Giù|3: Mouse Sinistra|4: Mouse Destra|5: Click
+
+
+$removing_app_title	Rimuovi Applicazione
+$removing_app_body	L'applicazione selezionata è progettata per inviare i propri overlays:  non è possibile associare ad essa un overlay utilizzando il Pannello di controllo di Intellikeys USB, perciò sarà rimossa dalla lista.  Consultare la Guida Utente su come associare gli overlay.
+
+$app_tab_unavailable_body	Il Pannello Applicazioni non è disponibile in questa versione.
+$app_tab_unavailable_title	Funzione non disponibile.
+
+$confirm_delete			Conferma eliminazione
+$sure_delete_group		Sei sicuro di voler eliminiare il gruppo
+$sure_delete_user		Sei sicuro di voler eliminare l'utente
+$group_must_be_empty		Il gruppo deve essere vuoto per poter essere eliminato.  Eliminare tutti gli utenti del gruppo prima di eliminare il gruppo stesso.
+$delete_empty_group		Vuoi eliminare il Gruppo?
+$the_group_named		Il Gruppo
+$is_empty_delete		è vuoto.  Vuoi eliminare questo gruppo?
+$last_saved_group_missing	L'ultimo gruppo salvato non esiste.  Usa
+$last_saved_user_missing	L'ultimo utente salvato non esiste.  Usa
+$invalid_preference		Valore non valido nelle preferenze Utente. Usa
+    
+$Standard_Overlay_0_Name		Accesso WEB USB
+$Standard_Overlay_1_Name		Overlay di Configurazione USB
+$Standard_Overlay_2_Name		Numerico USB
+$Standard_Overlay_3_Name		Alfabetico USB
+$Standard_Overlay_4_Name		Mouse USB
+$Standard_Overlay_5_Name		QWERTY USB
+$Standard_Overlay_6_Name		Scrittura Base USB
+$Standard_Overlay_7_Name		nessuno
+
+
+$Mode_intro				Quando non c'è un Overlay standard montato, Usa Intellikeys in modalità ...
+
+$mode_overlays			Overlay associati ad Applicazioni
+$mode_one_overlay		Con questo Overlay
+$mode_overlays_one		Usa lo stesso overlay per tutte le applicazioni
+$mode_presets			Come Sensore, con queste impostazioni
+$mode_discover_but		Ma sarà consentito l'invio di overlay da parte di applicazioni specifiche
+$Mode				Modalità
+$Sent_By:			Inviato da : 
+
+$DiscoverNameMac		Discover Envoy
+$DiscoverNameWin		DiscoverPro
+
+$must_supply_one_overlay	Nel pannello Modalità, non è possibile scegliere "Con questo Overlay" senza scegliere anche un overlay.  Selezionare un overlay o impostare una modalità differente.
+
+$must_attach_overlay		Nel pannello Applicazioni, è stato specificato "Usa l'overlay selezionato", per un'applicazione, ma non è stato associato un overlay.  Premi OK per tornare al pannello Applicazioni.  Premi Annulla per rimuovere l'applicazione dalla lista.
+
+$overlay_sending_disabled	Invio overlay disabilitato, verificare nel pannello Modalità
+
+$sticky					Blocco Temporaneo
+

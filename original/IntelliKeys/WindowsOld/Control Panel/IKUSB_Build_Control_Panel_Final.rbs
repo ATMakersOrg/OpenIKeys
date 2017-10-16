@@ -1,0 +1,11 @@
+PropertyValue("App.StageCode") = "3"
+BuildLinux = False
+BuildMacMachOX86 = False
+BuildWin32 = True
+BuildRegion = "United States"
+BuildLanguage = "English"
+DoCommand "BuildApp"
+QuitIDE True
+
+
+

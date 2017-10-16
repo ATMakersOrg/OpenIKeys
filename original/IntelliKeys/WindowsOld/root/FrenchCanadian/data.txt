@@ -1,0 +1,189 @@
+﻿APP_DISALLOWED_SRC_MAP	disallowed.txt
+APP_OVERLAYS_NAMES_MAP	application display names.txt
+APP_OVERLAYS_SRC_FOLDER	Application Overlays
+APP_OVERLAYS_SRC_MAP	applications.txt
+App_Overlays_Folder		Private/Application Overlays/Win
+App_Watch_Period		500
+Channels_Folder			Private/Channels/
+Control_Panel_Name		USB Control Panel.exe		
+Correct_Period			500
+Custom_Overlay			custom
+Dead_Until_Time			1000
+Debug_Log_File			
+Debug_Log_Flush_Period		1000
+Debug_Sender				0
+Device_Search_Period		1000
+Diagnostic_Period				1000
+DiscoverName			Discover
+EEProm_Byte_Overdue		500
+Engine_Folder			Private/Channels/Engine/
+Engine_Period			5
+External_Command_Period		250
+External_Command_Period_2	250
+Firmware_Version			3.0
+Guest					Invité
+Guest_Folder			Documents/Invité/
+Help_File				Private/ikusbhelp.html
+IK_Product_ID			257
+IK_Vendor_ID			2398
+IS_Product_ID			8
+IS_Vendor_ID			5195
+Intellipics_Player_Program		intellipics player.exe
+Intellipics_Program			intellipics.exe
+Key_Down_Time					5
+Key_Sound_Frequency		247
+Keyboard_Reset_Sound_Duration	50
+Led_Reconcile_Period		100
+Load_Student_Data				2000
+Long_Key_Sound_Length		700
+Max_Repeat_Start			4000
+Min_Repeat_Start			1000
+Min_Response_Time		15
+Mode:		Mode:
+Mouse_Accelleration_Knee		1000
+Mouse_Accelleration_Scale_Mac	60
+Mouse_Accelleration_Scale_Win	25
+Mouse_Click_Delay			5
+One_Overlay_Only	Une planche seulement	
+Overlay_Rec_Black_Weight		50
+Overlay_Rec_Fallback_Threshhold	150
+Overlay_Rec_Settle_Period		1000
+Overlays			Planches
+Overlays_Folder		Private/Standard Overlays/Win
+Override_Use_System_Repeat_Settings		1
+Preferences_File		preferences.txt
+Private_Folder			Private/
+Queue_Empty_Timeout		2000
+Reload_Standard_Overlay_When_Recognized		0
+S_BOOL_OFF			Désactivé
+S_BOOL_ON			Activé
+S_CONNECTED				Connecté
+S_CP_CONNECTED		Connecté
+S_CP_CUSTOM_OVERLAY          	Planche personnalisée
+S_CP_FIRMWARE_VERSION          	Version du micrologiciel
+S_CP_KEYSOUNDVOLUME		Volume de son de touche 
+S_CP_KEYSOUNDVOLUME_OFF		Désactivé
+S_CP_KEYSOUND_VOLUME	Volume de son de touche 
+S_CP_NUMKEYS			Nombre de touches appuyées
+S_CP_ONOFF_SWITCH_STATUS      Activé ou désactivé
+S_CP_OVERLAY_LEVEL		Niveau de planche
+S_CP_OVERLAY_NAME		Nom de planche
+S_CP_ROWCOL			Rangée = %d, Colonne = %d
+S_CP_SENS			Valeur des capteurs = %d,%d,%d,%d,%d,%d,%d,%d,%d
+S_CP_SENSORS                   	Valeurs des capteurs
+S_CP_SERIAL_NUMBER            	Numéro de série
+S_CP_SOFTWARE_VERSION          	Version du logiciel
+S_CP_STANDARD_OVERLAY       	Planche standard
+S_CP_SWITCH1			Interrupteur 1
+S_CP_SWITCH2			Interrupteur 2
+S_GUEST			Invité
+S_INTELLIKEYS_WILL		le panneau de configuration...
+S_KEYSOUND_1			1
+S_KEYSOUND_2			2
+S_KEYSOUND_3			3
+S_KEYSOUND_4			4
+S_KEYSOUND_OFF		Désactivé
+S_LATCHING				Blocage
+S_LF_HEADER1			Fonctions de IntelliKeys USB pour l’utilisateur "%s"
+S_LF_HEADER2			Fonctions de IntelliKeys USB pour l’utilisateur "%s" du groupe "%s"
+S_LF_KBNUM				Nombre de claviers
+S_LF_NUMKB				Nombre de claviers connectés
+S_LIGHTS_SIX				Six
+S_LIGHTS_THREE				Trois
+S_LISTFEATURES_BUTALLOWOVERLAYS			Mais permettre planches
+S_LISTFEATURES_DATA_SEND_RATE 		Taux d’envoi de données
+S_LISTFEATURES_INDICATOR_LIGHTS 		Voyants lumineux
+S_LISTFEATURES_KEY_SOUND_VOLUME		Volume de son de touche 
+S_LISTFEATURES_MODE				Mode
+S_LISTFEATURES_MODE_LASTSENT		Utiliser la dernière planche envoyée
+S_LISTFEATURES_MODE_LAST_OVERLAY		Dernière planche envoyée
+S_LISTFEATURES_MODE_SPECIFIC			Utiliser une planche spécifique
+S_LISTFEATURES_MODE_SPECIFIC_OVERLAY	Planche spécifique
+S_LISTFEATURES_MODE_SWITCH			comme un interrupteur
+S_LISTFEATURES_MODE_SWITCH_SETTING		Paramètre d’interrupteur
+S_LISTFEATURES_MOUSE_SPEED 			Vitesse de la souris
+S_LISTFEATURES_REPEAT			Répéter
+S_LISTFEATURES_REPEAT_LATCHING		Répéter le blocage
+S_LISTFEATURES_REPEAT_RATE 			Répéter le taux
+S_LISTFEATURES_REQUIRED_LIFT_OFF 		Levée du doigt requis
+S_LISTFEATURES_RESPONSE_RATE 		Taux de réponse
+S_LISTFEATURES_SHIFT_KEY_ACTION 		Action de la touche majuscule
+S_LISTFEATURES_SMART_TYPING 			Saisie intelligente
+S_LOCKING				Blocage
+S_NO					Non
+S_NONE				Aucun
+S_NOT_CONNECTED			Pas connecté
+S_NO_LATCHING				Pas de blocage
+S_TOOLTIP_IK_OFF		IntelliKeys USB est connecté, mais est actuellement désactivé.
+S_TOOLTIP_IK_ON		IntelliKeys USB est connecté.
+S_TOOLTIP_IS_OFF		IntelliSwitch est connecté, mais est actuellement désactivé.
+S_TOOLTIP_IS_ON		IntelliSwitch est connecté.
+S_TOOLTIP_MULTIPLE_DEVICES	Plus d’un dispositif est connecté.
+S_TOOLTIP_NO_DEVICES		Aucun dispositif n'est connecté.
+S_TROUBLESHOOTING		Dépannage...
+S_UNKNOWN_VALUE		Valeur inconnue
+S_YES					Oui
+S_attached_to_application	relié à l’application
+S_cannot_be_sent		ne peut être envoyé.  Il peur avoir été déplacé ou effacé.
+S_error_sending_overlay	Erreur lors de l’envoi de la planche
+S_overlay			planche
+Save_Text_As_UTF8			1
+Short_Key_Sound_Length		50
+Software_Version			3.5.2.19
+Sweep_Sound_Duration		200
+Sweep_Sound_High_Frequency	250
+Sweep_Sound_Low_Frequency	200
+Switch_Presets				Préréglages d’interrupteur
+Switch_Response_Period		50
+Switch_Settings_Folder		Private/Switch Settings
+Systray_Menu			Ouvrir le panneau de configuration de IntelliKeys USB.
+Systray_Menu_Switch		Ouvrir le panneau de configuration de IntelliKeys USB et IntelliSwitch.
+Systray_Tip			IntelliKeys USB
+Tray_File			iksystray.dat
+Unicode_File_Names	1
+Unknown				Inconnu
+Users_Folder			Documents/
+Valid_Serial_Number_Prefix		C-
+all_files			Tous les fichiers
+allow_applications_to_send_overlays	mais permettre aux applications d’envoyer leurs propres planches
+app_not_allowed	Vous ne pouvez relier de planches à cette application à partir du panneau de configuration de IntelliKeys USB puisque l’application est conçue pour envoyer ses propres planches.  Consultez le Guide d’utilisation de l’application au sujet du lien avec des planches.
+app_will_choose		Le panneau de configuration n’enverra pas de planche
+app_will_choose_clickit	Le panneau de configuration n’enverra pas de planche
+attach_edit_overlays_for	Relier/Modifier des planches pour
+choose_a_switch_setting	Choisir un paramètre d’interrupteur
+choose_overlay		Veuillez choisir un fichier de planche
+for			pour
+intellikeys_name		IntelliKeys USB
+intellikeys_usb			IntelliKeys USB
+log_dlls	0
+max_repeat_delay				750
+menu_enabled			1
+must_specify_overlay	Vous devez spécifier une planche lors de la sélection du mode Une planche seulement.
+no_overlay_chosen		Vous n’avez pas choisi un fichier de planche.  Le mode ne sera pas changé.
+not_valid_overlay		Ce fichier n’est pas une planche valide.  Le mode ne sera pas changé.
+num_switch_files		0
+overlay_files		Fichiers de planche
+raw_mode_immunity		2000
+report_diagnostics_realtime		1
+report_diagnostics_realtime_period	100
+report_diagnostics_realtime_timeout	50
+right_click_text	AAAAAAAAAARIGHTCLICKAAAAAAAAAA
+send		Envoyer
+send_no_overlay	Ne pas envoyer de planche
+sending			Envoi
+show_discover_anyway	0
+use_attached_overlay	Le panneau de configuration enverra
+use_overlay			utiliser une planche
+use_switch_setting		utiliser un paramètre d’interrupteur
+using_overlay		Utilisation d’une planche
+using_switch_setting	Utilisation d’un paramètre d’interrupteur
+watch_apps			1
+win_kick_dll_key				135
+S_OVERLAY_IN_PLACE_TITLE		Remarque
+S_OVERLAY_IN_PLACE_TEXT			Votre IntelliKeys USB semble avoir une surface standard à la place. Pour utiliser le pavé personnalisé que vous venez d'envoyer, vous devrez enlever la surface standard.
+S_NO_IKEYS_FOUND				Pas IntelliKeys USB trouvé
+S_IKEYS_ERROR					IntelliKeys USB Erreur
+S_OVERLAYFILE_ERROR				Le fichier est dans un format inconnu, corrompu ou n'est pas un fichier de superposition.
+S_SENDING_SETTINGS				Paramètres d'envoi...
+S_GETTING_SETTINGS				Obtenir les paramètres...
+

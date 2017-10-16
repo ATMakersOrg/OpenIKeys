@@ -1,0 +1,736 @@
+
+; USB.INF  -- This file contains descriptions of all the HDC (USB controller)
+;
+;*** Created 10/2/95  (Creation Date)
+
+[Version]
+signature="$CHICAGO$"
+CatalogFile=usb.cat
+LayoutFile=Layout.inf, Layout1.inf, Layout2.inf
+Class=USB
+ClassGUID={36FC9E60-C465-11CF-8056-444553540000}
+Provider=%Msft%
+
+[DestinationDirs]
+USBUI.CopyFiles=11
+USB.DelFiles=11
+USBMON.DelFiles=11
+USBINF.DelFiles=17
+DefaultDestDir=10,system32\drivers
+
+; =================== Class Sections ===========================
+
+[ClassInstall]
+Addreg=USBClassReg
+
+[USBClassReg]
+HKR,,,,%USBClassName%
+HKR,,Icon,,-20
+
+
+; =================== Table of content =========================
+
+[Manufacturer]
+%Generic.Mfg%=Generic.Section
+%Microsoft.Mfg%=Microsoft.Section
+%GenericHub.Mfg%=GenericHub.Section
+%AMD.Mfg%=AMD.Section
+%Compaq.Mfg%=Compaq.Section
+%Intel.Mfg%=Intel.Section
+%Kawatsu.Mfg%=Kawatsu.Section
+%Cherry.Mfg%=Cherry.Section
+%Altec.Mfg%=Altec.Section
+%Telex.Mfg%=Telex.Section
+%Dallas.Mfg%=Dallas.Section
+%NMB.Mfg%=NMB.Section
+%STSL.Mfg%=STSL.Section
+%SUPGERGATE.Mfg%=SUPGERGATE.Section
+%Iiyama.Mfg%=Iiyama.Section
+%Samsung.Mfg%=Samsung.Section
+%CTX.Mfg%=CTX.Section
+%LiteOn.Mfg%=LiteOn.Section
+%Winbond.Mfg%=Winbond.Section
+%MultiVideoLabs.Mfg%=MultiVideoLabs.Section
+%Sand.Mfg%=Sand.Section
+%TI.Mfg%=TI.Section
+%Philips.Mfg%=Philips.Section
+%NEC.Mfg%=NEC.Section
+%VIA.Mfg%=VIA.Section
+%CMD.Mfg%=CMD.Section
+%Lucent.Mfg%=Lucent.Section
+%NatSemi.Mfg%=NatSemi.Section
+%SIS.Mfg%=SIS.Section
+%ACER.Mfg%=ACER.Section
+%OPTi.Mfg%=OPTi.Section
+%FTA.Mfg%=FTA.Section
+%CATC.Mfg%=CATC.Section
+%Symbios.Mfg%=Symbios.Section
+%Sony.Mfg%=Sony.Section
+%Sejin.Mfg%=Sejin.Section
+%EIZO.Mfg%=EIZO.Section
+%Nokia.Mfg%=Nokia.Section
+%KeyTronic.Mfg%=KeyTronic.Section
+%Chicony.Mfg%=Chicony.Section
+%BTC.Mfg%=BTC.Section
+%Forward.Mfg%=Forward.Section
+%SolidYear.Mfg%=SolidYear.Section
+%LabTec.Mfg%=LabTec.Section
+%Silitek.Mfg%=Silitek.Section
+%Granite.Mfg%=Granite.Section
+%Yamaha.Mfg%=Yamaha.Section
+%IntelliTools.Mfg%=IntelliTools.Section
+
+; =================== Generic ==================================
+
+[Generic.Section]
+%PCI\CC_0C0310.DeviceDesc%=OpenHCD.Dev,PCI\CC_0C0310
+%PCI\CC_0C0300.DeviceDesc%=UniversalHCD.Dev,PCI\CC_0C0300
+%USB\ROOT_HUB.DeviceDesc%=StandardHub.Dev,USB\ROOT_HUB
+%USB\ROOT_HUB_DBC.DeviceDesc%=DbcHub.Dev,USB\ROOT_HUB_DBC
+%USB\UNKNOWN.DeviceDesc%=BADDEVICE,USB\UNKNOWN
+
+%USB\COMPOSITE.DeviceDesc%=Composite.Dev,USB\COMPOSITE
+
+; --------------------------------------------------------------
+
+[BADDEVICE]
+CopyFiles=
+
+[BADDEVICE.hw]
+AddReg=Host.FailInstall
+
+[Host.FailInstall]
+; on enumeration disable the device
+HKR,,ConfigFlags,1,01,00,00,00
+
+
+; --------------------------------------------------------------
+; Special case for broken NEC part
+
+[NECOHCI.Dev]
+AddReg=NECOHCI.AddReg, USB.AddReg
+CopyFiles=NECOHCI.CopyFiles,USB.CopyFiles,USBUI.CopyFiles
+DelFiles=USB.DelFiles
+
+[NECOHCI.AddReg]
+HKR,,NTMPDriver,,openhci.sys
+HKR,,SlowBulk,0x10001,00,00,00,01
+HKR,,EnumPropPages,,"sysclass.dll,USBControllerPropPage"
+HKR,,IdleEnable,0x10001,01,00,00,00
+
+[NECOHCI.CopyFiles]
+openhci.sys
+
+; --------------------------------------------------------------
+
+; Special case for Hydra part
+
+[HydraOHCI.Dev]
+AddReg=HydraOHCI.AddReg, USB.AddReg
+CopyFiles=HydraOHCI.CopyFiles,USB.CopyFiles,USBUI.CopyFiles
+DelFiles=USB.DelFiles
+
+[HydraOHCI.AddReg]
+HKR,,NTMPDriver,,openhci.sys
+HKR,,EnumPropPages,,"sysclass.dll,USBControllerPropPage"
+HKR,,HydraFixEnable,0x10001,01,00,00,00
+
+[HydraOHCI.CopyFiles]
+openhci.sys
+
+; --------------------------------------------------------------
+
+[OpenHCD.Dev]
+AddReg=OpenHCD.AddReg, USB.AddReg
+CopyFiles=OpenHCD.CopyFiles,USB.CopyFiles,USBUI.CopyFiles
+DelFiles=USB.DelFiles
+
+[OpenHCD.AddReg]
+HKR,,NTMPDriver,,openhci.sys
+HKR,,EnumPropPages,,"sysclass.dll,USBControllerPropPage"
+
+[OpenHCD.CopyFiles]
+openhci.sys
+
+; --------------------------------------------------------------
+
+[UniversalHCD.Dev]
+AddReg=UniversalHCD.AddReg, USB.AddReg
+CopyFiles=UniversalHCD.CopyFiles,USB.CopyFiles,USBUI.CopyFiles
+DelFiles=USB.DelFiles
+
+[UniversalHCD.AddReg]
+HKR,,NTMPDriver,,uhcd.sys
+HKR,,EnumPropPages,,"sysclass.dll,USBControllerPropPage"
+
+[UniversalHCD.CopyFiles]
+uhcd.sys
+
+; --------------------------------------------------------------
+
+[DbcHub.Dev.HW]
+AddReg=Devbay.filter
+
+[Devbay.filter]
+HKR,,upperfilters,0,"dbfilter.sys"
+
+[DbcHub.Dev]
+AddReg=DbcHub.AddReg
+CopyFiles=DbcHub.CopyFiles
+DelFiles=DbcHub.DelFiles,USBINF.DelFiles,USBMON.DelFiles
+
+
+; --------------------------------------------------------------
+
+[StandardHub.Dev]
+AddReg=Hub.AddReg,Power.AddReg
+CopyFiles=Hub.CopyFiles
+DelFiles=Hub.DelFiles,USBINF.DelFiles,USBMON.DelFiles
+
+[Composite.Dev]
+AddReg=Hub.AddReg
+DelReg=Composite.DelReg
+
+; =================== Microsoft ===================================
+
+[Microsoft.Section]
+%USB\VID_045E&PID_001C.DeviceDesc%=StandardHub.Dev,USB\VID_045E&PID_001C
+; %USB\VID_045E&PID_0014.DeviceDesc%=Composite.Dev,USB\VID_045E&PID_0014
+%USB\VID_045E&PID_001D.DeviceDesc%=Composite.Dev,USB\VID_045E&PID_001D
+
+; =================== AMD ======================================
+
+[AMD.Section]
+%PCI\VEN_1022&DEV_740C.DeviceDesc%=OpenHCD.Dev,PCI\VEN_1022&DEV_740C
+
+; =================== Compaq ===================================
+
+[Compaq.Section]
+%PCI\VEN_0E11&DEV_A0F8.DeviceDesc%=HydraOHCI.Dev,PCI\VEN_0E11&DEV_A0F8
+
+; =================== Intel ====================================
+
+[Intel.Section]
+%PCI\VEN_8086&DEV_2412.DeviceDesc%=UniversalHCD.Dev,PCI\VEN_8086&DEV_2412
+%PCI\VEN_8086&DEV_2422.DeviceDesc%=UniversalHCD.Dev,PCI\VEN_8086&DEV_2422
+%PCI\VEN_8086&DEV_7020.DeviceDesc%=UniversalHCD.Dev,PCI\VEN_8086&DEV_7020
+%PCI\VEN_8086&DEV_7112.DeviceDesc%=UniversalHCD.Dev,PCI\VEN_8086&DEV_7112
+%PCI\VEN_8086&DEV_719A.DeviceDesc%=UniversalHCD.Dev,PCI\VEN_8086&DEV_719A
+%PCI\VEN_8086&DEV_7602.DeviceDesc%=UniversalHCD.Dev,PCI\VEN_8086&DEV_7602
+%USB\VID_8086&PID_9303.DeviceDesc%=StandardHub.Dev,USB\VID_8086&PID_9303
+%USB\VID_042B&PID_9316.DeviceDesc%=StandardHub.Dev,USB\VID_042B&PID_9316
+
+; =================== Kawatsu - now KC Tech ===========================
+
+[Kawatsu.Section]
+%USB\VID_050F&PID_0001.DeviceDesc%=StandardHub.Dev,USB\VID_050F&PID_0001
+
+; =================== Cherry ===========================
+
+[Cherry.Section]
+%USB\VID_046A&PID_0003.DeviceDesc%=StandardHub.Dev,USB\VID_046A&PID_0003
+
+; =================== Altec Lansing ===========================
+
+[Altec.Section]
+%USB\VID_04D2&PID_FF47.DeviceDesc%=Composite.Dev,USB\VID_04D2&PID_FF47
+%USB\VID_04D2&PID_FF49.DeviceDesc%=Composite.Dev,USB\VID_04D2&PID_FF49
+%USB\VID_04D2&PID_0070.DeviceDesc%=Composite.Dev,USB\VID_04D2&PID_0070
+
+; =================== Telex ===================================
+
+[Telex.Section]
+%USB\VID_0562&PID_0000.DeviceDesc%=Composite.Dev,USB\VID_0562&PID_0000
+
+; =================== Dallas ==================================
+[Dallas.Section]
+%USB\VID_04FA&PID_4201.DeviceDesc%=Composite.Dev,USB\VID_04FA&PID_4201
+
+; =================== NMB ===========================
+
+[NMB.Section]
+%USB\VID_0446&PID_6781.DeviceDesc%=Composite.Dev,USB\VID_0446&PID_6781
+
+; =================== STSL ===========================
+
+[STSL.Section]
+%USB\VID_05FA&PID_3303.DeviceDesc%=Composite.Dev,USB\VID_05FA&PID_3303
+
+; =================== SUPGERGATE ===========================
+
+[SUPGERGATE.Section]
+%USB\VID_05d5&PID_6782.DeviceDesc%=Composite.Dev,USB\VID_05d5&PID_6782
+
+; =================== Iiyama ==================================
+
+[Iiyama.Section]
+%USB\VID_04E1&PID_0201.DeviceDesc%=StandardHub.Dev,USB\VID_04E1&PID_0201
+
+; =================== Samsung ==================================
+
+[Samsung.Section]
+%USB\VID_0419&PID_8001.DeviceDesc%=StandardHub.Dev,USB\VID_0419&PID_8001
+%USB\VID_055D&PID_8001.DeviceDesc%=StandardHub.Dev,USB\VID_055D&PID_8001
+
+; =================== CTX ==================================
+
+[CTX.Section]
+%USB\VID_0698&PID_9999.DeviceDesc%=StandardHub.Dev,USB\VID_0698&PID_9999
+
+; =================== LiteOn ==================================
+
+[LiteOn.Section]
+%USB\VID_04CA&PID_9304.DeviceDesc%=StandardHub.Dev,USB\VID_04CA&PID_9304
+
+; =================== Winbond ==================================
+
+[Winbond.Section]
+%USB\VID_0416&PID_0101.DeviceDesc%=StandardHub.Dev,USB\VID_0416&PID_0101
+
+; =================== MultiVideoLabs ==================================
+
+[MultiVideoLabs.Section]
+%USB\VID_04a8&PID_0101.DeviceDesc%=StandardHub.Dev,USB\VID_04a8&PID_0101
+
+; =================== Sand ==================================
+
+[Sand.Section]
+%USB\VID_0405&PID_0000.DeviceDesc%=StandardHub.Dev,USB\VID_0405&PID_0000
+
+; =================== TI ==================================
+
+[TI.Section]
+%USB\VID_0451&PID_1446.DeviceDesc%=StandardHub.Dev,USB\VID_0451&PID_1446
+
+; =================== CATC ==================================
+
+[CATC.Section]
+%USB\VID_0423&PID_1237.DeviceDesc%=StandardHub.Dev,USB\VID_0423&PID_1237
+
+; =================== SONY ==================================
+[Sony.Section]
+%USB\VID_054C&PID_0001.DeviceDesc%=StandardHub.Dev,USB\VID_054C&PID_0001
+%USB\VID_054C&PID_0002.DeviceDesc%=StandardHub.Dev,USB\VID_054C&PID_0002
+
+; =================== Granite ==================================
+[Granite.Section]
+%USB\VID_0654&PID_0006.DeviceDesc%=StandardHub.Dev,USB\VID_0654&PID_0006
+%USB\VID_0654&PID_0016.DeviceDesc%=StandardHub.Dev,USB\VID_0654&PID_0016
+
+; =================== Fujitsu ==================================
+
+[FTA.Section]
+%USB\VID_0430&PID_36BA.DeviceDesc%=StandardHub.Dev,USB\VID_0430&PID_36BA
+%USB\VID_0430&PID_0002.DeviceDesc%=Composite.Dev,USB\VID_0430&PID_0002
+
+; =================== Philips ==================================
+
+[Philips.Section]
+%USB\VID_0471&PID_0201.DeviceDesc%=StandardHub.Dev,USB\VID_0471&PID_0201
+%USB\VID_0471&PID_0302.DeviceDesc%=Composite.Dev,USB\VID_0471&PID_0302
+%USB\VID_0471&PID_0101.DeviceDesc%=Composite.Dev,USB\VID_0471&PID_0101
+%USB\VID_0471&PID_0402.DeviceDesc%=Composite.Dev,USB\VID_0471&PID_0101
+%USB\VID_0471&PID_0601.DeviceDesc%=Composite.Dev,USB\VID_0471&PID_0601
+%USB\VID_0471&PID_0700.DeviceDesc%=StandardHub.Dev,USB\VID_0471&PID_0700
+
+; =================== NEC ==================================
+[NEC.Section]
+%USB\VID_0409&PID_55AA.DeviceDesc%=StandardHub.Dev,USB\VID_0409&PID_55AA
+%USB\VID_0409&PID_8010.DeviceDesc%=StandardHub.Dev,USB\VID_0409&PID_8010
+%USB\VID_0409&PID_8011.DeviceDesc%=StandardHub.Dev,USB\VID_0409&PID_8011
+%USB\VID_0409&PID_0203.DeviceDesc%=Composite.Dev,USB\VID_0409&PID_0203
+%PCI\VEN_1033&DEV_0035.DeviceDesc%=NECOHCI.Dev,PCI\VEN_1033&DEV_0035
+%PCI\VEN_1033&DEV_0035&REV_01.DeviceDesc%=NECOHCI.Dev,PCI\VEN_1033&DEV_0035&REV_01
+%PCI\VEN_1033&DEV_0035&REV_02.DeviceDesc%=NECOHCI.Dev,PCI\VEN_1033&DEV_0035&REV_02
+%USB\VID_0409&PID_0011.DeviceDesc%=Composite.Dev,USB\VID_0409&PID_0011
+%USB\VID_0409&PID_0014.DeviceDesc%=Composite.Dev,USB\VID_0409&PID_0014
+; %USB\VID_03EB&PID_3311.DeviceDesc%=StandardHub.Dev,USB\VID_03EB&PID_3311
+; %USB\VID_03EB&PID_3312.DeviceDesc%=StandardHub.Dev,USB\VID_03EB&PID_3312
+
+; =================== CMD ==================================
+
+[CMD.Section]
+%PCI\VEN_1095&DEV_0670&REV_04.DeviceDesc%=BADDEVICE,PCI\VEN_1095&DEV_0670&REV_04
+%PCI\VEN_1095&DEV_0673.DeviceDesc%=OpenHCD.Dev,PCI\VEN_1095&DEV_0673
+%PCI\VEN_1095&CC_0C0310.DeviceDesc%=OpenHCD.Dev,PCI\VEN_1095&CC_0C0310
+%PCI\VEN_1095&CC_0C0300.DeviceDesc%=OpenHCD.Dev,PCI\VEN_1095&CC_0C0300
+%PCI\VEN_1095&DEV_0673&SUBSYS_06701095.DeviceDesc%=OpenHCD.Dev,PCI\VEN_1095&DEV_0673&SUBSYS_06701095
+
+; =================== Lucent ==================================
+
+[Lucent.Section]
+%PCI\VEN_11C1&DEV_5801.DeviceDesc%=OpenHCD.Dev,PCI\VEN_11C1&DEV_5801
+%PCI\VEN_11C1&CC_0C0310.DeviceDesc%=OpenHCD.Dev,PCI\VEN_11C1&CC_0C0310
+%PCI\VEN_11C1&CC_0C0300.DeviceDesc%=OpenHCD.Dev,PCI\VEN_11C1&CC_0C0300
+%PCI\VEN_11C1&DEV_5801&SUBSYS_580111C1.DeviceDesc%=OpenHCD.Dev,PCI\VEN_11C1&DEV_5801&SUBSYS_580111C1
+
+; =================== NatSemi ==================================
+
+[NatSemi.Section]
+%PCI\VEN_100B&DEV_0012.DeviceDesc%=OpenHCD.Dev,PCI\VEN_100B&DEV_0012
+%USB\VID_0400&PID_1237.DeviceDesc%=StandardHub.Dev,USB\VID_0400&PID_1237
+
+; =================== SIS ======================================
+
+[SIS.Section]
+%PCI\VEN_1039&DEV_7001.DeviceDesc%=HydraOHCI.Dev,PCI\VEN_1039&DEV_7001
+%PCI\VEN_1039&CC_0C0310.DeviceDesc%=HydraOHCI.Dev,PCI\VEN_1039&CC_0C0310
+%PCI\VEN_1039&CC_0C0300.DeviceDesc%=HydraOHCI.Dev,PCI\VEN_1039&CC_0C0300
+%PCI\VEN_1039&DEV_7001&SUBSYS_00000000.DeviceDesc%=HydraOHCI.Dev,PCI\VEN_1039&DEV_7001&SUBSYS_00000000
+
+; =================== Acer =====================================
+
+[ACER.Section]
+%PCI\VEN_10B9&DEV_5237.DeviceDesc%=HydraOHCI.Dev,PCI\VEN_10B9&DEV_5237
+%USB\VID_04A5&PID_0003.DeviceDesc%=Composite.Dev,USB\VID_04A5&PID_0003
+
+; =================== OPTi=====================================
+
+[OPTi.Section]
+%PCI\VEN_1045&DEV_C861.DeviceDesc%=HydraOHCI.Dev,PCI\VEN_1045&DEV_C861
+%PCI\VEN_1045&CC_0C0310.DeviceDesc%=HydraOHCI.Dev,PCI\VEN_1045&CC_0C0310
+%PCI\VEN_1045&CC_0C0300.DeviceDesc%=HydraOHCI.Dev,PCI\VEN_1045&CC_0C0300
+%PCI\VEN_1045&DEV_C861&SUBSYS_C8611045.DeviceDesc%=HydraOHCI.Dev,PCI\VEN_1045&DEV_C861&SUBSYS_C8611045
+
+; =================== Symbios==================================
+
+[Symbios.Section]
+%PCI\VEN_1000&DEV_0901.DeviceDesc%=HydraOHCI.Dev,PCI\VEN_1000&DEV_0901
+
+; =================== Sejin ==================================
+[Sejin.Section]
+%USB\VID_0510&PID_1000.DeviceDesc%=Composite.Dev,USB\VID_0510&PID_1000
+
+; =================== EIZO ==================================
+[EIZO.Section]
+%USB\VID_056D&PID_0000.DeviceDesc%=StandardHub.Dev,USB\VID_056D&PID_0000
+
+; =================== Nokia ==================================
+[Nokia.Section]
+%USB\VID_04A6&PID_0180.DeviceDesc%=StandardHub.Dev,USB\VID_04A6&PID_0180
+
+; =================== LabTec ==================================
+[LabTec.Section]
+%USB\VID_0672&PID_1041.DeviceDesc%=Composite.Dev,USB\VID_0672&PID_1041
+
+; =================== Silitek ==================================
+[Silitek.Section]
+%USB\VID_047B&PID_0002.DeviceDesc%=Composite.Dev,USB\VID_047B&PID_0002
+
+; =================== Generic HUB ==================================
+[GenericHub.Section]
+%USB\CLASS_09&SUBCLASS_01.DeviceDesc%=StandardHub.Dev,USB\CLASS_09&SUBCLASS_01
+%USB\CLASS_09.DeviceDesc%=StandardHub.Dev,USB\CLASS_09
+
+
+; =================== VIA ====================================
+
+[VIA.Section]
+%PCI\VEN_1106&DEV_3038.DeviceDesc%=UniversalHCD.Dev,PCI\VEN_1106&DEV_3038
+
+; =================== KeyTronic ==============================
+[KeyTronic.Section]
+%USB\VID_03F9&PID_0102.DeviceDesc%=Composite.Dev,USB\VID_03F9&PID_0102
+
+; =================== Chicony ================================
+[Chicony.Section]
+%USB\VID_04F2&PID_0001.DeviceDesc%=Composite.Dev,USB\VID_04F2&PID_0001
+
+; =================== BTC ====================================
+[BTC.Section]
+%USB\VID_046E&PID_6782.DeviceDesc%=Composite.Dev,USB\VID_046E&PID_6782
+
+; =================== Forward ================================
+[Forward.Section]
+%USB\VID_05BC&PID_0001.DeviceDesc%=Composite.Dev,USB\VID_05BC&PID_0001
+
+; =================== SolidYear ==============================
+[SolidYear.Section]
+%USB\VID_060B&PID_2101.DeviceDesc%=Composite.Dev,USB\VID_060B&PID_2101
+
+; =================== Yamaha =================================
+[Yamaha.Section]
+%USB\VID_0499&PID_3001.DeviceDesc%=Composite.Dev,USB\VID_0499&PID_3001
+
+; =================== IntelliTools =================================
+[IntelliTools.Section]
+%USB\VID_144B&PID_0008.DeviceDesc%=Composite.Dev,USB\VID_144B&PID_0008
+
+; =================== Global ==================================
+
+[USB.AddReg]
+HKR,,DevLoader,,*NTKERN
+HKLM,System\CurrentControlSet\Services\USB\SilentClasses,0,1,80,09,00,00
+HKLM,System\CurrentControlSet\Services\USB\SilentClasses,1,1,43,03,01,01
+HKLM,System\CurrentControlSet\Services\USB\SilentClasses,2,1,43,03,01,02
+
+[USB.CopyFiles]
+usbd.sys
+usbhub.sys
+
+[USBUI.CopyFiles]
+usbui.dll
+
+[USB.DelFiles]
+usbhub.sys,,,1
+openhci.sys,,,1
+uhcd.sys,,,1
+usbd.sys,,,1
+usbcamd.sys,,,1
+imagecls.sys,,,1
+hcd.vxd,,,1
+usbd.vxd,,,1
+usb_enum.vxd,,,1
+vtaishid.vxd,,,1
+tmusb.sys,,,1
+taishid.sys,,,1
+usbuidll.cpl,,,1
+usbuidll.dll,,,1
+
+[USBMON.DelFiles]
+mondrv.sys,,,1
+mondll.dll,,,1
+
+[USBINF.DelFiles]
+propext.inf,,,1
+tmusb.inf,,,1
+ehidmous.inf,,,1
+ehidkbd.inf,,,1
+ehidjoy.inf,,,1
+
+[DBCHUB.AddReg]
+HKR,,DevLoader,,*NTKERN
+HKR,,NTMPDriver,,usbhub.sys
+
+
+[DBCHUB.CopyFiles]
+usbhub.sys
+dbclass.sys
+dbfilter.sys
+
+[DBCHUB.DelFiles]
+
+
+[HUB.AddReg]
+HKR,,DevLoader,,*NTKERN
+HKR,,NTMPDriver,,usbhub.sys
+
+[Power.AddReg]
+HKR,,EnumPropPages,,"sysclass.dll,USBHubPropPage"
+
+[Composite.DelReg]
+HKR,,EnumPropPages
+
+[HUB.CopyFiles]
+;copied during host controller install, don't need to copy during hub install
+;usbhub.sys
+
+[HUB.DelFiles]
+
+[ControlFlags]
+;ExcludeFromSelect=*
+
+;[DestinationDirs]
+;DefaultDestDir = 11                     ; System directory
+
+[Strings]
+Msft="Microsoft"
+USBClassName="Universal Serial Bus controllers"
+
+Generic.Mfg="(Standard USB Host Controller)"
+PCI\CC_0C0310.DeviceDesc="Standard OpenHCI USB Host Controller"
+PCI\CC_0C0300.DeviceDesc="Standard Universal PCI to USB Host Controller"
+USB\ROOT_HUB.DeviceDesc="USB Root Hub"
+USB\ROOT_HUB_DBC.DeviceDesc="USB Root Hub with Device Bay ports"
+USB\COMPOSITE.DeviceDesc="USB Composite Device"
+
+Microsoft.Mfg="Microsoft"
+USB\VID_045E&PID_001C.DeviceDesc="Microsoft Integrated USB Hub"
+; USB\VID_045E&PID_0014.DeviceDesc="Microsoft Digital Sound System Composite Device"
+USB\VID_045E&PID_001D.DeviceDesc="Microsoft USB Keyboard Composite Device"
+
+AMD.Mfg="AMD"
+PCI\VEN_1022&DEV_740C.DeviceDesc="AMD 756 PCI to USB Open Host Controller"
+
+Compaq.Mfg="Compaq"
+PCI\VEN_0E11&DEV_A0F8.DeviceDesc="Compaq PCI to USB Open Host Controller"
+
+FTA.Mfg="Fujitsu"
+USB\VID_0430&PID_36BA.DeviceDesc="Fujitsu USB Bus Powered Hub"
+USB\VID_0430&PID_0002.DeviceDesc="Fujitsu USB Composite Device"
+
+Intel.Mfg="Intel"
+PCI\VEN_8086&DEV_2412.DeviceDesc="Intel 82801AA USB Universal Host Controller"
+PCI\VEN_8086&DEV_2422.DeviceDesc="Intel 82801AB USB Universal Host Controller"
+PCI\VEN_8086&DEV_7020.DeviceDesc="Intel 82371SB PCI to USB Universal Host Controller"
+PCI\VEN_8086&DEV_7112.DeviceDesc="Intel 82371AB/EB PCI to USB Universal Host Controller"
+PCI\VEN_8086&DEV_719A.DeviceDesc="Intel 82440MX PCI to USB Universal Host Controller"
+PCI\VEN_8086&DEV_7602.DeviceDesc="Intel 82372FB PCI to USB Universal Host Controller"
+USB\VID_8086&PID_9303.DeviceDesc="Intel 8x930Hx USB Hub"
+USB\VID_042B&PID_9316.DeviceDesc="Intel 8x931Hx Customer Hub"
+
+Kawatsu.Mfg="KC Technology"
+USB\VID_050F&PID_0001.DeviceDesc="KC Technology USB Hub"
+
+Cherry.Mfg="CHERRY GmbH"
+USB\VID_046A&PID_0003.DeviceDesc="Cherry GmbH USB-Hub"
+
+Altec.Mfg="Altec Lansing"
+USB\VID_04D2&PID_FF47.DeviceDesc="Altec Lansing Composite USB Audio Device"
+USB\VID_04D2&PID_FF49.DeviceDesc="Altec Lansing Composite USB Audio Device"
+USB\VID_04D2&PID_0070.DeviceDesc="Altec Lansing Composite USB Audio Device"
+
+Telex.Mfg="Telex"
+USB\VID_0562&PID_0000.DeviceDesc="Telex Composite USB Device"
+
+Dallas.Mfg="Dallas Semiconductor"
+USB\VID_04FA&PID_4201.DeviceDesc="Generic USB Composite Device"
+
+NMB.Mfg="NMB"
+USB\VID_0446&PID_6781.DeviceDesc="NMB Composite USB Device"
+
+STSL.Mfg="STSL"
+USB\VID_05FA&PID_3303.DeviceDesc="STSL Composite USB Device"
+
+SUPGERGATE.Mfg="SUPGERGATE"
+USB\VID_05d5&PID_6782.DeviceDesc="SUPGERGATE Composite USB Device"
+
+Iiyama.Mfg="Iiyama"
+USB\VID_04E1&PID_0201.DeviceDesc="Iiyama USB Hub"
+
+Samsung.Mfg="Samsung"
+USB\VID_0419&PID_8001.DeviceDesc="Samsung USB Hub"
+USB\VID_055D&PID_8001.DeviceDesc="Samsung E.M. USB Hub"
+
+CTX.Mfg="CTX"
+USB\VID_0698&PID_9999.DeviceDesc="CTX USB Hub"
+
+LiteOn.Mfg="LiteOn"
+USB\VID_04CA&PID_9304.DeviceDesc="Lite On USB Hub"
+
+Winbond.Mfg="Winbond"
+USB\VID_0416&PID_0101.DeviceDesc="Winbond USB Hub"
+
+MultiVideoLabs.Mfg="MultiVideo Labs"
+USB\VID_04a8&PID_0101.DeviceDesc="MultiVideo Labs USB Hub"
+
+Sand.Mfg="Sand"
+USB\VID_0405&PID_0000.DeviceDesc="Sand USB Hub"
+
+TI.Mfg="TI"
+USB\VID_0451&PID_1446.DeviceDesc="General purpose USB Hub"
+
+CATC.Mfg="Computer Access Technology Corporation"
+USB\VID_0423&PID_1237.DeviceDesc="Computer Access Technology Corporation USB Hub"
+
+Sony.Mfg="SONY Corporation"
+USB\VID_054C&PID_0001.DeviceDesc="Sony USB HUB"
+USB\VID_054C&PID_0002.DeviceDesc="Standard USB HUB"
+
+Philips.Mfg="Philips"
+USB\VID_0471&PID_0201.DeviceDesc="Philips USB Hub"
+USB\VID_0471&PID_0302.DeviceDesc="Philips Composite USB Device"
+USB\VID_0471&PID_0101.DeviceDesc="Philips Composite USB Device"
+USB\VID_0471&PID_0402.DeviceDesc="Philips Semiconductors CICT Composite USB Device"
+USB\VID_0471&PID_0601.DeviceDesc="Philips Composite USB Device"
+USB\VID_0471&PID_0700.DeviceDesc="Philips Semiconductors CICT USB Hub"
+
+NEC.Mfg="NEC"
+USB\VID_0409&PID_55AA.DeviceDesc="NEC USB Hub"
+USB\VID_0409&PID_8010.DeviceDesc="NEC USB Intellibase Hub"
+USB\VID_0409&PID_8011.DeviceDesc="NEC USB Intellibase Hub"
+PCI\VEN_1033&DEV_0035.DeviceDesc="NEC USB Open Host Controller"
+PCI\VEN_1033&DEV_0035&REV_01.DeviceDesc="NEC USB Open Host Controller (E5-E11)"
+PCI\VEN_1033&DEV_0035&REV_02.DeviceDesc="NEC USB Open Host Controller (E13+)"
+USB\VID_0409&PID_0014.DeviceDesc="NEC Composite USB Device"
+USB\VID_0409&PID_0011.DeviceDesc="NEC Composite USB Device"
+USB\VID_0409&PID_0203.DeviceDesc="NEC Composite USB Device"
+; USB\VID_03EB&PID_3312.DeviceDesc="NEC USB 4-port Hub"
+
+CMD.Mfg="CMD Technology"
+PCI\VEN_1095&DEV_0670&REV_04.DeviceDesc="Rev 04 CMD USB controller not supported by Microsoft"
+PCI\VEN_1095&DEV_0673.DeviceDesc="CMD USB Open Host Controller"
+PCI\VEN_1095&CC_0C0310.DeviceDesc="CMD USB Open Host Controller"
+PCI\VEN_1095&CC_0C0300.DeviceDesc="CMD USB Open Host Controller"
+PCI\VEN_1095&DEV_0673&SUBSYS_06701095.DeviceDesc="CMD USB Open Host Controller"
+
+Lucent.Mfg="Lucent Technology"
+PCI\VEN_11C1&DEV_5801.DeviceDesc="Lucent USB Open Host Controller"
+PCI\VEN_11C1&CC_0C0310.DeviceDesc="Lucent USB Open Host Controller"
+PCI\VEN_11C1&CC_0C0300.DeviceDesc="Lucent USB Open Host Controller"
+PCI\VEN_11C1&DEV_5801&SUBSYS_580111C1.DeviceDesc="Lucent USB Open Host Controller"
+
+NatSemi.Mfg="National Semiconductor"
+PCI\VEN_100B&DEV_0012.DeviceDesc="National Semiconductor PCI to USB Open Host Controller"
+USB\VID_0400&PID_1237.DeviceDesc="National Semiconductor USB Hub"
+
+SIS.Mfg="Silicon Integrated Systems"
+PCI\VEN_1039&DEV_7001.DeviceDesc="SiS 7001 PCI to USB Open Host Controller"
+PCI\VEN_1039&CC_0C0310.DeviceDesc="SiS 7001 PCI to USB Open Host Controller"
+PCI\VEN_1039&CC_0C0300.DeviceDesc="SiS 7001 PCI to USB Open Host Controller"
+PCI\VEN_1039&DEV_7001&SUBSYS_00000000.DeviceDesc="SiS 7001 PCI to USB Open Host Controller"
+
+ACER.Mfg="ACER Labs Inc."
+PCI\VEN_10B9&DEV_5237.DeviceDesc="ALi PCI to USB Open Host Controller"
+USB\VID_04A5&PID_0003.DeviceDesc="API Composite USB Device"
+
+Sejin.Mfg="Sejin"
+USB\VID_0510&PID_1000.DeviceDesc="Sejin Composite USB Device"
+
+EIZO.Mfg="EIZO"
+USB\VID_056D&PID_0000.DeviceDesc="EIZO USB Hub"
+
+Nokia.Mfg="Nokia"
+USB\VID_04A6&PID_0180.DeviceDesc="Nokia USB Hub Type P"
+
+LabTec.Mfg="Labtec"
+USB\VID_0672&PID_1041.DeviceDesc="Labtec USB Composite Device"
+
+Silitek.Mfg="Silitek"
+USB\VID_047B&PID_0002.DeviceDesc="Silitek USB Composite Device"
+
+GenericHub.Mfg="(Generic USB Hub)"
+USB\CLASS_09&SUBCLASS_01.DeviceDesc="Generic USB Hub"
+USB\CLASS_09.DeviceDesc="Generic USB Hub"
+
+
+VIA.Mfg="VIA Technologies"
+PCI\VEN_1106&DEV_3038.DeviceDesc="VIA Tech 3038 PCI to USB Universal Host Controller"
+
+OPTi.MFG="OPTi"
+PCI\VEN_1045&DEV_C861.DeviceDesc="OPTi 82C861 PCI to USB Open Host Controller"
+PCI\VEN_1045&CC_0C0310.DeviceDesc="OPTi 82C861 PCI to USB Open Host Controller"
+PCI\VEN_1045&CC_0C0300.DeviceDesc="OPTi 82C861 PCI to USB Open Host Controller"
+PCI\VEN_1045&DEV_C861&SUBSYS_C8611045.DeviceDesc="OPTi 82C861 PCI to USB Open Host Controller"
+
+Symbios.Mfg="Symbios Logic"
+PCI\VEN_1000&DEV_0901.DeviceDesc="Symbios Logic SYM61C102 USB Host Controller"
+
+KeyTronic.Mfg="Key Tronic"
+USB\VID_03F9&PID_0102.DeviceDesc="Key Tronic Composite USB Device"
+
+Chicony.Mfg="Chicony"
+USB\VID_04F2&PID_0001.DeviceDesc="Chicony Composite USB Device"
+
+BTC.Mfg="BTC"
+USB\VID_046E&PID_6782.DeviceDesc="BTC Composite USB Device"
+
+Forward.Mfg="Forward"
+USB\VID_05BC&PID_0001.DeviceDesc="Forward Composite USB Device"
+
+SolidYear.Mfg="Solid Year"
+USB\VID_060B&PID_2101.DeviceDesc="Solid Year Composite USB Device"
+
+Yamaha.Mfg="Yamaha"
+USB\VID_0499&PID_3001.DeviceDesc="Yamaha Composite USB Device"
+
+Granite.Mfg="Granite Microsystems"
+USB\VID_0654&PID_0006.DeviceDesc="Granite Microsystems USB Hub"
+USB\VID_0654&PID_0016.DeviceDesc="Granite Microsystems USB Hub"
+
+
+USB\UNKNOWN.DeviceDesc="Unknown Device"
+
+IntelliTools.Mfg="IntelliTools"
+USB\VID_144B&PID_0008.DeviceDesc="IntelliSwitch Composite Device"
+

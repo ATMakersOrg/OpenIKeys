@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dll", "..\KbdHookDll\dll.vcxproj", "{ACA1EF22-77A3-4781-35B8-0D0A138D8ABB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ikusb", "ikusb.vcxproj", "{5BA69745-A648-5F1B-E0CE-D37841D26959}"
+	ProjectSection(ProjectDependencies) = postProject
+		{ACA1EF22-77A3-4781-35B8-0D0A138D8ABB} = {ACA1EF22-77A3-4781-35B8-0D0A138D8ABB}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		Service Release|Win32 = Service Release|Win32
+		Template|Win32 = Template|Win32
+		Win9x Svc Rel|Win32 = Win9x Svc Rel|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACA1EF22-77A3-4781-35B8-0D0A138D8ABB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{ACA1EF22-77A3-4781-35B8-0D0A138D8ABB}.Debug|Win32.Build.0 = Debug|Win32
+		{ACA1EF22-77A3-4781-35B8-0D0A138D8ABB}.Release|Win32.ActiveCfg = Release|Win32
+		{ACA1EF22-77A3-4781-35B8-0D0A138D8ABB}.Release|Win32.Build.0 = Release|Win32
+		{ACA1EF22-77A3-4781-35B8-0D0A138D8ABB}.Service Release|Win32.ActiveCfg = Release|Win32
+		{ACA1EF22-77A3-4781-35B8-0D0A138D8ABB}.Service Release|Win32.Build.0 = Release|Win32
+		{ACA1EF22-77A3-4781-35B8-0D0A138D8ABB}.Template|Win32.ActiveCfg = Release|Win32
+		{ACA1EF22-77A3-4781-35B8-0D0A138D8ABB}.Template|Win32.Build.0 = Release|Win32
+		{ACA1EF22-77A3-4781-35B8-0D0A138D8ABB}.Win9x Svc Rel|Win32.ActiveCfg = Release|Win32
+		{ACA1EF22-77A3-4781-35B8-0D0A138D8ABB}.Win9x Svc Rel|Win32.Build.0 = Release|Win32
+		{5BA69745-A648-5F1B-E0CE-D37841D26959}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5BA69745-A648-5F1B-E0CE-D37841D26959}.Debug|Win32.Build.0 = Debug|Win32
+		{5BA69745-A648-5F1B-E0CE-D37841D26959}.Release|Win32.ActiveCfg = Release|Win32
+		{5BA69745-A648-5F1B-E0CE-D37841D26959}.Release|Win32.Build.0 = Release|Win32
+		{5BA69745-A648-5F1B-E0CE-D37841D26959}.Service Release|Win32.ActiveCfg = Service Release|Win32
+		{5BA69745-A648-5F1B-E0CE-D37841D26959}.Service Release|Win32.Build.0 = Service Release|Win32
+		{5BA69745-A648-5F1B-E0CE-D37841D26959}.Template|Win32.ActiveCfg = Template|Win32
+		{5BA69745-A648-5F1B-E0CE-D37841D26959}.Template|Win32.Build.0 = Template|Win32
+		{5BA69745-A648-5F1B-E0CE-D37841D26959}.Win9x Svc Rel|Win32.ActiveCfg = Win9x Svc Rel|Win32
+		{5BA69745-A648-5F1B-E0CE-D37841D26959}.Win9x Svc Rel|Win32.Build.0 = Win9x Svc Rel|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

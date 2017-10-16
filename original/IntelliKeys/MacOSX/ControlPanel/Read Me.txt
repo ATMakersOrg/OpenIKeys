@@ -1,0 +1,77 @@
+IntelliKeys USB
+Version 3.5.2
+Important Information
+
+1 - What's changed in this version
+
+Version 3.5.2 includes Windows 8 and Mac OS 10.8 (Mountain Lion) support in
+addition to improved 64-bit Windows operating system support for 
+international versions.
+
+2 - Product Notes
+
+Installation Note: 
+To install IntelliKeys USB software, you must have Administrator access for 
+the computer. Before installing this new version, unplug the IntelliKeys 
+USB from the computer.  Then uninstall the older IntelliKeys USB software.
+
+To uninstall the older version:
+- For Windows XP, use Add/Remove Programs from the Control Panel.
+- For Windows 7 and 8, use Programs and Features.
+- For Mac, use the Uninstall program provided with the installation.
+
+If, however, you have the Popular Software Overlays, DO NOT uninstall the
+older IntelliKeys USB software!
+
+Very important information for Mac users!
+
+- Version 3.5.2 will only work on Intel systems running Mac OS 10.5.8 - 10.8.
+  This may be found in "Installers/V3.5 (10.x, Intel Only)" in the English 
+  version of the product, and is the only installer version for international
+  versions of the product. 
+
+- On Mac OS X the IntelliKeys USB icon appears in the menu bar,
+  typically next to the time display.  Select this icon 
+  to open the IntelliKeys USB control panel. In Classic mode, 
+  from the menu bar select the Finder to select the IntelliKeys 
+  USB icon to open the IntelliKeys USB control panel. 
+
+- The standard IntelliKeys USB overlays' mouse right click 
+  key will work in Mac OS X programs that support the mouse 
+  right click functionality.
+
+- On Macs each attached keyboard is recognized as separate and 
+  unique. This means that the num lock and caps lock lights on 
+  the IntelliKeys USB will report the state for the IntelliKeys 
+  USB only. These lights would not need to be synchronized with 
+  the lights on the standard keyboard.  
+ 
+
+3 - Operating System Support 
+
+IntelliKeys USB version 3.5 will run on
+
+- Intel systems running Mac 10.5 through 10.8
+- Windows 32- and 64-bit Windows XP, Windows Vista, Windows 7 and
+  Windows 8.
+
+If you have an earlier version of IntelliKeys USB, please see our website
+for technical details: www.intellitools.com 
+
+
+4  - Contacting IntelliTools
+
+We welcome your comments; you can reach us using the following methods:
+ 
+* Phone: 800-894-5374 (U.S. and Canada) (8 a.m. to 5 p.m. Pacific Time, Monday through Friday)
+* Other countries: 781-276-0600
+* By e-mail:
+    tech@cambiumtech.com (for technical information)
+    customerservice@cambiumtech.com (for general information)
+* On the Web:
+    http://www.intellitools.com	
+* By mail at: 
+    Cambium Learning Technologies
+    24 Prime Park Way, Suite 303
+    Natick, MA 01730
+    USA

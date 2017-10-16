@@ -1,0 +1,106 @@
+
+;  for international versions
+
+codepage_for_locale_0404		950  ;  traditional chinese
+codepage_for_locale_0C04		932  ;  simplified chinese
+codepage_for_locale_0411		932  ;  japanese
+codepage_for_locale_0412		949  ;  korean
+
+
+Overlays_Folder			Private/Standard Overlays/Win/
+Switch_Settings_Folder		Private/Switch Settings/Win/
+
+;
+;  The standard overlays
+;
+Standard_Overlay_0		USB Web Schablone.oms
+Standard_Overlay_1		USB Einstellungs Schablone.oms
+Standard_Overlay_2		USB Rechen Schablone.oms
+Standard_Overlay_3		USB Alphabet Schablone.oms
+Standard_Overlay_4		USB Maus Schablone.oms
+Standard_Overlay_5		USB QWERTZ Schablone.omg
+Standard_Overlay_6		USB Basis Schablone.oms
+Standard_Overlay_7		none.oms
+Standard_Setup_Overlay		1
+
+Standard_Overlay_0_Name		USB Web Schablone
+Standard_Overlay_1_Name		USB Einstellungs Schablone
+Standard_Overlay_2_Name		USB Rechen Schablone
+Standard_Overlay_3_Name		USB Alphabet Schablone
+Standard_Overlay_4_Name		USB Maus Schablone
+Standard_Overlay_5_Name		USB QWERTZ Schablone
+Standard_Overlay_6_Name		USB Basis Schablone
+Standard_Overlay_7_Name		none
+
+
+Control_Panel_Name		IntelliKeys USB.exe
+
+Override_Use_System_Repeat_Settings          	0
+Force_Key_Up					1
+max_repeat_delay				750
+
+num_switch_files	26
+
+switch_file_1	1 - Leertaste und Eingabe.oms
+switch_file_2	2 - Bild auf und Bild ab.oms
+switch_file_3	3 - Linksklick und Rechtsklick.oms
+switch_file_4	4 - Ja und Nein.oms
+switch_file_5	5 - F 11 und F 12.oms
+switch_file_6	6 - F 5 und F 8.oms
+switch_file_7	7 - Tab und Eingabe.oms
+switch_file_8	8 - Pfeil links und Pfeil rechts.oms
+switch_file_9	9 - 1 und 2.oms
+switch_file_10	10 - Tab und Eingabe.oms
+switch_file_11	11 - Tab und Leertaste.oms
+switch_file_12	12 - Tab und Shift-Tab.oms
+switch_file_13	13 - Linke Shift-Taste und rechte Shift-Taste.oms
+switch_file_14	14 - Alt + Pfeil links und Alt + Pfeil rechts.oms
+switch_file_15	15 - Escape und Eingabe.oms
+switch_file_16	16 - Linker und rechter Mausklick.oms
+switch_file_17	17 - Pfeiltasten und Eingabe.oms
+switch_file_18	18 - Pfeiltasten und Leertaste.oms
+switch_file_19	19 - 1 bis 4 und 0.oms
+switch_file_20	20 - 1 bis 4 und Eingabe.oms
+switch_file_21	21 - Bearbeitungstasten.oms
+switch_file_22	22 - Sondertasten.oms
+switch_file_23	23 - Mausklicks, Eingabe, Leertaste.oms
+switch_file_24	24 - 5 Maustasten.oms
+switch_file_25	25 - Verschiedenes 1.oms
+switch_file_26	26 - Mausrichtungen.oms
+
+;
+;  names by which to identify running programs
+
+engine_name_1		ikusbsvc.exe
+engine_name_2		ikusb.exe
+engine_name_3		w9xsvc.exe
+
+control_panel_name_1	IntelliKeys USB.exe
+control_panel_name_2	IntelliKeys USB
+
+system_tray_name_1	iksystray.exe
+system_tray_name_2	system tray.exe
+system_tray_name_3	iksyst~1.exe
+
+debug_sender		0
+
+Unicode_File_Names	1
+
+clickit_file		c:\itools\clickit\clickdll.dll		
+intellikeys_file		IntelliKeys USB.exe
+
+S_SYSTRAY_SKIP_APP_1	Bootstrap loader for Discover
+S_SYSTRAY_SKIP_APP_2	IK USB System Tray
+S_SYSTRAY_SKIP_APP_3	IntelliKeys USB
+S_SYSTRAY_SKIP_APP_4	Main UI application that resides in the System Tray
+S_SYSTRAY_SKIP_APP_5	Windows Explorer
+S_SYSTRAY_SKIP_APP_6	Run DLL as an app
+
+DiscoverName		Entdecke Pro
+
+s_overlay_not_sent_1	Schablone nicht gesndet|Eine Schablone wurde nicht gesendet, weil "Nur eine Schablone" in den Modus Einstellungen der Intellikeys oder Intelliswitch Systemsteuerung selektiert ist. Um das Senden zu aktivieren, selektieren Sie eine Schablone.
+s_overlay_not_sent_2	Schablone nicht gesndet|Eine Schablone wurde nicht gesendet, weil "Voreinstellung Taster" in den Modus Einstellungen der Intellikeys oder Intelliswitch Systemsteuerung selektiert ist. Um das Senden zu aktivieren, selektieren Sie eine Schablone.
+s_overlay_not_sent_3	Schablone nicht gesndet|Eine Schablone wurde nicht gesendet, weil "Entdecke Pro" in den Modus Einstellungen der Intellikeys oder Intelliswitch Systemsteuerung selektiert ist. Um das Senden zu aktivieren, selektieren Sie eine Schablone.
+S_LISTFEATURES_MODE_DISCOVER			Entdecke Pro
+
+

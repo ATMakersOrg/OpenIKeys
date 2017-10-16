@@ -1,0 +1,107 @@
+
+;  for international versions
+
+codepage_for_locale_0404		950  ;  traditional chinese
+codepage_for_locale_0C04		932  ;  simplified chinese
+codepage_for_locale_0411		932  ;  japanese
+codepage_for_locale_0412		949  ;  korean
+
+
+Overlays_Folder			Private/Standard Overlays/Win/
+Switch_Settings_Folder		Private/Switch Settings/Win/
+
+;
+;  The standard overlays
+;
+Standard_Overlay_0		Web Access USB Overlay.oms
+Standard_Overlay_1		Setup USB Overlay.oms
+Standard_Overlay_2		Math Access USB Overlay.oms
+Standard_Overlay_3		Alphabet USB Overlay.oms
+Standard_Overlay_4		Mouse Access USB Overlay.oms
+Standard_Overlay_5		QWERTY USB Overlay.oms
+Standard_Overlay_6		Basic Writing USB Overlay.oms
+Standard_Overlay_7		none.oms
+Standard_Setup_Overlay		1
+
+Standard_Overlay_0_Name		Web Access USB Overlay
+Standard_Overlay_1_Name		Setup USB Overlay
+Standard_Overlay_2_Name		Math Access USB Overlay
+Standard_Overlay_3_Name		Alphabet USB Overlay
+Standard_Overlay_4_Name		Mouse Access USB Overlay
+Standard_Overlay_5_Name		QWERTY USB Overlay
+Standard_Overlay_6_Name		Basic Writing USB Overlay
+Standard_Overlay_7_Name		none
+
+
+Control_Panel_Name		IntelliKeys USB.exe
+
+Override_Use_System_Repeat_Settings          	0
+Force_Key_Up					1
+max_repeat_delay				750
+
+num_switch_files	26
+
+switch_file_1	1 - Ctrl-Enter and Ctrl-Enter
+switch_file_2	2 - Ctrl-Right and -Down Arrows.oms
+switch_file_3	3 - Space and Enter.oms
+switch_file_4	4 - Click and Click.oms
+switch_file_5	5 - Click and Double Click.oms
+switch_file_6	6 - Left and Right Arrows.oms
+switch_file_7	7 - Up Arrow and Down Arrow.oms
+switch_file_8	8 - Left Arrow and Up Arrow.oms
+switch_file_9	9 - 1 and 2.oms
+switch_file_10	10 - Tab and Enter.oms
+switch_file_11	11 - Tab and Space.oms
+switch_file_12	12 - Tab and Shift-Tab.oms
+switch_file_13	13 - Left Shift and Right Shift.oms
+switch_file_14	14 - Down Arrow and Enter.oms
+switch_file_15	15 - Right Arrow and Enter.oms
+switch_file_16	16 - Left Click and Right Click
+switch_file_17	17 - Arrow Keys and Enter.oms
+switch_file_18	18 - Arrow Keys and Space.oms
+switch_file_19	19 - 1 thru 4 and 0.oms
+switch_file_20	20 - 1 thru 4 and Enter.oms
+switch_file_21	21 - Edit Keys.oms
+switch_file_22	22 - Modifiers.oms
+switch_file_23	23 - Mouse Click.oms
+switch_file_24	24 - Five-Button Mouse.oms
+switch_file_25	25 - Miscellaneous 1.oms
+switch_file_26	26 - Mouse Directions.oms
+
+;
+;  names by which to identify running programs
+
+engine_name_1		ikusbsvc.exe
+engine_name_2		ikusb.exe
+engine_name_3		w9xsvc.exe
+
+control_panel_name_1	IntelliKeys USB.exe
+control_panel_name_2	IntelliKeys USB
+
+system_tray_name_1	iksystray.exe
+system_tray_name_2	system tray.exe
+system_tray_name_3	iksyst~1.exe
+
+balloon_name_1		balloon.exe
+
+debug_sender		0
+
+Unicode_File_Names	0
+	
+intellikeys_file		IntelliKeys USB.exe
+
+S_SYSTRAY_SKIP_APP_1	Bootstrap loader for Discover
+S_SYSTRAY_SKIP_APP_2	IK USB System Tray
+S_SYSTRAY_SKIP_APP_3	IntelliKeys USB
+S_SYSTRAY_SKIP_APP_4	Main UI application that resides in the System Tray
+S_SYSTRAY_SKIP_APP_5	Run a DLL as an app
+
+DiscoverName		DiscoverPro
+
+s_overlay_not_sent_1	Overlay Not Sent|An overlay was not sent because One Overlay Only is selected on the Mode tab of the IntelliKeys and IntelliSwitch Control Panel.  To enable overlay sending, select Overlays.
+s_overlay_not_sent_2	Overlay Not Sent|An overlay was not sent because Switch Presets is selected on the Mode tab of the IntelliKeys and IntelliSwitch Control Panel.  To enable overlay sending, select Overlays.
+s_overlay_not_sent_3	Overlay Not Sent|An overlay was not sent because DiscoverPro is selected on the Mode tab of the IntelliKeys and IntelliSwitch Control Panel.  To enable overlay sending, select Overlays.
+
+S_LISTFEATURES_MODE_DISCOVER			DiscoverPro
+
+menu_enabled		1

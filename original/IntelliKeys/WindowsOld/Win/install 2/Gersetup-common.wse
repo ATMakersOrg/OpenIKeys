@@ -1,0 +1,2572 @@
+Document Type: WSE
+item: Global
+  Version=9.0
+  Title=IntelliKeys USB and IntelliSwitch
+  Title German=IntelliKeys USB and IntelliSwitch
+  Flags=01001000
+  Languages=65 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  Copy Default=1
+  Japanese Font Name=MS Gothic
+  Japanese Font Size=10
+  Start Gradient=0 0 255
+  End Gradient=0 0 0
+  Windows Flags=00000100000000000010110101011000
+  Message Font=MS Sans Serif
+  Font Size=8
+  Disk Filename=SETUP
+  Patch Flags=0000000000000001
+  Patch Threshold=85
+  Patch Memory=4000
+  MIF PDF Version=1.0
+  MIF SMS Version=2.0
+  FTP Cluster Size=20
+  Dialogs Version=6
+  Crystal Format=10111100101100000010001001001001
+  Step View=&Properties
+  Variable Name1=_SYS_
+  Variable Default1=C:\WINDOWS\SYSTEM
+  Variable Flags1=00001000
+  Variable Name2=_WISE_
+  Variable Default2=C:\PROGRA~2\WISEIN~1
+  Variable Flags2=00001000
+end
+item: Remark
+  Text=----------  get system information  --------------------------------------------------
+end
+breakpoint item: Include Script
+  Pathname=..\..\..\..\InstallPieces\systems\sysinfo.wse
+end
+item: Remark
+end
+item: Remark
+end
+item: Remark
+  Text=---------------   Insure the SYS is writable   --------------------------------------------------------
+end
+item: Open/Close INSTALL.LOG
+  Flags=00000001
+end
+item: Check if File/Dir Exists
+  Pathname=%SYS%
+  Flags=10000100
+end
+item: Set Variable
+  Variable=SYS
+  Value=%WIN%
+end
+item: End Block
+end
+item: Remark
+end
+item: Remark
+end
+item: Remark
+  Text=---------------   title, location, group  --------------------------------------------------------
+end
+item: Set Variable
+  Variable=OLDAPPTITLE
+  Value=IntelliKeys USB
+  Flags=10000000
+end
+item: Set Variable
+  Variable=APPTITLE
+  Value=IntelliKeys USB and IntelliSwitch
+  Flags=10000000
+end
+item: Set Variable
+  Variable=GROUP
+ Value=AbleNet
+  Flags=10000000
+end
+item: Set Variable
+  Variable=MAINDIR
+  Value=IntelliKeys USB
+  Flags=10000000
+end
+remarked item: Set Variable
+  Variable=APPNAME
+  Value=IntelliKeys USB
+  Flags=10000000
+end
+item: Include Script
+  Pathname=version.wse
+end
+item: Remark
+end
+item: Remark
+  Text=----------  how were we invoked?  --------------------------------------------------
+end
+item: Set Variable
+  Variable=COINSTALL
+  Value=no
+end
+item: Parse String
+  Source=%CMDLINE%
+  Pattern=ddd
+  Variable1=CMDLINE1
+  Variable2=CMDLINE2
+  Flags=00000011
+end
+item: If/While Statement
+  Variable=CMDLINE1
+  Flags=00000001
+end
+item: Set Variable
+  Variable=COINSTALL
+  Value=yes
+end
+item: End Block
+end
+item: Remark
+end
+item: Remark
+end
+item: Remark
+  Text=---------------   check system version if we're NOT COINSTALL  --------------------------------------------------------
+end
+item: If/While Statement
+  Variable=COINSTALL
+  Value=no
+end
+remarked item: If/While Statement
+  Variable=SYS_MAJORVER
+  Value=4
+  Flags=00001001
+end
+remarked item: If/While Statement
+  Variable=SYS_MINORVER
+  Value=0
+  Flags=00001001
+end
+remarked item: If/While Statement
+  Variable=ATTENDED
+  Value=yes
+end
+remarked item: Display Message
+  Title=%apptitle% v%version%
+  Title German=%apptitle% v%version%
+  Text=This software can only be installed on
+  Text=Windows 98, Windows ME, Windows 2000 or Windows XP.
+  Text German=This software can only be installed on
+  Text German=Windows 98, Windows ME, Windows 2000 or Windows XP.
+end
+remarked item: End Block
+end
+remarked item: Exit Installation
+end
+remarked item: End Block
+end
+remarked item: If/While Statement
+  Variable=SYS_NAME
+  Value=WINNT4
+end
+remarked item: If/While Statement
+  Variable=ATTENDED
+  Value=yes
+end
+remarked item: Display Message
+  Title=%apptitle% v%version%
+  Title German=%apptitle% v%version%
+  Text=This software can only be installed on
+  Text=Windows 98, Windows ME, Windows 2000 or Windows XP.
+  Text German=This software can only be installed on
+  Text German=Windows 98, Windows ME, Windows 2000 or Windows XP.
+end
+remarked item: End Block
+end
+remarked item: Exit Installation
+end
+remarked item: End Block
+end
+remarked item: End Block
+end
+item: End Block
+end
+item: Remark
+end
+item: Remark
+end
+item: Remark
+  Text=----------  check for Admin privileges -----------
+end
+item: If/While Statement
+  Variable=SYS_MAJORVER
+  Value=5
+  Flags=00000111
+end
+item: If/While Statement
+  Variable=SYS_ADMIN
+  Value=TRUE
+  Flags=00000001
+end
+item: If/While Statement
+  Variable=ATTENDED
+  Value=yes
+end
+item: Display Message
+  Title=Unable to Complete Installation
+  Title German=Unable to Complete Installation
+  Text=%apptitle% v%version% is unable to install on this system.
+  Text=
+  Text=To complete installation on this operating system, you will need Administrator privileges. 
+  Text=
+  Text=Please exit this installation, logon as Adminstrator and begin installing, or contact your Adminstrator to install this product.
+  Text=
+  Text=Press the OK button to exit this installation.
+  Text=
+  Text German=%apptitle% v%version% is unable to install on this system.
+  Text German=
+  Text German=To complete installation on this operating system, you will need Administrator privileges. 
+  Text German=
+  Text German=Please exit this installation, logon as Adminstrator and begin installing, or contact your Adminstrator to install this product.
+  Text German=
+  Text German=Press the OK button to exit this installation.
+  Text German=
+  Flags=00100000
+end
+item: End Block
+end
+item: Exit Installation
+end
+item: End Block
+end
+item: End Block
+end
+item: Remark
+end
+item: Remark
+end
+remarked item: Remark
+  Text=----------  check for various conditions:
+end
+remarked item: Remark
+  Text=----------                     device install underway
+end
+remarked item: Remark
+  Text=----------                     unloaded devces connected
+end
+remarked item: Remark
+  Text=----------                     loaded devices connected
+end
+remarked item: Remark
+  Text=----------                     software installed
+end
+remarked item: Create Directory
+  Pathname=%temp%\itools
+end
+remarked item: Install File
+  Source=CheckDevInstall\Release\CheckDevInstall.exe
+  Destination=%temp%\itools\CheckDevInstall.exe
+  Flags=0000000010000010
+end
+remarked item: Execute Program
+  Pathname=%temp%\itools\CheckDevInstall.exe
+  Flags=00001010
+end
+remarked item: Set Variable
+  Variable=X
+  Value=INSTALL_RESULT
+  Flags=00100000
+end
+remarked item: Set Variable
+  Variable=BDEVINSTALL
+  Value=X-((X/256)*256)
+  Flags=00100000
+end
+remarked item: Set Variable
+  Variable=X
+  Value=X/256
+  Flags=00100000
+end
+remarked item: Set Variable
+  Variable=NRAW
+  Value=X-((X/256)*256)
+  Flags=00100000
+end
+remarked item: Set Variable
+  Variable=X
+  Value=X/256
+  Flags=00100000
+end
+remarked item: Set Variable
+  Variable=NLOADED
+  Value=X-((X/256)*256)
+  Flags=00100000
+end
+remarked item: Set Variable
+  Variable=X
+  Value=X/256
+  Flags=00100000
+end
+remarked item: Set Variable
+  Variable=BINSTALLED
+  Value=X-((X/256)*256)
+  Flags=00100000
+end
+remarked item: Remark
+end
+remarked item: Display Message
+  Title=invoked
+  Title German=invoked
+  Text=cmdline = %cmdline%
+  Text=cmdline1 = %cmdline1%
+  Text=cmdline2 = %cmdline2%
+  Text=coinstall = %coinstall%
+  Text=bdevinstall = %bdevinstall%
+  Text=nraw = %nraw%
+  Text=nloaded = %nloaded%
+  Text=bnstalled = %binstalled%
+  Text=attended = %attended%
+  Text=
+  Text German=cmdline = %cmdline%
+  Text German=cmdline1 = %cmdline1%
+  Text German=cmdline2 = %cmdline2%
+  Text German=coinstall = %coinstall%
+  Text German=bdevinstall = %bdevinstall%
+  Text German=nraw = %nraw%
+  Text German=nloaded = %nloaded%
+  Text German=bnstalled = %binstalled%
+  Text German=attended = %attended%
+  Text German=
+end
+remarked item: Remark
+end
+remarked item: Remark
+  Text=----------  don't allow if device is currently installing
+end
+remarked item: If/While Statement
+  Variable=BDEVINSTALL
+  Value=1
+end
+remarked item: If/While Statement
+  Variable=COINSTALL
+  Value=no
+end
+remarked item: If/While Statement
+  Variable=ATTENDED
+  Value=yes
+end
+remarked item: Display Message
+  Title=Unable to Complete Installation
+  Title German=Unable to Complete Installation
+  Text=The system is already in the process of installing one or more drivers for IntelliKeys USB.  In this case there is no need or you to run the installer yourself. Instead, follow the instructions given by the Found New Hardware Wizard.
+  Text German=The system is already in the process of installing one or more drivers for IntelliKeys USB.  In this case there is no need or you to run the installer yourself. Instead, follow the instructions given by the Found New Hardware Wizard.
+  Flags=00100000
+end
+remarked item: End Block
+end
+remarked item: Exit Installation
+end
+remarked item: End Block
+end
+remarked item: End Block
+end
+remarked item: Remark
+end
+remarked item: Remark
+end
+remarked item: Remark
+  Text=----------  don't allow if plugged in and no software
+end
+remarked item: Remark
+  Text=----------  but do allow if it's silent.
+end
+remarked item: If/While Statement
+  Variable=NLOADED
+  Value=0
+  Flags=00000110
+end
+remarked item: If/While Statement
+  Variable=BINSTALLED
+  Value=0
+end
+remarked item: If/While Statement
+  Variable=ATTENDED
+  Value=yes
+end
+remarked item: Display Message
+  Title=Unable to Complete Installation
+  Title German=Unable to Complete Installation
+  Text=Please unplug your IntelliKeys before using this installer.
+  Text German=Please unplug your IntelliKeys before using this installer.
+  Flags=00100000
+end
+remarked item: Exit Installation
+end
+remarked item: End Block
+end
+remarked item: End Block
+end
+remarked item: End Block
+end
+remarked item: Remark
+end
+remarked item: Remark
+  Text=---------- determine if the driver needs updating
+end
+remarked item: Set Variable
+  Variable=UPDATEDRIVER
+  Value=Y
+end
+remarked item: Get System Information
+  Variable=INSTALLEDDRIVERVERSION
+  Pathname=%win%\system32\drivers\IkFirm.sys
+  Flags=00000101
+end
+remarked item: If/While Statement
+  Variable=DRIVER_PLATFORM
+  Value=wnt
+  Flags=00000100
+end
+remarked item: Install File
+  Source=..\Loading Driver\ForCustomers\ikfirm.sys
+  Destination=%temp%\itools\Drivers\%driver_platform%\%driver_platform_arc%\ikfirm.sys
+  Flags=0000000010000010
+end
+remarked item: Else Statement
+end
+remarked item: Remark
+  Text=It seems that the Source file name cannot be constructed at the run time. So I  am adding several cases.
+end
+remarked item: Remark
+  Text=If the source file allowed variable names then the commented code  below would do for the entire else block.
+end
+remarked item: Install File
+  Source=..\Drivers\%driver_platform%\%driver_platform_arc%%\ikusb.sys
+  Destination=%temp%\itools\Drivers\%driver_platform%\%driver_platform_arc%\ikusb.sys
+  Flags=0000000010000010
+end
+remarked item: If/While Statement
+  Variable=DRIVER_PLATFORM
+  Value=w2k
+  Flags=00000100
+end
+remarked item: Install File
+  Source=..\Drivers\w2k\x86\ikusb.sys
+  Destination=%temp%\itools\Drivers\w2k\x86\ikusb.sys
+  Flags=0000000010000010
+end
+remarked item: End Block
+end
+remarked item: Remark
+end
+remarked item: If/While Statement
+  Variable=DRIVER_PLATFORM
+  Value=wxp
+  Flags=00000100
+end
+remarked item: If/While Statement
+  Variable=DRIVER_PLATFORM_ARC
+  Value=x86
+  Flags=00000100
+end
+remarked item: Install File
+  Source=..\Drivers\wxp\x86\ikusb.sys
+  Destination=%temp%\itools\Drivers\wxp\x86\ikusb.sys
+  Flags=0000000010000010
+end
+remarked item: Else Statement
+end
+remarked item: Install File
+  Source=..\Drivers\wxp\x64\ikusb.sys
+  Destination=%temp%\itools\Drivers\wxp\x64\ikusb.sys
+  Flags=0000000010000010
+end
+remarked item: End Block
+end
+remarked item: End Block
+end
+remarked item: Remark
+end
+remarked item: If/While Statement
+  Variable=DRIVER_PLATFORM
+  Value=wlh
+  Flags=00000100
+end
+remarked item: If/While Statement
+  Variable=DRIVER_PLATFORM_ARC
+  Value=x86
+  Flags=00000100
+end
+remarked item: Install File
+  Source=..\Drivers\wlh\x86\ikusb.sys
+  Destination=%temp%\itools\Drivers\wlh\x86\ikusb.sys
+  Flags=0000000010000010
+end
+remarked item: Else Statement
+end
+remarked item: Install File
+  Source=..\Drivers\wlh\x64\ikusb.sys
+  Destination=%temp%\itools\Drivers\wlh\x64\ikusb.sys
+  Flags=0000000010000010
+end
+remarked item: End Block
+end
+remarked item: End Block
+end
+remarked item: Remark
+end
+remarked item: End Block
+end
+remarked item: Remark
+end
+remarked item: Get System Information
+  Variable=NEWDRIVERVERSION
+  Pathname=%temp%\itools\IkFirm.sys
+  Flags=00000101
+end
+remarked item: If/While Statement
+  Variable=INSTALLEDDRIVERVERSION
+  Flags=00000001
+end
+remarked item: If/While Statement
+  Variable=INSTALLEDDRIVERVERSION
+  Value=%NEWDRIVERVERSION%
+  Flags=00000111
+end
+remarked item: Set Variable
+  Variable=UPDATEDRIVER
+  Value=N
+end
+remarked item: End Block
+end
+remarked item: End Block
+end
+remarked item: Remark
+end
+remarked item: Remark
+  Text=---------- don't allow if plugged in and running, and the driver must be updated
+end
+remarked item: If/While Statement
+  Variable=NLOADED
+  Value=0
+  Flags=00000110
+end
+remarked item: If/While Statement
+  Variable=BINSTALLED
+  Value=0
+  Flags=00000110
+end
+remarked item: If/While Statement
+  Variable=UPDATEDRIVER
+  Value=Y
+end
+remarked item: If/While Statement
+  Variable=ATTENDED
+  Value=yes
+end
+remarked item: Display Message
+  Title=Unable to Complete Installation
+  Title German=Unable to Complete Installation
+  Text=This installer needs to update the IntelliKeys USB driver, but it cannot be done while the device is plugged in.  Please unplug the device and restart this installer.
+  Text German=This installer needs to update the IntelliKeys USB driver, but it cannot be done while the device is plugged in.  Please unplug the device and restart this installer.
+  Flags=00100000
+end
+remarked item: Exit Installation
+end
+remarked item: End Block
+end
+remarked item: End Block
+end
+remarked item: End Block
+end
+remarked item: End Block
+end
+remarked item: Remark
+end
+remarked item: Remark
+end
+remarked item: Remark
+  Text=----------  Warn about legacy IK removal for Windows 2000
+end
+remarked item: If/While Statement
+  Variable=ATTENDED
+  Value=yes
+end
+remarked item: Include Script
+  Pathname=..\..\..\..\InstallPieces\systems\LegacyIkWarning.wse
+end
+remarked item: End Block
+end
+remarked item: Remark
+end
+item: Remark
+end
+item: Remark
+  Text=---------------   figure out where Itools is --------------------------------------------------------
+end
+item: Read INI Value
+  Variable=DRIVE
+  Pathname=%WIN%\ITOOLS_X.INI
+  Section=Directory
+  Item=ITOOLS
+end
+item: If/While Statement
+  Variable=DRIVE
+end
+item: Read INI Value
+  Variable=DRIVE
+  Pathname=%WIN%\ITOOLS_X.INI
+  Section=Overlay Maker
+  Item=MyOverlays
+  Default=C:\
+end
+item: End Block
+end
+item: Parse String
+  Source=%DRIVE%
+  Pattern=\
+  Variable1=DRIVE
+end
+item: Set Variable
+  Variable=MAINDIR
+  Value=%DRIVE%\ITOOLS\%MAINDIR%
+end
+item: Edit INI File
+  Pathname=%WIN%\ITOOLS_X.INI
+  Settings=[Directory]
+  Settings=ITOOLS=%DRIVE%
+  Settings=
+end
+item: Remark
+end
+item: Remark
+end
+item: Remark
+  Text=---------------  Install ReadMe and license Files so this installer will find them  ------------------------------------------------------------------------------------
+end
+item: Install File
+  Source=ikusb-readme.txt
+  Destination=%temp%\itools\ikusb-readme.txt
+  Flags=0000000010000010
+end
+item: Install File
+  Source=license.txt
+  Destination=%temp%\itools\ikusb-license.txt
+  Flags=0000000010000010
+end
+item: Remark
+end
+item: Remark
+end
+item: Remark
+  Text=---------------   do the wizard thang  --------------------------------------------------------
+end
+item: If/While Statement
+  Variable=ATTENDED
+  Value=yes
+end
+item: Wizard Block
+  Direction Variable=DIRECTION
+  Display Variable=DISPLAY
+  Bitmap Pathname=%_WISE_%\DIALOGS\TEMPLATE\WIZARD.BMP
+  X Position=9
+  Y Position=10
+  Filler Color=8421440
+  Dialog=Select Program Manager Group
+  Dialog=Select Backup Directory
+  Dialog=Display Registration Information
+  Dialog=Get Registration Information
+  Variable=EXPLORER
+  Variable=DOBACKUP
+  Variable=DOBRAND
+  Variable=DOBRAND
+  Value=1
+  Value=A
+  Value=1
+  Value=1
+  Compare=0
+  Compare=1
+  Compare=0
+  Compare=1
+  Flags=00000011
+end
+item: Custom Dialog Set
+  Name=Welcome
+  Display Variable=DISPLAY
+  item: Dialog
+    Title=Welcome
+    Title French=Bienvenue
+    Title German=Willkommen
+    Title Portuguese=Bem-vindo 
+    Title Spanish=Bienvenido
+    Title Italian=Benvenuto
+    Title Danish=Velkommen
+    Title Dutch=Welkom
+    Title Norwegian=Velkommen
+    Title Swedish=Välkommen
+    Width=280
+    Height=224
+    Font Name=Helv
+    Font Size=8
+    item: Push Button
+      Rectangle=172 185 214 199
+      Variable=DIRECTION
+      Value=N
+      Create Flags=01010000000000010000000000000001
+      Text=&Next >
+      Text French=&Suivant>
+      Text German=&Weiter>
+      Text Portuguese=&Próximo>
+      Text Spanish=&Siguiente >
+      Text Italian=&Avanti >
+      Text Danish=&Næste>
+      Text Dutch=&Volgende>
+      Text Norwegian=&Neste>
+      Text Swedish=&Nästa >
+    end
+    item: Push Button
+      Rectangle=222 185 264 199
+      Action=3
+      Create Flags=01010000000000010000000000000000
+      Text=Cancel
+      Text French=Annuler
+      Text German=Abbrechen
+      Text Portuguese=Cancelar
+      Text Spanish=Cancelar
+      Text Italian=Annulla
+      Text Danish=Annuller
+      Text Dutch=Annuleren
+      Text Norwegian=Avbryt
+      Text Swedish=Avbryt
+    end
+    item: Static
+      Rectangle=9 177 263 178
+      Action=3
+      Create Flags=01010000000000000000000000000111
+    end
+    item: Static
+      Rectangle=89 70 127 95
+      Action=2
+      Enabled Color=00000000000000001111111111111111
+      Create Flags=01010000000000000000000000001011
+      Pathname=%_WISE_%\dialogs\template\install.grf
+      Pathname French=%_WISE_%\dialogs\template\install.grf
+      Pathname German=%_WISE_%\dialogs\template\install.grf
+      Pathname Portuguese=%_WISE_%\dialogs\template\install.grf
+      Pathname Spanish=%_WISE_%\dialogs\template\install.grf
+      Pathname Italian=%_WISE_%\dialogs\template\install.grf
+      Pathname Danish=%_WISE_%\dialogs\template\install.grf
+      Pathname Dutch=%_WISE_%\dialogs\template\install.grf
+      Pathname Norwegian=%_WISE_%\dialogs\template\install.grf
+      Pathname Swedish=%_WISE_%\dialogs\template\install.grf
+    end
+    item: Static
+      Rectangle=127 72 264 106
+      Enabled Color=00000000000000001111111111111111
+      Create Flags=01010000000000000000000000000000
+      Text=Welcome to %APPTITLE% v%version% Setup program. This program will install %APPTITLE% v%version% on your computer.
+      Text French=Bienvenue sur le programme d'installation %APPTITLE%. Ce programme va installer %APPTITLE% sur votre ordinateur.
+      Text German=Willkommen im Installationsprogramm für %APPTITLE%. Dieses Programm installiert  %APPTITLE% auf Ihrem Computer.
+      Text Portuguese=Bem-vindo ao programa de configuração %APPTITLE%. Este programa instalará %APPTITLE% no seu computador
+      Text Spanish=Bienvenido al programa de Configuración %APPTITLE%. Este programa instalará %APPTITLE en su ordenador
+      Text Italian=Benvenuto nel programma di installazione di %APPTITLE%. Con questo programma puoi installare %APPTITLE% sul tuo computer.
+      Text Danish=Velkommen til %APPTITLE% installationsprogrammet. Dette program installerer %APPTITLE% på computeren.
+      Text Dutch=Welkom bij het %APPTITLE% installatieprogramma. Dit programma installeert %APPTITLE% op uw computer.
+      Text Norwegian=Velkommen til %APPTITLE% Oppsett-program. Dette programmet vil installere %APPTITLE% på datamaskinen din.
+      Text Swedish=Välkommen till installationsprogrammet för %APPTITLE%. Detta program installerar %APPTITLE% på din dator.
+    end
+  end
+end
+item: Custom Dialog Set
+  Name=Show License Agreement
+  Display Variable=DISPLAY
+  item: Dialog
+    Title=License Agreement
+    Title French=Fichier Lisez-moi
+    Title German=Liesmich-Datei
+    Title Portuguese=Ficheiro Leia-me
+    Title Spanish=Archivo Léeme
+    Title Italian=File Leggimi
+    Title Danish=Vigtigt fil
+    Title Dutch=Leesmij-bestand
+    Title Norwegian=Informasjonsfil
+    Title Swedish=Läs mig-fil
+    Width=280
+    Height=224
+    Font Name=Helv
+    Font Size=8
+    item: Push Button
+      Rectangle=172 185 214 199
+      Variable=DIRECTION
+      Value=N
+      Create Flags=01010000000000010000000000000001
+      Text=&Agree >
+      Text French=&Suivant>
+      Text German=&Weiter>
+      Text Portuguese=&Próximo>
+      Text Spanish=&Siguiente >
+      Text Italian=&Avanti >
+      Text Danish=&Næste>
+      Text Dutch=&Volgende>
+      Text Norwegian=&Neste>
+      Text Swedish=&Nästa >
+    end
+    item: Push Button
+      Rectangle=222 185 264 199
+      Action=3
+      Create Flags=01010000000000010000000000000000
+      Text=Cancel
+      Text French=Annuler
+      Text German=Abbrechen
+      Text Portuguese=Cancelar
+      Text Spanish=Cancelar
+      Text Italian=Annulla
+      Text Danish=Slet
+      Text Dutch=Annuleren
+      Text Norwegian=Avbryt
+      Text Swedish=Avbryt
+    end
+    item: Static
+      Rectangle=9 177 263 178
+      Action=3
+      Create Flags=01010000000000000000000000000111
+    end
+    item: Editbox
+      Rectangle=85 11 254 170
+      Value=%temp%\itools\ikusb-license.txt
+      Help Context=16711681
+      Create Flags=01010000101000000000100000000100
+    end
+    item: Push Button
+      Rectangle=130 185 172 199
+      Variable=DIRECTION
+      Value=B
+      Create Flags=01010000000000010000000000000000
+      Flags=0000000000000001
+      Text=< &Back
+      Text French=<&Retour
+      Text German=<&Zurück
+      Text Portuguese=<&Retornar
+      Text Spanish=<&Retroceder
+      Text Italian=< &Indietro
+      Text Danish=<&Back
+      Text Dutch=<&Terug
+      Text Norwegian=<&Tilbake
+      Text Swedish=< &Tillbaka
+    end
+  end
+end
+item: Custom Dialog Set
+  Name=Display ReadMe
+  Display Variable=DISPLAY
+  item: Dialog
+    Title=Read Me File
+    Title French=Fichier Lisez-moi
+    Title German=Liesmich-Datei
+    Title Portuguese=Ficheiro Leia-me
+    Title Spanish=Archivo Léeme
+    Title Italian=File Leggimi
+    Title Danish=Vigtigt fil
+    Title Dutch=Leesmij-bestand
+    Title Norwegian=Informasjonsfil
+    Title Swedish=Läs mig-fil
+    Width=280
+    Height=224
+    Font Name=Helv
+    Font Size=8
+    item: Push Button
+      Rectangle=172 185 214 199
+      Variable=DIRECTION
+      Value=N
+      Create Flags=01010000000000010000000000000001
+      Text=&Next >
+      Text French=&Suivant>
+      Text German=&Weiter>
+      Text Portuguese=&Próximo>
+      Text Spanish=&Siguiente >
+      Text Italian=&Avanti >
+      Text Danish=&Næste>
+      Text Dutch=&Volgende>
+      Text Norwegian=&Neste>
+      Text Swedish=&Nästa >
+    end
+    item: Push Button
+      Rectangle=222 185 264 199
+      Action=3
+      Create Flags=01010000000000010000000000000000
+      Text=Cancel
+      Text French=Annuler
+      Text German=Abbrechen
+      Text Portuguese=Cancelar
+      Text Spanish=Cancelar
+      Text Italian=Annulla
+      Text Danish=Slet
+      Text Dutch=Annuleren
+      Text Norwegian=Avbryt
+      Text Swedish=Avbryt
+    end
+    item: Static
+      Rectangle=9 177 263 178
+      Action=3
+      Create Flags=01010000000000000000000000000111
+    end
+    item: Editbox
+      Rectangle=85 11 254 170
+      Value=%temp%\itools\ikusb-readme.txt
+      Help Context=16711681
+      Create Flags=01010000101000000000100000000100
+    end
+    item: Push Button
+      Rectangle=130 185 172 199
+      Variable=DIRECTION
+      Value=B
+      Create Flags=01010000000000010000000000000000
+      Flags=0000000000000001
+      Text=< &Back
+      Text French=<&Retour
+      Text German=<&Zurück
+      Text Portuguese=<&Retornar
+      Text Spanish=<&Retroceder
+      Text Italian=< &Indietro
+      Text Danish=<&Back
+      Text Dutch=<&Terug
+      Text Norwegian=<&Tilbake
+      Text Swedish=< &Tillbaka
+    end
+  end
+end
+remarked item: Custom Dialog Set
+  Name=Select Destination Directory
+  Display Variable=DISPLAY
+  item: Dialog
+    Title=Destination Location
+    Title French=%APPTITLE%
+    Title German=%APPTITLE%
+    Title Portuguese=%APPTITLE%
+    Title Spanish=%APPTITLE%
+    Title Italian=%APPTITLE%
+    Title Danish=%APPTITLE%
+    Title Dutch=%APPTITLE%
+    Title Norwegian=%APPTITLE%
+    Title Swedish=%APPTITLE%
+    Width=290
+    Height=224
+    Font Name=Helv
+    Font Size=8
+    item: Push Button
+      Rectangle=186 186 228 200
+      Variable=DIRECTION
+      Value=N
+      Create Flags=01010000000000010000000000000001
+      Text=&Next >
+      Text French=&Suivant>
+      Text German=&Weiter>
+      Text Portuguese=&Próximo>
+      Text Spanish=&Siguiente >
+      Text Italian=&Avanti >
+      Text Danish=&Næste>
+      Text Dutch=&Volgende>
+      Text Norwegian=&Neste>
+      Text Swedish=&Nästa >
+    end
+    item: Push Button
+      Rectangle=143 186 185 200
+      Variable=DIRECTION
+      Value=B
+      Create Flags=01010000000000010000000000000000
+      Flags=0000000000000001
+      Text=< &Back
+      Text French=<&Retour
+      Text German=<&Zurück
+      Text Portuguese=<&Retornar
+      Text Spanish=<&Retroceder
+      Text Italian=< &Indietro
+      Text Danish=<&Tilbage
+      Text Dutch=<&Terug
+      Text Norwegian=<&Tilbake
+      Text Swedish=< &Tillbaka
+    end
+    item: Push Button
+      Rectangle=237 186 279 200
+      Action=3
+      Create Flags=01010000000000010000000000000000
+      Text=Cancel
+      Text French=Annuler
+      Text German=Abbrechen
+      Text Portuguese=Cancelar
+      Text Spanish=Cancelar
+      Text Italian=Annulla
+      Text Danish=Annuller
+      Text Dutch=Annuleren
+      Text Norwegian=Avbryt
+      Text Swedish=Avbryt
+    end
+    item: Static
+      Rectangle=91 10 262 85
+      Create Flags=01010000000000000000000000000000
+      Text=Setup will install %APPTITLE% in the following folder.
+      Text=
+      Text=To install into a different folder, click Browse, and select another folder. 
+      Text=
+      Text=You can choose not to install %APPTITLE% by clicking Cancel to exit Setup.
+      Text French=%APPTITLE% va être installé dans le répertoire ci-dessous.
+      Text French=
+      Text French=Pour l'installer dans un répertoire différent, cliquez sur Parcourir et sélectionnez un autre répertoire.
+      Text French=
+      Text French=Vous pouvez choisir de ne pas installer %APPTITLE% en cliquant sur Annuler pour quitter l'Installation.
+      Text German=Installation speichert %APPTITLE% im unten angegebenen Ordner:
+      Text German=
+      Text German=Zur Installation in einem anderen Ordner auf Blättern klicken und einen anderen Ordner wählen.
+      Text German=
+      Text German=Wenn Sie %APPTITLE% nicht installieren möchten, können Sie durch Klicken auf Abbrechen die Installation beenden.
+      Text Portuguese=Configuração instalará %APPTITLE% na seguinte pasta
+      Text Portuguese=
+      Text Portuguese=Para instalar numa pasta diferente, faça um clique sobre Procurar, e seleccione uma outra pasta.
+      Text Portuguese=
+      Text Portuguese=Pode escolher não instalar %APPTITLE% clicando no botão Cancelar para sair da Configuração
+      Text Spanish=El programa de Configuración instalará %APPTITLE% en la siguiente carpeta.
+      Text Spanish=
+      Text Spanish=Para instalar en una carpeta diferente, haga un clic en Visualizar, y seleccione otra carpeta.
+      Text Spanish=
+      Text Spanish=Puede elegir no instalar %APPTITLE% haciendo un clic en Cancelar para salir de Configuración.
+      Text Italian=Il programma di installazione installerà %APPTITLE% nella seguente cartella.
+      Text Italian=
+      Text Italian=Per effettuare l’installazione in una cartella diversa, fai clic su Sfoglia, e scegli un’altra cartella.
+      Text Italian=
+      Text Italian=Puoi scegliere di non installare %APPTITLE% facendo clic su Annulla per uscire dal programma di installazione
+      Text Danish=Installationsprogrammet installerer %APPTITLE% i denne mappe.
+      Text Danish=
+      Text Danish=Man installerer i en anden mappe ved at klikke på Browse og vælge en anden mappe.
+      Text Danish=
+      Text Danish=Man kan vælge ikke at installere %APPTITLE% ved at klikke på Slet og forlade installationsprogrammet.
+      Text Dutch=Het installatieprogramma installeert %APPTITLE% in de volgende directory.
+      Text Dutch=
+      Text Dutch=Als u het in een andere directory wilt installeren, klik dan op Bladeren en kies een andere locatie.
+      Text Dutch=
+      Text Dutch=U kunt ervoor kiezen om %APPTITLE% niet te installeren: klik op Annuleren om het installatieprogramma te verlaten.
+      Text Norwegian=Oppsett vil installere %APPTITLE% i følgende mappe.
+      Text Norwegian=
+      Text Norwegian=For å installere i en annen mappe, klikk Bla igjennom og velg en annen mappe.
+      Text Norwegian=
+      Text Norwegian=Du kan velge å ikke installere %APPTITLE% ved å velge Avbryt for å gå ut av Oppsett.
+      Text Swedish=Installationsprogrammet installerar %APPTITLE% i följande mapp.
+      Text Swedish=
+      Text Swedish=Om du vill att installationen ska göras i en annan mapp, klickar du på Bläddra och väljer en annan mapp.
+      Text Swedish=
+      Text Swedish=Du kan välja att inte installera %APPTITLE% genom att klicka på Avbryt för att lämna installationsprogrammet.
+    end
+    item: Static
+      Rectangle=83 134 270 162
+      Action=1
+      Create Flags=01010000000000000000000000000111
+      Text=Destination Folder
+      Text French=Répertoire de destination
+      Text German=Zielordner
+      Text Portuguese=Pasta de Destino
+      Text Spanish=Carpeta de Destino
+      Text Italian=Cartella di destinazione
+      Text Danish=Destinationsmappe
+      Text Dutch=Doeldirectory
+      Text Norwegian=Målmappe
+      Text Swedish=Destinationsmapp
+    end
+    item: Push Button
+      Rectangle=220 143 262 157
+      Variable=MAINDIR_SAVE
+      Value=%MAINDIR%
+      Destination Dialog=1
+      Action=2
+      Create Flags=01010000000000010000000000000000
+      Text=B&rowse...
+      Text French=P&arcourir
+      Text German=B&lättern...
+      Text Portuguese=P&rocurar
+      Text Spanish=V&isualizar...
+      Text Italian=Sfoglia...
+      Text Danish=&Gennemse...
+      Text Dutch=B&laderen...
+      Text Norwegian=Bla igjennom
+      Text Swedish=&Bläddra
+    end
+    item: Static
+      Rectangle=86 146 215 154
+      Destination Dialog=2
+      Create Flags=01010000000000000000000000000000
+      Text=%MAINDIR%
+      Text French=%MAINDIR%
+      Text German=%MAINDIR%
+      Text Portuguese=%MAINDIR%
+      Text Spanish=%MAINDIR%
+      Text Italian=%MAINDIR%
+      Text Danish=%MAINDIR%
+      Text Dutch=%MAINDIR%
+      Text Norwegian=%MAINDIR%
+      Text Swedish=%MAINDIR%
+    end
+  end
+  item: Dialog
+    Title=Select Destination Directory
+    Title French=Choisissez le répertoire de destination
+    Title German=Zielverzeichnis wählen
+    Title Portuguese=Seleccionar Directório de Destino
+    Title Spanish=Seleccione el Directorio de Destino
+    Title Italian=Seleziona Directory di destinazione
+    Title Danish=Vælg Destinationsbibliotek
+    Title Dutch=Kies doeldirectory
+    Title Norwegian=Velg målkatalog
+    Title Swedish=Välj destinationskalatog
+    Width=221
+    Height=173
+    Font Name=Helv
+    Font Size=8
+    item: Listbox
+      Rectangle=5 5 160 150
+      Variable=MAINDIR
+      Create Flags=01010000100000010000000101000001
+      Flags=0000110000000010
+      Text=%MAINDIR%
+      Text=
+      Text French=%MAINDIR%
+      Text German=%MAINDIR%
+      Text Portuguese=%MAINDIR%
+      Text Spanish=%MAINDIR%
+      Text Italian=%MAINDIR%
+      Text Danish=%MAINDIR%
+      Text Dutch=%MAINDIR%
+      Text Norwegian=%MAINDIR%
+      Text Swedish=%MAINDIR%
+    end
+    item: Push Button
+      Rectangle=167 5 212 20
+      Create Flags=01010000000000010000000000000001
+      Text=OK
+      Text French=OK
+      Text German=OK
+      Text Portuguese=OK
+      Text Spanish=ACEPTAR
+      Text Italian=OK
+      Text Danish=OK
+      Text Dutch=OK
+      Text Norwegian=OK
+      Text Swedish=OK
+    end
+    item: Push Button
+      Rectangle=167 25 212 40
+      Variable=MAINDIR
+      Value=%MAINDIR_SAVE%
+      Create Flags=01010000000000010000000000000000
+      Flags=0000000000000001
+      Text=Cancel
+      Text French=Annuler
+      Text German=Abbrechen 
+      Text Portuguese=Cancelar
+      Text Spanish=Cancelar
+      Text Italian=Annulla
+      Text Danish=Slet
+      Text Dutch=Annuleren
+      Text Norwegian=Avbryt
+      Text Swedish=Avbryt
+    end
+  end
+end
+remarked item: Custom Dialog Set
+  Name=Start Installation
+  Display Variable=DISPLAY
+  item: Dialog
+    Title=Start Installation
+    Title French=%APPTITLE%
+    Title German=%APPTITLE%
+    Title Portuguese=%APPTITLE%
+    Title Spanish=%APPTITLE%
+    Title Italian=%APPTITLE%
+    Title Danish=%APPTITLE%
+    Title Dutch=%APPTITLE%
+    Title Norwegian=%APPTITLE%
+    Title Swedish=%APPTITLE%
+    Width=283
+    Height=224
+    Font Name=Helv
+    Font Size=8
+    item: Push Button
+      Rectangle=180 189 222 203
+      Variable=DIRECTION
+      Value=N
+      Create Flags=01010000000000010000000000000001
+      Text=&Next >
+      Text French=&Suivant>
+      Text German=&Weiter>
+      Text Portuguese=&Próximo>
+      Text Spanish=&Siguiente >
+      Text Italian=&Avanti >
+      Text Danish=&Næste>
+      Text Dutch=&Volgende>
+      Text Norwegian=&Neste>
+      Text Swedish=&Nästa >
+    end
+    item: Push Button
+      Rectangle=135 189 177 203
+      Variable=DIRECTION
+      Value=B
+      Create Flags=01010000000000010000000000000000
+      Text=< &Back
+      Text French=<&Retour
+      Text German=<&Zurück
+      Text Portuguese=<&Retornar
+      Text Spanish=<&Retroceder
+      Text Italian=< &Indietro
+      Text Danish=<&Tilbage
+      Text Dutch=<&Terug
+      Text Norwegian=<&Tilbake
+      Text Swedish=< &Tillbaka
+    end
+    item: Push Button
+      Rectangle=231 189 273 203
+      Action=3
+      Create Flags=01010000000000010000000000000000
+      Text=Cancel
+      Text French=Annuler
+      Text German=Abbrechen
+      Text Portuguese=Cancelar
+      Text Spanish=Cancelar
+      Text Italian=Annulla
+      Text Danish=Annuller
+      Text Dutch=Annuleren
+      Text Norwegian=Avbryt
+      Text Swedish=Avbryt
+    end
+    item: Static
+      Rectangle=89 12 270 72
+      Create Flags=01010000000000000000000000000000
+      Text=You are now ready to install %APPTITLE%.
+      Text=
+      Text=Press the Next button to begin the installation or the Back button to reenter the installation information.
+      Text French=Vous êtes maintenant prêt à installer %APPTITLE%.
+      Text French=
+      Text French=Cliquez sur Suivant pour commencer l'installation ou Retour pour entrer à nouveau les informations d'installation.
+      Text German=Sie sind jetzt zur Installation von %APPTITLE% bereit.
+      Text German=
+      Text German=Auf die Schaltfläche Weiter klicken, um mit dem Start der Installation zu beginnen, oder auf die Schaltfläche Zurück, um die Installationsinformationen nochmals aufzurufen.
+      Text Portuguese=Está agora pronto para instalar %APPTITLE%
+      Text Portuguese=
+      Text Portuguese=Pressione o botão Próximo para começar a instalação ou o botão Retornar para introduzir novamente a informação sobre a instalação
+      Text Spanish=Ahora estará listo para instalar %APPTITLE%.
+      Text Spanish=
+      Text Spanish=Pulse el botón de Siguiente para comenzar la instalación o el botón Retroceder para volver a introducir la información sobre la instalación.
+      Text Italian=Sei pronto ad installare %APPTITLE%.
+      Text Italian=
+      Text Italian=Premi il tasto Avanti per iniziare l’installazione o il tasto Indietro per rientrare nuovamente nei dati sull’installazione
+      Text Danish=Du er nu klar til at installere %APPTITLE%.
+      Text Danish=
+      Text Danish=Klik på Næste for at starte installationen eller på Tilbage for at ændre installationsoplysningerne.
+      Text Dutch=U bent nu klaar om %APPTITLE% te installeren.
+      Text Dutch=
+      Text Dutch=Druk op Volgende om met de installatie te beginnen of op Terug om de installatie-informatie opnieuw in te voeren.
+      Text Norwegian=Du er nå klar til å installere %APPTITLE%
+      Text Norwegian=
+      Text Norwegian=Trykk på Neste-tasten for å starte installeringen, eller Tilbake-tasten for å taste inn installasjonsinformasjonen på nytt.
+      Text Swedish=Du är nu redo att installera %APPTITLE%.
+      Text Swedish=
+      Text Swedish=Tryck på Nästa för att starta installationen eller på Tillbaka för att skriva in installationsinformationen på nytt.
+    end
+  end
+end
+item: End Block
+end
+item: End Block
+end
+item: Remark
+end
+item: Remark
+end
+item: Remark
+  Text=---------  Here  --------------------------------------------------------------------------------------------------------------------------------------------------
+end
+item: Remark
+  Text=--------------------  We ---------------------------------------------------------------------------------------------------------------------------------------
+end
+item: Remark
+  Text=------------------------------------  Goooooo!!  -----------------------------------------------------------------------------------------------------------------------
+end
+item: Remark
+end
+item: Remark
+end
+item: Remark
+  Text=---------------  record the value of the root directory  ------------------------------------------------------------------------------------
+end
+item: Install File
+  Source=ikusbroot.txt
+  Destination=%win%\AbleNet\IKUSBRoot.txt
+  Flags=0000000010000010
+end
+item: Insert Line into Text File
+  Pathname=%win%\AbleNet\IKUSBRoot.txt
+  New Text=Root_Location     %maindir%\
+  Line Number=0
+end
+item: Remark
+end
+item: Install File
+  Source=.\sleep\Release\sleep.exe
+  Destination=%temp%\itools\sleep.exe
+  Flags=0000000010000010
+end
+item: Remark
+end
+item: Remark
+  Text=---------------  shutdown version 1 app  --------------------------------------------------------
+end
+item: Check if File/Dir Exists
+  Pathname=%maindir%\shutdown.exe
+  Flags=00000100
+end
+item: Execute Program
+  Pathname=%maindir%\shutdown.exe
+  Flags=00000110
+end
+item: End Block
+end
+item: Remark
+end
+item: Remark
+  Text=---------------  shutdown version 2 service  --------------------------------------------------------
+end
+item: Check if File/Dir Exists
+  Pathname=%maindir%\private\shutdown.exe
+  Flags=00000100
+end
+item: Execute Program
+  Pathname=%maindir%\private\shutdown.exe
+  Flags=00000110
+end
+item: End Block
+end
+item: Execute Program
+  Pathname=%temp%\itools\sleep.exe
+  Flags=00000110
+end
+item: Check if File/Dir Exists
+  Pathname=%maindir%\private\manager.exe
+  Flags=00000100
+end
+item: Execute Program
+  Pathname=%maindir%\private\manager.exe
+  Command Line=stop
+  Flags=00000110
+end
+item: End Block
+end
+item: Execute Program
+  Pathname=%temp%\itools\sleep.exe
+  Flags=00000110
+end
+item: Check if File/Dir Exists
+  Pathname=%maindir%\private\shutdown.exe
+  Flags=00000100
+end
+item: Execute Program
+  Pathname=%maindir%\private\shutdown.exe
+  Flags=00000110
+end
+item: End Block
+end
+item: Remark
+end
+item: Remark
+end
+item: Remark
+  Text=---------------  sleep a bit --------------------------------------------------------
+end
+item: Execute Program
+  Pathname=%temp%\itools\sleep.exe
+  Flags=00000110
+end
+item: Remark
+end
+item: Remark
+end
+item: Remark
+  Text=----------  see if we need to restart because Discover is holding one of our DLLs
+end
+item: Delete File
+  Pathname=%maindir%\private\msgclnt.xxx
+end
+item: Delete File
+  Pathname=%maindir%\private\applib.xxx
+end
+item: Set Variable
+  Variable=DISCOVER_HOLDING
+  Value=0
+end
+item: Delete File
+  Pathname=%maindir%\private\msgclnt.dll
+end
+item: Find File in Path
+  Variable=AFTER
+  Pathname List=msgclnt.dll
+  Search Directories=%maindir%\private
+end
+item: If/While Statement
+  Variable=AFTER
+  Flags=00000001
+end
+item: Set Variable
+  Variable=DISCOVER_HOLDING
+  Value=1
+end
+item: Rename File/Directory
+  Old Pathname=%maindir%\private\msgclnt.dll
+  New Filename=msgclnt.xxx
+end
+item: End Block
+end
+item: Delete File
+  Pathname=%maindir%\private\applib.dll
+end
+item: Find File in Path
+  Variable=AFTER
+  Pathname List=applib.dll
+  Search Directories=%maindir%\private
+end
+item: If/While Statement
+  Variable=AFTER
+  Flags=00000001
+end
+item: Set Variable
+  Variable=DISCOVER_HOLDING
+  Value=1
+end
+item: Rename File/Directory
+  Old Pathname=%maindir%\private\applib.dll
+  New Filename=applib.xxx
+end
+item: End Block
+end
+item: Remark
+end
+item: Remark
+end
+item: Remark
+  Text=----------  remove obsolete files
+end
+item: Delete File
+  Pathname=%maindir%\*.dll
+end
+item: Delete File
+  Pathname=%maindir%\*.exe
+end
+item: Delete File
+  Pathname=%maindir%\private\*.dll
+end
+item: Delete File
+  Pathname=%maindir%\private\*.exe
+end
+item: Delete File
+  Pathname=%maindir%\private\text\*.*
+  Flags=00001100
+end
+item: Remark
+end
+item: Remark
+end
+item: Remark
+  Text=---------------  Install ReadMe for user  ------------------------------------------------------------------------------------
+end
+item: Copy Local File
+  Source=%temp%\itools\ikusb-readme.txt
+  Destination=%maindir%\Read Me.txt
+  Flags=0000000011000010
+end
+item: Remark
+end
+item: Remark
+end
+item: Remark
+  Text=---------------   start logging, uninstall support --------------------------------------------------------
+end
+item: Check Disk Space
+  Component=COMPONENTS
+end
+item: Install File
+  Source=uninstall.exe
+  Destination=%maindir%\private\uninstall.exe
+  Flags=0000000010000010
+end
+item: Set Variable
+  Variable=UNINSTALL_PATH
+  Value=%maindir%\private\uninstall.exe
+  Flags=00010100
+end
+item: Set Variable
+  Variable=INST_LOG_PATH
+  Flags=00010100
+end
+item: Edit Registry
+  Total Keys=1
+  Key=Software\Microsoft\Windows\CurrentVersion\Uninstall\%APPTITLE%
+  New Value=%APPTITLE%
+  Value Name=DisplayName
+  Root=2
+end
+item: Edit Registry
+  Total Keys=1
+  Key=Software\Microsoft\Windows\CurrentVersion\Uninstall\%APPTITLE%
+  New Value=%UNINSTALL_PATH% %INST_LOG_PATH%
+  Value Name=UninstallString
+  Root=2
+end
+item: Edit Registry
+  Total Keys=1
+  Key=Software\Microsoft\Windows\CurrentVersion\Uninstall\%APPTITLE%
+  New Value="%MAINDIR%\IntelliKeys USB.exe",0
+  New Value=
+  Value Name=DisplayIcon
+  Root=2
+end
+item: Remark
+end
+item: Edit Registry
+  Total Keys=1
+  Key=Software\Microsoft\Windows\CurrentVersion\Uninstall\%OLDAPPTITLE%
+  Value Name=DisplayName
+  Root=130
+end
+item: Edit Registry
+  Total Keys=1
+  Key=Software\Microsoft\Windows\CurrentVersion\Uninstall\%OLDAPPTITLE%
+  Value Name=DisplayIcon
+  Root=130
+end
+item: Edit Registry
+  Total Keys=1
+  Key=Software\Microsoft\Windows\CurrentVersion\Uninstall\%OLDAPPTITLE%
+  Value Name=UninstallString
+  Root=130
+end
+item: Remark
+end
+item: Remark
+  Text=---------------  copy new files --------------------------------------------------------
+end
+item: Install File
+  Source=..\..\Control Panel\IntelliKeys USB.exe
+  Destination=%maindir%\IntelliKeys USB.exe
+  Flags=0000000010000010
+end
+item: Install File
+  Source=..\..\Control Panel\IntelliKeys USB Libs\IntelliKeysPlugin.dll
+  Destination=%maindir%\IntelliKeysPlugin.dll
+  Flags=0000000010000010
+end
+item: Install File
+  Source=..\..\Control Panel\private\text\English\GerMainStringTable.txt
+  Destination=%maindir%\private\text\English\MainStringTable.txt
+  Flags=0000000110000010
+end
+item: Install File
+  Source=..\shutdown\Release\shutdown.exe
+  Destination=%maindir%\private\shutdown.exe
+  Flags=0000000010000010
+end
+item: Install File
+  Source=..\ikusb\Service_Release\ikusbsvc.exe
+  Destination=%maindir%\private\ikusbsvc.exe
+  Flags=0000000010000010
+end
+item: Install File
+  Source=..\\KbdHookDll\Release\kbdhook.dll
+  Destination=%maindir%\private\kbdhook.dll
+  Flags=0000000010000010
+end
+item: Install File
+  Source=..\..\root\German\data.txt
+  Destination=%maindir%\private\data.txt
+  Flags=0000000010000010
+end
+item: Install File
+  Source=..\..\root\German\datawin.txt
+  Destination=%maindir%\private\datawin.txt
+  Flags=0000000010000010
+end
+item: Install File
+  Source=..\..\root\German\private\Standard Overlays\Win\*.*
+  Destination=%maindir%\private\Standard Overlays\Win
+  Flags=0000000110000010
+end
+item: Remark
+end
+item: Install File
+  Source=blank.txt
+  Destination=%maindir%\private\installed.txt
+  Flags=0000000010000010
+end
+item: Remark
+end
+item: Create Directory
+  Pathname=%maindir%\private\Switch Settings\Win
+end
+item: Delete File
+  Pathname=%maindir%\private\Switch Settings\Win\*.*
+end
+item: Install File
+  Source=..\..\root\German\private\Switch Settings\Win\*.*
+  Destination=%maindir%\private\Switch Settings\Win
+  Flags=0000000110000010
+end
+item: Remark
+end
+item: Install File
+  Source=..\..\root\German\private\ikusbhelp.html
+  Destination=%maindir%\private\ikusbhelp.html
+  Flags=0000000110000010
+end
+item: Install File
+  Source=..\..\root\German\private\website.htm
+  Destination=%maindir%\private\website.htm
+  Flags=0000000110000010
+end
+item: Install File
+  Source=..\Control Panel DLL\Release\ikusb.cpl
+  Destination=%sys%\ikusb.cpl
+  Flags=0000000010000010
+end
+item: Install File
+  Source=..\system tray\Release\System Tray.exe
+  Destination=%maindir%\private\iksystray.exe
+  Flags=0000000010000010
+end
+item: Install File
+  Source=..\ikeysxfr32\release\ikeysxfr32.exe
+  Destination=%maindir%\private\ikeysxfr.exe
+  Flags=0000000010000010
+end
+item: Install File
+  Source=..\..\root\Documents\Guest\settings.txt
+  Destination=%maindir%\Documents\Gast\settings.txt
+  Flags=0000000010000010
+end
+item: Install File
+  Source=..\..\root\German\private\channels\*.*
+  Destination=%maindir%\private\channels
+  Flags=0000000110000010
+end
+item: Install File
+  Source=..\..\root\German\private\appnames.txt
+  Destination=%maindir%\private\appnames.txt
+  Flags=0000000110000010
+end
+item: Install File
+  Source=..\..\root\German\private\default intelliswitch.oms
+  Destination=%maindir%\private\default intelliswitch.oms
+  Flags=0000000110000010
+end
+item: Remark
+end
+item: Install File
+  Source=..\Documentation\German\*.*
+  Destination=%maindir%\Documentation
+  Flags=0000000110000010
+end
+item: Remark
+end
+item: Install File
+  Source=..\Overlays\German\*.*
+  Destination=%maindir%\Overlays
+  Flags=0000000110000010
+end
+item: Install File
+  Source=..\Overlays for Editing\German\*.*
+  Destination=%maindir%\Overlays for Editing
+  Flags=0000000110000010
+end
+item: Remark
+end
+item: Install File
+  Source=..\KbdHookDll\Release\kbdhook.dll
+  Destination=%maindir%\private\kbdhook.dll
+  Flags=0000000010000010
+end
+item: Remark
+end
+item: Install File
+  Source=..\Application Library DLL\Release\AppLib.dll
+  Destination=%maindir%\private\AppLib.dll
+  Flags=0000000010000010
+end
+item: Install File
+  Source=..\Message Client DLL\Release\msgclnt.dll
+  Destination=%maindir%\private\msgclnt.dll
+  Flags=0000000010000010
+end
+item: Remark
+end
+item: Delete File
+  Pathname=%maindir%\private\application overlays\*.omt
+end
+item: Delete File
+  Pathname=%maindir%\private\application overlays\applications.txt
+end
+item: Remark
+end
+remarked item: If/While Statement
+  Variable=SYS_MAJORVER
+  Value=5
+  Flags=00000111
+end
+item: Install File
+  Source=..\..\root\German\private\Application Overlays\Win\disallowed.txt
+  Destination=%maindir%\private\Application Overlays\disallowed.txt
+  Flags=0000000110000010
+end
+item: Install File
+  Source=..\..\root\German\private\Application Overlays\Win\MoreApps.txt
+  Destination=%maindir%\private\Application Overlays\MoreApps.txt
+  Flags=0000000110000010
+end
+remarked item: Install File
+  Source=..\..\root\German\private\Application Overlays\Win\Sample\*.*
+  Destination=%maindir%\private\Application Overlays\Sample
+  Flags=0000000110000010
+end
+remarked item: Else Statement
+end
+remarked item: Install File
+  Source=..\..\root\private\Application Overlays\Win98\disallowed.txt
+  Destination=%maindir%\private\Application Overlays\disallowed.txt
+  Flags=0000000110000010
+end
+remarked item: Install File
+  Source=..\..\root\private\Application Overlays\Win98\Sample\*.*
+  Destination=%maindir%\private\Application Overlays\Sample
+  Flags=0000000110000010
+end
+remarked item: End Block
+end
+item: Remark
+end
+item: Remark
+  Text=---------------- install a file that indicates which flavor  ---------
+end
+remarked item: If/While Statement
+  Variable=INTELLISWITCH
+  Value=yes
+end
+item: Install File
+  Source=blank.txt
+  Destination=%maindir%\private\ISInstall.txt
+  Flags=0000000010000010
+end
+remarked item: Else Statement
+end
+item: Install File
+  Source=blank.txt
+  Destination=%maindir%\private\IKInstall.txt
+  Flags=0000000010000010
+end
+remarked item: End Block
+end
+item: Remark
+end
+item: Remark
+  Text=---------------- install extra oerlays if it's the pack installer
+end
+item: Compiler Variable If
+  Variable=_OVERLAYPACK_
+  Value=YES
+end
+item: If/While Statement
+  Variable=OVERLAYPACK
+  Value=yes
+end
+item: Delete File
+  Pathname=%maindir%\private\Application Overlays\Popular Applcation Overlays\*.*
+  Flags=00001100
+end
+item: Install File
+  Source=..\..\root\German\private\Application Overlays\Win\Popular Application Overlays\*.*
+  Destination=%maindir%\private\Application Overlays\Popular Application Overlays
+  Flags=0000000110000010
+end
+item: End Block
+end
+item: Compiler Variable End
+end
+item: Remark
+end
+remarked item: Remark
+  Text=---------------  unicode library for 9x --------------------------------------------------------
+end
+remarked item: If/While Statement
+  Variable=SYS_MAJORVER
+  Value=4
+  Flags=00001001
+end
+remarked item: Install File
+  Source=..\unicows\unicows.dll
+  Destination=%maindir%\private\unicows.dll
+  Flags=0000000110000010
+end
+remarked item: End Block
+end
+item: Remark
+end
+item: Remark
+end
+remarked item: Remark
+  Text=---------------  park the driver files locally  --------------------------------------------------------
+end
+remarked item: Remark
+  Text=Note that are some duplicates. They have been done for making the install process simple.
+end
+remarked item: Remark
+end
+remarked item: Remark
+  Text=Drivers in wnt use the ikusb3.inf. Rest is similar to any x86 platform.
+end
+remarked item: Install File
+  Source=..\Loading Driver\ForCustomers\ikfirm.sys
+  Destination=%maindir%\driver package\Drivers\wnt\x86\IkFirm.sys
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=..\Loading Driver\ikusb3.inf
+  Destination=%maindir%\driver package\Drivers\wnt\x86\ikusb3.inf
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=..\Loading Driver\ikusb3.cat
+  Destination=%maindir%\driver package\Drivers\wnt\x86\ikusb3.cat
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=coinstall\release\ikusbco.dll
+  Destination=%maindir%\driver package\Drivers\wnt\x86\ikusbco.dll
+  Flags=0000000010000010
+end
+remarked item: Remark
+end
+remarked item: Remark
+  Text=The .cat files are same for all the platforms.
+end
+remarked item: Install File
+  Source=..\Loading Driver\ikusb3.cat
+  Destination=%maindir%\driver package\Drivers\w2k\x86\ikusb3.cat
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=..\Drivers\wxp\x86\ikusb3.cat
+  Destination=%maindir%\driver package\Drivers\wxp\x86\ikusb3.cat
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=..\Drivers\wxp\x64\ikusb3.cat
+  Destination=%maindir%\driver package\Drivers\wxp\x64\ikusb3.cat
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=..\Drivers\wlh\x86\ikusb3.cat
+  Destination=%maindir%\driver package\Drivers\wlh\x86\ikusb3.cat
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=..\Drivers\wlh\x64\ikusb3.cat
+  Destination=%maindir%\driver package\Drivers\wlh\x64\ikusb3.cat
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=..\Loading Driver\ikusb3.cat
+  Destination=%maindir%\driver package\Drivers\wxp\x86\ikusb3.cat
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=..\Loading Driver\ikusb3.cat
+  Destination=%maindir%\driver package\Drivers\wxp\x64\ikusb3.cat
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=..\Loading Driver\ikusb3.cat
+  Destination=%maindir%\driver package\Drivers\wlh\x86\ikusb3.cat
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=..\Loading Driver\ikusb3.cat
+  Destination=%maindir%\driver package\Drivers\wlh\x64\ikusb3.cat
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=..\Loading Driver\cyusb.cat
+  Destination=%maindir%\driver package\Drivers\wxp\x86\cyusb.cat
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=..\Loading Driver\cyusb.cat
+  Destination=%maindir%\driver package\Drivers\wxp\x64\cyusb.cat
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=..\Loading Driver\cyusb.cat
+  Destination=%maindir%\driver package\Drivers\wlh\x86\cyusb.cat
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=..\Loading Driver\cyusb.cat
+  Destination=%maindir%\driver package\Drivers\wlh\x64\cyusb.cat
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=..\Loading Driver\ikusb3_wxp.cat
+  Destination=%maindir%\driver package\Drivers\wxp\x86\ikusb3_wxp.cat
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=..\Loading Driver\ikusb3_wxp.cat
+  Destination=%maindir%\driver package\Drivers\wxp\x64\ikusb3_wxp.cat
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=..\Loading Driver\ikusb3_wlhx86.cat
+  Destination=%maindir%\driver package\Drivers\wlh\x86\ikusb3_wlhx86.cat
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=..\Loading Driver\ikusb3_wlhx64.cat
+  Destination=%maindir%\driver package\Drivers\wlh\x64\ikusb3_wlhx64.cat
+  Flags=0000000010000010
+end
+remarked item: Remark
+end
+remarked item: Remark
+  Text=ikusb4.inf is same for all the platforms except wnt. It uses the new CyUSB based drivers.
+end
+remarked item: Install File
+  Source=..\Drivers\ikusb4.inf
+  Destination=%maindir%\driver package\Drivers\w2k\x86\ikusb4.inf
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=..\Drivers\ikusb4.inf
+  Destination=%maindir%\driver package\Drivers\wxp\x86\ikusb4.inf
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=..\Drivers\ikusb4.inf
+  Destination=%maindir%\driver package\Drivers\wxp\x64\ikusb4.inf
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=..\Drivers\ikusb4.inf
+  Destination=%maindir%\driver package\Drivers\wlh\x86\ikusb4.inf
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=..\Drivers\ikusb4.inf
+  Destination=%maindir%\driver package\Drivers\wlh\x64\ikusb4.inf
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=..\Drivers\wxp\x86\ikusb4.inf
+  Destination=%maindir%\driver package\Drivers\wxp\x86\ikusb4.inf
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=..\Drivers\wxp\x64\ikusb4.inf
+  Destination=%maindir%\driver package\Drivers\wxp\x64\ikusb4.inf
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=..\Drivers\wlh\x86\ikusb4.inf
+  Destination=%maindir%\driver package\Drivers\wlh\x86\ikusb4.inf
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=..\Drivers\wlh\x64\ikusb4.inf
+  Destination=%maindir%\driver package\Drivers\wlh\x64\ikusb4.inf
+  Flags=0000000010000010
+end
+remarked item: Remark
+end
+remarked item: Remark
+  Text=The script files are same for all the platforms that use CyUSB based drivers.
+end
+remarked item: Install File
+  Source=..\Drivers\IntelliKeys.spt
+  Destination=%maindir%\driver package\Drivers\w2k\x86\IntelliKeys.spt
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=..\Drivers\IntelliKeys.spt
+  Destination=%maindir%\driver package\Drivers\wxp\x86\IntelliKeys.spt
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=..\Drivers\IntelliKeys.spt
+  Destination=%maindir%\driver package\Drivers\wxp\x64\IntelliKeys.spt
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=..\Drivers\IntelliKeys.spt
+  Destination=%maindir%\driver package\Drivers\wlh\x86\IntelliKeys.spt
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=..\Drivers\IntelliKeys.spt
+  Destination=%maindir%\driver package\Drivers\wlh\x64\IntelliKeys.spt
+  Flags=0000000010000010
+end
+remarked item: Remark
+end
+remarked item: Remark
+  Text=ikusb.sys is different for different platforms. These are based on CyUSB drivers.
+end
+remarked item: Install File
+  Source=..\Drivers\w2k\x86\ikusb.sys
+  Destination=%maindir%\driver package\Drivers\w2k\x86\ikusb.sys
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=..\Drivers\wxp\x86\ikusb.sys
+  Destination=%maindir%\driver package\Drivers\wxp\x86\ikusb.sys
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=..\Drivers\wxp\x64\ikusb.sys
+  Destination=%maindir%\driver package\Drivers\wxp\x64\ikusb.sys
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=..\Drivers\wlh\x86\ikusb.sys
+  Destination=%maindir%\driver package\Drivers\wlh\x86\ikusb.sys
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=..\Drivers\wlh\x64\ikusb.sys
+  Destination=%maindir%\driver package\Drivers\wlh\x64\ikusb.sys
+  Flags=0000100010000010
+end
+remarked item: Remark
+end
+remarked item: Remark
+  Text=For 64-bit platforms, the coinstallers are compiled for 64 bit platform and for x86 it  comiled for  x86 platform.
+end
+remarked item: Install File
+  Source=coinstall\release\ikusbco.dll
+  Destination=%maindir%\driver package\Drivers\w2k\x86\ikusbco.dll
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=coinstall\release\ikusbco.dll
+  Destination=%maindir%\driver package\Drivers\wxp\x86\ikusbco.dll
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=coinstall\x64\release\ikusbco.dll
+  Destination=%maindir%\driver package\Drivers\wxp\x64\ikusbco.dll
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=coinstall\release\ikusbco.dll
+  Destination=%maindir%\driver package\Drivers\wlh\x86\ikusbco.dll
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=coinstall\x64\release\ikusbco.dll
+  Destination=%maindir%\driver package\Drivers\wlh\x64\ikusbco.dll
+  Flags=0000000010000010
+end
+remarked item: Remark
+end
+remarked item: Remark
+end
+remarked item: If/While Statement
+  Variable=UPDATEDRIVER
+  Value=Y
+end
+remarked item: Include Script
+  Pathname=remove driver.wse
+end
+remarked item: Include Script
+  Pathname=add driver.wse
+end
+remarked item: End Block
+end
+remarked item: Remark
+end
+remarked item: Remark
+end
+remarked item: Remark
+  Text=---------------   Install System Software -------------------------------------------------------
+end
+remarked item: Include Script
+  Pathname=..\..\..\..\InstallPieces\MFC42 VC6\MFC42.wse
+end
+remarked item: Remark
+end
+item: Remark
+end
+item: Remark
+  Text=---------------  Remove IKEYSXFR and  reinstal classic sending -------------------------------------------------------
+end
+item: Remark
+  Text=---------------  this give us the classic IKEYSXFR we want to save -------------------------------------------------------
+end
+item: Delete File
+  Pathname=%sys32%\ikeysxfr.exe
+end
+item: Include Script
+  Pathname=..\..\..\..\installpieces\sending\wrapper.wse
+end
+item: Remark
+  Text=----------  above use of wrapper probably left logging on
+end
+item: Open/Close INSTALL.LOG
+  Flags=00000001
+end
+item: Remark
+end
+item: Remark
+end
+item: Remark
+  Text=----------  save a copy of the old sending file if it's still legacy
+end
+item: Get System Information
+  Variable=IKVERSION
+  Pathname=%sys32%\ikeysxfr.exe
+  Flags=00000101
+end
+item: If/While Statement
+  Variable=IKVERSION
+  Flags=00000001
+end
+item: Parse String
+  Source=%ikversion%
+  Pattern=.
+  Variable1=MAJORVERSION
+  Variable2=REST
+  Flags=00000001
+end
+item: Parse String
+  Source=%rest%
+  Pattern=.
+  Variable1=MINORVERSION
+  Flags=00000001
+end
+item: If/While Statement
+  Variable=MAJORVERSION
+  Value=1
+end
+item: If/While Statement
+  Variable=MINORVERSION
+  Value=9
+  Flags=00001001
+end
+item: Copy Local File
+  Source=%sys32%\ikeysxfr.exe
+  Destination=%sys32%\ikeysxfr16.exe
+  Flags=0000000011000010
+end
+item: End Block
+end
+item: End Block
+end
+item: End Block
+end
+item: Remark
+end
+item: Remark
+end
+item: Remark
+  Text=----------  install the new sending file
+end
+item: Install File
+  Source=..\IkeysXfr32\Release\IkeysXfr32.exe
+  Destination=%sys32%\IkeysXfr.exe
+  Flags=0000000010000011
+end
+item: Delete File
+  Pathname=%win%\ikeysxfr.ini
+end
+item: Remark
+end
+item: Remark
+end
+item: Remark
+  Text=---------------   remove old shortcuts  -------------------------------------------------------
+end
+item: Get Registry Key Value
+  Variable=STARTUPDIR
+  Key=Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders
+  Default=%WIN%\Start Menu\Startup
+  Value Name=Startup
+  Flags=00000010
+end
+item: Get Registry Key Value
+  Variable=CSTARTUPDIR
+  Key=Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders
+  Default=%STARTUPDIR%
+  Value Name=Common Startup
+  Flags=00000100
+end
+item: Include Script
+  Pathname=remlinks.wse
+end
+item: Remark
+end
+item: Remark
+end
+item: Remark
+  Text=------------------    make a new shortcut
+end
+item: Create Shortcut
+  Source=%MAINDIR%\private\iksystray.exe
+  Destination=%CSTARTUPDIR%\iksystray.lnk
+  Working Directory=%MAINDIR%
+  Icon Number=0
+  Key Type=1536
+  Flags=00000111
+end
+item: Remark
+end
+item: Remark
+end
+item: Remark
+  Text=---------  set DACLs on files
+end
+item: If/While Statement
+  Variable=SYS_MAJORVER
+  Value=5
+  Flags=00000111
+end
+item: Install File
+  Source=.\setacl.exe
+  Destination=%temp%\itools\setacl.exe
+  Flags=0000000010100010
+end
+item: Execute Program
+  Pathname=%temp%\itools\setacl.exe
+  Command Line="%maindir%" /dir /grant EVERYONE /full
+  Flags=00000110
+end
+item: Delete File
+  Pathname=%temp%\itools\setacl.exe
+end
+item: End Block
+end
+item: Set File Attributes
+  Pathname=%maindir%
+  Flags=00001000
+end
+item: Remark
+end
+item: Remark
+end
+item: Remark
+  Text=----------------- set up service
+end
+item: Set Variable
+  Variable=MD
+  Value=%MAINDIR%
+  Flags=00010100
+end
+item: If/While Statement
+  Variable=SYS_MAJORVER
+  Value=4
+  Flags=00001001
+end
+remarked item: Edit INI File
+  Pathname=%WIN%\ITOOLS_X.INI
+  Settings=[IntelliKeys USB]
+  Settings=path=%md%\
+  Settings=
+end
+remarked item: Install File
+  Source=..\..\..\..\IntelliKeys USB 2\Win\IKUSB\W9x_Service_Release\w9xsvc.exe
+  Destination=%maindir%\private\w9xsvc.exe
+  Flags=0000000110000010
+end
+remarked item: Edit Registry
+  Total Keys=1
+  Key=Software\Microsoft\Windows\CurrentVersion\RunServices
+  New Value=%maindir%\private\w9xsvc.exe
+  New Value=
+  Value Name=IntelliKeys USB
+  Root=2
+end
+remarked item: Execute Program
+  Pathname=%maindir%\private\w9xsvc.exe
+  Flags=00001000
+end
+item: Else Statement
+end
+item: Edit INI File
+  Pathname=%WIN%\ITOOLS_X.INI
+  Settings=[IntelliKeys USB]
+  Settings=service=%md%\private\ikusbsvc.exe
+  Settings=path=%md%\
+  Settings=
+  Settings=
+end
+item: Install File
+  Source=..\service manager\Release\manager.exe
+  Destination=%maindir%\private\manager.exe
+  Flags=0000000110000010
+end
+item: Execute Program
+  Pathname=%maindir%\private\manager.exe
+  Command Line=remove
+  Flags=00000110
+end
+item: Execute Program
+  Pathname=%maindir%\private\manager.exe
+  Command Line=install
+  Flags=00000110
+end
+item: Execute Program
+  Pathname=%maindir%\private\manager.exe
+  Command Line=start
+  Flags=00000110
+end
+item: End Block
+end
+item: Remark
+end
+item: Remark
+end
+item: Remark
+  Text=---------------   all done!  -------------------------------------------------------
+end
+item: If/While Statement
+  Variable=ATTENDED
+  Value=yes
+end
+item: Wizard Block
+  Direction Variable=DIRECTION
+  Display Variable=DISPLAY
+  Bitmap Pathname=%_WISE_%\DIALOGS\TEMPLATE\WIZARD.BMP
+  X Position=9
+  Y Position=10
+  Filler Color=8421440
+  Flags=00000011
+end
+item: Custom Dialog Set
+  Name=Finished
+  Display Variable=DISPLAY
+  item: Dialog
+    Title=Installation Complete
+    Title French=Installation en cours
+    Title German=Installation abgeschlossen
+    Title Portuguese=Instalação Completa 
+    Title Spanish=Se ha completado la Instalación
+    Title Italian=Installazione completata
+    Title Danish=Installation gennemført
+    Title Dutch=Installatie afgerond
+    Title Norwegian=Installasjonen er fullført
+    Title Swedish=Installationen klar
+    Width=280
+    Height=224
+    Font Name=Helv
+    Font Size=8
+    item: Push Button
+      Rectangle=170 185 212 199
+      Variable=DIRECTION
+      Value=N
+      Create Flags=01010000000000010000000000000001
+      Text=&Finish >
+      Text French=&Terminer>
+      Text German=&Fertigstellen>
+      Text Portuguese=&Terminar >
+      Text Spanish=&Finalizar>
+      Text Italian=&Fine >
+      Text Danish=&Afslut >
+      Text Dutch=&Klaar>
+      Text Norwegian=&Avslutt>
+      Text Swedish=&Sluta>
+    end
+    item: Push Button
+      Control Name=CANCEL
+      Rectangle=222 185 264 199
+      Action=3
+      Create Flags=01010000000000010000000000000000
+      Text=Cancel
+      Text French=Annuler
+      Text German=Abbrechen
+      Text Portuguese=Cancelar
+      Text Spanish=Cancelar
+      Text Italian=Annulla
+      Text Danish=Annuller
+      Text Dutch=Annuleren
+      Text Norwegian=Avbryt
+      Text Swedish=Avbryt
+    end
+    item: Static
+      Rectangle=9 177 263 178
+      Action=3
+      Create Flags=01010000000000000000000000000111
+    end
+    item: Static
+      Rectangle=90 10 260 50
+      Enabled Color=00000000000000001111111111111111
+      Create Flags=01010000000000000000000000000000
+      Text=%APPTITLE% has been successfully installed.
+      Text=
+      Text=
+      Text=Press the Finish button to exit this installation.
+      Text=
+      Text French=L'installation de %APPTITLE% est réussie
+      Text French=
+      Text French=
+      Text French=Cliquez sur Terminer pour quitter cette installation
+      Text French=
+      Text German=%APPTITLE% wurde erfolgreich installiert.
+      Text German=
+      Text German=
+      Text German=Zum Beenden dieser Installation Fertigstellen anklicken.
+      Text German=
+      Text Portuguese=%APPTITLE% foi instalado com êxito
+      Text Portuguese=
+      Text Portuguese=
+      Text Portuguese=Pressionar o botão Terminar para sair desta instalação
+      Text Portuguese=
+      Text Spanish=%APPTITLE% se ha instalado con éxito.
+      Text Spanish=
+      Text Spanish=
+      Text Spanish=Pulse el botón de Finalizar para salir de esta instalación.
+      Text Spanish=
+      Text Italian=%APPTITLE% è stato installato.
+      Text Italian=
+      Text Italian=
+      Text Italian=Premi il pulsante Fine per uscire dal programma di installazione
+      Text Italian=
+      Text Danish=%APPTITLE% er nu installeret korrekt.
+      Text Danish=
+      Text Danish=
+      Text Danish=Klik på Afslut for at afslutte installationen.
+      Text Danish=
+      Text Dutch=%APPTITLE% is met succes geïnstalleerd.
+      Text Dutch=
+      Text Dutch=
+      Text Dutch=Druk op Klaar om deze installatie af te ronden.
+      Text Dutch=
+      Text Norwegian=Installasjonen av %APPTITLE% er vellykket.
+      Text Norwegian=
+      Text Norwegian=
+      Text Norwegian=Trykk på Avslutt-tasten for å avslutte denne installasjonen.
+      Text Norwegian=
+      Text Swedish=Installationen av %APPTITLE% har lyckats.
+      Text Swedish=
+      Text Swedish=
+      Text Swedish=Tryck på Sluta för att gå ur installationsprogrammet.
+      Text Swedish=
+    end
+    item: Push Button
+      Control Name=BACK
+      Rectangle=128 185 170 199
+      Variable=DIRECTION
+      Value=B
+      Create Flags=01010000000000010000000000000000
+      Text=< &Back
+      Text French=<&Retour
+      Text German=<&Zurück
+      Text Portuguese=<&Retornar
+      Text Spanish=<&Retroceder
+      Text Italian=< &Indietro
+      Text Danish=<&Tilbage
+      Text Dutch=<&Terug
+      Text Norwegian=<&Tilbake
+      Text Swedish=< &Tillbaka
+    end
+    item: Set Control Attribute
+      Control Name=BACK
+      Operation=1
+    end
+    item: Set Control Attribute
+      Control Name=CANCEL
+      Operation=1
+    end
+  end
+end
+item: End Block
+end
+item: End Block
+end
+item: Remark
+end
+item: Remark
+end
+remarked item: Remark
+  Text=----------  logo testing note
+end
+remarked item: If/While Statement
+  Variable=SYS_MAJORVER
+  Value=5
+  Flags=00000111
+end
+remarked item: If/While Statement
+  Variable=ATTENDED
+  Value=yes
+end
+remarked item: Display Message
+  Title=A Note about Windows Logo Testing
+  Title German=A Note about Windows Logo Testing
+  Text=When you plug your IntelliKeys USB into a Windows 2000 or Windows XP system for the first time, you may see a message "IntelliKeys Firmware has not passed Windows logo testing..." 
+  Text=
+  Text=Click "Continue Anyway." The IntelliKeys USB will function normally. 
+  Text=
+  Text German=When you plug your IntelliKeys USB into a Windows 2000 or Windows XP system for the first time, you may see a message "IntelliKeys Firmware has not passed Windows logo testing..." 
+  Text German=
+  Text German=Click "Continue Anyway." The IntelliKeys USB will function normally. 
+  Text German=
+  Flags=00100000
+end
+remarked item: End Block
+end
+remarked item: End Block
+end
+item: Remark
+end
+item: Remark
+end
+item: Remark
+  Text=----------  re-launch systm tray
+end
+item: Execute Program
+  Pathname=%temp%\itools\sleep.exe
+  Flags=00000110
+end
+item: Execute Program
+  Pathname=%MAINDIR%\private\iksystray.exe
+  Default Directory=%MAINDIR%
+  Flags=00000100
+end
+item: Remark
+end
+item: Delete File
+  Pathname=%temp%\itools\sleep.exe
+end
+item: Remark
+end
+item: Remark
+  Text=----------  do NOT restart.      
+end
+item: Set Variable
+  Variable=RESTART
+end
+item: Remark
+end
+item: Remark
+  Text=----------  Restart if Discover causes us to.
+end
+item: If/While Statement
+  Variable=DISCOVER_HOLDING
+  Value=0
+  Flags=00000001
+end
+item: Set Variable
+  Variable=RESTART
+  Value=S
+end
+item: End Block
+end
+item: Remark
+end
+remarked item: If/While Statement
+  Variable=SYS_MAJORVER
+  Value=4
+  Flags=00001001
+end
+remarked item: Set Variable
+  Variable=RESTART
+  Value=S
+end
+remarked item: End Block
+end

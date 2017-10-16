@@ -1,0 +1,30 @@
+#!/bin/sh
+
+##
+# ikusb
+##
+
+. /etc/rc.common
+
+StartService ()
+{
+    ConsoleMessage "Starting IntelliKeys USB"
+    "/Applications/IntelliTools/IntelliKeys USB/private/ikusb" &
+}
+
+StopService ()
+{
+    ConsoleMessage "Stopping IntelliKeys USB"
+    if pid=$(GetPID ikusb); then
+        kill -TERM "${pid}"
+    fi
+}
+
+RestartService ()
+{
+    ConsoleMessage "Restarting IntelliKeys USB"
+    StopService
+    StartService
+}
+
+RunService "$1"

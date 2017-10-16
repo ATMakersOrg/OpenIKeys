@@ -1,0 +1,211 @@
+Document Type: WSE
+item: Global
+  Version=9.0
+  Flags=00000100
+  Languages=65 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  Japanese Font Name=MS Gothic
+  Japanese Font Size=9
+  Progress Bar DLL=%_WISE_%\Progress\WizWin32a.DLL
+  Start Gradient=0 0 255
+  End Gradient=0 0 0
+  Windows Flags=00000100000000010010110000001000
+  Message Font=MS Sans Serif
+  Font Size=8
+  Pages Modified=00100000000000000000000000000000
+  Disk Label=Default
+  Disk Filename=SETUP
+  Patch Flags=0000000000000001
+  Patch Threshold=85
+  Patch Memory=4000
+  MIF PDF Version=1.0
+  MIF SMS Version=2.0
+  FTP Cluster Size=20
+  Dialogs Version=7
+  Crystal Format=10111100101100000010001001001001
+  Step View=Properties
+  Variable Name1=_SYS_
+  Variable Default1=C:\Windows\system32
+  Variable Flags1=00001000
+  Variable Name2=_WIN_
+  Variable Default2=C:\Windows
+  Variable Flags2=00001000
+  Variable Name3=_WISE_
+  Variable Default3=C:\PROGRA~2\WISEIN~1
+  Variable Flags3=00001000
+end
+item: Remark
+  Text=---- Language Specific Installation Directory Names
+end
+item: Set Variable
+  Variable=DOCUMENTATION_DIR
+  Value=Documentation
+end
+item: Set Variable
+  Variable=GUEST_DIR
+  Value=Guest
+end
+item: Set Variable
+  Variable=OVERLAYS_DIR
+  Value=Overlays
+end
+item: Set Variable
+  Variable=OVERLAYS_FOR_EDITING_DIR
+  Value=Overlays for Editing
+end
+item: Remark
+end
+item: Remark
+  Text=---- End Language Specific Directory Names
+end
+item: Remark
+end
+item: Remark
+  Text=------ Setup Language Specific Strings ------
+end
+item: Remark
+end
+item: Set Variable
+  Variable=WELCOME_DLG_TITLE
+  Value=Welcome
+end
+item: Set Variable
+  Variable=WELCOME_DLG_TEXT1
+  Value=Welcome to %APPTITLE% v%VERSION% Setup program. 
+end
+item: Set Variable
+  Variable=WELCOME_DLG_TEXT2
+  Value=This program will install %APPTITLE% v%VERSION% on your computer.
+end
+item: Set Variable
+  Variable=LICENSE_DLG_TITLE
+  Value=License Agreement
+end
+item: Set Variable
+  Variable=README_DLG_TITLE
+  Value=Read Me File 
+end
+item: Set Variable
+  Variable=FINISHED_DLG_TITLE
+  Value=Installation Complete
+end
+item: Set Variable
+  Variable=FINISHED_DLG_TEXT1
+  Value=%APPTITLE% has been successfully installed.
+end
+item: Set Variable
+  Variable=FINISHED_DLG_TEXT2
+  Value=Press the Finish button to exit this installation.
+end
+item: Set Variable
+  Variable=MSG_UNABLE_TO_CONTINUE_TITLE
+  Value=Unable to Complete Installation
+end
+item: Set Variable
+  Variable=MSG_UNABLE_TO_CONTINUE_TEXT1
+  Value=%apptitle% v%version% is unable to install on this system.
+end
+item: Set Variable
+  Variable=MSG_UNABLE_TO_CONTINUE_TEXT2
+  Value=To complete installation on this operating system, you will need Administrator privileges. 
+end
+item: Set Variable
+  Variable=MSG_UNABLE_TO_CONTINUE_TEXT3
+  Value=Please exit this installation, logon as Adminstrator and begin installing, or contact your Adminstrator to install this product.
+end
+item: Set Variable
+  Variable=MSG_UNABLE_TO_CONTINUE_TEXT4
+  Value=Press the OK button to exit this installation.
+end
+item: Set Variable
+  Variable=MSG_INSTALL_ALREADY_RUNNING
+  Value=The system is already in the process of installing one or more drivers for IntelliKeys USB.  In this case there is no need or you to run the installer yourself. Instead, follow the instructions given by the Found New Hardware Wizard.
+end
+item: Set Variable
+  Variable=MSG_UNPLUG_INTELLIKEYS
+  Value=Please unplug your IntelliKeys before using this installer.
+end
+item: Set Variable
+  Variable=MSG_UNPLUG_INTELLIKEYS_2
+  Value=This installer needs to update the IntelliKeys USB driver, but it cannot be done while the device is plugged in.  Please unplug the device and restart this installer.
+end
+item: Remark
+end
+item: Remark
+end
+item: Remark
+  Text=------ End Setup Language Specific Strings ------
+end
+item: Remark
+  Text=----- Uninstall Language Strings -----
+end
+item: Remark
+end
+item: Set Variable
+  Variable=UNINSTALL_WELCOME_DLG_TITLE
+  Value=Welcome
+end
+item: Set Variable
+  Variable=UNINSTALL_WELCOME_DLG_TEXT1
+  Value=Welcome to the %APPTITLE% v%version% Uninstall program.
+end
+item: Set Variable
+  Variable=UNINSTALL_WELCOME_DLG_TEXT2
+  Value=This program will remove %APPTITLE% v%version% from your computer.
+end
+item: Set Variable
+  Variable=UNINSTALL_MSG_CANCEL_TITLE
+  Value=Cancel Uninstall
+end
+item: Set Variable
+  Variable=UNINSTALL_MSG_CANCEL_TEXT1
+  Value=Would you like to cancel the removal of IntelliKeys USB v%version%?
+end
+item: Set Variable
+  Variable=UNINSTALLING_PROGRESS_TITLE
+  Value=Uninstalling...
+end
+item: Set Variable
+  Variable=UNINSTALLING_PROGRESS_TEXT
+  Value=Uninstall is in progress.  Please wait.
+end
+item: Remark
+end
+item: Remark
+  Text=----- End Uninstall Language Strings -----
+end
+item: Remark
+end
+item: Remark
+  Text=----- Uninstall2 Language Strings -----
+end
+item: Remark
+end
+item: Set Variable
+  Variable=UNINSTALL_FINISHED_DLG_TITLE
+  Value=Installation Complete
+end
+item: Set Variable
+  Variable=UNINSTALL_FINISHED_DLG_TEXT1
+  Value=%APPTITLE% v%version% has been successfully removed.
+end
+remarked item: Set Variable
+  Variable=UNINSTALLING_PROGRESS_TITLE
+  Value=Uninstalling...
+end
+remarked item: Set Variable
+  Variable=UNINSTALLING_PROGRESS_TEXT
+  Value=Uninstall is in progress.  Please wait.
+end
+item: Set Variable
+  Variable=MSG_UNPLUG_INTELLIKEYS_TITLE
+  Value=Unplug IntelliKeys
+end
+item: Set Variable
+  Variable=MSG_UNPLUG_TEXT
+  Value=Your IntelliKeys USB is currently plugged in.  If you uninstalled the software in preparation for installing a new or different version, make sure you unplug IntelliKeys USB before starting that installation.
+end
+item: Remark
+end
+item: Remark
+  Text=----- End Uninstall2 Language Strings -----
+end

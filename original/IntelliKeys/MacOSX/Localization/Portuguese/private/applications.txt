@@ -1,0 +1,6 @@
+
+OSX:Applications:Adobe%20Reader%206.0:Adobe%20Reader%206.0.app		
+OSX:Applications:Adobe%20Reader%207.0.5:Adobe%20Reader%207.0.5.app		
+OSX:Applications:Clicker%204:Clicker%204.app		
+OSX:Applications:Clicker%205:Clicker%205.app		
+OSX:Developer:Applications:Xcode.app		

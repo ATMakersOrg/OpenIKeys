@@ -1,0 +1,190 @@
+﻿;;Guest					Гость
+;;Guest_Folder				Documents/Гость/
+All_Files				Все файлы
+Allow_Applications_To_Send_Overlays	но по-прежнему разрешать приложениям загружать собственные накладки
+APP_DISALLOWED_SRC_MAP			disallowed.txt
+App_Not_Allowed				Вы не можете прикреплять накладки к этому приложению с помощью Панели управления IntelliKeys USB, поскольку приложение настроено на загрузку собственных наклaдок. Обратитесь к Руководству пользователя для этого приложения.
+App_Overlays_Folder			private/Application Overlays/Win
+APP_OVERLAYS_NAMES_MAP			application display names.txt
+APP_OVERLAYS_SRC_FOLDER			Application Overlays
+APP_OVERLAYS_SRC_MAP			applications.txt
+App_Watch_Period			500
+App_Will_Choose				Панель управления не будет загружать накладку
+App_Will_Choose_Clickit			Панель управления не будет загружать накладку
+Attach_Edit_Overlays_For		Прикрепление/Редактирование накладок для
+Channels_Folder				private/Channels/
+Choose_A_Switch_Setting			Выберите установку ключей
+Choose_Overlay				Выберите файл накладки
+Control_Panel_Name			USB Control Panel.exe		
+Correct_Period				500
+Custom_Overlay				custom
+Dead_Until_Time				1000
+Debug_Log_File			
+Debug_Log_Flush_Period			1000
+Debug_Sender				0
+Device_Search_Period			1000
+Diagnostic_Period			1000
+DiscoverName				Discover
+EEProm_Byte_Overdue			500
+Engine_Folder				private/Channels/Engine/
+Engine_Period				5
+External_Command_Period			250
+External_Command_Period_2		250
+Firmware_Version			3.0
+For					для
+Guest					Гость
+Guest_Folder				Documents/Гость/
+Help_File				private/ikusbhelp.html
+IK_Product_ID				257
+IK_Vendor_ID				2398
+Intellikeys_Name			IntelliKeys USB
+Intellikeys_Usb				IntelliKeys USB
+Intellipics_Player_Program		intellipics player.exe
+Intellipics_Program			intellipics.exe
+IS_Product_ID				8
+IS_Vendor_ID				5195
+Key_Down_Time				5
+Key_Sound_Frequency			247
+Keyboard_Reset_Sound_Duration		50
+Led_Reconcile_Period			100
+Load_Student_Data			2000
+Log_Dlls				0
+Long_Key_Sound_Length			700
+Max_Repeat_Delay			750
+Max_Repeat_Start			4000
+Menu_Enabled				1
+Min_Repeat_Start			1000
+Min_Response_Time			15
+Mode:					Режим:
+Mouse_Accelleration_Knee		1000
+Mouse_Accelleration_Scale_Mac		60
+Mouse_Accelleration_Scale_Win		25
+Mouse_Click_Delay			5
+Must_Specify_Overlay			В режиме "Только одной накладкой" необходимо указать накладку.
+No_Overlay_Chosen			Вы не указали файл накладки.  Режим не будет изменен.
+Not_Valid_Overlay			Неверный формат для файла накладки.  Режим не будет изменен.
+Num_Switch_Files			0
+One_Overlay_Only			Только одной накладкой	
+Overlay_Files				Файлы накладки
+Overlay_Rec_Black_Weight		50
+Overlay_Rec_Fallback_Threshhold		150
+Overlay_Rec_Settle_Period		1000
+Overlays				Накладками
+Overlays_Folder				private/Standard Overlays/Win
+Override_Use_System_Repeat_Settings	1
+Preferences_File			preferences.txt
+Private_Folder				private/
+Queue_Empty_Timeout			2000
+Raw_Mode_Immunity			2000
+Reload_Standard_Overlay_When_Recognized	0
+Report_Diagnostics_Realtime		1
+Report_Diagnostics_Realtime_Period	100
+Report_Diagnostics_Realtime_Timeout	50
+Right_Click_Text			AAAAПРАВЫЙЩЕЛЧОКAAAAA
+S_Attached_To_Application		прикреплена к программе
+S_BOOL_OFF				Выкл.
+S_BOOL_ON				Вкл.
+S_Cannot_Be_Sent			не может быть загружена.  Возможно, она перемещена или удалена.
+S_CONNECTED				Подключено
+S_CP_CONNECTED				Подключено
+S_CP_CUSTOM_OVERLAY          		Пользовательская накладка
+S_CP_FIRMWARE_VERSION          		Версия прошивки
+S_CP_KEYSOUND_VOLUME			Громкость звука клавиш
+S_CP_KEYSOUNDVOLUME			Громкость звука клавиш
+S_CP_KEYSOUNDVOLUME_OFF			Выкл.
+S_CP_NUMKEYS				Количество нажатых клавиш
+S_CP_ONOFF_SWITCH_STATUS      		Вкл. или Выкл.
+S_CP_OVERLAY_LEVEL			Слой накладки
+S_CP_OVERLAY_NAME			Имя накладки
+S_CP_ROWCOL				Строка = %d, Столбец = %d
+S_CP_SENS				Значения сенсора = %d,%d,%d,%d,%d,%d,%d,%d,%d
+S_CP_SENSORS                   		Значения сенсора
+S_CP_SERIAL_NUMBER            		Серийный номер
+S_CP_SOFTWARE_VERSION          		Версия программы
+S_CP_STANDARD_OVERLAY       		Стандартная накладка
+S_CP_SWITCH1				Ключ 1
+S_CP_SWITCH2				Ключ 2
+S_Error_Sending_Overlay			Ошибка загрузки накладки
+S_GUEST					Гость
+S_INTELLIKEYS_WILL			Панель управления будет...
+S_KEYSOUND_1				1
+S_KEYSOUND_2				2
+S_KEYSOUND_3				3
+S_KEYSOUND_4				4
+S_KEYSOUND_OFF				Выкл.
+S_LATCHING				Нажатие
+S_LF_HEADER1				Параметры IntelliKeys USB для пользователя "%s"
+S_LF_HEADER2				Параметры IntelliKeys USB для пользователя "%s" в группе "%s"
+S_LF_KBNUM				Номер клавиатуры
+S_LF_NUMKB				Количество подключенных клавиатур
+S_LIGHTS_SIX				Шесть
+S_LIGHTS_THREE				Три
+S_LISTFEATURES_BUTALLOWOVERLAYS		Но разрешить накладкам
+S_LISTFEATURES_DATA_SEND_RATE 		Частота отправки данных
+S_LISTFEATURES_INDICATOR_LIGHTS 	Индикаторные лампочки
+S_LISTFEATURES_KEY_SOUND_VOLUME		Громкость звука клавиш
+S_LISTFEATURES_MODE			Режим
+S_LISTFEATURES_MODE_LAST_OVERLAY	Последняя загруженная накладка:
+S_LISTFEATURES_MODE_LASTSENT		Использовать последнюю загруженную накладку
+S_LISTFEATURES_MODE_SPECIFIC		Использовать указанную накладку
+S_LISTFEATURES_MODE_SPECIFIC_OVERLAY	Указанная накладка:
+S_LISTFEATURES_MODE_SWITCH		как ключ
+S_LISTFEATURES_MODE_SWITCH_SETTING	Настройка ключей:
+S_LISTFEATURES_MOUSE_SPEED 		Скорость мыши
+S_LISTFEATURES_REPEAT			Повтор
+S_LISTFEATURES_REPEAT_LATCHING		Закрепление повтора
+S_LISTFEATURES_REPEAT_RATE 		Частота повтора
+S_LISTFEATURES_REQUIRED_LIFT_OFF 	Отрывистое нажате Выкл.
+S_LISTFEATURES_RESPONSE_RATE 		Скорость реакции
+S_LISTFEATURES_SHIFT_KEY_ACTION 	Действие клавиши SHIFT
+S_LISTFEATURES_SMART_TYPING 		Умная печать
+S_LOCKING				Закрепление
+S_NO					Нет
+S_NO_LATCHING				Не нажимать
+S_NONE					(не указано)
+S_NOT_CONNECTED				Не подключено
+S_Overlay				накладка
+S_TOOLTIP_IK_OFF			IntelliKeys USB подсоединена, но сейчас выключена.
+S_TOOLTIP_IK_ON				IntelliKeys USB подключена.
+S_TOOLTIP_IS_OFF			IntelliSwitch подсоединена, но сейчас выключена.
+S_TOOLTIP_IS_ON				IntelliSwitch подключена.
+S_TOOLTIP_MULTIPLE_DEVICES		Подключено более одного устройства.
+S_TOOLTIP_NO_DEVICES			Ни одно устройство не подключено.
+S_TROUBLESHOOTING			Информация...
+S_UNKNOWN_VALUE				Неизвестное значение
+S_YES					Да
+Save_Text_As_UTF8			1
+Send					Загрузить
+Send_No_Overlay				Не загружать накладку
+Sending					Загрузка
+Short_Key_Sound_Length			50
+Show_Discover_Anyway			0
+Software_Version			3.5.2.19
+Sweep_Sound_Duration			200
+Sweep_Sound_High_Frequency		250
+Sweep_Sound_Low_Frequency		200
+Switch_Presets				Установками ключей
+Switch_Response_Period			50
+Switch_Settings_Folder			Private/Switch Settings
+Systray_Menu				Открыть Панель управления IntelliKeys USB
+Systray_Menu_Switch			Открыть Панель управления IntelliKeys USB и IntelliSwitch
+Systray_Tip				IntelliKeys USB
+Tray_File				iksystray.dat
+Unicode_File_Names			1
+Unknown					Неизвестно
+Use_Attached_Overlay			Панель управления загрузит
+Use_Overlay				использовать накладку
+Use_Switch_Setting			использовать настройки ключей
+Users_Folder				Documents/
+Using_overlay				Используемая  накладка
+Using_Switch_Setting			Используемая установка ключей
+Valid_Serial_Number_Prefix		C-
+Watch_Apps				1
+win_kick_dll_key				135
+S_OVERLAY_IN_PLACE_TITLE		примечание
+S_OVERLAY_IN_PLACE_TEXT			Ваша IntelliKeys USB, кажется, есть стандартные Наложение на месте. использовать пользовательский наложение просто послал, вы должны будете удалить стандартные Overlay.
+S_NO_IKEYS_FOUND				Нет IntelliKeys USB не найдено
+S_IKEYS_ERROR					IntelliKeys USB ошибке
+S_OVERLAYFILE_ERROR				Файл находится в неизвестном формате, поврежден или не файл наложения.
+S_SENDING_SETTINGS				установки параметров передачи...
+S_GETTING_SETTINGS				Получение параметров...

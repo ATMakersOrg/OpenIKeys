@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Description</key>
+	<string>IntelliKeys USB Service</string>
+	<key>Messages</key>
+	<dict>
+		<key>restart</key>
+		<string>Restart IntelliKeys USB</string>
+		<key>start</key>
+		<string>Start IntelliKeys USB</string>
+		<key>stop</key>
+		<string>Stop IntelliKeys USB</string>
+	</dict>
+	<key>OrderPreference</key>
+	<string>Late</string>
+	<key>Provides</key>
+	<array>
+		<string>ikusb</string>
+	</array>
+	<key>Requires</key>
+	<array/>
+</dict>
+</plist>

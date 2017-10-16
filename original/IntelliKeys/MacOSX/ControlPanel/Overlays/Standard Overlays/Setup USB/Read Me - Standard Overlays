@@ -1,0 +1,32 @@
+Working with Standard Overlay Files
+
+The Standard Overlays folder is useful to open if you wish to edit a Standard overlay layout. It contains 
+eight sub-folders: one for each of the seven Standard overlays and a printable version of 
+the Access Features USB Chart (found on the reverse side of the Setup USB Overlay).
+
+Each of the seven folders contains three things:
+1. The Read Me document provides print and send instructions.
+2. Print folder contains a printable version of the overlay. 
+3. The Send folder contains an electronic version of the overlay to send to the IntelliKeys 
+USB keyboard. Since the printable copies do not have bar codes that can be read by the IntelliKeys USB Keyboard, you will have to send the electronic version of the overlay to the keyboard before using the printed copy. 
+
+You may also order replacement standard IntelliKeys USB overlays (with bar codes) from IntelliTools Customer Service,  800-899-6687.
+
+Printing a Standard Overlay
+
+1. Open the printable version of the desired .pdf file using Acrobat Reader. Adobe 
+Acrobat Reader is included on the IntelliKeys USB CD. The program, located in the 
+Documentation folder, can be easily installed on your computer.
+2. Load your printer with legal size paper and select legal and landscape (horizontal) 
+as your printer's settings.
+3. Select Print from the File Menu and uncheck Fit to Page (a.k.a. Shrink Oversized Pages).
+4. Trim the overlay along the Cut dotted line. Your trimmed overlay should be 8.5" x 12.99" inches.
+
+Sending a Standard Overlay Ð Use one of the following methods:
+
+A. Select "...with only one overlay for all applications" on the Advanced tab of the control panel. Press Browse to navigate to the folder and select it. Remember that "...with only one overlay for all applications" overrides any subsequent overlay sending.
+If you decide to return to the default setting of "...with overlays attached to applications,Ó click Keyboard Reset in the IntelliKeys USB control panel.
+
+B. If you have Overlay Maker 3 or Overlay Maker 3 Trial or Overlay Sender 3 installed on your computer, open the Send folder and double-click on the electronic file in the corresponding Send folder.
+
+IntelliTools Overlay Maker 3 Trial CD is included with IntelliKeys USB shipments. After 45 days Overlay Maker 3 Trial will have no authoring features but will continue to open, print, and send overlays.  Overlay Maker 3 Trial may also be downloaded from the IntelliTools web site, www.intellitools.com.

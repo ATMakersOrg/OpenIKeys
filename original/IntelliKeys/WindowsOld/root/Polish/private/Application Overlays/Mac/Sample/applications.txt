@@ -1,0 +1,4 @@
+/Applications/Adobe%20Reader%206.0/Adobe%20Reader%206.0.app		1|Adobe Reader Overlay.omt|
+/Applications/Adobe%20Reader%207.0.5/Adobe%20Reader%207.0.5.app		1|Adobe Reader Overlay.omt|
+/Applications/Clicker%204/Clicker%204.app		1|Clicker Scan Overlay.omt|
+/Applications/Clicker%205/Clicker%205.app		1|Clicker 5 Scan Overlay.omt|

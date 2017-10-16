@@ -1,0 +1,70 @@
+;
+;  The standard overlays
+;
+Standard_Overlay_0		Web Access USB Overlay.oms
+Standard_Overlay_1		Setup USB Overlay.oms
+Standard_Overlay_2		Math Access USB Overlay.oms
+Standard_Overlay_3		Alphabet USB Overlay.oms
+Standard_Overlay_4		Mouse Access USB Overlay.oms
+Standard_Overlay_5		QWERTY USB Overlay.oms
+Standard_Overlay_6		Basic Writing USB Overlay.oms
+Standard_Overlay_7		none.oms
+Standard_Setup_Overlay		1
+;
+;  The standard switch files
+;
+Switch_File_1	1 - Ctrl-Return and Ctrl-Return
+Switch_File_2	2 - Ctrl-Right and -Down Arrows
+Switch_File_3	3 - Space and Return.oms
+Switch_File_4	4 - Click and Click.oms
+Switch_File_5	5 - Click and Double Click.oms
+Switch_File_6	6 - Left and Right Arrows
+Switch_File_7	7 - Up Arrow and Down Arrow.oms
+Switch_File_8	8 - Left Arrow and Up Arrow.oms
+Switch_File_9	9 - 1 and 2.oms
+Switch_File_10	10 - Tab and Return.oms
+Switch_File_11	11 - Tab and Space.oms
+Switch_File_12	12 - Tab and Shift-Tab.oms
+Switch_File_13	13 - Left Shift and Right Shift
+Switch_File_14	14 - Down Arrow and Return.oms
+Switch_File_15	15 - Right Arrow and Return.oms
+Switch_File_16	16 - Left Click and Right Click
+Switch_File_17	17 - Arrow Keys and Return.oms
+Switch_File_18	18 - Arrow Keys and Space.oms
+Switch_File_19	19 - 1 thru 4 and 0.oms
+Switch_File_20	20 - 1 thru 4 and Return.oms
+Switch_File_21	21 - Edit Keys.oms
+Switch_File_22	22 - Modifiers.oms
+Switch_File_23	23 - Mouse Click.oms
+Switch_File_24	24 - Five-Button Mouse.oms
+Switch_File_25	25 - Miscellaneous 1.oms
+Switch_File_26	26 - Mouse Directions.oms
+
+
+
+Balloon_Name_1		/Applications/IntelliTools/IntelliKeys USB/Private/Balloon
+Balloon_Name_2		/Applications/IntelliTools/IntelliKeys USB/Private/Balloon.app
+Control_Panel_Name		IntelliKeys USB.app
+Control_Panel_Name_1	/Applications/IntelliTools/IntelliKeys USB/IntelliKeys USB
+Control_Panel_Name_2	/applications/intellitools/intellikeys usb/IntelliKeys USB.app
+Classic_Sending_Extension	Switch InTT Release
+Classic_Control_Panel		IntelliKeys USB
+DiscoverName			Discover Envoy
+Engine_Name_1		ikusb
+Force_Key_Up					1
+Intellikeys_File		IntelliKeys USB
+Max_Repeat_Delay				750
+Num_Switch_Files	26
+Overlays_Folder			private/Standard Overlays/Mac/
+Override_Use_System_Repeat_Settings          	0
+Save_Text_As_Unicode		0
+Save_Text_As_UTF8		0
+Switch_Settings_Folder		private/Switch Settings/Mac/
+S_LISTFEATURES_MODE_DISCOVER			Discover Envoy
+
+S_Overlay_Not_Sent_1	Overlay Not Sent|An overlay was not sent because One Overlay Only is selected on the Mode tab of the IntelliKeys and IntelliSwitch Control Panel.  To enable overlay sending, select Overlays.
+S_Overlay_Not_Sent_2	Overlay Not Sent|An overlay was not sent because Switch Presets is selected on the Mode tab of the IntelliKeys and IntelliSwitch Control Panel.  To enable overlay sending, select Overlays.
+S_Overlay_Not_Sent_3	Overlay Not Sent|An overlay was not sent because Envoy is selected on the Mode tab of the IntelliKeys and IntelliSwitch Control Panel.  To enable overlay sending, select Overlays.
+
+
+

@@ -1,0 +1,534 @@
+<?xml version="1.0"?>
+<RBProject version="2011r4.3" FormatVersion="2" MinIDEVersion="20070100">
+<block type="Module" ID="1901987470">
+ <ObjName>IDECommunicator</ObjName>
+ <ObjContainerID>0</ObjContainerID>
+ <IsClass>0</IsClass>
+ <ItemFlags>1</ItemFlags>
+ <IsInterface>0</IsInterface>
+ <Compatibility></Compatibility>
+ <Method>
+  <ItemName>FindIPCDir</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function FindIPCDir() As FolderItem</SourceLine>
+   <SourceLine>dim ipcDir As FolderItem</SourceLine>
+   <SourceLine>dim ok as Boolean</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>#pragma BreakOnExceptions off</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>try</SourceLine>
+   <SourceLine>stdout.WriteLine "IDECommunicator.FindIPCDir: trying SpecialFolder.Temporary"</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>ok = isValidFolder( SpecialFolder.Temporary,ipcDir )</SourceLine>
+   <SourceLine>catch UnsupportedFormatException</SourceLine>
+   <SourceLine>ok = false</SourceLine>
+   <SourceLine>end</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if not ok then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>try</SourceLine>
+   <SourceLine>stdout.WriteLine "IDECommunicator.FindIPCDir: trying /tmp"</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>ok = isValidFolder( GetFolderItem( "/tmp", FolderItem.PathTypeShell), ipcDir )</SourceLine>
+   <SourceLine>catch UnsupportedFormatException</SourceLine>
+   <SourceLine>ok = false</SourceLine>
+   <SourceLine>end</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if not ok then</SourceLine>
+   <SourceLine>try</SourceLine>
+   <SourceLine>stdout.WriteLine "IDECommunicator.FindIPCDir: trying /var/tmp"</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>ok = isValidFolder( GetFolderItem( "/var/tmp", FolderItem.PathTypeShell),ipcDir )</SourceLine>
+   <SourceLine>catch UnsupportedFormatException</SourceLine>
+   <SourceLine>ok = false</SourceLine>
+   <SourceLine>end</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if not ok then</SourceLine>
+   <SourceLine>try</SourceLine>
+   <SourceLine>stdout.WriteLine "IDECommunicator.FindIPCDir: trying SpecialFolder.Home"</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>ok = isValidFolder( SpecialFolder.Home,ipcDir )</SourceLine>
+   <SourceLine>catch UnsupportedFormatException</SourceLine>
+   <SourceLine>ok = false</SourceLine>
+   <SourceLine>end</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if ok then</SourceLine>
+   <SourceLine>stdout.WriteLine "IDECommunicator.FindIPCDir: Found " + ipcDir.AbsolutePath</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return ipcDir</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>33</ItemFlags>
+  <Shared>0</Shared>
+  <ItemParams></ItemParams>
+  <ItemResult>FolderItem</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>SendScript</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function SendScript(sourceCode As String) As Boolean</SourceLine>
+   <SourceLine>// Send the given source to the IDE.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>dim theSocket as IPCSocket  </SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// First, try to connect if we're not connected already</SourceLine>
+   <SourceLine>if not ConnectToIDE(theSocket) then</SourceLine>
+   <SourceLine>// The IDE is not running, apparently</SourceLine>
+   <SourceLine>ReportError  "IDECommunicator.SendScript: can't connect to IDE"</SourceLine>
+   <SourceLineBreakpoint>8</SourceLineBreakpoint>
+   <SourceLine>return false</SourceLine>
+   <SourceLine>end</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>stdout.WriteLine  "IDECommunicator.SendScript: Sending: " + EndOfLine + sourceCode</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>theSocket.Write sourceCode.ConvertEncoding(Encodings.UTF8) + EndOfLine</SourceLine>
+   <SourceLine>while theSocket.BytesLeftToSend &gt; 0</SourceLine>
+   <SourceLine>theSocket.Poll</SourceLine>
+   <SourceLine>if not theSocket.IsConnected then</SourceLine>
+   <SourceLine>ReportError "IDECommunicator.SendScript: have bytes to send but connection lost"</SourceLine>
+   <SourceLineBreakpoint>18</SourceLineBreakpoint>
+   <SourceLine>theSocket.Close</SourceLine>
+   <SourceLine>return false</SourceLine>
+   <SourceLine>elseif theSocket.LastErrorCode &lt;&gt; 0 then</SourceLine>
+   <SourceLine>ReportError "IDECommunicator.SendScript: Sending Error: " + Str (theSocket.LastErrorCode)</SourceLine>
+   <SourceLineBreakpoint>22</SourceLineBreakpoint>
+   <SourceLine>theSocket.Close</SourceLine>
+   <SourceLine>return false</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>theSocket.Close</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>stdout.WriteLine  "IDECommunicator.SendScript: done - closing socket"</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return true</SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>1</ItemFlags>
+  <Shared>0</Shared>
+  <ItemParams>sourceCode As String</ItemParams>
+  <ItemResult>Boolean</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>ReportError</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub ReportError(msg as String)</SourceLine>
+   <SourceLine>// A socket error has occurred.  If you're using this module</SourceLine>
+   <SourceLine>// in your own code, you'll probably want to replace this</SourceLine>
+   <SourceLine>// with some error reporting mechanism that fits into your app.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>#if not TargetHasGUI</SourceLine>
+   <SourceLine>stderr.WriteLine "Socket error: " + msg</SourceLine>
+   <SourceLine>#endif</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>33</ItemFlags>
+  <Shared>0</Shared>
+  <ItemParams>msg as String</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>isValidFolder</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function isValidFolder(dirIn as FolderItem, ByRef dirOut as FolderItem) As Boolean</SourceLine>
+   <SourceLine>stdout.WriteLine "IDECommunicator.isValidFolder: checking existences and writable for " + dirIn.AbsolutePath</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if (dirIn &lt;&gt; nil) and dirIn.Exists and dirIn.IsWriteable then</SourceLine>
+   <SourceLine>dirOut = dirIn</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>stdout.WriteLine "IDECommunicator.isValidFolder:  setting dirOut= " + dirOut.AbsolutePath</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return true</SourceLine>
+   <SourceLine>end</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>stdout.WriteLine "IDECommunicator.isValidFolder: dirOut= NotFound or Not Writeable"</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>33</ItemFlags>
+  <Shared>0</Shared>
+  <ItemParams>dirIn as FolderItem, ByRef dirOut as FolderItem</ItemParams>
+  <ItemResult>Boolean</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>UnescapedShellPath</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function UnescapedShellPath(path as String) As String</SourceLine>
+   <SourceLine>// Convert an escaped Shell Path to a non-escaped Shell Path</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>path = path.ReplaceAll("\\",chr(1))</SourceLine>
+   <SourceLine>path = path.ReplaceAll("\","")</SourceLine>
+   <SourceLine>path = path.ReplaceAll(chr(1),"\")</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return path</SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>1</ItemFlags>
+  <Shared>0</Shared>
+  <ItemParams>path as String</ItemParams>
+  <ItemResult>String</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>NativePath</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function NativePath(f as FolderItem) As String</SourceLine>
+   <SourceLine>// Converts the path as it's normal on the current platform.</SourceLine>
+   <SourceLine>// That is the AbsolutePath on Windows and Linux, and a POSIXPath</SourceLine>
+   <SourceLine>// on OS X.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>dim path as String</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>#if TargetMacOS</SourceLine>
+   <SourceLine>// We need to return a POSIX path. Unfortunately, RS doesn't give us</SourceLine>
+   <SourceLine>// a function to get one on OSX yet. So we'll do this:</SourceLine>
+   <SourceLine>path = UnescapedShellPath (f.ShellPath)</SourceLine>
+   <SourceLine>#else</SourceLine>
+   <SourceLine>path = f.AbsolutePath</SourceLine>
+   <SourceLine>#endif</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return path</SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>1</ItemFlags>
+  <Shared>0</Shared>
+  <ItemParams>f as FolderItem</ItemParams>
+  <ItemResult>String</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>EscapedShellPath</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function EscapedShellPath(path as String) As String</SourceLine>
+   <SourceLine>// Convert a POSIX path into an escaped Shell Path</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>path = path.ReplaceAll("\",chr(1))</SourceLine>
+   <SourceLine>path = path.ReplaceAll("","\ ")</SourceLine>
+   <SourceLine>path = path.ReplaceAll("""","\""")</SourceLine>
+   <SourceLine>path = path.ReplaceAll(chr(1),"\\")</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return path</SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>1</ItemFlags>
+  <Shared>0</Shared>
+  <ItemParams>path as String</ItemParams>
+  <ItemResult>String</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>ResolveNativePath</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function ResolveNativePath(path As String) As FolderItem</SourceLine>
+   <SourceLine>// This takes a "native" OS path as they get passed to console apps as arguments,</SourceLine>
+   <SourceLine>// i.e. a POSIX path on Mac and Linux, and any "common" path on Windows.</SourceLine>
+   <SourceLine>//</SourceLine>
+   <SourceLine>// This function deals with two special tasks:</SourceLine>
+   <SourceLine>// 1. The passed path may be relative - so it resolves that properly, based on the</SourceLine>
+   <SourceLine>//     SpecialFolder.CurrentWorkingDirectory</SourceLine>
+   <SourceLine>// 2. On OS X, there's no simply way to create a FolderItem from a POSIX path,</SourceLine>
+   <SourceLine>//     so it solves this, too.</SourceLine>
+   <SourceLine>//</SourceLine>
+   <SourceLine>// See also: http://www.tempel.org/RB/FilePaths</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>#if TargetWin32</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>dim currentDisk as String</SourceLine>
+   <SourceLine>dim currentPath as String = SpecialFolder.CurrentWorkingDirectory.AbsolutePath</SourceLine>
+   <SourceLine>if currentPath.Mid(2,1) = ":" then</SourceLine>
+   <SourceLine>// split the drive:path combo up into drive and path</SourceLine>
+   <SourceLine>currentDisk = currentPath.Left(2)</SourceLine>
+   <SourceLine>currentPath = currentPath.Mid(3)</SourceLine>
+   <SourceLine>end</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if path.Left(2) = "\\" then</SourceLine>
+   <SourceLine>// An UNC path</SourceLine>
+   <SourceLine>elseif path.Left(1) = "\" then</SourceLine>
+   <SourceLine>// An absolute path on the current working drive</SourceLine>
+   <SourceLine>path = currentDisk + path</SourceLine>
+   <SourceLine>elseif path.Mid(2,2) = ":\" then</SourceLine>
+   <SourceLine>// An absolute path with specified drive</SourceLine>
+   <SourceLine>elseif path.Mid(2,1) = ":" then</SourceLine>
+   <SourceLine>// A relative path on the specified drive</SourceLine>
+   <SourceLine>#if false</SourceLine>
+   <SourceLine>// this doesn't work yet</SourceLine>
+   <SourceLine>declare function CurDir lib "kernel32" (drv as CString) as CString</SourceLine>
+   <SourceLine>currentPath = CurDir (path.Left(1))</SourceLine>
+   <SourceLine>path = path.Left(2) + currentPath + path.Mid(3)</SourceLine>
+   <SourceLine>#endif</SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine>// A relative path on the current working drive</SourceLine>
+   <SourceLine>path = currentDisk + currentPath + path</SourceLine>
+   <SourceLine>end</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return GetFolderItem (path, FolderItem.PathTypeAbsolute)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>#elseif TargetMacOS</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// This code converts the path into a Carbon path</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>dim segments() as String = path.ReplaceAll(":",Chr(1)).Split("/")</SourceLine>
+   <SourceLine>dim isRelative as Boolean</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if segments.Ubound &gt;= 1 then</SourceLine>
+   <SourceLine>if segments(0)="" and segments(1)="Volumes" then</SourceLine>
+   <SourceLine>segments.Remove 1</SourceLine>
+   <SourceLine>segments.Remove 0</SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine>// An absolute path on the root volume</SourceLine>
+   <SourceLine>segments(0) = Volume(0).Name</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine>isRelative = true</SourceLine>
+   <SourceLine>end</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>path = Join (segments, ":")</SourceLine>
+   <SourceLine>path = path.ReplaceAll(Chr(1),"/") // converts former legal ":" chars into "/"</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if isRelative then</SourceLine>
+   <SourceLine>dim currPath as String = SpecialFolder.CurrentWorkingDirectory.AbsolutePath</SourceLine>
+   <SourceLine>path = currPath + path</SourceLine>
+   <SourceLine>end</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return GetFolderItem (path, FolderItem.PathTypeAbsolute)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>#elseif TargetLinux</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if path.Left(1) &lt;&gt; "/" then</SourceLine>
+   <SourceLine>// A relative path</SourceLine>
+   <SourceLine>dim currentPath as String = SpecialFolder.CurrentWorkingDirectory.AbsolutePath</SourceLine>
+   <SourceLine>path = currentPath + path</SourceLine>
+   <SourceLine>end</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>try</SourceLine>
+   <SourceLine>#pragma BreakOnExceptions off</SourceLine>
+   <SourceLine>return GetFolderItem (path, FolderItem.PathTypeAbsolute)</SourceLine>
+   <SourceLine>catch</SourceLine>
+   <SourceLine>return nil</SourceLine>
+   <SourceLine>end try</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>#else</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>#error // this is unexpected</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>#endif</SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>1</ItemFlags>
+  <Shared>0</Shared>
+  <ItemParams>path As String</ItemParams>
+  <ItemResult>FolderItem</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>ConnectToIDE</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function ConnectToIDE(ByRef theSocket As IPCSocket) As Boolean</SourceLine>
+   <SourceLine>if theSocket = nil or not theSocket.IsConnected then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>stdout.WriteLine "IDECommunicator.ConnectToIDE: calling FindIPCDir"</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>dim socketDir as FolderItem = FindIPCDir()</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if socketDir = nil then</SourceLine>
+   <SourceLine>theSocket = nil</SourceLine>
+   <SourceLine>return false</SourceLine>
+   <SourceLine>end</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// Now try different namings for the socket file, as different IDE versions used different names</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>theSocket = New IPCSocket</SourceLine>
+   <SourceLine>theSocket.Path = NativePath (socketDir.Child("REALStudioIDE"))</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>stdout.WriteLine "IDECommunicator.ConnectToIDE: trying path " + theSocket.Path</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>theSocket.Connect</SourceLine>
+   <SourceLine>do</SourceLine>
+   <SourceLine>theSocket.Poll</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>stdout.WriteLine "IDECommunicator.ConnectToIDE: After Poll: LastErrorCode: " + Str( theSocket.LastErrorCode) + " Connected: " + Str(theSocket.IsConnected)</SourceLine>
+   <SourceLine>loop until theSocket.LastErrorCode &lt;&gt; 0 or theSocket.IsConnected</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if not theSocket.IsConnected then</SourceLine>
+   <SourceLine>// Try name used in 2010 releases</SourceLine>
+   <SourceLine>theSocket = New IPCSocket</SourceLine>
+   <SourceLine>#if TargetMacOS or TargetLinux</SourceLine>
+   <SourceLine>theSocket.Path = NativePath (socketDir.Child("REAL\ StudioIDE"))</SourceLine>
+   <SourceLine>#else</SourceLine>
+   <SourceLine>theSocket.Path = NativePath (socketDir.Child("REAL StudioIDE"))</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>stdout.WriteLine "IDECommunicator.ConnectToIDE: trying path " + theSocket.Path</SourceLine>
+   <SourceLine>#endif</SourceLine>
+   <SourceLine>theSocket.Connect</SourceLine>
+   <SourceLine>do</SourceLine>
+   <SourceLine>theSocket.Poll</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>stdout.WriteLine "IDECommunicator.ConnectToIDE: After Poll: LastErrorCode: " + Str( theSocket.LastErrorCode) + " Connected: " + Str(theSocket.IsConnected)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>loop until theSocket.LastErrorCode &lt;&gt; 0 or theSocket.IsConnected</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if not theSocket.IsConnected then</SourceLine>
+   <SourceLine>// Try name used before the IDE was renamed to "REAL Studio"</SourceLine>
+   <SourceLine>theSocket = New IPCSocket</SourceLine>
+   <SourceLine>theSocket.Path = NativePath (socketDir.Child("REALbasicIDE"))</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>stdout.WriteLine "IDECommunicator.ConnectToIDE: trying path " + theSocket.Path</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>theSocket.Connect</SourceLine>
+   <SourceLine>do</SourceLine>
+   <SourceLine>theSocket.Poll</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>stdout.WriteLine "IDECommunicator.ConnectToIDE: After Poll: LastErrorCode: " + Str( theSocket.LastErrorCode) + " Connected: " + Str(theSocket.IsConnected)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>loop until theSocket.LastErrorCode &lt;&gt; 0 or theSocket.IsConnected</SourceLine>
+   <SourceLine>end</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if not theSocket.IsConnected then</SourceLine>
+   <SourceLine>// The IDE is not running, apparently</SourceLine>
+   <SourceLine>ReportError "IDECommunicator.ConnectToIDE: can't connect"</SourceLine>
+   <SourceLineBreakpoint>63</SourceLineBreakpoint>
+   <SourceLine>theSocket = nil</SourceLine>
+   <SourceLine>return false</SourceLine>
+   <SourceLine>end</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>stdout.WriteLine "IDECommunicator.ConnectToIDE: connected to IDE at " + theSocket.Path</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return true</SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>33</ItemFlags>
+  <Shared>0</Shared>
+  <ItemParams>ByRef theSocket As IPCSocket</ItemParams>
+  <ItemResult>Boolean</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>IPCPath</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function IPCPath() As String</SourceLine>
+   <SourceLine>// First, try to connect if we're not connected already</SourceLine>
+   <SourceLine>dim theSocket as IPCSocket</SourceLine>
+   <SourceLine>if ConnectToIDE(theSocket) then</SourceLine>
+   <SourceLine>dim p as String = theSocket.Path</SourceLine>
+   <SourceLine>theSocket.Close</SourceLine>
+   <SourceLine>return p</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>1</ItemFlags>
+  <Shared>0</Shared>
+  <ItemParams></ItemParams>
+  <ItemResult>String</ItemResult>
+ </Method>
+ <Note>
+  <ItemName>About This Module</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <NoteLine>About This Module</NoteLine>
+   <NoteLine></NoteLine>
+   <NoteLine>This module provides code for sending IDE Scripting commands to the</NoteLine>
+   <NoteLine>REALbasic IDE.  Feel free to use this in your own projects (without any</NoteLine>
+   <NoteLine>warranty, express or implied).</NoteLine>
+   <NoteLine></NoteLine>
+   <NoteLine>To use, just call IDECommunicator.SendScript and pass in the text of the</NoteLine>
+   <NoteLine>script you want the IDE to execute.  If you're curious where it's looking</NoteLine>
+   <NoteLine>for a communications path with the IDE, you can get that information from</NoteLine>
+   <NoteLine>IDECommunicator.FindIPCPath.</NoteLine>
+   <NoteLine></NoteLine>
+   <NoteLine></NoteLine>
+  </ItemSource>
+  <ItemFlags>0</ItemFlags>
+ </Note>
+ <ViewBehavior>
+  <ViewProperty>
+   <ObjName>Name</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <InheritsFrom>Object</InheritsFrom>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Index</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <PropertyValue>-2147483648</PropertyValue>
+   <InheritsFrom>Object</InheritsFrom>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Super</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <InheritsFrom>Object</InheritsFrom>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Left</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Position</PropertyGroup>
+   <PropertyValue>0</PropertyValue>
+   <InheritsFrom>Object</InheritsFrom>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Top</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Position</PropertyGroup>
+   <PropertyValue>0</PropertyValue>
+   <InheritsFrom>Object</InheritsFrom>
+  </ViewProperty>
+ </ViewBehavior>
+</block>
+</RBProject>

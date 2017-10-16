@@ -1,0 +1,176 @@
+﻿All_Files				Todos los archivos
+Allow_Applications_To_Send_Overlays	aunque permiten que las aplicaciones envíen sus propias overlays
+APP_DISALLOWED_SRC_MAP			disallowed.txt
+App_Not_Allowed				No puede adjuntar overlays a esta aplicación desde el panel de control de IntelliKeys USB ya que la aplicación está diseñada para enviar sus propias overlays. Consulte la Guía del usuario de esta aplicación sobre cómo adjuntar APP_OVERLAYS_NAMES_MAP			application display names.txt
+APP_OVERLAYS_SRC_FOLDER			Application Overlays
+APP_OVERLAYS_SRC_MAP			applications.txt
+App_Overlays_Folder			private/Application Overlays/Mac
+App_Watch_Period			500
+overlays.
+App_Will_Choose				El Panel de Control no enviará una overlay
+App_Will_Choose_Clickit			El Panel de Control no enviará una overlay
+Attach_Edit_Overlays_For		Adjuntar/Editar overlays para
+Channels_Folder				private/Channels/
+Choose_A_Switch_Setting			Elija una configuración del switch
+Choose_Overlay				Por favor elija un archivo de overlay
+Control_Panel_Name			IntelliKeys USB.app		
+Correct_Period				500
+Custom_Overlay				custom
+Dead_Until_Time				1000
+Debug_Log_File			
+Debug_Log_Flush_Period			1000
+Device_Search_Period			1000
+Debug_Sender				0
+DiscoverName				Discover
+EEProm_Byte_Overdue			500
+Engine_Folder				private/Channels/Engine/
+Engine_Period				5
+External_Command_Period			250
+External_Command_Period 2		250
+Firmware_Version			3.0
+For					para
+;;Guest					Invitado
+;;Guest_Folder				Documents/Invitado/
+Guest					Guest
+Guest_Folder				Documents/Guest/
+Help_File				Private/ikusbhelp.html
+IK_Product_ID				257
+IK_Vendor_ID				2398
+IS_Product_ID				8
+IS_Vendor_ID				5195
+Intellikeys_Usb				IntelliKeys USB
+Intellikeys_Name			IntelliKeys USB
+Intellipics_Player_Program		intellipics player.exe
+Intellipics_Program			intellipics.exe
+Key_Sound_Frequency			247
+Keyboard_Reset_Sound_Duration		50
+Led_Reconcile_Period			100
+Log_Dlls				0
+Long_Key_Sound_Length			700
+Max_Repeat_Start			4000
+Menu_Enabled				1
+Min_Repeat_Start			1000
+Min_Response_Time			15
+Mode:					Modo:
+Mouse_Accelleration_Knee		1000
+Mouse_Accelleration_Scale_Mac		60
+Mouse_Accelleration_Scale_Win		25
+Mouse_Click_Delay			5
+Must_Specify_Overlay			Debe especificar una overlay en la elección Sólo un Modo Overlay.
+No_Overlay_Chosen			Usted no escogió un archivo de overlay.  El modo no será cambiado.
+Not_Valid_Overlay			Ese archivo no es una overlay válida.  El modo no será cambiado.
+Overlay_Files				Archivos overlay
+One_Overlay_Only			Sólo un Overlay	
+Overlay_Rec_Black_Weight		50
+Overlay_Rec_Fallback_Threshhold		150
+Overlay_Rec_Settle_Period		1000
+Overlays				Overlays
+Overlays_Folder				private/Standard Overlays/Mac/
+Preferences_File			preferences.txt
+Private_Folder				private/
+Queue_Empty_Timeout			2000
+Raw_Mode_Immunity			2000
+Report_Diagnostics_Realtime		1
+Report_Diagnostics_Realtime_Period	100
+Report_Diagnostics_Realtime_Timeout	50
+Right_Click_Text			AAAAAAAAAARIGHTCLICKAAAAAAAAAA
+S_BOOL_OFF				Sin
+S_BOOL_ON				On
+S_CONNECTED				Conectado
+S_CP_CONNECTED				Conectado
+S_CP_CUSTOM_OVERLAY          		Overlay personalizada
+S_CP_FIRMWARE_VERSION          		Versión de Firmware
+S_CP_KEYSOUNDVOLUME			Sonido de teclas
+S_CP_KEYSOUNDVOLUME_OFF			Sin
+S_CP_KEYSOUND_VOLUME			Sonido de teclas
+S_CP_NUMKEYS				Número de teclas pulsadas
+S_CP_ONOFF_SWITCH_STATUS      		Encendido o Apagado
+S_CP_OVERLAY_LEVEL			Nivel de overlay
+S_CP_OVERLAY_NAME			Nombre de overlay
+S_CP_ROWCOL				Fila = %d, Columna = %d
+S_CP_SENS				Valores de los sensores = %d,%d,%d,%d,%d,%d,%d,%d,%d
+S_CP_SENSORS                   		Valores de los Sensores
+S_CP_SERIAL_NUMBER            		Número de Serie
+S_CP_SOFTWARE_VERSION          		Versión de Software
+S_CP_STANDARD_OVERLAY       		Overlay estándar
+S_CP_SWITCH1				Switch 1
+S_CP_SWITCH2				Switch 2
+;;S_GUEST					Invitado
+S_GUEST					Guest
+S_INTELLIKEYS_WILL			el Panel de Control...
+S_KEYSOUND_1				1
+S_KEYSOUND_2				2
+S_KEYSOUND_3				3
+S_KEYSOUND_4				4
+S_KEYSOUND_OFF				Sin
+S_LATCHING				Mantener efecto
+S_LF_HEADER1				Funciones de IntelliKeys USB para el usuario "%s"
+S_LF_HEADER2				Funciones de IntelliKeys USB para el usuario "%s" en el grupo "%s"
+S_LF_KBNUM				Teclado número
+S_LF_NUMKB				Número de teclados conectados
+S_LIGHTS_SIX				Seis
+S_LIGHTS_THREE				Tres
+S_LISTFEATURES_BUTALLOWOVERLAYS		Pero permitir overlays
+S_LISTFEATURES_DATA_SEND_RATE 		Velocidad de transferencia de datos
+S_LISTFEATURES_INDICATOR_LIGHTS 	Indicadores luminosos
+S_LISTFEATURES_KEY_SOUND_VOLUME		Sonido de teclas
+S_LISTFEATURES_MODE			Modo
+S_LISTFEATURES_MODE_LASTSENT		Use la última overlay enviada
+S_LISTFEATURES_MODE_LAST_OVERLAY	Última overlay enviada
+S_LISTFEATURES_MODE_SPECIFIC		Use esta overlay
+S_LISTFEATURES_MODE_SPECIFIC_OVERLAY	Overlay específica
+S_LISTFEATURES_MODE_SWITCH		como un switch
+S_LISTFEATURES_MODE_SWITCH_SETTING	Configurar switch
+S_LISTFEATURES_MOUSE_SPEED 		Velocidad del ratón
+S_LISTFEATURES_REPEAT			Repetición
+S_LISTFEATURES_REPEAT_LATCHING		Repetición automática
+S_LISTFEATURES_REPEAT_RATE 		Velocidad de repetición
+S_LISTFEATURES_REQUIRED_LIFT_OFF 	Despegue obligatorio
+S_LISTFEATURES_RESPONSE_RATE 		Velocidad de respuesta
+S_LISTFEATURES_SHIFT_KEY_ACTION 	Efecto de Tecla Mayús
+S_LISTFEATURES_SMART_TYPING 		Escritura inteligente
+S_LOCKING				Bloqueo
+S_NO					No
+S_NONE					Ninguno
+S_NOT_CONNECTED				No conectado
+S_NO_LATCHING				Sin efecto
+S_TOOLTIP_IK_OFF			IntelliKeys USB está conectado, pero actualmente apagado.
+S_TOOLTIP_IK_ON				IntelliKeys USB está conectado.
+S_TOOLTIP_IS_OFF			IntelliSwitch está conectado, pero actualmente apagado.
+S_TOOLTIP_IS_ON				IntelliSwitch está conectado.
+S_TOOLTIP_MULTIPLE_DEVICES		Más de un dispositivo está conectado.
+S_TOOLTIP_NO_DEVICES			No hay dispositivos conectados.
+S_TROUBLESHOOTING			Solución de problemas...
+S_UNKNOWN_VALUE				Valor desconocido
+S_YES					Sí
+S_Attached_To_Application		adjunto a la aplicación
+S_Cannot_Be_Sent			no puede ser enviado.  Puede haber sido movido o eliminado.
+S_Error_Sending_Overlay			Error al enviar overlay
+S_Overlay				overlay
+Save_Text_As_UTF8			1
+Send					Enviar
+Send_No_Overlay				No enviar overlay
+Sending					Enviando
+Short_Key_Sound_Length			50
+Show_Discover_Anyway			0
+Software_Version			3.5.2.19
+Sweep_Sound_Duration			200
+Sweep_Sound_High_Frequency		250
+Sweep_Sound_Low_Frequency		200
+Switch_Presets				Switch Presets
+Switch_Response_Period			50
+Switch_Settings_Folder			private/Switch Settings/Mac/
+Systray_Menu				Abrir Panel de Control de IntelliKeys USB
+Systray_Menu_Switch			Abrir Panel de Control de IntelliKeys USB y de IntelliSwitch
+Systray_Tip				IntelliKeys USB
+Tray_File				iksystray.dat
+Unicode_File_Names			0
+Unknown					Desconocido
+Use_Attached_Overlay			El Panel de Control enviará
+Use_Overlay				utilizar overlay
+Use_Switch_Setting			utilizar el valor del switch
+Using_Switch_Setting			Utilizando el valor del switch
+Users_Folder				Documents/
+Using_Overlay				Utilizando overlay
+Valid_Serial_Number_Prefix		C-
+Watch_Apps				1

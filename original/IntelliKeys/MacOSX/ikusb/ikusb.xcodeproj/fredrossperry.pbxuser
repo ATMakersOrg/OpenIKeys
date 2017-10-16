@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	08FB7793FE84155DC02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Development;
+		activeBuildStyle = 014CEA490018CE3211CA2923 /* Development */;
+		activeExecutable = 6DA6F9530835675600CB063B /* ikusb */;
+		activeTarget = 8DD76F740486A8DE00D96B5E /* ikusb */;
+		addToTargets = (
+			8DD76F740486A8DE00D96B5E /* ikusb */,
+		);
+		breakpoints = (
+		);
+		breakpointsGroup = 6DA49032086CC58C0042914E /* XCBreakpointsBucket */;
+		codeSenseManager = 6DA6F95A0835677500CB063B /* Code sense */;
+		executables = (
+			6DA6F9530835675600CB063B /* ikusb */,
+		);
+		perUserDictionary = {
+			"PBXConfiguration.PBXBreakpointsDataSource.v1:1CA1AED706398EBD00589147" = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXBreakpointsDataSource_BreakpointID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					20,
+					210,
+					20,
+					110,
+					109,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXBreakpointsDataSource_ActionID,
+					PBXBreakpointsDataSource_TypeID,
+					PBXBreakpointsDataSource_BreakpointID,
+					PBXBreakpointsDataSource_UseID,
+					PBXBreakpointsDataSource_LocationID,
+					PBXBreakpointsDataSource_ConditionID,
+					PBXBreakpointsDataSource_ContinueID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXErrorsWarningsDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXErrorsWarningsDataSource_LocationID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					300,
+					322.2085,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXErrorsWarningsDataSource_TypeID,
+					PBXErrorsWarningsDataSource_MessageID,
+					PBXErrorsWarningsDataSource_LocationID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					275,
+					20,
+					88,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					200,
+					423,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 158787933;
+			PBXPrepackagedSmartGroups_v2 = (
+				{
+					PBXTransientLocationAtTop = bottom;
+					absolutePathToBundle = "";
+					activationKey = OldTargetSmartGroup;
+					clz = PBXTargetSmartGroup;
+					description = "Displays all targets of the project.";
+					globalID = 1C37FABC04509CD000000102;
+					name = Targets;
+					preferences = {
+						image = Targets;
+					};
+				},
+				{
+					PBXTransientLocationAtTop = bottom;
+					absolutePathToBundle = "";
+					clz = PBXTargetSmartGroup2;
+					description = "Displays all targets of the project as well as nested build phases.";
+					globalID = 1C37FBAC04509CD000000102;
+					name = Targets;
+					preferences = {
+						image = Targets;
+					};
+				},
+				{
+					PBXTransientLocationAtTop = bottom;
+					absolutePathToBundle = "";
+					clz = PBXExecutablesSmartGroup;
+					description = "Displays all executables of the project.";
+					globalID = 1C37FAAC04509CD000000102;
+					name = Executables;
+					preferences = {
+						image = Executable;
+					};
+				},
+				{
+					" PBXTransientLocationAtTop " = bottom;
+					absolutePathToBundle = "";
+					clz = PBXErrorsWarningsSmartGroup;
+					description = "Displays files with errors or warnings.";
+					globalID = 1C08E77C0454961000C914BD;
+					name = "Errors and Warnings";
+					preferences = {
+						fnmatch = "";
+						image = WarningsErrors;
+						recursive = 1;
+						regex = "";
+						root = "<PROJECT>";
+					};
+				},
+				{
+					PBXTransientLocationAtTop = bottom;
+					absolutePathToBundle = "";
+					clz = PBXFilenameSmartGroup;
+					description = "Filters items in a given group (potentially recursively) based on matching the name with the regular expression of the filter.";
+					globalID = 1CC0EA4004350EF90044410B;
+					name = "Implementation Files";
+					preferences = {
+						canSave = 1;
+						fnmatch = "";
+						image = SmartFolder;
+						isLeaf = 0;
+						recursive = 1;
+						regex = "?*\\.[mcMC]";
+						root = "<PROJECT>";
+					};
+				},
+				{
+					PBXTransientLocationAtTop = bottom;
+					absolutePathToBundle = "";
+					clz = PBXFilenameSmartGroup;
+					description = "This group displays Interface Builder NIB Files.";
+					globalID = 1CC0EA4004350EF90041110B;
+					name = "NIB Files";
+					preferences = {
+						canSave = 1;
+						fnmatch = "*.nib";
+						image = SmartFolder;
+						isLeaf = 0;
+						recursive = 1;
+						regex = "";
+						root = "<PROJECT>";
+					};
+				},
+				{
+					PBXTransientLocationAtTop = no;
+					absolutePathToBundle = "";
+					clz = PBXFindSmartGroup;
+					description = "Displays Find Results.";
+					globalID = 1C37FABC05509CD000000102;
+					name = "Find Results";
+					preferences = {
+						image = spyglass;
+					};
+				},
+				{
+					PBXTransientLocationAtTop = no;
+					absolutePathToBundle = "";
+					clz = PBXBookmarksSmartGroup;
+					description = "Displays Project Bookmarks.";
+					globalID = 1C37FABC05539CD112110102;
+					name = Bookmarks;
+					preferences = {
+						image = Bookmarks;
+					};
+				},
+				{
+					PBXTransientLocationAtTop = bottom;
+					absolutePathToBundle = "";
+					clz = XCSCMSmartGroup;
+					description = "Displays files with interesting SCM status.";
+					globalID = E2644B35053B69B200211256;
+					name = SCM;
+					preferences = {
+						image = PBXRepository;
+						isLeaf = 0;
+					};
+				},
+				{
+					PBXTransientLocationAtTop = bottom;
+					absolutePathToBundle = "";
+					clz = PBXSymbolsSmartGroup;
+					description = "Displays all symbols for the project.";
+					globalID = 1C37FABC04509CD000100104;
+					name = "Project Symbols";
+					preferences = {
+						image = ProjectSymbols;
+						isLeaf = 1;
+					};
+				},
+				{
+					PBXTransientLocationAtTop = bottom;
+					absolutePathToBundle = "";
+					clz = PBXFilenameSmartGroup;
+					description = "Filters items in a given group (potentially recursively) based on matching the name with the regular expression of the filter.";
+					globalID = PBXTemplateMarker;
+					name = "Simple Filter SmartGroup";
+					preferences = {
+						canSave = 1;
+						fnmatch = "*.nib";
+						image = SmartFolder;
+						isLeaf = 0;
+						recursive = 1;
+						regex = "";
+						root = "<PROJECT>";
+					};
+				},
+				{
+					PBXTransientLocationAtTop = bottom;
+					absolutePathToBundle = "";
+					clz = PBXFilenameSmartGroup;
+					description = "Filters items in a given group (potentially recursively) based on matching the name with the regular expression of the filter.";
+					globalID = PBXTemplateMarker;
+					name = "Simple Regular Expression SmartGroup";
+					preferences = {
+						canSave = 1;
+						fnmatch = "";
+						image = SmartFolder;
+						isLeaf = 0;
+						recursive = 1;
+						regex = "?*\\.[mcMC]";
+						root = "<PROJECT>";
+					};
+				},
+				{
+					PBXTransientLocationAtTop = bottom;
+					clz = XDDesignSmartGroup;
+					description = "Displays Xdesign models";
+					globalID = 2E4A936305E6979E00701470;
+					name = Design;
+					preferences = {
+						image = Design;
+						isLeaf = 0;
+					};
+				},
+			);
+			PBXWorkspaceStateSaveDate = 158787933;
+		};
+		sourceControlManager = 6DA6F9590835677500CB063B /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	6D0193C9088C49C300A329FC /* prefix.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1016, 603}}";
+			sepNavSelRange = "{531, 0}";
+			sepNavVisRect = "{{0, 0}, {1016, 603}}";
+			sepNavWindowFrame = "{{15, 95}, {1055, 732}}";
+		};
+	};
+	6D0536C7087055A800C0752A /* Messages.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1071, 1694}}";
+			sepNavSelRange = "{1669, 0}";
+			sepNavVisRect = "{{0, 366}, {1071, 636}}";
+			sepNavWindowFrame = "{{15, 62}, {1110, 765}}";
+		};
+	};
+	6D39F17208510810000C2A69 /* AppLib.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1239, 28658}}";
+			sepNavSelRange = "{40845, 0}";
+			sepNavVisRect = "{{0, 26500}, {1239, 383}}";
+			sepNavWindowFrame = "{{104, 67}, {1067, 757}}";
+		};
+	};
+	6D96C043083BC65400AA9194 /* IKEngine.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1071, 1750}}";
+			sepNavSelRange = "{2562, 0}";
+			sepNavVisRect = "{{0, 1114}, {1071, 636}}";
+			sepNavWindowFrame = "{{38, 41}, {1110, 765}}";
+		};
+	};
+	6D96C044083BC65400AA9194 /* IKOverlayList.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {653, 2478}}";
+			sepNavSelRange = "{1551, 0}";
+			sepNavVisRect = "{{0, 135}, {653, 195}}";
+		};
+	};
+	6D96C046083BC65400AA9194 /* IKString.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {693, 1694}}";
+			sepNavSelRange = "{2743, 6}";
+			sepNavVisRect = "{{0, 870}, {693, 627}}";
+			sepNavWindowFrame = "{{38, 50}, {732, 756}}";
+		};
+	};
+	6DA49032086CC58C0042914E /* XCBreakpointsBucket */ = {
+		isa = XCBreakpointsBucket;
+		name = "Project Breakpoints";
+		objects = (
+		);
+	};
+	6DA6F9530835675600CB063B /* ikusb */ = {
+		isa = PBXExecutable;
+		activeArgIndex = 2147483647;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = ikusb;
+		savedGlobals = {
+		};
+		sourceDirectories = (
+		);
+	};
+	6DA6F9590835677500CB063B /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+		scmType = "";
+	};
+	6DA6F95A0835677500CB063B /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	6DA6F98F083569CD00CB063B /* main.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1028, 16982}}";
+			sepNavSelRange = "{2518, 0}";
+			sepNavVisRect = "{{0, 1005}, {1028, 628}}";
+			sepNavWindowFrame = "{{72, 57}, {1067, 757}}";
+		};
+	};
+	6DA6FB4108356F0200CB063B /* IKCommon.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {944, 1078}}";
+			sepNavSelRange = "{817, 0}";
+			sepNavVisRect = "{{0, 653}, {944, 193}}";
+			sepNavWindowFrame = "{{15, 71}, {732, 756}}";
+		};
+	};
+	6DA6FB4208356F0200CB063B /* IKControlPanel.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {944, 5474}}";
+			sepNavSelRange = "{1689, 14}";
+			sepNavVisRect = "{{0, 569}, {944, 193}}";
+			sepNavWindowFrame = "{{15, 70}, {1067, 757}}";
+		};
+	};
+	6DA6FB4408356F0200CB063B /* IKDevice.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1026, 61544}}";
+			sepNavSelRange = "{70155, 0}";
+			sepNavVisRect = "{{0, 47147}, {1026, 640}}";
+			sepNavWindowFrame = "{{15, 58}, {1065, 769}}";
+		};
+	};
+	6DA6FB4508356F0200CB063B /* IKEngine.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1028, 34034}}";
+			sepNavSelRange = "{56509, 0}";
+			sepNavVisRect = "{{0, 33167}, {1028, 628}}";
+			sepNavWindowFrame = "{{46, 46}, {1067, 757}}";
+		};
+	};
+	6DA6FB4608356F0200CB063B /* IKFile.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {816, 18746}}";
+			sepNavSelRange = "{781, 0}";
+			sepNavVisRect = "{{0, 519}, {816, 495}}";
+			sepNavWindowFrame = "{{147, 182}, {855, 624}}";
+		};
+	};
+	6DA6FB4708356F0200CB063B /* IKFile.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1028, 1526}}";
+			sepNavSelRange = "{2446, 0}";
+			sepNavVisRect = "{{0, 828}, {1028, 628}}";
+			sepNavWindowFrame = "{{291, 50}, {1067, 757}}";
+		};
+	};
+	6DA6FB4808356F0200CB063B /* IKMap.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {656, 4886}}";
+			sepNavSelRange = "{4371, 0}";
+			sepNavVisRect = "{{0, 3536}, {653, 195}}";
+			sepNavWindowFrame = "{{61, 227}, {750, 558}}";
+		};
+	};
+	6DA6FB4A08356F0200CB063B /* IKMessage.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1016, 8918}}";
+			sepNavSelRange = "{5985, 0}";
+			sepNavVisRect = "{{0, 3094}, {1016, 603}}";
+			sepNavWindowFrame = "{{15, 95}, {1055, 732}}";
+		};
+	};
+	6DA6FB4B08356F0200CB063B /* IKMessage.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1028, 628}}";
+			sepNavSelRange = "{541, 142}";
+			sepNavVisRect = "{{0, 0}, {1028, 628}}";
+			sepNavWindowFrame = "{{38, 49}, {1067, 757}}";
+		};
+	};
+	6DA6FB4E08356F0200CB063B /* IKOverlay.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1026, 12194}}";
+			sepNavSelRange = "{4687, 0}";
+			sepNavVisRect = "{{0, 2557}, {1026, 640}}";
+			sepNavWindowFrame = "{{38, 37}, {1065, 769}}";
+		};
+	};
+	6DA6FB5008356F0200CB063B /* IKPrefs.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {829, 1722}}";
+			sepNavSelRange = "{1518, 0}";
+			sepNavVisRect = "{{0, 738}, {829, 303}}";
+		};
+	};
+	6DA6FB5208356F0200CB063B /* IKSettings.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1239, 4704}}";
+			sepNavSelRange = "{3589, 0}";
+			sepNavVisRect = "{{0, 2028}, {1239, 383}}";
+		};
+	};
+	6DA6FB5408356F0200CB063B /* IKString.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1239, 14798}}";
+			sepNavSelRange = "{9037, 0}";
+			sepNavVisRect = "{{0, 7432}, {1239, 383}}";
+			sepNavWindowFrame = "{{176, 122}, {750, 558}}";
+		};
+	};
+	6DA6FB5608356F0200CB063B /* IKUniversalToHid.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {693, 3108}}";
+			sepNavSelRange = "{94, 0}";
+			sepNavVisRect = "{{0, 2481}, {693, 627}}";
+			sepNavWindowFrame = "{{38, 50}, {732, 756}}";
+		};
+	};
+	6DA6FB5708356F0200CB063B /* IKUtil.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1016, 43120}}";
+			sepNavSelRange = "{25074, 0}";
+			sepNavVisRect = "{{0, 15863}, {1016, 603}}";
+			sepNavWindowFrame = "{{87, 100}, {1055, 732}}";
+		};
+	};
+	6DA6FB5808356F0200CB063B /* IKUtil.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {816, 1442}}";
+			sepNavSelRange = "{3177, 0}";
+			sepNavVisRect = "{{0, 947}, {816, 495}}";
+			sepNavWindowFrame = "{{15, 203}, {855, 624}}";
+		};
+	};
+	6DA6FB5A08356F0200CB063B /* Messages.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1028, 1358}}";
+			sepNavSelRange = "{1373, 22}";
+			sepNavVisRect = "{{0, 239}, {1028, 628}}";
+			sepNavWindowFrame = "{{15, 70}, {1067, 757}}";
+		};
+	};
+	6DA6FB5B08356F0200CB063B /* sharedMemory.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1016, 4830}}";
+			sepNavSelRange = "{118, 0}";
+			sepNavVisRect = "{{0, 0}, {1016, 603}}";
+			sepNavWindowFrame = "{{15, 95}, {1055, 732}}";
+		};
+	};
+	6DA6FB8208356FBF00CB063B /* FileCopy.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {973, 4185}}";
+			sepNavSelRange = "{13445, 29}";
+			sepNavVisRect = "{{0, 3737}, {973, 268}}";
+		};
+	};
+	6DA6FB8808356FD300CB063B /* Optimization.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {973, 1945}}";
+			sepNavSelRange = "{4852, 31}";
+			sepNavVisRect = "{{0, 1273}, {973, 268}}";
+		};
+	};
+	6DA6FBAE083570DF00CB063B /* IntelliKeys_Mac.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {992, 3570}}";
+			sepNavSelRange = "{6082, 0}";
+			sepNavVisRect = "{{0, 3375}, {653, 195}}";
+			sepNavWindowFrame = "{{38, 49}, {1067, 757}}";
+		};
+	};
+	6DA6FBBC083571EE00CB063B /* FileCopy.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {973, 9197}}";
+			sepNavSelRange = "{3493, 23}";
+			sepNavVisRect = "{{0, 952}, {973, 268}}";
+		};
+	};
+	6DA6FBE90835729200CB063B /* MoreDesktopMgr.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {914, 18214}}";
+			sepNavSelRange = "{3558, 20}";
+			sepNavVisRect = "{{0, 1037}, {914, 237}}";
+		};
+	};
+	6DA6FBED0835729D00CB063B /* MoreFilesExtras.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1016, 51898}}";
+			sepNavSelRange = "{4003, 16}";
+			sepNavVisRect = "{{0, 931}, {1016, 603}}";
+			sepNavWindowFrame = "{{38, 74}, {1055, 732}}";
+		};
+	};
+	6DF57BEB0871A0B00083130C /* IterateDirectory.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {914, 3332}}";
+			sepNavSelRange = "{3134, 0}";
+			sepNavVisRect = "{{0, 785}, {914, 237}}";
+			sepNavWindowFrame = "{{15, 95}, {1055, 732}}";
+		};
+	};
+	8DD76F740486A8DE00D96B5E /* ikusb */ = {
+		activeExec = 0;
+		executables = (
+			6DA6F9530835675600CB063B /* ikusb */,
+		);
+	};
+}

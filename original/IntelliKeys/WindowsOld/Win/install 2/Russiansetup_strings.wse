@@ -1,0 +1,261 @@
+Document Type: WSE
+item: Global
+  Version=9.0
+  Title=IntelliKeys USB
+  Title Japanese=IntelliKeys USB
+  Flags=00000100
+  Languages=64 0 0 0 0 0 0 0 0 0 0 0 0 0 0 65
+  Japanese Font Name=MS Gothic
+  Japanese Font Size=9
+  Progress Bar DLL=%_WISE_%\Progress\WizWin32a.DLL
+  Start Gradient=0 0 255
+  End Gradient=0 0 0
+  Windows Flags=00000100000000010010110000001000
+  Message Font=MS Sans Serif
+  Font Size=8
+  Pages Modified=00100001000000000000000000000000
+  Disk Label=Default
+  Disk Filename=SETUP
+  Patch Flags=0000000000000001
+  Patch Threshold=85
+  Patch Memory=4000
+  MIF PDF Version=1.0
+  MIF SMS Version=2.0
+  FTP Cluster Size=20
+  Dialogs Version=7
+  Crystal Format=10111100101100000010001001001001
+  Step View=&Properties
+  Variable Name1=_SYS_
+  Variable Default1=C:\Windows\system32
+  Variable Flags1=00001000
+  Variable Name2=_WIN_
+  Variable Default2=C:\Windows
+  Variable Flags2=00001000
+  Variable Name3=_WISE_
+  Variable Default3=C:\PROGRA~2\WISEIN~1
+  Variable Flags3=00001000
+end
+item: Remark
+  Text=---- Language Specific Installation Directory Names
+end
+remarked item: Set Variable
+  Variable=DOCUMENTATION_DIR
+  Value=Документация
+end
+remarked item: Set Variable
+  Variable=GUEST_DIR
+  Value=Гость
+end
+remarked item: Set Variable
+  Variable=OVERLAYS_DIR
+  Value=Оверлеи
+end
+remarked item: Set Variable
+  Variable=OVERLAYS_FOR_EDITING_DIR
+  Value=Оверлеи для правки
+end
+item: Set Variable
+  Variable=DOCUMENTATION_DIR
+  Value=Documentation
+end
+item: Set Variable
+  Variable=GUEST_DIR
+  Value=Гость
+end
+item: Set Variable
+  Variable=OVERLAYS_DIR
+  Value=Overlays
+end
+item: Set Variable
+  Variable=OVERLAYS_FOR_EDITING_DIR
+  Value=Overlays for Editing
+end
+item: Remark
+end
+item: Remark
+  Text=---- End Language Specific Directory Names
+end
+item: Remark
+end
+item: Remark
+  Text=------ Setup Language Specific Strings ------
+end
+item: Remark
+end
+item: Set Variable
+  Variable=WELCOME_DLG_TITLE
+  Value=Добро пожаловать
+end
+item: Set Variable
+  Variable=WELCOME_DLG_TEXT1
+  Value=Добро пожаловать в программу 
+end
+item: Set Variable
+  Variable=WELCOME_DLG_TEXT2
+  Value=установки приложения
+end
+item: Set Variable
+  Variable=WELCOME_DLG_TEXT3
+  Value=IntelliKeys USB и IntelliSwitch
+end
+item: Set Variable
+  Variable=WELCOME_DLG_TEXT4
+  Value=Эта программа установит на
+end
+item: Set Variable
+  Variable=WELCOME_DLG_TEXT5
+  Value=ваш компьютер приложение
+end
+item: Set Variable
+  Variable=WELCOME_DLG_TEXT6
+  Value=IntelliKeys USB и IntelliSwitch %VERSION%.
+end
+item: Set Variable
+  Variable=LICENSE_DLG_TITLE
+  Value=Лицензионное соглашение
+end
+item: Set Variable
+  Variable=README_DLG_TITLE
+  Value=Файл Read Me
+end
+item: Set Variable
+  Variable=FINISHED_DLG_TITLE
+  Value=Установка завершена
+end
+item: Set Variable
+  Variable=FINISHED_DLG_TEXT1
+  Value=Приложение IntelliKeys USB и IntelliSwitch
+end
+item: Set Variable
+  Variable=FINISHED_DLG_TEXT2
+  Value=успешно установлено!
+end
+item: Set Variable
+  Variable=MSG_UNABLE_TO_CONTINUE_TITLE
+  Value=Не удается выполнить установку
+end
+item: Set Variable
+  Variable=MSG_UNABLE_TO_CONTINUE_TEXT1
+  Value=Не удается установить приложение %apptitle% в.%version% в этой системе.
+end
+item: Set Variable
+  Variable=MSG_UNABLE_TO_CONTINUE_TEXT2
+  Value=Чтобы выполнить установку в этой системе, необходимо обладать правами администратора. 
+end
+item: Set Variable
+  Variable=MSG_UNABLE_TO_CONTINUE_TEXT3
+  Value=Чтобы установить данный продукт, выйдите из этой установки, войдите в систему как администратор и запустите установку или обратитесь за помощью к администратору.
+end
+item: Set Variable
+  Variable=MSG_UNABLE_TO_CONTINUE_TEXT4
+  Value=Чтобы выйти из этой установки, нажмите кнопку ОК.
+end
+item: Set Variable
+  Variable=MSG_INSTALL_ALREADY_RUNNING
+  Value=Система уже находится в процессе установки одного или нескольких драйверов для IntelliKeys USB.  В этом случае нет необходимости самому запускать программу установки. Вместо этого выполняйте инструкции, выводимые мастером обнаружения нового оборудования.
+end
+item: Set Variable
+  Variable=MSG_UNPLUG_INTELLIKEYS
+  Value=Прежде чем использовать эту программу установки, отсоедините IntelliKeys.
+end
+item: Set Variable
+  Variable=MSG_UNPLUG_INTELLIKEYS_2
+  Value=Программе установки необходимо обновить драйвер IntelliKeys USB, но это невозможно сделать, пока устройство подсоединено. Отсоедините устройство и повторно запустите эту программу установки.
+end
+item: Remark
+end
+item: Remark
+  Text=------ End Setup Language Specific Strings ------
+end
+item: Remark
+end
+item: Remark
+  Text=----- Uninstall Language Strings -----
+end
+item: Remark
+end
+item: Set Variable
+  Variable=UNINSTALL_WELCOME_DLG_TITLE
+  Value=Добро пожаловать
+end
+item: Set Variable
+  Variable=UNINSTALL_WELCOME_DLG_TEXT1
+  Value=Добро пожаловать в программу
+end
+item: Set Variable
+  Variable=UNINSTALL_WELCOME_DLG_TEXT2
+  Value=удаления IntelliKeys USB и IntelliSwitch!
+end
+item: Set Variable
+  Variable=UNINSTALL_WELCOME_DLG_TEXT3
+  Value=Эта программа удалит из вашего
+end
+item: Set Variable
+  Variable=UNINSTALL_WELCOME_DLG_TEXT4
+  Value=компьютера приложение IntelliKeys USB и
+end
+item: Set Variable
+  Variable=UNINSTALL_WELCOME_DLG_TEXT5
+  Value=IntelliSwitch 3.5.2. 
+end
+item: Set Variable
+  Variable=UNINSTALL_MSG_CANCEL_TITLE
+  Value=Отменить удаление
+end
+item: Set Variable
+  Variable=UNINSTALL_MSG_CANCEL_TEXT1
+  Value=Отменить удаление IntelliKeys USB в.%version%?
+end
+item: Set Variable
+  Variable=UNINSTALLING_PROGRESS_TITLE
+  Value=Выполняется удаление...
+end
+item: Set Variable
+  Variable=UNINSTALLING_PROGRESS_TEXT
+  Value=Выполняется удаление.  Подождите.
+end
+item: Remark
+end
+item: Remark
+  Text=----- End Uninstall Language Strings -----
+end
+item: Remark
+end
+item: Remark
+  Text=----- Uninstall2 Language Strings -----
+end
+item: Remark
+end
+item: Set Variable
+  Variable=UNINSTALL_FINISHED_DLG_TITLE
+  Value=Удаление завершено
+end
+item: Set Variable
+  Variable=UNINSTALL_FINISHED_DLG_TEXT1
+  Value=Приложение IntelliKeys USB и IntelliSwitch
+end
+item: Set Variable
+  Variable=UNINSTALL_FINISHED_DLG_TEXT2
+  Value=успешно удалено.
+end
+remarked item: Set Variable
+  Variable=UNINSTALLING_PROGRESS_TITLE
+  Value=Выполняется удаление...
+end
+remarked item: Set Variable
+  Variable=UNINSTALLING_PROGRESS_TEXT
+  Value=Выполняется удаление.  Подождите.
+end
+item: Set Variable
+  Variable=MSG_UNPLUG_INTELLIKEYS_TITLE
+  Value=Отсоедините IntelliKeys
+end
+item: Set Variable
+  Variable=MSG_UNPLUG_TEXT
+  Value=Сейчас устройство IntelliKeys USB подсоединено. Если удаляется программное обеспечение, чтобы подготовить установку нового программного обеспечения или ПО другой версии, убедитесь, что устройство IntelliKeys USB отсоединено, прежде чем начать эту установку.
+end
+item: Remark
+end
+item: Remark
+  Text=----- End Uninstall2 Language Strings -----
+end

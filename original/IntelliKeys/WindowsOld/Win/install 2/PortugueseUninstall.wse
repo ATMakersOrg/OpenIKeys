@@ -1,0 +1,535 @@
+Document Type: WSE
+item: Global
+  Version=9.0
+  Title=IntelliKeys USB Uninstaller
+  Title Portuguese=IntelliKeys USB Uninstaller
+  Flags=01001000
+  Languages=64 0 0 0 0 65 0 0 0 0 0 0 0 0 0 0
+  Default Language=5
+  Copy Default=1
+  Japanese Font Name=MS Gothic
+  Japanese Font Size=10
+  Start Gradient=0 0 255
+  End Gradient=0 0 0
+  Windows Flags=00000100000000000010110101011000
+  Message Font=MS Sans Serif
+  Font Size=8
+  Extra Flags=00000000000000000000010100000000
+  Pages Modified=00001001000000000000000000000000
+  Extra Pages=00000000000000000000000000100000
+  Disk Filename=SETUP
+  Patch Flags=0000000000000001
+  Patch Threshold=85
+  Patch Memory=4000
+  MIF PDF Version=1.0
+  MIF SMS Version=2.0
+  FTP Cluster Size=20
+  Dialogs Version=6
+  Crystal Format=10111100101100000010001001001001
+  Step View=&Properties
+  Variable Name1=_SYS_
+  Variable Default1=C:\WINDOWS\SYSTEM
+  Variable Flags1=00001000
+  Variable Name2=_WISE_
+  Variable Default2=C:\PROGRA~2\WISEIN~1
+  Variable Flags2=00001000
+  Variable Name3=_INIT_WINDOW_
+  Variable Default3=HIDE
+  Variable Flags3=00001000
+end
+item: Open/Close INSTALL.LOG
+  Flags=00000001
+end
+item: Remark
+end
+item: Include Script
+  Pathname=..\..\..\..\InstallPieces\systems\Sysinfo.wse
+end
+item: Remark
+end
+item: Remark
+  Text=---------------   Insure the SYS is writable   --------------------------------------------------------
+end
+item: Open/Close INSTALL.LOG
+  Flags=00000001
+end
+item: Check if File/Dir Exists
+  Pathname=%SYS%
+  Flags=10000100
+end
+item: Set Variable
+  Variable=SYS
+  Value=%WIN%
+end
+item: End Block
+end
+item: Remark
+end
+item: Remark
+  Text=---------------   title, location, group  --------------------------------------------------------
+end
+item: Set Variable
+  Variable=APPTITLE
+  Value=IntelliKeys USB
+  Flags=10000000
+end
+item: Set Variable
+  Variable=GROUP
+ Value=AbleNet
+  Flags=10000000
+end
+item: Set Variable
+  Variable=MAINDIR
+  Value=IntelliKeys USB
+  Flags=10000000
+end
+item: Set Variable
+  Variable=APPNAME
+  Value=IntelliKeys USB
+  Flags=10000000
+end
+item: Include Script
+  Pathname=version.wse
+end
+item: Remark
+end
+item: Remark
+end
+item: Remark
+  Text=----- Language Strings -----
+end
+item: Include Script
+  Pathname=PortugueseSetup_strings.wse
+end
+item: Remark
+end
+item: Remark
+end
+item: Remark
+  Text=---------------   figure out where Itools is --------------------------------------------------------
+end
+item: Read INI Value
+  Variable=DRIVE
+  Pathname=%WIN%\ITOOLS_X.INI
+  Section=Directory
+  Item=ITOOLS
+end
+item: If/While Statement
+  Variable=DRIVE
+end
+item: Read INI Value
+  Variable=DRIVE
+  Pathname=%WIN%\ITOOLS_X.INI
+  Section=Overlay Maker
+  Item=MyOverlays
+  Default=C:\
+end
+item: End Block
+end
+item: Parse String
+  Source=%DRIVE%
+  Pattern=\
+  Variable1=DRIVE
+end
+item: Set Variable
+  Variable=MAINDIR
+  Value=%DRIVE%\ITOOLS\%MAINDIR%
+end
+item: Edit INI File
+  Pathname=%WIN%\ITOOLS_X.INI
+  Settings=[Directory]
+  Settings=ITOOLS=%DRIVE%
+  Settings=
+end
+item: Remark
+end
+item: Remark
+  Text=---------------   do the wizard thang  --------------------------------------------------------
+end
+item: Wizard Block
+  Direction Variable=DIRECTION
+  Display Variable=DISPLAY
+  Bitmap Pathname=%_WISE_%\DIALOGS\TEMPLATE\WIZARD.BMP
+  X Position=9
+  Y Position=10
+  Filler Color=8421440
+  Dialog=Select Program Manager Group
+  Dialog=Select Backup Directory
+  Dialog=Display Registration Information
+  Dialog=Get Registration Information
+  Variable=EXPLORER
+  Variable=DOBACKUP
+  Variable=DOBRAND
+  Variable=DOBRAND
+  Value=1
+  Value=A
+  Value=1
+  Value=1
+  Compare=0
+  Compare=1
+  Compare=0
+  Compare=1
+  Flags=00000011
+end
+item: Remark
+  Text=---- Parameterized Dialog
+end
+item: Custom Dialog Set
+  Name=Welcome
+  Display Variable=DISPLAY
+  item: Dialog
+    Title=%UNINSTALL_WELCOME_DLG_TITLE%
+    Title French=Bienvenue
+    Title German=Willkommen
+    Title Portuguese=Bem-vindo 
+    Title Spanish=Bienvenido
+    Title Italian=Benvenuto
+    Title Danish=Velkommen
+    Title Dutch=Welkom
+    Title Norwegian=Velkommen
+    Title Swedish=Välkommen
+    Width=280
+    Height=224
+    Font Name=Helv
+    Font Size=8
+    item: Push Button
+      Rectangle=172 185 214 199
+      Variable=DIRECTION
+      Value=N
+      Create Flags=01010000000000010000000000000001
+      Text=&Next >
+      Text French=&Suivant>
+      Text German=&Weiter>
+      Text Portuguese=&Próximo>
+      Text Spanish=&Siguiente >
+      Text Italian=&Avanti >
+      Text Danish=&Næste>
+      Text Dutch=&Volgende>
+      Text Norwegian=&Neste>
+      Text Swedish=&Nästa >
+    end
+    item: Push Button
+      Rectangle=222 185 264 199
+      Action=1
+      Create Flags=01010000000000010000000000000000
+      Text=Cancel
+      Text French=Annuler
+      Text German=Abbrechen
+      Text Portuguese=Cancelar
+      Text Spanish=Cancelar
+      Text Italian=Annulla
+      Text Danish=Annuller
+      Text Dutch=Annuleren
+      Text Norwegian=Avbryt
+      Text Swedish=Avbryt
+    end
+    item: Static
+      Rectangle=9 177 263 178
+      Action=3
+      Create Flags=01010000000000000000000000000111
+    end
+    item: Static
+      Rectangle=87 71 125 96
+      Action=2
+      Enabled Color=00000000000000001111111111111111
+      Create Flags=01010000000000000000000000001011
+      Pathname=%_WISE_%\dialogs\template\install.grf
+      Pathname French=%_WISE_%\dialogs\template\install.grf
+      Pathname German=%_WISE_%\dialogs\template\install.grf
+      Pathname Portuguese=%_WISE_%\dialogs\template\install.grf
+      Pathname Spanish=%_WISE_%\dialogs\template\install.grf
+      Pathname Italian=%_WISE_%\dialogs\template\install.grf
+      Pathname Danish=%_WISE_%\dialogs\template\install.grf
+      Pathname Dutch=%_WISE_%\dialogs\template\install.grf
+      Pathname Norwegian=%_WISE_%\dialogs\template\install.grf
+      Pathname Swedish=%_WISE_%\dialogs\template\install.grf
+    end
+    item: Static
+      Rectangle=130 72 267 128
+      Enabled Color=00000000000000001111111111111111
+      Create Flags=01010000000000000000000000000000
+      Text=%UNINSTALL_WELCOME_DLG_TEXT1%
+      Text=
+      Text=%UNINSTALL_WELCOME_DLG_TEXT2%
+      Text French=Bienvenue sur le programme d'installation %APPTITLE%. Ce programme va installer %APPTITLE% sur votre ordinateur.
+      Text German=Willkommen im Installationsprogramm für %APPTITLE%. Dieses Programm installiert  %APPTITLE% auf Ihrem Computer.
+      Text Portuguese=Bem-vindo ao programa de configuração %APPTITLE%. Este programa instalará %APPTITLE% no seu computador
+      Text Spanish=Bienvenido al programa de Configuración %APPTITLE%. Este programa instalará %APPTITLE en su ordenador
+      Text Italian=Benvenuto nel programma di installazione di %APPTITLE%. Con questo programma puoi installare %APPTITLE% sul tuo computer.
+      Text Danish=Velkommen til %APPTITLE% installationsprogrammet. Dette program installerer %APPTITLE% på computeren.
+      Text Dutch=Welkom bij het %APPTITLE% installatieprogramma. Dit programma installeert %APPTITLE% op uw computer.
+      Text Norwegian=Velkommen til %APPTITLE% Oppsett-program. Dette programmet vil installere %APPTITLE% på datamaskinen din.
+      Text Swedish=Välkommen till installationsprogrammet för %APPTITLE%. Detta program installerar %APPTITLE% på din dator.
+    end
+  end
+end
+item: Remark
+  Text=---- Hardcoded Dialog
+end
+remarked item: Custom Dialog Set
+  Name=Welcome
+  Display Variable=DISPLAY
+  item: Dialog
+    Title=Welcome
+    Title French=Bienvenue
+    Title German=Willkommen
+    Title Portuguese=Bem-vindo 
+    Title Spanish=Bienvenido
+    Title Italian=Benvenuto
+    Title Danish=Velkommen
+    Title Dutch=Welkom
+    Title Norwegian=Velkommen
+    Title Swedish=Välkommen
+    Width=280
+    Height=224
+    Font Name=Helv
+    Font Size=8
+    item: Push Button
+      Rectangle=172 185 214 199
+      Variable=DIRECTION
+      Value=N
+      Create Flags=01010000000000010000000000000001
+      Text=&Next >
+      Text French=&Suivant>
+      Text German=&Weiter>
+      Text Portuguese=&Próximo>
+      Text Spanish=&Siguiente >
+      Text Italian=&Avanti >
+      Text Danish=&Næste>
+      Text Dutch=&Volgende>
+      Text Norwegian=&Neste>
+      Text Swedish=&Nästa >
+    end
+    item: Push Button
+      Rectangle=222 185 264 199
+      Action=1
+      Create Flags=01010000000000010000000000000000
+      Text=Cancel
+      Text French=Annuler
+      Text German=Abbrechen
+      Text Portuguese=Cancelar
+      Text Spanish=Cancelar
+      Text Italian=Annulla
+      Text Danish=Annuller
+      Text Dutch=Annuleren
+      Text Norwegian=Avbryt
+      Text Swedish=Avbryt
+    end
+    item: Static
+      Rectangle=9 177 263 178
+      Action=3
+      Create Flags=01010000000000000000000000000111
+    end
+    item: Static
+      Rectangle=87 71 125 96
+      Action=2
+      Enabled Color=00000000000000001111111111111111
+      Create Flags=01010000000000000000000000001011
+      Pathname=%_WISE_%\dialogs\template\install.grf
+      Pathname French=%_WISE_%\dialogs\template\install.grf
+      Pathname German=%_WISE_%\dialogs\template\install.grf
+      Pathname Portuguese=%_WISE_%\dialogs\template\install.grf
+      Pathname Spanish=%_WISE_%\dialogs\template\install.grf
+      Pathname Italian=%_WISE_%\dialogs\template\install.grf
+      Pathname Danish=%_WISE_%\dialogs\template\install.grf
+      Pathname Dutch=%_WISE_%\dialogs\template\install.grf
+      Pathname Norwegian=%_WISE_%\dialogs\template\install.grf
+      Pathname Swedish=%_WISE_%\dialogs\template\install.grf
+    end
+    item: Static
+      Rectangle=130 72 267 106
+      Enabled Color=00000000000000001111111111111111
+      Create Flags=01010000000000000000000000000000
+      Text=Welcome to the %APPTITLE% v%version% Uninstall program. This program will remove %APPTITLE% v%version% from your computer.
+      Text French=Bienvenue sur le programme d'installation %APPTITLE%. Ce programme va installer %APPTITLE% sur votre ordinateur.
+      Text German=Willkommen im Installationsprogramm für %APPTITLE%. Dieses Programm installiert  %APPTITLE% auf Ihrem Computer.
+      Text Portuguese=Bem-vindo ao programa de configuração %APPTITLE%. Este programa instalará %APPTITLE% no seu computador
+      Text Spanish=Bienvenido al programa de Configuración %APPTITLE%. Este programa instalará %APPTITLE en su ordenador
+      Text Italian=Benvenuto nel programma di installazione di %APPTITLE%. Con questo programma puoi installare %APPTITLE% sul tuo computer.
+      Text Danish=Velkommen til %APPTITLE% installationsprogrammet. Dette program installerer %APPTITLE% på computeren.
+      Text Dutch=Welkom bij het %APPTITLE% installatieprogramma. Dit programma installeert %APPTITLE% op uw computer.
+      Text Norwegian=Velkommen til %APPTITLE% Oppsett-program. Dette programmet vil installere %APPTITLE% på datamaskinen din.
+      Text Swedish=Välkommen till installationsprogrammet för %APPTITLE%. Detta program installerar %APPTITLE% på din dator.
+    end
+  end
+end
+item: If/While Statement
+  Variable=DIRECTION
+  Value=N
+  Flags=00000001
+end
+item: Display Message
+  Title=%UNINSTALL_MSG_CANCEL_TITLE%
+  Title Portuguese=%UNINSTALL_MSG_CANCEL_TITLE%
+  Text=%UNINSTALL_MSG_CANCEL_TEXT1%
+  Text Portuguese=%UNINSTALL_MSG_CANCEL_TEXT1%
+  Flags=00100001
+end
+item: Exit Installation
+end
+item: End Block
+end
+item: End Block
+end
+item: End Block
+end
+item: Remark
+end
+item: Custom Script Item
+  Filename=Display Progress Message.wse
+  Variable Name1=_CENTER_
+  Variable Value1=AB
+  Variable Name2=_WIDTH_
+  Variable Value2=320
+  Variable Name3=_MSG_TITLE_
+  Variable Value3=%UNINSTALLING_PROGRESS_TITLE%
+  Variable Name4=HELPFILE
+  Variable Value4=C:\Program Files (x86)\Wise Installation System\Help\Wise.hlp
+  Variable Name5=_OPTION_
+  Variable Value5=B
+  Variable Name6=_HEIGHT_
+  Variable Value6=80
+  Variable Name7=_MSG_TEXT_
+  Variable Value7=%UNINSTALLING_PROGRESS_TEXT%
+  Variable Name8=_Y_POS_
+  Variable Name9=_X_POS_
+end
+item: Remark
+end
+item: Create Directory
+  Pathname=%temp%\itools
+end
+item: Install File
+  Source=.\sleep\Release\sleep.exe
+  Destination=%temp%\itools\sleepu.exe
+  Flags=0000000010100010
+end
+item: Remark
+end
+item: Remark
+end
+item: Remark
+end
+item: Remark
+  Text=---------------  shutdown version 1 app  --------------------------------------------------------
+end
+item: Check if File/Dir Exists
+  Pathname=%maindir%\shutdown.exe
+  Flags=00000100
+end
+item: Execute Program
+  Pathname=%maindir%\shutdown.exe
+  Flags=00000110
+end
+item: End Block
+end
+item: Remark
+end
+item: Remark
+end
+item: Remark
+end
+item: Remark
+  Text=---------------  shutdown version 2 service  --------------------------------------------------------
+end
+item: Check if File/Dir Exists
+  Pathname=%maindir%\private\shutdown.exe
+  Flags=00000100
+end
+item: Execute Program
+  Pathname=%maindir%\private\shutdown.exe
+  Flags=00000110
+end
+item: End Block
+end
+item: Execute Program
+  Pathname=%temp%\itools\sleepu.exe
+  Flags=00000110
+end
+item: Check if File/Dir Exists
+  Pathname=%maindir%\private\manager.exe
+  Flags=00000100
+end
+item: Execute Program
+  Pathname=%maindir%\private\manager.exe
+  Command Line=stop
+  Flags=00000110
+end
+item: End Block
+end
+item: Execute Program
+  Pathname=%temp%\itools\sleepu.exe
+  Flags=00000110
+end
+item: Check if File/Dir Exists
+  Pathname=%maindir%\private\shutdown.exe
+  Flags=00000100
+end
+item: Execute Program
+  Pathname=%maindir%\private\shutdown.exe
+  Flags=00000110
+end
+item: End Block
+end
+item: Remark
+end
+item: Remark
+end
+item: Remark
+end
+item: Remark
+  Text=---------------  sleep a bit --------------------------------------------------------
+end
+item: Execute Program
+  Pathname=%temp%\itools\sleepu.exe
+  Flags=00000110
+end
+item: Remark
+end
+item: Remark
+end
+item: Remark
+end
+item: Remark
+  Text=---------------  remove version 2 service  --------------------------------------------------------
+end
+item: Check if File/Dir Exists
+  Pathname=%maindir%\private\manager.exe
+  Flags=00000100
+end
+item: Execute Program
+  Pathname=%maindir%\private\manager.exe
+  Command Line=remove
+  Flags=00000110
+end
+item: End Block
+end
+item: Remark
+end
+item: Remark
+end
+item: Remark
+end
+item: Remark
+  Text=---------------  do phase 2 --------------------------------------------------------
+end
+item: Install File
+  Source=PortugueseUninstall2.exe
+  Destination=%temp%\itools\uninstall2.exe
+  Flags=0000000010100010
+end
+item: Execute Program
+  Pathname=%temp%\itools\uninstall2.exe
+end
+item: Execute Program
+  Pathname=%temp%\itools\sleepu.exe
+  Flags=00000110
+end
+item: Delete File
+  Pathname=%temp%\itools\sleepu.exe
+end
+item: Delete File
+  Pathname=%temp%\itools\uninstall2.exe
+end
+item: Remark
+end

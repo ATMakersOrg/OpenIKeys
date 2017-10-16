@@ -1,0 +1,13 @@
+/Applications/AOL%20Instant%20Messenger%20(SM)%20Ä/AOL%20Instant%20Messenger%20(SM)/Contents/MacOS/AOL%20Instant%20Messenger%20(SM)		1|AOL Instant Messenger.omt|
+/Applications/Inspiration%207.6/Inspiration%207.6.app		1|Inspiration Overlay.omt|
+/Applications/Inspiration%208/Inspiration%208.app		1|Inspiration 8 Overlay.omt|
+/Applications/Kidspiration%202/Kidspiration%202.app		1|Kidspiration Overlay.omt|
+/Applications/iTunes.app		1|iTunes Overlay.omt|
+/Applications/Safari.app		1|Safari Overlay.omt|
+/Applications/Kurzweil%203000/Contents/MacOSClassic/Kurzweil%203000		1|Kurzweil Reading Overlay.omt|
+/Applications/Microsoft%20Office%202004/Microsoft%20PowerPoint		1|PowerPoint Overlay.omt|
+/Applications/Microsoft%20Office%20X/Microsoft%20PowerPoint		1|PowerPoint Overlay.omt|
+/Applications/Microsoft%20Office%20X/Microsoft%20Word		1|Word Overlay.omt|
+/Applications/Microsoft%20Office%202004/Microsoft%20Word		1|Word Overlay.omt|
+/Applications/Don%20Johnston/CoWriter%20SE/CoWriter%20SE.app		1|CoWriter Overlay.omt|
+/Applications/Don%20Johnston/SOLO/Applications/WOL.app		1|Write Outloud Overlay.omt|CoWriter Overlay.omt|

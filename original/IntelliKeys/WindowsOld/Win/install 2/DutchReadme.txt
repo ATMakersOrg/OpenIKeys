@@ -1,0 +1,1 @@
+OBSOLETE - replaced by assets in Documentation localization folders.

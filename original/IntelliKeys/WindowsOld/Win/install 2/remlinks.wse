@@ -1,0 +1,68 @@
+Document Type: WSE
+item: Global
+  Version=9.0
+  Title=IntelliKeys USB Installer
+  Flags=00001000
+  Languages=65 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  Copy Default=1
+  Japanese Font Name=MS Gothic
+  Japanese Font Size=10
+  Start Gradient=0 0 255
+  End Gradient=0 0 0
+  Windows Flags=00000100000000100010110101011000
+  Message Font=MS Sans Serif
+  Font Size=8
+  Disk Filename=SETUP
+  Patch Flags=0000000000000001
+  Patch Threshold=85
+  Patch Memory=4000
+  MIF PDF Version=1.0
+  MIF SMS Version=2.0
+  FTP Cluster Size=20
+  Dialogs Version=6
+  Crystal Format=10111100101100000010001001001001
+  Variable Name1=_SYS_
+  Variable Default1=C:\WINDOWS\SYSTEM
+  Variable Flags1=00001000
+  Variable Name2=_WISE_
+  Variable Default2=C:\PROGRA~1\WISEIN~1
+  Variable Flags2=00001000
+end
+item: Delete File
+  Pathname=%CSTARTUPDIR%\0-ikusb.lnk
+end
+item: Delete File
+  Pathname=%CSTARTUPDIR%\ikusb.lnk
+end
+item: Delete File
+  Pathname=%CSTARTUPDIR%\ikusbstart.lnk
+end
+item: Delete File
+  Pathname=%CSTARTUPDIR%\ikusbstart2.lnk
+end
+item: Delete File
+  Pathname=%CSTARTUPDIR%\ikusbsleepdaemon.lnk
+end
+item: Delete File
+  Pathname=%CSTARTUPDIR%\iksystray.lnk
+end
+item: Remark
+end
+item: Delete File
+  Pathname=%STARTUPDIR%\0-ikusb.lnk
+end
+item: Delete File
+  Pathname=%STARTUPDIR%\ikusb.lnk
+end
+item: Delete File
+  Pathname=%STARTUPDIR%\ikusbstart.lnk
+end
+item: Delete File
+  Pathname=%STARTUPDIR%\ikusbstart2.lnk
+end
+item: Delete File
+  Pathname=%STARTUPDIR%\ikusbsleepdaemon.lnk
+end
+item: Delete File
+  Pathname=%STARTUPDIR%\iksystray.lnk
+end

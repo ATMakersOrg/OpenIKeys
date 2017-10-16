@@ -1,0 +1,297 @@
+$Touch_Features		Eigenschaften: Berührung
+$Keysound_Volume	Tastenklang Lautstärke
+$Repeat_Features	Eigenschaften: Wiederholung
+$Additional_Features	Eigenschaften: Weitere
+$Indicator_Lights	Reaktion Umschalttaste
+$Testing		Test
+$StandardOverlayNote	Anmerkung: Bei eingelegtem Standard Overlay wird dieses verwendet und nicht das oben gewählte Overlay.
+$Volume:		Lautstärke:
+$Response_Rate:		Wiederholungsgeschwindigkeit:
+$Mouse_Speed:		Mausgeschwindigkeit :
+$Repeat_Rate:		Wiederholungsrate :
+$Firmware_Version_:	Firmware Version :
+$Software_Version_:	Software Version :
+$On/Off_Switch_:	Ein/Aus Schalter :
+$Connected_:		Verbunden :
+$Serial_Number_:	Seriennummer :
+$Standard_Overlay_In_Place_:	Standard Overlay eingelegt :
+$Last_Sent_Overlay_:	Letztes gesendetes Overlay :
+$Overlay_Level_:	Overlay Ebene :
+$Language_:		Sprache :
+$Mode_:_		Betriebsart :
+$Connected		Verbunden
+$Not_Connected		Nicht verbunden
+$Switched_On		Eingeschaltet
+$Switched_Off		Ausgeschaltet
+On			Ein
+Off			Aus
+$Switch_1_:		Schalter 1 :
+$Switch_2_:		Schalter 2 :
+$Switch_3_:		Schalter 3 :
+$Switch_4_:		Schalter 4 :
+$Switch_5_:		Schalter 5 :
+$Pad_:			: Feld	:
+$Group:			Gruppe :
+$User:			Nutzer:
+$Edit_Groups_and_Users	&Gruppe und Nutzer bearbeiten...
+$Keyboard_Reset		&Tastatur Reset
+$Help...		&Hilfe...
+$Visit_Our_Website	& Besuchen Sie unsere Website
+$Done			&Fertig
+$Clear			&Löschen
+$Required_Lift_Off	&Abheben erforderlich
+$Repeat			&Wiederholen
+$Repeat_Latching	Wiederholen &Einrasten
+$Smart_Typing		&Schnelles Schreiben
+$Latching		Einrasten
+$Latching2		Einrasten
+$Locking		Verriegeln
+$Locking2		Verriegeln
+$No_Latching		&Nicht Einrasten
+$No_Latching2		Nicht Einrasten
+$Touch_Features.tabTitle	Berührungseigenschaften
+$Advanced		&Fortgeschritten
+$Troubleshooting	Fehlersuche
+
+
+$Browse...		&Blättern
+$Display_Features...	Anzeigeeigenschhaften
+!Root_Folder_Does_Not_Exist	Der Hauptordner existiert nicht. Bitte prüfen Sie die Installation.
+!Users_Folder_Does_Not_Exist	Der Benutzerordner existiert nicht. Bitte prüfen Sie die Installation.
+!Group_Folder_Inaccessible	Gruppen und Nutzer können nicht untersucht werden. Der Hauptordner könnte nicht erreichbar sein.
+!Keyboard_Software_Not_Responding	Die USB Tastatur Software reagiert nicht. Sie arbeitet oder ist nicht gestartet. Prüfen Sie, ob die Software läuft und ändern Sie die Einstellungen erneut.
+!Unsupported_USB_Keyboard_Message	Die Intellikeys Software hat eine unbekannte Mitteilung erhalten : ID =
+$Use_Intellikeys...		Wenn kein Standard Overlay benutzt wird, nutzen Sie Intellikeys...
+$Device_Status		Gerätezustand
+!Unable_to_save_the_settings	Kann die Einstellungen für diesen Nutzer nicht speichern.
+!Unable_to_load_the_settings	Kann die Einstellungen für diesen Nutzer nicht laden.
+!Unable_to_locate_preferences	Kann die Voreinstellungen im privaten Ordner nicht finden.
+!Unable_to_save_preferences	Kann die Voreinstellungen nicht speichern.
+!Cannot_Add_To_Guest_Group	Nutzer können nicht zur Gruppe der Gäste hinzugefügt werden.
+!The_User			Der Benutzer '
+!Could_not_be_added		' kann nicht hinzugefügt werden. Der Speicherort ist evtl. nicht erreichbar.
+!Can't_read_group_folder	Gruppenordner kann nicht erstellt oder geprüft werden für Gruppe :
+!Can't_rename_group_folder	Gruppenordner kann nicht geändert werden in :
+!User_already_exists		Es gibt einen Benutzer mit diesem Namen. Bitte wählen Sie einen anderen Namen.
+!Group_already_exists		Es gibt eine Gruppe mit diesem Namen. Bitte wählen Sie einen anderen Namen.
+!Can't_add_group_folder		Hinzufügen nicht möglich Gruppe '
+!Can't_add_group_folder		'. Das Verzeichnis ist nicht erreichbar.
+!Can't_scan_group_folders	Gruppenordner können nicht geprüft werden.
+!Group_is_not_empty		Die Gruppe kann nicht gelöscht werden, da sie nicht leer ist. Bitte vor dem Löschen alle Benutzer löschen.
+!Keyboard_not_reset		Die Tastatur wurde nicht neu gestartet (Reset). Bitte noch einmal versuchen.
+!Can't_locate_student_folder	Ordener für die Übungen nicht zu finden. Gast Einstellungen werden benutzt.
+$Device:					Gerät:
+$Data_Send_Rate:		Datengeschwindigkeit:
+$IntelliKeys_USB		IntelliKeys USB
+$Groups_and_Users		Gruppen und Benutzer
+$Groups					Gruppen
+$Users					Benutzer
+$Group_Name				Gruppenname
+$Group_Name:			Gruppenname:
+$OK						OK
+$Cancel					Abbrechen
+$User_Name				Benutzername
+$User_Name:				Benutzername:
+$Yes					Ja
+$No					Nein
+$group_New...				&Neu...
+$group_Delete				&Löschen
+$group_Rename...			&Umbenennen
+$student_New...				Neu
+$student_Delete				Löschen
+$student_Rename...			Umbenennen
+$volumeTest				Test
+$Last_Sent			letzte/r Gesendete
+$Use_				benutze
+$Switch_			Schalter
+$None				keine/r
+$Off				Aus
+$1				1
+$2				2
+$3				3
+$4				4
+$Sensor_Values_:_		Sensorwerte : 
+$Guest				Guest
+$Software_Version_=		Software Version =
+$Firmware_Version_=		Firmware Version =
+$Repeat_Rate_=			Wiederholungsrate =
+$Mouse_Speed_=			Mausgeschwindigkeit =
+$Data_Send_Rate_=		Datengeschwindigkeit =
+$Response_Rate_=		Wiederholungsrate =
+$Smart_Typing_is		Schnelles Schreiben ist
+$Required_Lift_Off_is		Erforderliches Abheben ist
+$Keysound_Volume_=		Tastenklang Lautstärke =
+$Repeat_is			Wiederholung ist
+$Repeat_Latching_is		Wiederholung Einrasten ist
+$Shift_Key_Action_=		Reaktion Umschalttaste =
+$Display_Latching		Einrasten
+$Display_No_Latching		Nicht einrasten
+$Display_Locking		Feststellen
+$Indicator_Lights_=		Anzeigen =
+$Three				Drei
+$Six				Sechs
+$Mode_=				Betriebsart =
+$Mode_Warning_=			Warnungsbetriebsart anzeigen =
+$Use_Last_Sent_Overlay		Letztes gesendetes Overlay benutzen
+$Use_This_Overlay		Dieses Overlay benutzen
+$Use_As_A_Switch		Als Schalter benutzen
+$Last_Sent_Overlay_=		Letztes gesendetes Overlay =
+$Specific_Overlay_=		Bestimmtes Overlay =
+$Switch_Setting_=		Schalter einstellung =
+$Number_Of_Connected_Keyboards_=	Anzahl angeschlossener Tastaturen =
+$Keyboard_Number_=		Tastatur Nummer =
+$Serial_Number_=		Seriennummer
+$On_or_Off_=			Ein oder Aus =
+$Standard_Overlay_=		Standard Overlay =
+$Overlay_Name_=			Overlay Name =
+$Overlay_Level_=		Overlay Ebene =
+$Switch_1_=			Schalter 1 =
+$Switch_2_=			Schalter 2 =
+$Switch_3_=			Schalter 3 =
+$Switch_4_=			Schalter 4 =
+$Switch_5_=			Schalter 5 =
+$Sensor_Values_=		Sensorwerte =
+$Number_of_keys_pressed_=	Anzahl betätigter Tasten =
+$Row_=				Zeile =
+$Column_=			Spalten =
+$IntelliKeys_USB_features_for_user	IntelliKeys USB Einstellungen für Benutzer
+$in_group			in Gruppe
+$Unknown			Unbekannt
+$Custom	    ; das Nächste ist für den Reiter „Anwendung“			  
+$Applications		Anwendungen
+$The_app_highlighted	Für die unten ausgwählten Anwendungen...
+$Has_these_overlays	... das Bedienfeld wird...
+$overlay_location	Overlay Pfad:
+$Add			Hinzufügen...
+$Remove			Entfernen
+$Attach			Verbinden...
+$Detach			Trennen
+$Edit			Bearbeiten...
+$attach_edit_overlays	Anbringen / Bearbeiten von Overlays
+$select_an_application	Eine Anwendung auswählen
+$program_files		Programm files
+$confirm_delete_app	Sind Sie sicher, dass sie die gewählte Anwendung entfernen möchten?
+$app_already_added	Die Anwendung ist schon in der Liste.
+$not_valid_overlay	Das ist keine gültige Overlay Datei. Bitte eine andere Datei wählen.
+$overlay_missing	Die gewählte Overlay Datei konnte nicht gefunden werden. Sie wurde gelöschte oder verschoben nachdem sie hinzugefügt wurde.after it was attached. 
+$confirm_detach_overlay		Sind Sie sicher, dass Sie das gewählte Overlay abtrennen möchten?
+$already_attached	Dieses Overlay ist schon verbunden.
+$app_not_allowed	Sie können zu dieser Anwendung keine Overlays aus dem IntelliKeys USB Bedienfeld verbinden, da die Anwendung ihre eigenen Overlays sendet. Bitte lesen Sie die Anleitung.
+
+$choose_app_header	Wählen Sie eine Anwendung.
+$programs		Anwendungen
+$browse			Durchblättern...
+$choose			Wählen...
+$current_overlay	Aktuelles Overlay:
+$sent_by		Gesendet von:
+$Sent_By_	Gesendet von:
+$Sent_By_=		Gesendet von=
+$last_sent_note		Hinweis: Benutzen Sie den Anwendungsreiter um Overlays mit Anwendungen zu verbinden
+
+$radio_attached		Das Bedienfeld wird das unten gewählte Overlay senden:
+$radio_none		Das Bedienfeld wird kein Overlay senden
+
+$edit_template_overlay	Diese Datei ist eine Overlay Vorlage. Sie werden eine Kopie dieser Datei bearbeiten und müssen diese Datei nach dem Speichern verbinden.
+$cannot_edit_overlay	Diese Datei kann nicht bearbeitet werden.
+$IntelliKeys_USB_Window_Title	IntelliKeys USB Bedienfeld.
+$IntelliKeys_USB_Window_Title2	IntelliKeys USB und IntelliSwitch Bedienfeld
+$find		Suchen...
+$IKOn		IntelliKeys Ein
+$IKOff		IntelliKeys Aus
+$ISOn		IntelliSwitch Ein
+$ISOff		IntelliSwitch Aus
+$IntelliSwitchFeaturesNotice	Hinweis: IntelliSwitch Nutzer können einstellen: Wiederholungsrate, Wiederholung Ein/Aus, Mausgeschwindigkeit, Tastenklang Lautstärke und Datenrate.
+$TabDoesNotApply		Hinweis: Einstellungen auf diesem Registerblatt haben keine Wirkung, wenn nicht auch "Overlays" im Registerblatt Mode gewählt wurde.
+$TabDoesNotApplyMsg		Hinweis: Einstellungen auf dem Anwendungs Registerblatt haben keine Wirkung, wenn nicht auch "Overlays" im Registerblatt Mode gewählt wurde.
+
+$application	Anwendung
+$overlay	Overlay
+$is_located	befindet sich im Pfad
+$was_expected	kann nicht gefunden werden. Es wurde erwartet im Pfad
+$overlay_details	Overlay Details
+$application_details	Anwendungsdetails
+
+$show_mode_warning	Warnung anzeigen, wenn das Overlay nicht gesendet werden konnte
+
+$switch_content_0
+$switch_content_1	Schalter:||1: Strg-Enter|2: Strg-Enter|3: Strg-Enter|4: Strg-Enter|5: Strg-Enter
+$switch_content_2	Schalter:||1: Strg-Pfeil Rechts|2: Strg-Pfeil unten|3: Strg-Pfeil Rechts|4: Strg-Pfeil unten|5: Strg-Pfeil Rechts
+$switch_content_3	Schalter:||1: Leertaste|2: Enter|3: Leertaste|4: Enter|5: Leertaste
+$switch_content_4	Schalter:||1: Maus Linksklick|2: Maus Linksklick|3: Maus Linksklick|4: Maus Linksklick|5: Maus Linksklick
+$switch_content_5	Schalter:||1: Maus Linksklick|2: Maus Links-Doppelklick|3: Maus Linksklick|4: Maus Links-Doppelklick|5: Maus Linksklick
+$switch_content_6	Schalter:||1: Pfeil links|2: Pfeil Rechts|3: Pfeil links|4: Pfeil Rechts|5: Pfeil links
+$switch_content_7	Schalter:||1: Pfeil hoch|2: Pfeil unten|3: Pfeil hoch|4: Pfeil unten|5: Pfeil hoch
+$switch_content_8	Schalter:||1: Pfeil links|2: Pfeil hoch|3: Pfeil links|4: Pfeil hoch|5: Pfeil links
+$switch_content_9	Schalter:||1: 1|2: 2|3: 1|4: 2|5: 1
+$switch_content_10	Schalter:||1: Tab|2: Enter|3: Tab|4: Enter|5: Tab
+$switch_content_11	Schalter:||1: Tab|2: Leertaste|3: Tab|4: Leertaste|5: Tab
+$switch_content_12	Schalter:||1: Tab|2: Shift-Tab|3: Tab|4: Shift-Tab|5: Tab
+$switch_content_13	Schalter:||1: Links Shift|2: Rechts Shift|3: Links Shift|4: Rechts Shift|5: Links Shift
+$switch_content_14	Schalter:||1: Pfeil unten|2: Enter|3: Pfeil unten|4: Enter|5: Pfeil unten
+$switch_content_15	Schalter:||1: Pfeil Rechts|2: Enter|3: Pfeil Rechts|4: Enter|5: Pfeil Rechts
+$switch_content_16	Schalter:||1: Maus Linksklick|2: Maus Rechtsklick|3: Maus Linksklick|4: Maus Rechtsklick|5: Maus Linksklick
+
+$switch_content_17	Schalter:||1: Pfeil hoch|2: Pfeil unten|3: Pfeil Links|4: Pfeil Rechts|5: Enter
+$switch_content_18	Schalter:||1: Pfeil hoch|2: Pfeil unten|3: Pfeil Links|4: Pfeil Rechts|5: Leertaste
+$switch_content_19	Schalter:||1: 1|2: 2|3: 3|4: 4|5: 0
+$switch_content_20	Schalter:||1: 1|2: 2|3: 3|4: 4|5: Enter
+$switch_content_21	Schalter:||1: Leertaste|2: Enter|3: Tab|4: Shift-Tab|5: Zurück
+$switch_content_22	Schalter:||1: Links Shift|2: Rechts Shift|3: Strg|4: Alt Links|5: Alt Rechts
+$switch_content_23	Schalter:||1: Maus Linksklick|2: Maus Rechtsklick|3: Maus Links Doppelklick|4: Leertaste|5: Enter
+$switch_content_24	Schalter:||1: Maus Linksklick|2: Maus Rechtsklick|3: Maus Mittelklick|4: Maus Linksklick|5: Maus Rechtsklick
+$switch_content_25	Schalter:||1: Maus Linksklick|2: Leertaste|3: Q|4: Z|5: Esc
+$switch_content_26	Schalter:||1: Maus hoch|2: Maus herunter|3: Maus links|4: Maus rechts|5: Tastenklick
+
+
+$removing_app_title	Lösche Anwendung
+$removing_app_body	Die gewählte Anwendung ist dafür gedacht ihre eignen Overlays zu senden. Sie können ihr mit dem IntelliKeys USB Bedienfeld keine Overlays hinzufügen, deshalb wird sie jetzt aus der Liste gelöscht werden.
+
+$app_tab_unavailable_body	Der Reiter "Anwendung" ist in dieser Version nicht verfügbar.
+$app_tab_unavailable_title	Funktion nicht verfügbar
+$confirm_delete			Löschen Bestätigen
+$sure_delete_group		Sind Sie sicher die Gruppe löschen zu wollen?
+$sure_delete_user		Sind Sie sicher den Benutzer löschen zu wollen?
+$group_must_be_empty		Zum Löschen muss die Gruppe leer sein. Bitte löschen Sie alle Benutzer in dieser Gruppe um sie dann zu entfernen.
+$delete_empty_group		Leere Gruppe löschen?
+$the_group_named		Die Gruppe mit dem Namen
+$is_empty_delete		ist leer. Möchten Sie die Gruppe löschen?
+$last_saved_group_missing	Die letzte gespeicherte Gruppe existiert nicht. Benutzen Sie
+$last_saved_user_missing	Der letzte gespeicherte Benutzer existiert nicht. Benutzen Sie
+$invalid_preference		Ungültiger Wert für Benutzer Präferenz durch
+
+$Standard_Overlay_0_Name	Internet USB Overlay
+$Standard_Overlay_1_Name	Einstellungs USB Overlay
+$Standard_Overlay_2_Name	Mathematik USB Overlay
+$Standard_Overlay_3_Name	Alphabet USB Overlay
+$Standard_Overlay_4_Name	Maus USB Overlay
+$Standard_Overlay_5_Name	QWERTZ USB Overlay
+$Standard_Overlay_6_Name	Schreiben (Basis) USB Overlay
+$Standard_Overlay_7_Name	nichts
+
+
+$Mode_intro			IntelliKeys and IntelliSwitch Funktionen werden bestimmt durch
+
+$mode_overlays			Overlays
+$mode_one_overlay		Nur ein Overlay
+$mode_overlays_one		Benutzen sie ein Overlay für alle Anwendungen
+$mode_presets			Schalter Voreinstellungen
+$mode_discover_but		Trotzdem den Anwendungen das Senden eigener Overlays erlauben
+$Mode				Betriebsart
+$Sent_By:			Gesendet von :
+
+$DiscoverNameMac		Discover Envoy
+$DiscoverNameWin		DiscoverPro
+
+$must_supply_one_overlay	Auf dem Reiter "Betriebsart" können Sie nicht "Nur ein Overlay" wählen ohne ein Overlay gewählt zu haben. Bitte wählen Sie jetzt ein Overlay oder eine andere Betriebsart.
+
+$must_attach_overlay		Auf dem Reiter "Anwendungen" wählten sie "Benutzen Sie das unten gewählte Overlay" für eine Anwendung, Sie habe jedoch kein Overlay verbunden. Klicken Sie OK um zum Reiter "Anwendungen" zurückzugehen, Klicken Sie Abbrechen um zur Anwendung zurückzukehren.
+
+$overlay_sending_disabled	Senden gesperrt, bitte prüfen sie den "Mode" Reiter.
+
+$sticky				Klebrig
+
+
+
+
+
+

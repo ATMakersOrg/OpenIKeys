@@ -1,0 +1,41 @@
+; dll.def : Declares the module parameters for the DLL.
+
+LIBRARY      "msgclnt"
+DESCRIPTION  'dll Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+
+DllIKSendOverlay
+DllIKSendOverlayName
+DllIKSendOverlayWithName
+DllIKShowControlPanel
+DllIKStopServer
+DllIKStopSystray
+DllIKIsIntellikeysConnected
+DllIKSendSettings
+DllIKGetSettings
+DllIKIsStandardOverlayInPlace
+DllIKIsIntellikeysOn
+DllIKSetStudent
+DllIKIsEngineAlive
+DllIKIsControlPanelAlive
+DllIKGetMessageName
+DllIKResetKeyboard
+DllIKBeep
+DllIKStartDiagnosticMode
+DllIKStopDiagnosticMode
+DllIKGetDeviceArray
+DllIKGetSoftwareVersion
+DllIKGetFirmwareVersion
+DllIKGetLastSentOverlay
+DllIKReceive
+DllIKRespond
+DllIKMessageInitialize
+DllIKDebugSender
+DllIKMakeWriteable
+DllIKStartRawMode
+DllIKStopRawMode
+DllIKGetRawEvent
+DllIKIsRawModeUsable
+

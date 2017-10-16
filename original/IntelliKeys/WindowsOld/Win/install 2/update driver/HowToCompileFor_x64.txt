@@ -1,0 +1,25 @@
+/* Compiling Coinstaller for 64 bits. */
+
+You will need Visual Studio 2008 or later. You will need to create an x64 target, 
+if not already there.
+
+Here are the settings:
+
+// Compiler
+/O2 /Ob1 /I "..\..\..\..\..\WinDDK\7600.16385.1\inc" /D "NDEBUG" /D "WIN32" /D "_CONSOLE" 
+/D "UNICODE" /D "_AMD64_" /D "_VC80_UPGRADE=0x0600" /D "_MBCS" /GF /FD /EHsc /MT /Gy 
+/Yu"stdafx.h" /Fp".\x64\Release/UPDATE DRIVER.pch" /Fo".\x64\Release/" 
+/Fd".\x64\Release/" /W3 /nologo /c /TP /errorReport:prompt
+
+// Linker
+
+/OUT:".\x64/Release/UPDATE DRIVER.exe" /INCREMENTAL:NO /NOLOGO 
+/LIBPATH:"..\..\..\..\..\WinDDK\7600.16385.1\lib\wlh\amd64" /MANIFEST 
+/MANIFESTFILE:"x64\Release\UPDATE DRIVER.exe.intermediate.manifest" 
+/MANIFESTUAC:"level='asInvoker' uiAccess='false'" 
+/PDB:".\x64\Release/UPDATE DRIVER.pdb" /SUBSYSTEM:CONSOLE /DYNAMICBASE:NO 
+/MACHINE:X64 /ERRORREPORT:PROMPT setupapi.lib  newdev.lib  kernel32.lib user32.lib 
+gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib 
+oleaut32.lib uuid.lib odbc32.lib odbccp32.lib
+
+Note that you may get some compiler errors and the compiler will tell you how to fix it.

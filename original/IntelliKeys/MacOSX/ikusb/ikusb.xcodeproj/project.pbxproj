@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 44;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6DA6F990083569CD00CB063B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6F98F083569CD00CB063B /* main.cpp */; };
+		6DA6F9DA08356C9C00CB063B /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DA6F9D908356C9C00CB063B /* IOKit.framework */; };
+		8DD76F790486A8DE00D96B5E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AB6884FE841BABC02AAC07 /* CoreFoundation.framework */; };
+		9E2AB58614A2CC5400B86C0C /* IntelliKeys_Mac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E2AB58414A2CC5400B86C0C /* IntelliKeys_Mac.cpp */; };
+		9E2E237214A2C795007AC799 /* AppLib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E2E236214A2C795007AC799 /* AppLib.cpp */; };
+		9E2E237314A2C795007AC799 /* IKControlPanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E2E236314A2C795007AC799 /* IKControlPanel.cpp */; };
+		9E2E237414A2C795007AC799 /* IKDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E2E236414A2C795007AC799 /* IKDevice.cpp */; };
+		9E2E237514A2C795007AC799 /* IKEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E2E236514A2C795007AC799 /* IKEngine.cpp */; };
+		9E2E237614A2C795007AC799 /* IKFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E2E236614A2C795007AC799 /* IKFile.cpp */; };
+		9E2E237714A2C795007AC799 /* IKMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E2E236714A2C795007AC799 /* IKMap.cpp */; };
+		9E2E237814A2C795007AC799 /* IKMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E2E236814A2C795007AC799 /* IKMessage.cpp */; };
+		9E2E237914A2C795007AC799 /* IKMsg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E2E236914A2C795007AC799 /* IKMsg.cpp */; };
+		9E2E237A14A2C795007AC799 /* IKOverlay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E2E236A14A2C795007AC799 /* IKOverlay.cpp */; };
+		9E2E237B14A2C795007AC799 /* IKOverlayList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E2E236B14A2C795007AC799 /* IKOverlayList.cpp */; };
+		9E2E237C14A2C795007AC799 /* IKPrefs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E2E236C14A2C795007AC799 /* IKPrefs.cpp */; };
+		9E2E237D14A2C795007AC799 /* IKSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E2E236D14A2C795007AC799 /* IKSettings.cpp */; };
+		9E2E237E14A2C795007AC799 /* IKString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E2E236E14A2C795007AC799 /* IKString.cpp */; };
+		9E2E237F14A2C795007AC799 /* IKStringArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E2E236F14A2C795007AC799 /* IKStringArray.cpp */; };
+		9E2E238014A2C795007AC799 /* IKUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E2E237014A2C795007AC799 /* IKUtil.cpp */; };
+		9E2E238114A2C795007AC799 /* sharedMemory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E2E237114A2C795007AC799 /* sharedMemory.cpp */; };
+		9E40230E146CBC760052033A /* WebService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E40230C146CBC760052033A /* WebService.cpp */; };
+		9E90800E149E664E008E7717 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E90800D149E664E008E7717 /* Foundation.framework */; };
+		9EF46C1B146F4EDA000DCF2B /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EF46C1A146F4EDA000DCF2B /* CoreServices.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		6DFE23EF088C233000F7747A /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.gcc.3_3;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+		6DFE23F0088C234200F7747A /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.gcc.3_3;
+			fileType = sourcecode.cpp;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXFileReference section */
+		09AB6884FE841BABC02AAC07 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+		6D0193C9088C49C300A329FC /* prefix.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = prefix.h; sourceTree = "<group>"; };
+		6DA6F98F083569CD00CB063B /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; usesTabs = 1; };
+		6DA6F9D908356C9C00CB063B /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		8DD76F7E0486A8DE00D96B5E /* ikusb */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ikusb; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E2AB58414A2CC5400B86C0C /* IntelliKeys_Mac.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntelliKeys_Mac.cpp; path = ../common/IntelliKeys_Mac.cpp; sourceTree = "<group>"; };
+		9E2AB58514A2CC5400B86C0C /* IntelliKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IntelliKeys.h; path = ../common/IntelliKeys.h; sourceTree = "<group>"; };
+		9E2E236214A2C795007AC799 /* AppLib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AppLib.cpp; path = ../common/AppLib.cpp; sourceTree = "<group>"; };
+		9E2E236314A2C795007AC799 /* IKControlPanel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKControlPanel.cpp; path = ../common/IKControlPanel.cpp; sourceTree = "<group>"; };
+		9E2E236414A2C795007AC799 /* IKDevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKDevice.cpp; path = ../common/IKDevice.cpp; sourceTree = "<group>"; };
+		9E2E236514A2C795007AC799 /* IKEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKEngine.cpp; path = ../common/IKEngine.cpp; sourceTree = "<group>"; };
+		9E2E236614A2C795007AC799 /* IKFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKFile.cpp; path = ../common/IKFile.cpp; sourceTree = "<group>"; };
+		9E2E236714A2C795007AC799 /* IKMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKMap.cpp; path = ../common/IKMap.cpp; sourceTree = "<group>"; };
+		9E2E236814A2C795007AC799 /* IKMessage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKMessage.cpp; path = ../common/IKMessage.cpp; sourceTree = "<group>"; };
+		9E2E236914A2C795007AC799 /* IKMsg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKMsg.cpp; path = ../common/IKMsg.cpp; sourceTree = "<group>"; };
+		9E2E236A14A2C795007AC799 /* IKOverlay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKOverlay.cpp; path = ../common/IKOverlay.cpp; sourceTree = "<group>"; };
+		9E2E236B14A2C795007AC799 /* IKOverlayList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKOverlayList.cpp; path = ../common/IKOverlayList.cpp; sourceTree = "<group>"; };
+		9E2E236C14A2C795007AC799 /* IKPrefs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKPrefs.cpp; path = ../common/IKPrefs.cpp; sourceTree = "<group>"; };
+		9E2E236D14A2C795007AC799 /* IKSettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKSettings.cpp; path = ../common/IKSettings.cpp; sourceTree = "<group>"; };
+		9E2E236E14A2C795007AC799 /* IKString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKString.cpp; path = ../common/IKString.cpp; sourceTree = "<group>"; };
+		9E2E236F14A2C795007AC799 /* IKStringArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKStringArray.cpp; path = ../common/IKStringArray.cpp; sourceTree = "<group>"; };
+		9E2E237014A2C795007AC799 /* IKUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IKUtil.cpp; path = ../common/IKUtil.cpp; sourceTree = "<group>"; };
+		9E2E237114A2C795007AC799 /* sharedMemory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sharedMemory.cpp; path = ../common/sharedMemory.cpp; sourceTree = "<group>"; };
+		9E40230C146CBC760052033A /* WebService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WebService.cpp; sourceTree = "<group>"; };
+		9E40230D146CBC760052033A /* WebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebService.h; sourceTree = "<group>"; };
+		9E90800D149E664E008E7717 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9EF46C1A146F4EDA000DCF2B /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = SDKs/MacOSX10.6.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DD76F780486A8DE00D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DD76F790486A8DE00D96B5E /* CoreFoundation.framework in Frameworks */,
+				6DA6F9DA08356C9C00CB063B /* IOKit.framework in Frameworks */,
+				9EF46C1B146F4EDA000DCF2B /* CoreServices.framework in Frameworks */,
+				9E90800E149E664E008E7717 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* ikusb */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				C6859E96029091FE04C91782 /* Documentation */,
+				08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */,
+				19C28FBDFE9D53C911CA2CBB /* Products */,
+			);
+			name = ikusb;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				6DA6F98F083569CD00CB063B /* main.cpp */,
+				6D0193C9088C49C300A329FC /* prefix.h */,
+				E8CE47E70FEFE0FD000E918B /* web service */,
+				6DA6FBAB083570D000CB063B /* overlay sending */,
+				6DA6FB3E08356EAC00CB063B /* common */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				9E90800D149E664E008E7717 /* Foundation.framework */,
+				9EF46C1A146F4EDA000DCF2B /* CoreServices.framework */,
+				6DA6F9D908356C9C00CB063B /* IOKit.framework */,
+				09AB6884FE841BABC02AAC07 /* CoreFoundation.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		19C28FBDFE9D53C911CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DD76F7E0486A8DE00D96B5E /* ikusb */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DA6FB3E08356EAC00CB063B /* common */ = {
+			isa = PBXGroup;
+			children = (
+				9E2E236214A2C795007AC799 /* AppLib.cpp */,
+				9E2E236314A2C795007AC799 /* IKControlPanel.cpp */,
+				9E2E236414A2C795007AC799 /* IKDevice.cpp */,
+				9E2E236514A2C795007AC799 /* IKEngine.cpp */,
+				9E2E236614A2C795007AC799 /* IKFile.cpp */,
+				9E2E236714A2C795007AC799 /* IKMap.cpp */,
+				9E2E236814A2C795007AC799 /* IKMessage.cpp */,
+				9E2E236914A2C795007AC799 /* IKMsg.cpp */,
+				9E2E236A14A2C795007AC799 /* IKOverlay.cpp */,
+				9E2E236B14A2C795007AC799 /* IKOverlayList.cpp */,
+				9E2E236C14A2C795007AC799 /* IKPrefs.cpp */,
+				9E2E236D14A2C795007AC799 /* IKSettings.cpp */,
+				9E2E236E14A2C795007AC799 /* IKString.cpp */,
+				9E2E236F14A2C795007AC799 /* IKStringArray.cpp */,
+				9E2E237014A2C795007AC799 /* IKUtil.cpp */,
+				9E2E237114A2C795007AC799 /* sharedMemory.cpp */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+		6DA6FBAB083570D000CB063B /* overlay sending */ = {
+			isa = PBXGroup;
+			children = (
+				9E2AB58414A2CC5400B86C0C /* IntelliKeys_Mac.cpp */,
+				9E2AB58514A2CC5400B86C0C /* IntelliKeys.h */,
+			);
+			name = "overlay sending";
+			sourceTree = "<group>";
+		};
+		C6859E96029091FE04C91782 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+		E8CE47E70FEFE0FD000E918B /* web service */ = {
+			isa = PBXGroup;
+			children = (
+				9E40230C146CBC760052033A /* WebService.cpp */,
+				9E40230D146CBC760052033A /* WebService.h */,
+			);
+			name = "web service";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DD76F740486A8DE00D96B5E /* ikusb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DA5D08708554E290048416E /* Build configuration list for PBXNativeTarget "ikusb" */;
+			buildPhases = (
+				8DD76F760486A8DE00D96B5E /* Sources */,
+				8DD76F780486A8DE00D96B5E /* Frameworks */,
+			);
+			buildRules = (
+				6DFE23F0088C234200F7747A /* PBXBuildRule */,
+				6DFE23EF088C233000F7747A /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = ikusb;
+			productInstallPath = "$(HOME)/bin";
+			productName = ikusb;
+			productReference = 8DD76F7E0486A8DE00D96B5E /* ikusb */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 6DA5D08B08554E290048416E /* Build configuration list for PBXProject "ikusb" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* ikusb */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DD76F740486A8DE00D96B5E /* ikusb */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DD76F760486A8DE00D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DA6F990083569CD00CB063B /* main.cpp in Sources */,
+				9E40230E146CBC760052033A /* WebService.cpp in Sources */,
+				9E2E237214A2C795007AC799 /* AppLib.cpp in Sources */,
+				9E2E237314A2C795007AC799 /* IKControlPanel.cpp in Sources */,
+				9E2E237414A2C795007AC799 /* IKDevice.cpp in Sources */,
+				9E2E237514A2C795007AC799 /* IKEngine.cpp in Sources */,
+				9E2E237614A2C795007AC799 /* IKFile.cpp in Sources */,
+				9E2E237714A2C795007AC799 /* IKMap.cpp in Sources */,
+				9E2E237814A2C795007AC799 /* IKMessage.cpp in Sources */,
+				9E2E237914A2C795007AC799 /* IKMsg.cpp in Sources */,
+				9E2E237A14A2C795007AC799 /* IKOverlay.cpp in Sources */,
+				9E2E237B14A2C795007AC799 /* IKOverlayList.cpp in Sources */,
+				9E2E237C14A2C795007AC799 /* IKPrefs.cpp in Sources */,
+				9E2E237D14A2C795007AC799 /* IKSettings.cpp in Sources */,
+				9E2E237E14A2C795007AC799 /* IKString.cpp in Sources */,
+				9E2E237F14A2C795007AC799 /* IKStringArray.cpp in Sources */,
+				9E2E238014A2C795007AC799 /* IKUtil.cpp in Sources */,
+				9E2E238114A2C795007AC799 /* sharedMemory.cpp in Sources */,
+				9E2AB58614A2CC5400B86C0C /* IntelliKeys_Mac.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6DA5D08808554E290048416E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ONLY_ACTIVE_ARCH_PRE_XCODE_3_1)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = "/Applications/IntelliTools/IntelliKeys USB/Private";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ./prefix.h;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				HEADER_SEARCH_PATHS = (
+					"/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon/**",
+					"../common/firmware/**",
+					"../common/**",
+				);
+				INSTALL_PATH = /;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/lib\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH_PRE_XCODE_3_1 = "$(NATIVE_ARCH)";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_NAME = ikusb;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+				SDKROOT_ppc = "";
+				SYMROOT = build;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		6DA5D08908554E290048416E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ONLY_ACTIVE_ARCH_PRE_XCODE_3_1)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = "/Applications/IntelliTools/IntelliKeys USB/Private";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ./prefix.h;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				HEADER_SEARCH_PATHS = (
+					"/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon/**",
+					"../common/firmware/**",
+					"../common/**",
+				);
+				INSTALL_PATH = /;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/lib\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH_PRE_XCODE_3_1 = "$(NATIVE_ARCH)";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_NAME = ikusb;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+				SDKROOT_ppc = "";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		6DA5D08A08554E290048416E /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ONLY_ACTIVE_ARCH_PRE_XCODE_3_1)";
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = "/Applications/IntelliTools/IntelliKeys USB/Private";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				HEADER_SEARCH_PATHS = (
+					"/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon/**",
+					"../common/firmware/**",
+					"../common/**",
+				);
+				INSTALL_PATH = /;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/lib\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH_PRE_XCODE_3_1 = "$(NATIVE_ARCH)";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_NAME = ikusb;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+				SDKROOT_ppc = "";
+			};
+			name = Default;
+		};
+		6DA5D08C08554E290048416E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = "/Applications/IntelliTools/IntelliKeys USB/Private";
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = prefix.h;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				HEADER_SEARCH_PATHS = (
+					../common/,
+					../common/firmware,
+				);
+				INSTALL_GROUP = "$(INSTALL_GROUP)";
+				INSTALL_OWNER = "$(USER)";
+				INSTALL_PATH = /;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lssl",
+					"-lcrypto",
+					"-lz",
+					"-lcurl",
+				);
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+				SYMROOT = build;
+				VALID_ARCHS = i386;
+			};
+			name = Debug;
+		};
+		6DA5D08D08554E290048416E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = "/Applications/IntelliTools/IntelliKeys USB/Private";
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = prefix.h;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				HEADER_SEARCH_PATHS = (
+					../common/,
+					../common/firmware,
+				);
+				INSTALL_GROUP = "$(INSTALL_GROUP)";
+				INSTALL_OWNER = "$(USER)";
+				INSTALL_PATH = /;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lssl",
+					"-lcrypto",
+					"-lz",
+					"-lcurl",
+				);
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+				SYMROOT = build;
+				VALID_ARCHS = i386;
+			};
+			name = Release;
+		};
+		6DA5D08E08554E290048416E /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = "/Applications/IntelliTools/IntelliKeys USB/Private";
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = prefix.h;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				HEADER_SEARCH_PATHS = (
+					../common/,
+					../common/firmware,
+				);
+				INSTALL_GROUP = "$(INSTALL_GROUP)";
+				INSTALL_OWNER = "$(USER)";
+				INSTALL_PATH = /;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lssl",
+					"-lcrypto",
+					"-lz",
+					"-lcurl",
+				);
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+				SYMROOT = build;
+				VALID_ARCHS = i386;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DA5D08708554E290048416E /* Build configuration list for PBXNativeTarget "ikusb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DA5D08808554E290048416E /* Debug */,
+				6DA5D08908554E290048416E /* Release */,
+				6DA5D08A08554E290048416E /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DA5D08B08554E290048416E /* Build configuration list for PBXProject "ikusb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DA5D08C08554E290048416E /* Debug */,
+				6DA5D08D08554E290048416E /* Release */,
+				6DA5D08E08554E290048416E /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

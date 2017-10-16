@@ -1,0 +1,1 @@
+#include <MSL MacHeadersMach-O.h>#include <Carbon/Carbon.h>#define PLAT_MACINTOSH		1#define PLAT_MACINTOSH_X	1#define BUILD_CW			1#undef bool#undef true#undef false#define bool	Boolean#define true 	TRUE#define false 	FALSE

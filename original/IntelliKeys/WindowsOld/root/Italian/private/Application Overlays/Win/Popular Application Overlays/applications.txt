@@ -1,0 +1,18 @@
+
+%Program%20Files%\Common%20Files\AOL\1118249009\ee\AOLServiceHost.exe		1|AOL Explorer.omt|
+%Program%20Files%\AIM\AIM.exe		1|AOL Instant Messenger.omt|
+%Program%20Files%\Inspiration%207.6\Insp7.exe	1|Inspiration Overlay.omt|
+C:\Program%20Files\Inspiration%208\Insp8.exe		1|Inspiration 8 Overlay.omt|
+%Program%20Files%\Kidspiration%202\Kids2.exe	1|Kidspiration Overlay.omt|
+%Program%20Files%\iTunes\iTunes.exe		1|iTunes Overlay.omt|
+%Program%20Files%\Kurzweil%20Educational%20Systems\Kurzweil%203000\Kurzweil%203000.exe		1|Kurzweil Overlay.omt|Kurzweil Reading Overlay.omt|
+%Program%20Files%\Microsoft%20Office\OFFICE10\POWERPNT.EXE		1|PowerPoint Overlay.omt|
+%Program%20Files%\Microsoft%20Office\OFFICE11\POWERPNT.EXE		1|PowerPoint Overlay.omt|
+%Program%20Files%\Microsoft%20Office\OFFICE10\WINWORD.EXE		1|Word Overlay.omt|
+%Program%20Files%\Microsoft%20Office\OFFICE11\WINWORD.EXE		1|Word Overlay.omt|
+%root%\Wynn3\Wynn.exe		1|Wynn Overlay.omt|
+%root%\Wynn4\Wynn.exe		1|Wynn Overlay.omt|
+%root%\Wynn5\Wynn.exe		1|Wynn Overlay.omt|
+%root%\TestTalk\TestTalker.exe		1|TestTalker.omt|Wynn Overlay.omt|
+%root%\DonJohnston\SOLO\Applications\WOL.exe	1|Write Outloud Overlay.omt|CoWriter Overlay.omt|
+%root%\DonJohnston\CoWriter\CoWriter5000.exe	1|CoWriter Overlay.omt|

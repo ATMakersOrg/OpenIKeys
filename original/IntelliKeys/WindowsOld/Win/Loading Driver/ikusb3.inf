@@ -1,0 +1,109 @@
+
+;
+; FILE   : ikusb3.inf
+; VERSION: 2.0
+;
+
+[Version]
+Signature=$CHICAGO$
+Class=USB
+ClassGuid={36FC9E60-C465-11CF-8056-444553540000}
+Provider=%MFGNAME%
+;CatalogFile=ikusb3.cat
+DriverVer=05/02/2005,2.0.0.0
+
+[Manufacturer]
+%MFGNAME%=DeviceList
+
+[DestinationDirs]
+DefaultDestDir=10,system32\drivers
+CoInstaller_CopyFiles=11
+
+[SourceDisksFiles]
+ikfirm.sys=1
+IKUSBco.dll=1
+
+[SourceDisksNames]
+1=%INSTDISK%,,,
+
+[DeviceList]
+%DESCRIPTION%=DriverInstall, USB\VID_095E&PID_0100
+
+[IntelliKeysCoInfo]
+OriginalInfSourcePath = %1%
+
+;------------------------------------------------------------------------------
+;  Coinstaller Sections
+;------------------------------------------------------------------------------
+
+[DriverInstall.NT.CoInstallers]
+AddReg=CoInstaller_AddReg
+CopyFiles=CoInstaller_CopyFiles
+
+[CoInstaller_CopyFiles]
+ikusbco.dll
+
+[CoInstaller_AddReg]
+HKR,,CoInstallers32,0x00010000,"ikusbco.dll,IKUSBCoInstaller"
+
+;------------------------------------------------------------------------------
+;  Windows 2000 Sections
+;------------------------------------------------------------------------------
+
+[DriverInstall.NT]
+CopyFiles=DriverCopyFiles
+ProductName=%ProductName%
+FriendlyNameFormat=%FriendlyNameFormat%
+
+[DriverCopyFiles]
+ikfirm.sys,,,2
+ikusbco.dll,,,2
+
+[DriverInstall.NT.Services]
+AddService=ikfirm,2,DriverService
+
+[DriverService]
+ServiceType=1
+StartType=2
+ErrorControl=1
+ServiceBinary=%10%\system32\drivers\ikfirm.sys
+LoadOrderGroup = Base
+
+[DriverInstall.nt.hw]
+AddReg=DriverHwAddReg
+
+[DriverHwAddReg]
+HKR,,FriendlyName,,%FRIENDLYNAME%
+
+;------------------------------------------------------------------------------
+;  Windows 98 Sections
+;------------------------------------------------------------------------------
+
+[DriverInstall]
+AddReg=DriverAddReg
+CopyFiles=DriverCopyFiles,CoInstaller_CopyFiles
+ProductName=%ProductName%
+
+[DriverAddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,ikfirm.sys
+HKLM,%RunOnce%,"W98_SETUP",,"rundll32.exe ikusbco.dll,IKUSBCoInstaller 12345"
+
+
+[DriverInstall.HW]
+AddReg=DriverHwAddReg
+
+;------------------------------------------------------------------------------
+;  String Definitions
+;------------------------------------------------------------------------------
+
+[Strings]
+MFGNAME="IntelliTools Inc."
+INSTDISK="ikfirm Installation Directory"
+DESCRIPTION="IntelliKeys USB Firmware Loader"
+FRIENDLYNAME="IntelliKeys USB Firmware Loader"
+ProductName = "IntelliKeys USB"
+FriendlyNameFormat="IntelliKeys USB %1!u!"
+RunOnce = "SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce\setup"
+W98_SETUP = "IK USB Windows 98 Setup"
+

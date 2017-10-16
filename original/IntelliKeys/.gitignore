@@ -1,0 +1,28 @@
+bin/Debug
+bin/Release
+bin/Debug/
+bin/Release/
+obj/
+publish/
+_Resharper*
+_UpgradeReport*
+UpgradeLog.XML
+*.user
+*.suo
+*.sdf
+*.pidf
+*.userprefs
+Debug/
+Release/
+AppStore/
+Service_Release/
+DebugIntelliKeys USB Libs/
+*~
+*.nib
+*/bin/*
+*/obj/*
+*/*/bin/*
+*/*/obj/*
+WindowsOld/Win/Install 2/*.exe
+*.DS_Store
+*.DotSettings

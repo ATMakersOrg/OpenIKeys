@@ -1,0 +1,234 @@
+Document Type: WSE
+item: Global
+  Version=9.0
+  Title=IntelliKeys USB Installer
+  Flags=00000100
+  Split=1420
+  Languages=65 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  Japanese Font Name=MS Gothic
+  Japanese Font Size=10
+  Start Gradient=0 0 255
+  End Gradient=0 0 0
+  Windows Flags=00000100000000010010110000001000
+  Message Font=MS Sans Serif
+  Font Size=8
+  Disk Filename=SETUP
+  Patch Flags=0000000000000001
+  Patch Threshold=85
+  Patch Memory=4000
+  MIF PDF Version=1.0
+  MIF SMS Version=2.0
+  FTP Cluster Size=20
+  Per-User Version ID=1
+  Dialogs Version=6
+  Crystal Format=10111100101100000010001001001001
+  Step View=&Properties
+end
+item: Remark
+end
+item: Remark
+  Text=-----  for WIn98/ME, back up driver database first
+end
+item: Remark
+end
+remarked item: If/While Statement
+  Variable=SYS_MAJORVER
+  Value=4
+  Flags=00001001
+end
+remarked item: Find File in Path
+  Variable=DRVDATA
+  Pathname List=%win%\inf\drvdata.bin
+end
+remarked item: If/While Statement
+  Variable=DRVDATA
+  Flags=00000001
+end
+remarked item: Copy Local File
+  Source=%win%\inf\drvdata.bin
+  Destination=%win%\inf\drvdata.bak
+  Flags=0000000011000010
+end
+remarked item: End Block
+end
+remarked item: Remark
+end
+remarked item: Find File in Path
+  Variable=DRVIDX
+  Pathname List=%win%\inf\drvidx.bin
+end
+remarked item: If/While Statement
+  Variable=DRVIDX
+  Flags=00000001
+end
+remarked item: Copy Local File
+  Source=%win%\inf\drvidx.bin
+  Destination=%win%\inf\drvidx.bak
+  Flags=0000000011000010
+end
+remarked item: End Block
+end
+remarked item: End Block
+end
+item: Remark
+end
+item: Remark
+end
+item: Remark
+  Text=-----  now install the current driver
+end
+item: Remark
+end
+remarked item: If/While Statement
+  Variable=SYS_MAJORVER
+  Value=4
+  Flags=00001001
+end
+remarked item: Remark
+end
+remarked item: Install File
+  Source=..\Loading Driver\ForCustomers\ikfirm.sys
+  Destination=%win%\system32\drivers\IkFirm.sys
+  Flags=0000000010000010
+end
+remarked item: Remark
+end
+remarked item: Install File
+  Source=.\ikusb2a.inf
+  Destination=%win%\inf\ikusb2a.inf
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=.\ikusb2b.inf
+  Destination=%win%\inf\ikusb2b.inf
+  Flags=0000000010000010
+end
+remarked item: Remark
+end
+remarked item: Install File
+  Source=.\isusb2a.inf
+  Destination=%win%\inf\isusb2a.inf
+  Flags=0000000010000010
+end
+remarked item: Install File
+  Source=.\isusb2b.inf
+  Destination=%win%\inf\isusb2b.inf
+  Flags=0000000010000010
+end
+remarked item: Remark
+end
+remarked item: Install File
+  Source=..\Loading Driver\ikusb1.inf
+  Destination=%win%\inf\ikusb1.inf
+  Flags=0000000010000010
+end
+remarked item: Remark
+end
+remarked item: Else Statement
+end
+item: Remark
+end
+item: Remark
+  Text=------  if not launched by the coinstaller, install the driver
+end
+remarked item: If/While Statement
+  Variable=COINSTALL
+  Value=no
+end
+item: Remark
+end
+item: Create Directory
+  Pathname=%temp%\itools
+end
+item: Remark
+end
+item: Install File
+  Source=..\ContinueAnyway\release\ContinueAnyway.exe
+  Destination=%temp%\itools\ContinueAnyway.exe
+  Flags=0000000010000010
+end
+item: Execute Program
+  Pathname=%temp%\itools\ContinueAnyway.exe
+  Flags=00001000
+end
+item: Remark
+end
+item: Remark
+end
+item: If/While Statement
+  Variable=DRIVER_PLATFORM_ARC
+  Value=x86
+  Flags=00000100
+end
+item: Install File
+  Source=update driver\release\UPDATE DRIVER.exe
+  Destination=%temp%\itools\x86\upddrv.exe
+  Flags=0000000010000010
+end
+item: Else Statement
+end
+item: Install File
+  Source=update driver\release64\UPDATE DRIVER.exe
+  Destination=%temp%\itools\x64\upddrv.exe
+  Flags=0000000010000010
+end
+item: End Block
+end
+item: Remark
+end
+item: Set Variable
+  Variable=INF
+  Value=%maindir%\driver package\Drivers\%driver_platform%\%driver_platform_arc%\
+end
+item: If/While Statement
+  Variable=DRIVER_PLATFORM
+  Value=wnt
+  Flags=00000100
+end
+item: Set Variable
+  Variable=INF
+  Value=ikusb3.inf
+  Flags=00000001
+end
+item: Else Statement
+end
+item: Set Variable
+  Variable=INF
+  Value=ikusb4.inf
+  Flags=00000001
+end
+item: End Block
+end
+item: Remark
+end
+item: If/While Statement
+  Variable=DRIVER_PLATFORM_ARC
+  Value=x86
+  Flags=00000100
+end
+item: Execute Program
+  Pathname=cmd
+  Command Line=/c %temp%\itools\x86\upddrv.exe "%inf%" "USB\VID_095E&PID_0100"
+  Flags=00001010
+end
+item: Else Statement
+end
+item: Execute Program
+  Pathname=cmd
+  Command Line=/c %temp%\itools\x64\upddrv.exe "%inf%" "USB\VID_095E&PID_0100"
+  Flags=00001010
+end
+item: End Block
+end
+item: Remark
+end
+remarked item: End Block
+end
+item: Remark
+end
+remarked item: End Block
+end
+item: Remark
+end
+item: Remark
+end

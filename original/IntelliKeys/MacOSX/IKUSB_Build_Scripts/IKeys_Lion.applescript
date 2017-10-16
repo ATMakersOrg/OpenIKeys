@@ -1,0 +1,1 @@
+do shell script "/Projects/IKUSB_Build_Scripts/IKUSB_Build.sh clean"
