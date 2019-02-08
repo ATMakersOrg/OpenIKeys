@@ -183,7 +183,7 @@ NTSTATUS
 CompleteRequest(
    IN PIRP Irp,
    IN NTSTATUS status,
-   IN ULONG info
+   IN ULONG_PTR info
    );
 
 BOOLEAN LockDevice(
