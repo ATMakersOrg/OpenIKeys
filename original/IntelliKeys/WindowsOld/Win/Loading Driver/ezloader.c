@@ -80,6 +80,11 @@
 #include "ezloader.h"
 
 //
+// Disable compiler warning about unreferenced function parameters
+//
+#pragma warning (disable : 4100)
+
+//
 // this file contains an image of the device firmware
 //
 extern INTEL_HEX_RECORD firmware[];
@@ -106,7 +111,6 @@ Return Value:
 --*/
 {
    NTSTATUS ntStatus = STATUS_SUCCESS;
-   PDEVICE_OBJECT deviceObject = NULL;
 
    Ezusb_KdPrint (("entering (Ezusb) DriverEntry (Build: %s/%s\n",__DATE__,__TIME__));
 
@@ -240,7 +244,7 @@ NTSTATUS
 CompleteRequest(
    IN PIRP Irp,
    IN NTSTATUS status,
-   IN ULONG info
+   IN ULONG_PTR info
    )
 /*++
 Routine Description:
@@ -281,7 +285,6 @@ Return Value:
 --*/
 {
    PIO_STACK_LOCATION irpStack;
-   PDEVICE_EXTENSION pdx = fdo->DeviceExtension;
    ULONG fcn;
    NTSTATUS ntStatus;
 
@@ -835,7 +838,7 @@ Return Value:
 
 --*/
 {
-   NTSTATUS ntStatus;
+   NTSTATUS ntStatus = STATUS_UNSUCCESSFUL;
    PURB urb = NULL;
    PINTEL_HEX_RECORD ptr = hexRecord;
 
