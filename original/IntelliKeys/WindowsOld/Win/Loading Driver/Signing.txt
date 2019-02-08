@@ -1,0 +1,18 @@
+To sign:
+
+Run the "prepare" command file to build and sign the cab file.  The signed cab file will be in the "disk1" folder.
+
+Log on to:
+
+https://developer.microsoft.com/en-us/dashboard/hardware/Driver/
+
+Using the Azure account login- in my case it's:
+
+matt@echoaudioazure.onmicrosoft.com
+
+
+Submit a new driver and upload the cab file.  Tick all the "Windows 10 Client x64" options.
+
+
+
+What about weird garbage files from makecab?
