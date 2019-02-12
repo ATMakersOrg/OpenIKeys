@@ -165,13 +165,23 @@
     <ClInclude Include="version.h" />
   </ItemGroup>
   <ItemGroup>
-    <Inf Include="ikusb.inf" />
+    <Inf Include="ikusb.inx">
+      <TimeStamp Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">3.5</TimeStamp>
+      <KmdfVersionNumber Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </KmdfVersionNumber>
+    </Inf>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="version.rc" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="prepare_w10_x64.cmd" />
+    <None Include="prepare_w10_x86.cmd" />
     <None Include="w10_x64.ddf" />
+    <None Include="w10_x86.ddf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Signing.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

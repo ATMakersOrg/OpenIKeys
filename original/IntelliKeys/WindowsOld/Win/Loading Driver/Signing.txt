@@ -12,7 +12,3 @@ matt@echoaudioazure.onmicrosoft.com
 
 
 Submit a new driver and upload the cab file.  Tick all the "Windows 10 Client x64" options.
-
-
-
-What about weird garbage files from makecab?

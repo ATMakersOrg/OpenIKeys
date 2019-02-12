@@ -41,11 +41,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Inf Include="ikusb.inf">
-      <Filter>Driver Files</Filter>
-    </Inf>
-  </ItemGroup>
-  <ItemGroup>
     <ResourceCompile Include="version.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
@@ -54,5 +49,24 @@
     <None Include="w10_x64.ddf">
       <Filter>Cabs</Filter>
     </None>
+    <None Include="prepare_w10_x64.cmd">
+      <Filter>Cabs</Filter>
+    </None>
+    <None Include="prepare_w10_x86.cmd">
+      <Filter>Cabs</Filter>
+    </None>
+    <None Include="w10_x86.ddf">
+      <Filter>Cabs</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Inf Include="ikusb.inx">
+      <Filter>Driver Files</Filter>
+    </Inf>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Signing.txt">
+      <Filter>Cabs</Filter>
+    </Text>
   </ItemGroup>
 </Project>
