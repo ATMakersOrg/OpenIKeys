@@ -166,9 +166,10 @@
   </ItemGroup>
   <ItemGroup>
     <Inf Include="ikusb.inx">
-      <TimeStamp Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">3.5</TimeStamp>
+      <TimeStamp Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">3.5.3</TimeStamp>
       <KmdfVersionNumber Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
       </KmdfVersionNumber>
+      <TimeStamp Condition="'$(Configuration)|$(Platform)'=='Release|x64'">3.5.3</TimeStamp>
     </Inf>
   </ItemGroup>
   <ItemGroup>

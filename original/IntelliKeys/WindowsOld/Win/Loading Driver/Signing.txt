@@ -1,4 +1,16 @@
+Before building:
+
+Change the version number in version.h
+Set the version number to match in the properties for ikusb.inx:
+	Right-click on ikusb.inx, select Properties
+	Go into StampInf, set "Driver Version Number"
+
+Make sure to change both the x86 and x64 configurations
+
+
 To sign:
+
+Connect the USB dongle containing the driver signing certificate to the computer
 
 Run the "prepare" command file to build and sign the cab file.  The signed cab file will be in the "disk1" folder.  Verify that the cab file has a digital signature (right-click, select Properties, and check in the Digital Signatures tab).
 
