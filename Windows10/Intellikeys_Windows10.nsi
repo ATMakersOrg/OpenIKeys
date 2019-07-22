@@ -9,7 +9,7 @@
 
   ;Name and file
   Name "IntelliKeys USB Windows 10"
-  OutFile "Setup_IntelliKeys_3.5.3.exe"
+  OutFile "Setup_IntelliKeys_Windows_3.5.3.exe"
 
   ;Default installation folder
   InstallDir "$LOCALAPPDATA\IntelliKeysUSBWindows10"
