@@ -704,6 +704,7 @@ BOOLEAN LockDevice(
    PDEVICE_EXTENSION pdx = (PDEVICE_EXTENSION) fdo->DeviceExtension;
 
    // Increment use count on our device object
+#if DBG
    LONG usage = InterlockedIncrement(&pdx->usage);
 
    // AddDevice initialized the use count to 1, so it ought to be bigger than
@@ -712,6 +713,7 @@ BOOLEAN LockDevice(
    // should also find the "removing" flag set.
 
    ASSERT(usage > 1 || pdx->removing);
+#endif
 
    // If device is about to be removed, restore the use count and return FALSE.
    // If we're in a race with HandleRemoveDevice (maybe running on another CPU),

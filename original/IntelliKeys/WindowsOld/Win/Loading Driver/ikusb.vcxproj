@@ -142,6 +142,16 @@
       <PreprocessorDefinitions>DRIVER=1;_WIN64;_AMD64_;AMD64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>DRIVER=1;_WIN64;_AMD64_;AMD64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>DRIVER=1;_X86_=1;i386=1;STD_CALL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
   <ItemGroup>
     <FilesToPackage Include="$(TargetPath)" />
   </ItemGroup>
@@ -152,9 +162,27 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ezloader.h" />
+    <ClInclude Include="version.h" />
   </ItemGroup>
   <ItemGroup>
-    <Inf Include="ikusb.inf" />
+    <Inf Include="ikusb.inx">
+      <TimeStamp Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">3.5.3</TimeStamp>
+      <KmdfVersionNumber Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </KmdfVersionNumber>
+      <TimeStamp Condition="'$(Configuration)|$(Platform)'=='Release|x64'">3.5.3</TimeStamp>
+    </Inf>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="version.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="prepare_w10_x64.cmd" />
+    <None Include="prepare_w10_x86.cmd" />
+    <None Include="w10_x64.ddf" />
+    <None Include="w10_x86.ddf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Signing.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

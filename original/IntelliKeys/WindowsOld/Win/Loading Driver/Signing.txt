@@ -1,0 +1,26 @@
+Before building:
+
+Change the version number in version.h
+Set the version number to match in the properties for ikusb.inx:
+	Right-click on ikusb.inx, select Properties
+	Go into StampInf, set "Driver Version Number"
+
+Make sure to change both the x86 and x64 configurations
+
+
+To sign:
+
+Connect the USB dongle containing the driver signing certificate to the computer
+
+Run the "prepare" command file to build and sign the cab file.  The signed cab file will be in the "disk1" folder.  Verify that the cab file has a digital signature (right-click, select Properties, and check in the Digital Signatures tab).
+
+Log on to:
+
+https://developer.microsoft.com/en-us/dashboard/hardware/Driver/
+
+Using the Azure account login- in my case it's:
+
+matt@echoaudioazure.onmicrosoft.com
+
+
+Submit a new driver and upload the cab file.  Tick all the "Windows 10 Client x64" options for 64-bit Windows 10.  For 32-bit Windows 10, tick all the options that are *not* x64 and *not* ARM64.

@@ -1,0 +1,49 @@
+[Version]
+Signature="$WINDOWS NT$"
+Class=USBDevice
+ClassGuid={88BAE032-5A81-49f0-BC3D-A4FF138216D6}
+Provider=%ProviderName%
+DriverVer=2/11/2019,3.5.0.0
+CatalogFile=ikusb.cat
+
+[Manufacturer]
+%MfgName%=Cypress,NT$ARCH$
+
+[Cypress.NT$ARCH$]
+%USB\VID_095E&PID_0100.DeviceDesc%=CypressFirmwareLoad, USB\VID_095E&PID_0100
+
+[CypressFirmwareLoad.NT]
+CopyFiles=CypressFirmwareLoad.Files
+
+[CypressFirmwareLoad.NT.Services]
+AddService = ikusb, 0x00000002, CypressFirmwareLoad.AddService
+
+[CypressFirmwareLoad.AddService]
+DisplayName    = %ikusb.SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %10%\System32\Drivers\ikusb.sys
+
+[CypressFirmwareLoad.Files]
+ikusb.sys
+
+[SourceDisksNames]
+1=%Disk_Description%,,,
+
+[SourceDisksFiles]
+ikusb.sys = 1
+
+[DestinationDirs]
+CypressFirmwareLoad.Files = 10, System32\Drivers
+
+;---------------------------------------------------------------;
+
+[Strings]
+ProviderName    = "IntelliTools"
+MfgName         = "IntelliTools Inc."
+Disk_Description= "Intellikeys USB Installation Disk"
+ikusb.SvcDesc = "IntelliKeys USB Firmware Loader"
+ClassName       = "Intellikeys USB"
+USB\VID_095E&PID_0100.DeviceDesc = "Intellikeys USB"
+
