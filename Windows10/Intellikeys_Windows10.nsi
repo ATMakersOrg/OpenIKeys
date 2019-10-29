@@ -24,9 +24,11 @@
   
 ;--------------------------------
 ;Interface Settings
-
+  !define MUI_ICON "atmakers.ico"
   !define MUI_ABORTWARNING
-
+  !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
+  !define MUI_WELCOMEFINISHPAGE_BITMAP_NOSTRETCH
+  !define MUI_WELCOMEFINISHPAGE_BITMAP "iKeys_installer.bmp"
 ;--------------------------------
 ;Pages
   !define MUI_PAGE_CUSTOMFUNCTION_SHOW ShowWelcomePage
@@ -38,15 +40,34 @@
   !insertmacro MUI_PAGE_INSTFILES
   !insertmacro MUI_PAGE_FINISH
 
+!if 0
   !insertmacro MUI_UNPAGE_WELCOME
   !insertmacro MUI_UNPAGE_CONFIRM
   !insertmacro MUI_UNPAGE_INSTFILES
   !insertmacro MUI_UNPAGE_FINISH
+!endif
 
 ;--------------------------------
 ;Languages
 
   !insertmacro MUI_LANGUAGE "English"
+  
+
+;--------------------------------
+; onInit function
+Function .onInit
+       # the plugins dir is automatically deleted when the installer exits
+        InitPluginsDir
+        File /oname=$PLUGINSDIR\splash.bmp IKeysSplash.bmp
+
+        advsplash::show 5000 600 400 -1 $PLUGINSDIR\splash
+
+        Pop $0          ; $0 has '1' if the user closed the splash screen early,
+                        ; '0' if everything closed normally, and '-1' if some error occurred.
+
+        Delete $PLUGINSDIR\splash.bmp
+FunctionEnd
+
 
 ;--------------------------------
 ;Installer Sections
@@ -71,10 +92,6 @@ nsExec::ExecToStack 'pnputil /add-driver ikusb.inf /install'
 ${EnableX64FSRedirection}
 Pop $0 # return value/error/timeout
 Pop $1 # printed text, up to ${NSIS_MAX_STRLEN}
-DetailPrint 'printed: $1'
-DetailPrint ""
-DetailPrint "       Return value: $0"
-DetailPrint ""
 
 
   ;Store installation folder
@@ -99,6 +116,7 @@ SectionEnd
 ;--------------------------------
 ;Uninstaller Section
 
+!if 0
 Section "Uninstall"
 
   ;ADD YOUR OWN FILES HERE...
@@ -110,13 +128,14 @@ Section "Uninstall"
 ;  DeleteRegKey /ifempty HKCU "Software\Modern UI Test"
 
 SectionEnd
+!endif
+
 
 Function Startup
 
 ;
 ; Run the legacy 3.5.2 Windows installer before showing the NSIS UI pages
 ;
-
   SetOutPath $TEMP
   File "IntelliKeys_English_W_3_5_2.exe"
   ExecWait '"$TEMP\IntelliKeys_English_W_3_5_2.exe"'
